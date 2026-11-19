@@ -1,7 +1,7 @@
 import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
 import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking } from "./sim.js";
 import * as V from "./views.js";
-import { playCutscene } from "./cutscene.js";
+import { playCutscene, setMuted } from "./cutscene.js";
 import { watchLive } from "./live.js";
 
 const app = { state: null, data: null, busy: false, picks: [] };
@@ -18,6 +18,7 @@ const setting = (k, def = true) => app.state.settings[k] ?? def;
     const saved = await loadGame("auto");
     app.state = saved && saved.version === SAVE_VERSION ? attachState(saved) : newGame();
     V.bindViews(app);
+    setMuted(!setting("sound"));
     window.addEventListener("hashchange", render);
     render();
   } catch (e) {
@@ -59,6 +60,56 @@ function render() {
 function updateStatus() {
   const ev = nextEvent(app.state);
   $status.innerHTML = `<span class="yr">${app.state.year}</span><span>${ev ? `Next · ${esc(ev.name.replace(` ${app.state.year}`, ""))}` : "Season over"}</span>`;
+  const m = document.getElementById("mute");
+  if (m) { m.textContent = setting("sound") ? "Mute" : "Unmute"; m.setAttribute("aria-pressed", String(!setting("sound"))); }
+}
+async function setSound(on) {
+  app.state.settings.sound = on;
+  setMuted(!on);
+  updateStatus();
+  await saveGame("auto", app.state);
+}
+
+// ---------- the choice before qualifiers, GBB and BBWC ----------
+function choicesFor(ev) {
+  if (ev.kind === "wildcards") return [["watch", "Watch wildcards", "The full wildcard ceremony, one beatboxer at a time"], ["skip", "Skip", "Just show the results"]];
+  if (ev.qualifier) return [["watch", "Watch wildcards", "Wildcard ceremony, then every battle live"], ["battle", "Skip to battle", "Straight to the live battles"], ["skip", "Skip competition", "Simulate it and move on"]];
+  if (["gbb", "bbwc"].includes(ev.comp)) return [["battle", "Watch it live", "Every battle and every judge's vote"], ["skip", "Skip competition", "Simulate it and move on"]];
+  return null;
+}
+function askChoice(ev) {
+  const opts = choicesFor(ev);
+  return new Promise((resolve) => {
+    const el = document.createElement("div");
+    el.className = "choice";
+    el.innerHTML = `<div class="choice-box" role="dialog" aria-modal="true" aria-labelledby="choice-h">
+      <p class="eyebrow">${V.kindIcon(V.kindOf(ev))} ${esc(V.KIND_LABEL[V.kindOf(ev)] || "Event")} · ${esc(ev.name.match(/\d{4}/)?.[0] || "")}</p>
+      <h2 id="choice-h">${esc(ev.name)}</h2>
+      <div class="choice-opts">${opts.map(([k, label, sub], i) => `<button class="choice-opt${i === 0 ? " first" : ""}" data-choice="${k}"><b>${esc(label)}</b><span>${esc(sub)}</span></button>`).join("")}</div>
+      <label class="check"><input type="checkbox" data-remember> Use this choice for the rest of the season</label>
+    </div>`;
+    document.body.appendChild(el);
+    el.querySelector(".choice-opt").focus();
+    el.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-choice]");
+      if (!b) return;
+      const remember = el.querySelector("[data-remember]").checked;
+      el.remove();
+      resolve({ choice: b.dataset.choice, remember });
+    });
+  });
+}
+async function decide(ev) {
+  const opts = choicesFor(ev);
+  if (!opts) return null;
+  const keys = opts.map((o) => o[0]);
+  const fit = (c) => (keys.includes(c) ? c : c === "watch" && keys.includes("battle") ? "battle" : c === "battle" && keys.includes("watch") ? "watch" : keys[keys.length - 1]);
+  const st = app.state;
+  if (st.seasonChoice?.year === st.year) return fit(st.seasonChoice.choice);
+  if (!setting("askBefore")) return fit(setting("defaultChoice", "watch"));
+  const { choice, remember } = await askChoice(ev);
+  if (remember) st.seasonChoice = { year: st.year, choice };
+  return choice;
 }
 
 // ---------- helpers shared with the cutscenes and the live viewer ----------
@@ -68,6 +119,7 @@ const helpers = {
   flag: (cc) => flagColors(cc),
   flagUrl: (cc) => flagUrl(cc),
   flagHTML: (cc) => V.flag(cc),
+  onMute: (muted) => setSound(!muted),
   avatarHTML: (id, size = "xl") => V.avatar(id, size),
   record: (id) => { const p = app.state.people[id]; return `Rating ${Math.round(p.rating)} · ${p.titles.length} career title${p.titles.length === 1 ? "" : "s"}`; },
   career: (id) => {
@@ -93,7 +145,7 @@ const live = (rec) => watchLive(rec, helpers, { sound: setting("sound"), judges:
 
 // which cutscenes are worth stopping for
 function wanted(sc, ev, quiet) {
-  if (sc.type === "ceremony") return setting("ceremonies");
+  if (sc.type === "ceremony") return true; // shown or skipped through the choice panel
   if (!setting("cutscenes")) return false;
   if (app.state.settings.favorites.includes(sc.id)) return true;
   if (sc.type === "champion" && sc.tier === "national") return setting("nationalCutscenes", false);
@@ -111,11 +163,19 @@ async function simUntil(stop, { quiet = false, liveKey = null, silentBefore = fa
       const ev = nextEvent(app.state);
       if (!ev || stop(ev, n)) break;
       const forced = liveKey && ev.key === liveKey;
+      const silent = silentBefore && !forced;
+      // qualifiers, GBB wildcards, GBB and BBWC ask how you want to see them
+      const choice = silent ? null : forced ? "watch" : await decide(ev);
       const out = runNext(app.state);
-      if (silentBefore && !forced) { if (n % 8 === 7) await tick(ev); continue; }
-      const scenes = out.cutscenes.filter((sc) => wanted(sc, ev, quiet && !forced));
-      const watch = out.result && out.result.battles?.length && out.result.format !== "7ts" && (forced
-        || (setting("liveBig") && ["gbb", "bbwc"].includes(ev.comp)) || (setting("liveQualifiers", false) && ev.qualifier));
+      if (silent) { if (n % 8 === 7) await tick(ev); continue; }
+      let scenes = out.cutscenes.filter((sc) => wanted(sc, ev, quiet && !forced));
+      const hasBattles = out.result && out.result.battles?.length && out.result.format !== "7ts";
+      let watch = forced && hasBattles;
+      if (choice) {
+        if (choice === "skip") scenes = scenes.filter((sc) => sc.type !== "ceremony" && sc.type !== "champion");
+        if (choice === "battle") scenes = scenes.filter((sc) => sc.type !== "ceremony");
+        watch = choice !== "skip" && hasBattles;
+      }
       if (scenes.length || watch) {
         updateStatus(); // don't draw the results page yet: it would spoil the winner behind the overlay
         await play(scenes.filter((s) => s.before));
@@ -153,6 +213,8 @@ document.addEventListener("click", async (e) => {
     return;
   }
   if (act === "replay") { const r = st.archive[b.dataset.key]; if (r) await live(r); return; }
+  if (act === "mute") return setSound(!setting("sound"));
+  if (act === "forgetchoice") { st.seasonChoice = null; await saveGame("auto", st); return render(); }
   if (act === "fav") {
     const id = b.dataset.id, f = st.settings.favorites;
     st.settings.favorites = f.includes(id) ? f.filter((x) => x !== id) : f.concat(id);
@@ -175,7 +237,12 @@ document.addEventListener("click", async (e) => {
 document.addEventListener("change", async (e) => {
   const f = e.target.closest("[data-form='people']");
   if (f && e.target.name !== "q") { location.hash = `#people?${new URLSearchParams(new FormData(f))}`; return; }
-  if (e.target.matches("[data-setting]")) { app.state.settings[e.target.dataset.setting] = e.target.checked; await saveGame("auto", app.state); return; }
+  if (e.target.matches("[data-setting]")) {
+    const k = e.target.dataset.setting;
+    if (k === "sound") return setSound(e.target.checked);
+    app.state.settings[k] = e.target.checked; await saveGame("auto", app.state); return;
+  }
+  if (e.target.matches("[data-setting-select]")) { app.state.settings[e.target.dataset.settingSelect] = e.target.value; await saveGame("auto", app.state); return; }
   if (e.target.matches("[data-upload]")) return uploadPicture(e.target.dataset.upload, e.target.files[0]);
   if (e.target.matches("[data-import]")) return importSave(e.target.files[0]);
 });

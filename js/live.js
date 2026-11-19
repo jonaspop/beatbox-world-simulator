@@ -1,7 +1,7 @@
 // Live viewer: replays a finished tournament step by step — elimination reveal, then every battle
 // with both performers' rounds and the five judges' votes one at a time.
 import { esc } from "./data.js";
-import { Beat } from "./cutscene.js";
+import { Beat, setMuted, isMuted } from "./cutscene.js";
 
 export function watchLive(result, h, { sound = true, judges = [] } = {}) {
   return new Promise((resolve) => {
@@ -11,6 +11,7 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
       <header class="live-top">
         <div class="live-title"><span class="live-dot"></span><b>${esc(result.name)}</b><span class="live-stage" data-stage>Starting</span></div>
         <div class="live-ctl">
+          <button class="btn small" data-c="mute">${isMuted() ? "Unmute" : "Mute"}</button>
           <button class="btn small" data-c="pause">Pause</button>
           <button class="btn small" data-c="speed">Speed 1×</button>
           <button class="btn small" data-c="skip">Skip battle</button>
@@ -22,7 +23,8 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
     const $ = (s) => el.querySelector(s);
     const main = $("[data-main]"), side = $("[data-side]"), stage = $("[data-stage]");
     let speed = 1, paused = false, skipOne = false, skipAll = false, closed = false;
-    const beat = sound ? new Beat(96) : null;
+    setMuted(!sound);
+    const beat = new Beat(96);
     const speeds = [1, 2, 4, 8];
 
     const wait = (ms) => new Promise((res) => {
@@ -40,6 +42,7 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
     el.addEventListener("click", (e) => {
       const c = e.target.closest("[data-c]")?.dataset.c;
       if (!c) return;
+      if (c === "mute") { setMuted(!isMuted()); e.target.textContent = isMuted() ? "Unmute" : "Mute"; h.onMute?.(isMuted()); }
       if (c === "pause") { paused = !paused; e.target.textContent = paused ? "Play" : "Pause"; }
       if (c === "speed") { speed = speeds[(speeds.indexOf(speed) + 1) % speeds.length]; e.target.textContent = `Speed ${speed}×`; }
       if (c === "skip") skipOne = true;

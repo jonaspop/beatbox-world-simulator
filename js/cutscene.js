@@ -17,6 +17,15 @@ function noiseBuffer(ac) {
   return b;
 }
 
+// one mute switch for every beat that is playing
+let MUTED = false;
+const BEATS = new Set();
+export function setMuted(m) {
+  MUTED = !!m;
+  for (const b of BEATS) b.applyMute();
+}
+export const isMuted = () => MUTED;
+
 export class Beat {
   constructor(bpm = 96, mood = "hype") {
     this.ac = ctxAudio();
@@ -25,8 +34,10 @@ export class Beat {
     this.on = !!this.ac;
     if (!this.on) return;
     this.master = this.ac.createGain();
-    this.master.gain.value = 0.55;
+    this.level = mood === "hype" ? 0.55 : 0.45;
+    this.master.gain.value = MUTED ? 0 : this.level;
     this.master.connect(this.ac.destination);
+    BEATS.add(this);
     this.noise = noiseBuffer(this.ac);
     this.step = 0;
     this.next = this.ac.currentTime + 0.08;
@@ -40,6 +51,13 @@ export class Beat {
         if (s === 0) this.pad(this.next, [220, 277, 330]);
         if (s === 8) this.pad(this.next, [196, 247, 294]);
         if (s % 4 === 2) this.hat(this.next, 0.04);
+      } else if (this.mood === "warm") {
+        // laid-back groove: soft kick, light hats, slow chords
+        const bar = Math.floor(this.step / 16) % 2;
+        if (s === 0) this.pad(this.next, bar ? [196, 247, 294] : [220, 262, 330]);
+        if (s === 0 || s === 10) this.kick(this.next, 0.55);
+        if (s === 8) this.snare(this.next, 0.28);
+        if (s % 4 === 2) this.hat(this.next, 0.035);
       } else {
         if (s === 0 || s === 7 || s === 10) this.kick(this.next);
         if (s === 4 || s === 12) this.snare(this.next);
@@ -50,12 +68,18 @@ export class Beat {
       this.step++;
     }
   }
-  kick(t) {
+  applyMute() {
+    if (!this.on) return;
+    const t = this.ac.currentTime;
+    this.master.gain.cancelScheduledValues(t);
+    this.master.gain.setTargetAtTime(MUTED ? 0 : this.level, t, 0.05);
+  }
+  kick(t, vol = 1) {
     if (!this.on) return;
     const o = this.ac.createOscillator(), g = this.ac.createGain();
     o.frequency.setValueAtTime(140, t);
     o.frequency.exponentialRampToValueAtTime(42, t + 0.14);
-    g.gain.setValueAtTime(1, t);
+    g.gain.setValueAtTime(vol, t);
     g.gain.exponentialRampToValueAtTime(0.001, t + 0.28);
     o.connect(g).connect(this.master);
     o.start(t); o.stop(t + 0.3);
@@ -115,6 +139,7 @@ export class Beat {
   get beatPhase() { return this.on ? ((this.ac.currentTime * this.bpm) / 60) % 1 : (performance.now() / 1000 * this.bpm / 60) % 1; }
   stop() {
     if (!this.on) return;
+    BEATS.delete(this);
     clearInterval(this.timer);
     const t = this.ac.currentTime;
     this.master.gain.setValueAtTime(this.master.gain.value, t);
@@ -270,10 +295,11 @@ const SCENES = {
     const img = await loadImg(h.image(sc.id));
     const big = sc.tier === "gbb" || sc.tier === "bbwc";
     const label = sc.tier === "bbwc" ? "WORLD CHAMPION" : sc.tier === "gbb" ? "GBB CHAMPION" : sc.tier === "national" ? "NATIONAL CHAMPION"
-      : sc.tier === "qualifier" ? `QUALIFIED FOR GBB ${sc.ticketYear || ""}`.trim() : "CHAMPION";
+      : "CHAMPION";
     const flagImg = await loadImg(h.flagUrl(p.country));
-    return { duration: big ? 10.5 : 7.5, bpm: 98, slamAt: big ? 3.2 : 2.2, img, colors, p, label, flagImg,
-      record: h.record(sc.id), confetti: null, sub: sc.event, runnerUp: sc.runnerUp ? h.person(sc.runnerUp).name : null };
+    const extra = sc.tier === "qualifier" ? `QUALIFIED FOR GBB ${sc.ticketYear || ""}`.trim() : null;
+    return { duration: big ? 8.5 : 6.8, bpm: 84, mood: "warm", img, colors, p, label, flagImg, extra,
+      record: h.record(sc.id), sub: sc.event, score: sc.score, runnerUp: sc.runnerUp ? h.person(sc.runnerUp).name : null };
   },
   async ceremony(g, sc, h) {
     // reveal from the last place up to number one
@@ -283,7 +309,7 @@ const SCENES = {
       return { p, place, img: await loadImg(h.image(id)), flag: await loadImg(h.flagUrl(p.country)), colors: h.flag(p.country) };
     }));
     const per = items.length > 12 ? 1.9 : 2.5;
-    return { duration: 2.2 + items.length * per + 1.2, bpm: 90, items, per, sub: sc.event, label: sc.label || "Wildcard" };
+    return { duration: 2.2 + items.length * per + 1.6, bpm: 86, mood: "warm", items, per, sub: sc.event, label: sc.label || "Wildcard" };
   },
   async wildcards(g, sc, h) {
     const people = sc.ids.map((id) => h.person(id));
@@ -299,66 +325,72 @@ const SCENES = {
   },
 };
 
-function drawChampion(g, W, H, t, s, beat, dt) {
-  g.fillStyle = "#07060a"; g.fillRect(0, 0, W, H);
-  spotlights(g, W, H, t);
-  const phase = beat.beatPhase;
-  // stage glow
-  const glow = g.createRadialGradient(W / 2, H * 0.62, 10, W / 2, H * 0.62, W * 0.6);
-  glow.addColorStop(0, `rgba(242,180,60,${0.18 + (t > s.slamAt ? 0.12 * (1 - phase) : 0)})`);
-  glow.addColorStop(1, "rgba(0,0,0,0)");
-  g.fillStyle = glow; g.fillRect(0, 0, W, H);
-  // event line
-  g.textAlign = "center"; g.textBaseline = "alphabetic";
-  const typed = s.sub.slice(0, Math.floor(clamp01((t - 0.5) / 1.4) * s.sub.length));
-  g.fillStyle = "rgba(236,231,243,0.8)";
-  g.font = `600 ${Math.max(14, W * 0.018)}px ${BODY}`;
-  g.fillText(typed.toUpperCase(), W / 2, H * 0.14);
-  if (t > s.slamAt) {
-    const k = t - s.slamAt;
-    if (!s.confetti) { s.confetti = new Confetti(W, H, ["#f2b43c", "#ffe7a6", ...s.colors]); beat.crash(); }
-    const shake = Math.max(0, 1 - k * 3) * 14;
-    g.save();
-    g.translate((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake);
-    flagBand(g, 0, H * 0.43, W, H * 0.05, s.colors, ease(k * 1.6));
-    const sc = easeBack(k * 2.2);
-    portrait(g, W / 2, H * 0.3, Math.min(W, H) * 0.09 * sc, s.img, s.p.name, s.colors);
-    const size = fitText(g, s.p.name.toUpperCase(), W * 0.86, Math.min(W * 0.14, H * 0.2));
-    g.save();
-    g.translate(W / 2, H * 0.62);
-    g.scale(0.6 + 0.4 * sc, 0.6 + 0.4 * sc);
-    g.fillStyle = "#f2b43c";
-    g.shadowColor = "rgba(242,180,60,0.8)"; g.shadowBlur = 24 + 20 * (1 - phase);
-    g.font = `900 ${size}px ${DISPLAY}`;
-    g.fillText(s.p.name.toUpperCase(), 0, 0);
-    g.restore();
-    g.fillStyle = "#ece7f3";
-    g.font = `800 ${Math.max(16, W * 0.026)}px ${DISPLAY}`;
-    g.globalAlpha = clamp01(k * 2 - 0.4);
-    const lbl = `${s.label}  ·  ${s.p.countryName.toUpperCase()}`;
-    const ly = H * 0.62 + size * 0.42;
-    g.fillText(lbl, W / 2 + (s.flagImg ? 22 : 0), ly);
-    if (s.flagImg) { const lw = g.measureText(lbl).width; g.drawImage(s.flagImg, W / 2 - lw / 2 - 30, ly - 22, 36, 27); }
-    g.font = `500 ${Math.max(12, W * 0.015)}px ${BODY}`;
-    g.fillStyle = "rgba(236,231,243,0.75)";
-    if (s.runnerUp) g.fillText(`beat ${s.runnerUp} in the final`, W / 2, H * 0.62 + size * 0.42 + 30);
-    g.fillText(s.record, W / 2, H * 0.62 + size * 0.42 + (s.runnerUp ? 54 : 30));
-    g.globalAlpha = 1;
-    g.restore();
-    if (k > 0.6) trophy(g, W * 0.12, H * 0.68, Math.min(W, H) * 0.07, 1 - phase);
-    if (k > 0.6) trophy(g, W * 0.88, H * 0.68, Math.min(W, H) * 0.07, 1 - phase);
-    s.confetti.draw(g, dt);
-  } else {
-    // build-up: pulsing ring
-    const k = t / s.slamAt;
-    g.strokeStyle = `rgba(242,180,60,${0.2 + k * 0.6})`;
-    g.lineWidth = 3;
-    g.beginPath(); g.arc(W / 2, H * 0.45, 30 + (1 - phase) * 40 + k * 60, 0, Math.PI * 2); g.stroke();
-    g.fillStyle = "rgba(236,231,243,0.85)";
-    g.font = `800 ${Math.max(18, W * 0.03)}px ${DISPLAY}`;
-    g.fillText("AND YOUR CHAMPION IS", W / 2, H * 0.47 + 10);
+// the winner: same language as the wildcard cards, calm and steady — a slow push-in on their picture,
+// a gold label in the lower-left, the name, flag, and how the final went
+function drawChampion(g, W, H, t, s, beat) {
+  g.fillStyle = "#0b0b0d"; g.fillRect(0, 0, W, H);
+  const intro = 1.3;
+  const k = clamp01((t - intro) / (s.duration - intro));
+  if (t >= intro - 0.4) {
+    if (s.img) {
+      coverImage(g, s.img, W, H, 1.03 + k * 0.05);
+      const shade = g.createLinearGradient(0, H, W * 0.6, H * 0.2);
+      shade.addColorStop(0, "rgba(0,0,0,0.85)"); shade.addColorStop(1, "rgba(0,0,0,0)");
+      g.fillStyle = shade; g.fillRect(0, 0, W, H);
+    } else posterArt(g, W, H, { flag: s.flagImg, p: s.p }, k, "255,194,61", 0.07);
+    // fade up from black
+    g.fillStyle = `rgba(11,11,13,${1 - ease((t - (intro - 0.4)) / 0.9)})`;
+    g.fillRect(0, 0, W, H);
   }
-  crowd(g, W, H, phase, t);
+  g.textAlign = "left"; g.textBaseline = "alphabetic";
+  if (t < intro + 0.2) {
+    // opener: just the event and the words "final result"
+    const a = Math.min(clamp01(t / 0.5), clamp01((intro + 0.2 - t) / 0.4));
+    g.globalAlpha = a;
+    g.fillStyle = "rgba(242,239,232,0.8)";
+    g.font = `700 ${Math.max(13, W * 0.016)}px ${BODY}`;
+    g.fillText(s.sub.toUpperCase(), W * 0.07, H * 0.47);
+    g.fillStyle = "#f2efe8";
+    g.font = `900 ${Math.min(W * 0.08, 92)}px ${DISPLAY}`;
+    g.fillText("FINAL RESULT", W * 0.07, H * 0.47 + Math.min(W * 0.08, 92));
+    g.globalAlpha = 1;
+    return;
+  }
+  const local = t - intro;
+  // top line
+  g.font = `700 ${Math.max(12, W * 0.014)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.85)";
+  g.fillText(s.sub.toUpperCase(), 28, 40);
+  // lower third
+  const slide = ease((local - 0.2) / 0.7);
+  const x0 = 28 - (1 - slide) * 90, base = H - 104;
+  g.globalAlpha = slide;
+  const nameSize = fitText(g, s.p.name.toUpperCase(), W * 0.66, Math.min(W * 0.11, 130));
+  const barW = Math.max(250, Math.min(W * 0.5, s.label.length * 15 + 40));
+  g.fillStyle = "#ffc23d";
+  g.beginPath(); g.moveTo(x0, base - nameSize - 50); g.lineTo(x0 + barW, base - nameSize - 50); g.lineTo(x0 + barW - 14, base - nameSize - 16); g.lineTo(x0, base - nameSize - 16); g.fill();
+  g.fillStyle = "#0b0b0d";
+  g.font = `900 24px ${DISPLAY}`;
+  g.fillText(s.label, x0 + 12, base - nameSize - 25);
+  g.fillStyle = "#f2efe8";
+  g.font = `900 ${nameSize}px ${DISPLAY}`;
+  g.shadowColor = "rgba(0,0,0,0.55)"; g.shadowBlur = 16;
+  g.fillText(s.p.name.toUpperCase(), x0, base - 6);
+  g.shadowBlur = 0;
+  // thin gold rule drawing in under the name
+  g.fillStyle = "#ffc23d";
+  g.fillRect(x0, base + 2, Math.min(W * 0.4, 360) * ease((local - 0.8) / 1.2), 3);
+  if (s.flagImg) g.drawImage(s.flagImg, x0, base + 16, 36, 27);
+  g.font = `700 ${Math.max(14, W * 0.017)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.9)";
+  g.fillText(s.p.countryName.toUpperCase(), x0 + (s.flagImg ? 46 : 0), base + 38);
+  // how it was won, appearing a moment later
+  g.globalAlpha = clamp01((local - 1.4) / 0.8);
+  g.font = `600 ${Math.max(13, W * 0.015)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.75)";
+  const how = [s.runnerUp ? `Beat ${s.runnerUp} in the final${s.score ? ` · ${s.score}` : ""}` : null, s.extra].filter(Boolean).join("   ·   ");
+  if (how) g.fillText(how, x0, base + 64);
+  g.globalAlpha = 1;
 }
 
 const ord = (n) => { const t = n % 100, u = n % 10; return `${n}${t >= 11 && t <= 13 ? "TH" : u === 1 ? "ST" : u === 2 ? "ND" : u === 3 ? "RD" : "TH"}`; };
@@ -381,7 +413,7 @@ function coverImage(g, img, W, H, zoom = 1) {
 }
 
 // a generated "poster" for beatboxers without a photo: their flag, halftone dots and giant initials
-function posterArt(g, W, H, it, k) {
+function posterArt(g, W, H, it, k, accent = "255,120,40", streak = 0.05) {
   g.fillStyle = "#0b0b0d"; g.fillRect(0, 0, W, H);
   if (it.flag) {
     g.save();
@@ -407,10 +439,10 @@ function posterArt(g, W, H, it, k) {
   // diagonal light streaks
   g.save();
   g.globalCompositeOperation = "lighter";
-  for (let i = 0; i < 3; i++) {
-    const x = W * (0.35 + i * 0.22) + k * 60;
+  for (let i = 0; i < 2; i++) {
+    const x = W * (0.42 + i * 0.26) + k * 30;
     const grad = g.createLinearGradient(x, 0, x + 120, H);
-    grad.addColorStop(0, "rgba(255,120,40,0)"); grad.addColorStop(0.5, "rgba(255,120,40,0.10)"); grad.addColorStop(1, "rgba(255,120,40,0)");
+    grad.addColorStop(0, `rgba(${accent},0)`); grad.addColorStop(0.5, `rgba(${accent},${streak})`); grad.addColorStop(1, `rgba(${accent},0)`);
     g.fillStyle = grad;
     g.beginPath(); g.moveTo(x, 0); g.lineTo(x + 70, 0); g.lineTo(x + 260, H); g.lineTo(x + 190, H); g.fill();
   }
@@ -419,21 +451,24 @@ function posterArt(g, W, H, it, k) {
 
 function drawCeremony(g, W, H, t, s, beat) {
   const i = Math.floor((t - 2.2) / s.per);
+  g.globalAlpha = 1;
   g.fillStyle = "#0b0b0d"; g.fillRect(0, 0, W, H);
   if (t < 2.2) {
     // opener
-    const k = ease(t / 1.2);
-    halftone(g, W, H, "rgba(255,91,31,0.18)", -0.2 + k * 0.3);
+    const k = ease(t / 1.4);
+    halftone(g, W, H, "rgba(242,239,232,0.05)", -0.2 + k * 0.2);
     g.textAlign = "left";
+    g.globalAlpha = Math.min(k, clamp01((2.2 - t) / 0.4));
     g.fillStyle = "#f2efe8";
-    const fs = fitText(g, `${s.label.toUpperCase()} RESULTS`, W * 0.8, Math.min(W * 0.11, 130));
+    const fs = fitText(g, `${s.label.toUpperCase()} RESULTS`, W * 0.8, Math.min(W * 0.1, 116));
     g.font = `900 ${fs}px ${DISPLAY}`;
-    g.fillText(`${s.label.toUpperCase()} RESULTS`, W * 0.07 - (1 - k) * 80, H * 0.52);
+    g.fillText(`${s.label.toUpperCase()} RESULTS`, W * 0.07 - (1 - k) * 24, H * 0.52);
     g.fillStyle = "#ff5b1f";
-    g.fillRect(W * 0.07, H * 0.52 + 18, W * 0.3 * k, 8);
+    g.fillRect(W * 0.07, H * 0.52 + 18, W * 0.22 * k, 5);
     g.font = `700 ${Math.max(14, W * 0.018)}px ${BODY}`;
     g.fillStyle = "rgba(242,239,232,0.75)";
     g.fillText(s.sub.toUpperCase(), W * 0.07, H * 0.52 - fs * 0.85);
+    g.globalAlpha = 1;
     return;
   }
   if (i >= s.items.length) {
@@ -460,20 +495,18 @@ function drawCeremony(g, W, H, t, s, beat) {
   const it = s.items[i];
   const local = t - 2.2 - i * s.per;
   const k = clamp01(local / s.per);
-  if (!s[`hit${i}`]) { s[`hit${i}`] = true; if (beat.on) beat.crash(); }
+  if (!s[`hit${i}`]) { s[`hit${i}`] = true; if (beat.on) beat.kick(beat.ac.currentTime, 0.6); }
   // background: photo or generated poster art, slowly zooming
   if (it.img) {
-    g.save(); coverImage(g, it.img, W, H, 1.04 + k * 0.06); g.restore();
+    g.save(); coverImage(g, it.img, W, H, 1.03 + k * 0.03); g.restore();
     const shade = g.createLinearGradient(0, H, W * 0.6, H * 0.2);
     shade.addColorStop(0, "rgba(0,0,0,0.85)"); shade.addColorStop(1, "rgba(0,0,0,0)");
     g.fillStyle = shade; g.fillRect(0, 0, W, H);
   } else posterArt(g, W, H, it, k);
-  // wipe-in
-  const wipe = 1 - ease(local / 0.35);
-  if (wipe > 0) {
-    g.fillStyle = "#ff5b1f";
-    g.beginPath(); g.moveTo(0, 0); g.lineTo(W * wipe * 1.3, 0); g.lineTo(W * wipe * 1.3 - 200, H); g.lineTo(0, H); g.fill();
-  }
+  // gentle fade between people instead of a flash
+  const fadeIn = 1 - ease(local / 0.45), fadeOut = ease((local - (s.per - 0.3)) / 0.3);
+  const cover = Math.max(fadeIn, fadeOut);
+  if (cover > 0) { g.fillStyle = `rgba(11,11,13,${cover})`; g.fillRect(0, 0, W, H); }
   // top-left event line + counter
   g.textAlign = "left";
   g.font = `700 ${Math.max(12, W * 0.014)}px ${BODY}`;
@@ -482,8 +515,9 @@ function drawCeremony(g, W, H, t, s, beat) {
   g.textAlign = "right";
   g.fillText(`${it.place} / ${s.items.length}`, W - 28, 40);
   // lower third, bottom-left
-  const slide = ease((local - 0.15) / 0.45);
-  const x0 = 28 - (1 - slide) * 400, base = H - 56;
+  const slide = ease((local - 0.2) / 0.6);
+  const x0 = 28 - (1 - slide) * 60, base = H - 56;
+  g.globalAlpha = slide * (1 - fadeOut);
   const nameSize = fitText(g, it.p.name.toUpperCase(), W * 0.62, Math.min(W * 0.1, 120));
   g.textAlign = "left";
   g.save();
@@ -599,7 +633,7 @@ export async function playCutscene(sc, helpers, { sound = true } = {}) {
   const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
   const wrap = document.createElement("div");
   wrap.className = "cutscene";
-  wrap.innerHTML = `<canvas></canvas><button class="cs-skip" type="button">Skip ▸</button>`;
+  wrap.innerHTML = `<canvas></canvas><div class="cs-ctl"><button class="cs-btn" type="button" data-mute>${MUTED ? "Unmute" : "Mute"}</button><button class="cs-btn" type="button" data-skip>Skip ▸</button></div>`;
   document.body.appendChild(wrap);
   const cv = wrap.querySelector("canvas");
   const g = cv.getContext("2d");
@@ -614,8 +648,15 @@ export async function playCutscene(sc, helpers, { sound = true } = {}) {
   window.addEventListener("resize", size);
   await document.fonts?.ready;
   const s = await SCENES[sc.type](g, sc, helpers);
-  const beat = sound ? new Beat(s.bpm, s.mood) : { on: false, beatPhase: 0, kick() {}, crash() {}, riser() {}, stop() {}, get ac() { return null; } };
-  if (sound && s.slamAt) setTimeout(() => beat.riser(Math.max(0.6, s.slamAt - 0.2)), 200);
+  setMuted(!sound);
+  const real = new Beat(s.bpm, s.mood);
+  const beat = real.on ? real : { on: false, beatPhase: 0, kick() {}, crash() {}, riser() {}, stop() {}, get ac() { return null; } };
+  if (s.slamAt) setTimeout(() => beat.riser(Math.max(0.6, s.slamAt - 0.2)), 200);
+  wrap.querySelector("[data-mute]").addEventListener("click", (e) => {
+    setMuted(!MUTED);
+    e.target.textContent = MUTED ? "Unmute" : "Mute";
+    helpers.onMute?.(MUTED);
+  });
   return new Promise((resolve) => {
     let done = false, last = performance.now(), t0 = last;
     const finish = () => {
@@ -628,7 +669,7 @@ export async function playCutscene(sc, helpers, { sound = true } = {}) {
       setTimeout(() => { wrap.remove(); resolve(); }, 300);
     };
     const onKey = (e) => { if (e.key === "Escape" || e.key === " " || e.key === "Enter") { e.preventDefault(); finish(); } };
-    wrap.querySelector(".cs-skip").addEventListener("click", finish);
+    wrap.querySelector("[data-skip]").addEventListener("click", finish);
     window.addEventListener("keydown", onKey);
     const frame = (now) => {
       if (done) return;

@@ -29,7 +29,7 @@ export const nameLink = (id, withFlag = true) => {
 const statusChip = (s) => `<span class="chip st-${esc(s)}">${esc(s)}</span>`;
 export const kindOf = (ev) => ev.kind === "review" ? "review" : ev.kind === "wildcards" ? "wild" : ev.national ? "nat"
   : ["gbb", "bbwc", "gbb_7ts"].includes(ev.comp) ? "major" : ev.qualifier ? "qual" : ev.comp === "botm" ? "open" : ev.comp === "custom" ? "custom" : "intl";
-const KIND_LABEL = { major: "Major", qual: "GBB qualifier", wild: "Wildcards", intl: "International", open: "Open", nat: "National", review: "Season", custom: "Custom" };
+export const KIND_LABEL = { major: "Major", qual: "GBB qualifier", wild: "Wildcards", intl: "International", open: "Open", nat: "National", review: "Season", custom: "Custom" };
 export const liveable = (ev) => ["major", "qual", "intl", "open", "nat", "custom"].includes(kindOf(ev)) && ev.kind !== "smoke";
 
 const ICON = {
@@ -357,9 +357,11 @@ export function viewSettings() {
   return `<header class="page-h"><div><p class="eyebrow">Game</p><h1>Settings & saves</h1></div></header>
   <div class="grid2">
     <section class="card"><h2>Show</h2>
-      ${box("liveBig", "Watch GBB and BBWC live when they come up", true)}
-      ${box("liveQualifiers", "Also watch every GBB qualifier live")}
-      ${box("ceremonies", "Wildcard ceremonies for GBB and every GBB qualifier", true)}
+      ${box("askBefore", "Ask me before every GBB qualifier, the GBB wildcards, GBB and BBWC", true)}
+      <label>When not asking<select data-setting-select="defaultChoice">
+        ${[["watch", "Watch wildcards, then the battles"], ["battle", "Skip to the battles"], ["skip", "Skip the competition"]].map(([v, l]) => `<option value="${v}"${(s.defaultChoice || "watch") === v ? " selected" : ""}>${l}</option>`).join("")}
+      </select></label>
+      ${A.state.seasonChoice?.year === A.state.year ? `<p class="small muted">You chose "${esc(A.state.seasonChoice.choice)}" for the rest of ${A.state.year}. <button class="btn small" data-act="forgetchoice">Ask again</button></p>` : ""}
       ${box("cutscenes", "Champion, retirement and comeback cutscenes", true)}
       ${box("nationalCutscenes", "A cutscene for every national champion")}
       ${box("sound", "Beat and sound effects", true)}

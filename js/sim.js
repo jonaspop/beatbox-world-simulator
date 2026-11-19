@@ -11,11 +11,27 @@ const rngOf = (state) => {
 };
 const syncRng = (state) => { state.rngState = rngOf(state).state; };
 
+// beatboxers who already reached GBB, BBWC, a GBB qualifier or an invitational: they don't need
+// Beatbox of the Month to grow, so they never enter it
+const ESTABLISH_COMPS = new Set(["gbb", "bbwc", "gbb_second_league", "fbb", "gnb", "mba", "apac", "amrq", "bcj", "ebc",
+  "gbc_global", "vokal_total", "bayreuth", "one_one"]);
+let REAL_ESTABLISHED = new Set();
 export function setData(data) {
   D = data;
   COMPS = {};
   for (const c of data.competitions) COMPS[c.id] = { ...c, month: guessMonth(c.id, data.history[c.id]) };
+  REAL_ESTABLISHED = new Set();
+  for (const [cid, eds] of Object.entries(data.history)) {
+    if (!ESTABLISH_COMPS.has(cid) && cid !== "gbc") continue;
+    for (const e of eds) {
+      const d = cid === "gbc" ? e.categories?.solo_global : e.categories?.solo;
+      if (!d) continue;
+      for (const key of ["participants", "seeding", "placements"]) for (const r of d[key] || []) if (r.beatboxer) REAL_ESTABLISHED.add(r.beatboxer);
+      for (const b of d.battles || []) { if (b.a?.beatboxer) REAL_ESTABLISHED.add(b.a.beatboxer); if (b.b?.beatboxer) REAL_ESTABLISHED.add(b.b.beatboxer); }
+    }
+  }
 }
+export const isEstablished = (state, id) => REAL_ESTABLISHED.has(id) || !!state.established?.[id];
 export const comp = (id) => COMPS[id];
 export const allComps = () => COMPS;
 
@@ -232,7 +248,8 @@ function pickEntrants(state, ev) {
     return out.slice(0, f.field);
   }
   if (f.home) return pickHomeEvent(state, ev, f);
-  const list = pool(state, f, ev).filter((p) => !(ev.qualifier && qualifiedNow.has(p.id)) && !(f.noGbbLevel && elite.has(p.id)));
+  const list = pool(state, f, ev).filter((p) => !(ev.qualifier && qualifiedNow.has(p.id)) && !(f.noGbbLevel && elite.has(p.id))
+    && !(ev.comp === "botm" && isEstablished(state, p.id)));
   const scored = list.map((p) => {
     let s = eff(p) + r.normal(0, ev.comp === "botm" ? 9 : 6);
     if (f.bias?.region && inRegion(p.country, f.bias.region)) s += f.bias.v;
@@ -461,6 +478,8 @@ export function runEvent(state, ev) {
   else if (ev.kind === "smoke") res = runGbbSmoke(state, ev, cut);
   else res = runTournament(state, ev, cut);
   ev.status = res && !res.skipped ? "done" : "skipped";
+  const fin = res?.battles?.find((b) => b.round === "Final");
+  for (const sc of cut) if (sc.type === "champion" && fin && !sc.score) sc.score = `${Math.max(...fin.votes)}–${Math.min(...fin.votes)}`;
   if (res) state.archive[ev.key] = { ...res, key: ev.key, comp: ev.comp, name: ev.name, year: ev.year, month: ev.month, day: ev.day, kind: ev.kind || "tournament" };
   return { event: ev, result: res, cutscenes: cut };
 }
@@ -483,7 +502,8 @@ function runTournament(state, ev, cut) {
   else if (ev.comp === "bbwc") entrants = bbwcEntrants(state, ev.year);
   else entrants = pickEntrants(state, ev);
   if (entrants.length < 4) return { skipped: true, reason: "Not enough entrants" };
-  if (ev.qualifier && state.settings.ceremonies !== false)
+  if (ESTABLISH_COMPS.has(ev.comp)) for (const id of entrants) (state.established ||= {})[id] = true;
+  if (ev.qualifier)
     cut.push({ type: "ceremony", ids: entrants, event: ev.name, before: true, label: "Wildcard" });
   const res = runBracket(state, entrants, { bracket: f.bracket, third: !!f.third || entrants.length >= 12, home: f.home, foreignInBracket: f.foreignInBracket });
   res.entrants = entrants;
