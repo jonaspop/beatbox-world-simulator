@@ -1,7 +1,7 @@
 // Data loading, game state, saving (IndexedDB) and small shared helpers.
 
 export const START_YEAR = 2027;
-export const SAVE_VERSION = 1;
+export const SAVE_VERSION = 2;
 
 // ---------- random numbers (seeded, so a save can be replayed) ----------
 export function makeRng(seed) {
@@ -80,6 +80,10 @@ export function flagColors(cc) {
   const hue = h % 360;
   return [`hsl(${hue} 55% 45%)`, "#f1edf6", `hsl(${(hue + 160) % 360} 55% 45%)`];
 }
+
+// real flag artwork (flag-icons, MIT licence) — includes Scotland, Wales, England, Northern Ireland
+export const FLAG_ICONS_VERSION = "7.2.3";
+export const flagUrl = (cc) => (cc ? `https://cdn.jsdelivr.net/npm/flag-icons@${FLAG_ICONS_VERSION}/flags/4x3/${cc}.svg` : null);
 
 // two strong colours for avatars (skips the white stripe so initials stay readable)
 const isLight = (c) => /^#f[0-9a-f]f[0-9a-f]f/i.test(c) || c === "#f4f4f4" || c === "#f1edf6";

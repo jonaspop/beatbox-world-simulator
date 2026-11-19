@@ -1,11 +1,13 @@
-import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, flagColors, esc, SAVE_VERSION } from "./data.js";
-import { setData, newGame, attachState, runNext, nextEvent, runCustom, ranking } from "./sim.js";
+import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
+import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking } from "./sim.js";
 import * as V from "./views.js";
 import { playCutscene } from "./cutscene.js";
+import { watchLive } from "./live.js";
 
 const app = { state: null, data: null, busy: false, picks: [] };
 const $main = document.getElementById("main");
 const $status = document.getElementById("status");
+const setting = (k, def = true) => app.state.settings[k] ?? def;
 
 // ---------- boot ----------
 (async function boot() {
@@ -21,7 +23,7 @@ const $status = document.getElementById("status");
   } catch (e) {
     console.error(e);
     $main.innerHTML = `<section class="card"><h2>Could not start</h2><p>${esc(e.message)}</p>
-      <p class="muted">Open the game through a web server (for example GitHub Pages, or <code>python -m http.server</code> in the project folder). Browsers block the data files when the page is opened straight from disk.</p></section>`;
+      <p class="muted">Open the game through a web server (GitHub Pages, or <code>python -m http.server</code> in the project folder). Browsers block the data files when the page is opened straight from disk.</p></section>`;
   }
 })();
 
@@ -41,28 +43,32 @@ function render() {
   const r = route();
   const views = {
     home: () => V.viewHome(), calendar: () => V.viewCalendar(), event: () => V.viewEvent(r.arg),
-    rankings: () => V.viewRankings(r.params), people: () => V.viewPeople(r.params), bb: () => V.viewProfile(r.arg),
+    people: () => V.viewPeople(r.params), rankings: () => V.viewPeople(r.params), bb: () => V.viewProfile(r.arg),
     champions: () => V.viewChampions(), countries: () => V.viewCountries(), custom: () => V.viewCustom(app.picks),
     settings: () => V.viewSettings(),
   };
   $main.innerHTML = (views[r.name] || views.home)();
-  document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === `#${r.name}` || (r.name === "bb" && a.getAttribute("href") === "#people")));
+  const navName = r.name === "bb" || r.name === "rankings" ? "people" : r.name === "event" ? "calendar" : r.name;
+  document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === `#${navName}`));
   updateStatus();
   if (r.name === "people") {
     const q = document.getElementById("people-q");
-    if (q && document.activeElement !== q && r.params.get("q")) { q.focus(); q.setSelectionRange(q.value.length, q.value.length); }
+    if (q && r.params.get("q")) { q.focus(); q.setSelectionRange(q.value.length, q.value.length); }
   }
 }
 function updateStatus() {
   const ev = nextEvent(app.state);
-  $status.innerHTML = `<span class="yr">${app.state.year}</span><span>${ev ? `Next: ${esc(ev.name.replace(` ${app.state.year}`, ""))}` : "Season over"}</span>`;
+  $status.innerHTML = `<span class="yr">${app.state.year}</span><span>${ev ? `Next · ${esc(ev.name.replace(` ${app.state.year}`, ""))}` : "Season over"}</span>`;
 }
 
-// ---------- cutscene helpers ----------
+// ---------- helpers shared with the cutscenes and the live viewer ----------
 const helpers = {
-  person: (id) => { const p = app.state.people[id] || {}; return { name: p.name || id, country: p.country, countryName: V.countryName(p.country), status: p.status }; },
+  person: (id) => { const p = app.state.people[id] || {}; return { name: p.name || id, country: p.country, countryName: V.countryName(p.country), status: p.status, rating: Math.round(p.rating ?? 0) }; },
   image: (id) => imageCache.get(id),
   flag: (cc) => flagColors(cc),
+  flagUrl: (cc) => flagUrl(cc),
+  flagHTML: (cc) => V.flag(cc),
+  avatarHTML: (id, size = "xl") => V.avatar(id, size),
   record: (id) => { const p = app.state.people[id]; return `Rating ${Math.round(p.rating)} · ${p.titles.length} career title${p.titles.length === 1 ? "" : "s"}`; },
   career: (id) => {
     const p = app.state.people[id];
@@ -75,32 +81,48 @@ const helpers = {
     return lines;
   },
 };
+const judgeNames = (r) => {
+  const names = (r.judges || []).map((id) => app.state.people[id]?.name || id);
+  while (names.length < 5) names.push("Guest judge");
+  return names;
+};
 async function play(list) {
-  if (!app.state.settings.cutscenes) return;
-  for (const sc of list) await playCutscene(sc, helpers, { sound: app.state.settings.sound });
+  for (const sc of list) await playCutscene(sc, helpers, { sound: setting("sound") });
+}
+const live = (rec) => watchLive(rec, helpers, { sound: setting("sound"), judges: judgeNames(rec) });
+
+// which cutscenes are worth stopping for
+function wanted(sc, ev, quiet) {
+  if (sc.type === "ceremony") return setting("ceremonies");
+  if (!setting("cutscenes")) return false;
+  if (app.state.settings.favorites.includes(sc.id)) return true;
+  if (sc.type === "champion" && sc.tier === "national") return setting("nationalCutscenes", false);
+  if (!quiet) return true;
+  return sc.type === "retirement" || sc.type === "comeback" || (sc.type === "champion" && ["gbb", "bbwc", "qualifier"].includes(sc.tier));
 }
 
 // ---------- simulation controls ----------
-const BIG = new Set(["gbb", "bbwc", "gbb_wildcards"]);
-async function simUntil(stop, { quiet = false } = {}) {
+async function simUntil(stop, { quiet = false, liveKey = null, silentBefore = false } = {}) {
   if (app.busy) return;
   app.busy = true;
   document.body.classList.add("busy");
-  const queued = [];
   try {
-    for (let n = 0; n < 400; n++) {
+    for (let n = 0; n < 500; n++) {
       const ev = nextEvent(app.state);
       if (!ev || stop(ev, n)) break;
+      const forced = liveKey && ev.key === liveKey;
       const out = runNext(app.state);
-      // when simming many events, only keep the cutscenes that matter
-      for (const sc of out.cutscenes) {
-        if (!quiet || BIG.has(ev.comp) || sc.type === "retirement" || sc.type === "comeback" || app.state.settings.favorites.includes(sc.id)) queued.push(sc);
-      }
-      if (n % 6 === 5) { $status.textContent = `Simulating… ${ev.name}`; await new Promise((r) => setTimeout(r)); }
-      if (queued.length && !quiet) break;
-      if (queued.some((sc) => sc.type !== "retirement") && quiet) { await flush(queued); }
+      if (silentBefore && !forced) { if (n % 8 === 7) await tick(ev); continue; }
+      const scenes = out.cutscenes.filter((sc) => wanted(sc, ev, quiet && !forced));
+      const watch = out.result && out.result.battles?.length && out.result.format !== "7ts" && (forced
+        || (setting("liveBig") && ["gbb", "bbwc"].includes(ev.comp)) || (setting("liveQualifiers", false) && ev.qualifier));
+      if (scenes.length || watch) {
+        updateStatus(); // don't draw the results page yet: it would spoil the winner behind the overlay
+        await play(scenes.filter((s) => s.before));
+        if (watch) await live(app.state.archive[ev.key]);
+        await play(scenes.filter((s) => !s.before));
+      } else if (n % 8 === 7) await tick(ev);
     }
-    await flush(queued);
     await saveGame("auto", app.state);
   } finally {
     app.busy = false;
@@ -108,16 +130,15 @@ async function simUntil(stop, { quiet = false } = {}) {
     render();
   }
 }
-async function flush(queued) {
-  if (!queued.length) return;
-  render();
-  await play(queued.splice(0));
+async function tick(ev) {
+  $status.textContent = `Simulating… ${ev.name}`;
+  await new Promise((r) => setTimeout(r));
 }
 
 // ---------- actions ----------
 document.addEventListener("click", async (e) => {
   const b = e.target.closest("[data-act]");
-  if (!b) return;
+  if (!b || b.closest(".live")) return;
   const act = b.dataset.act;
   const st = app.state;
   if (act === "next") return simUntil((ev, n) => n >= 1);
@@ -125,6 +146,13 @@ document.addEventListener("click", async (e) => {
   if (act === "tognext") { let seen = false; return simUntil((ev) => { if (seen) return true; if (ev.comp === b.dataset.target) seen = true; return false; }, { quiet: true }); }
   if (act === "season") { const y = st.year; return simUntil(() => app.state.year !== y, { quiet: true }); }
   if (act === "runto") { const key = b.dataset.key; let hit = false; return simUntil((ev) => { if (hit) return true; if (ev.key === key) hit = true; return false; }, { quiet: true }).then(() => { location.hash = `#event/${encodeURIComponent(key)}`; }); }
+  if (act === "live") {
+    const key = b.dataset.key; let hit = false;
+    await simUntil((ev) => { if (hit) return true; if (ev.key === key) hit = true; return false; }, { quiet: true, liveKey: key, silentBefore: true });
+    location.hash = `#event/${encodeURIComponent(key)}`;
+    return;
+  }
+  if (act === "replay") { const r = st.archive[b.dataset.key]; if (r) await live(r); return; }
   if (act === "fav") {
     const id = b.dataset.id, f = st.settings.favorites;
     st.settings.favorites = f.includes(id) ? f.filter((x) => x !== id) : f.concat(id);
@@ -138,15 +166,15 @@ document.addEventListener("click", async (e) => {
   if (act === "export") return exportSave();
   if (act === "newgame") {
     const c = document.querySelector("[data-confirm]");
-    if (b.dataset.armed) { app.state = newGame(); await saveGame("auto", app.state); location.hash = "#home"; return render(); }
+    if (b.dataset.armed) { const keep = app.state.settings; app.state = newGame(); app.state.settings = { ...keep, favorites: keep.favorites || [] }; await saveGame("auto", app.state); location.hash = "#home"; return render(); }
     b.dataset.armed = "1"; b.textContent = "Click again to wipe this save and restart"; if (c) c.textContent = "Pictures you uploaded are kept.";
   }
 });
 
 // filters and forms
 document.addEventListener("change", async (e) => {
-  const f = e.target.closest("[data-form='rankings']");
-  if (f) { const q = new URLSearchParams(new FormData(f)); location.hash = `#rankings?${q}`; return; }
+  const f = e.target.closest("[data-form='people']");
+  if (f && e.target.name !== "q") { location.hash = `#people?${new URLSearchParams(new FormData(f))}`; return; }
   if (e.target.matches("[data-setting]")) { app.state.settings[e.target.dataset.setting] = e.target.checked; await saveGame("auto", app.state); return; }
   if (e.target.matches("[data-upload]")) return uploadPicture(e.target.dataset.upload, e.target.files[0]);
   if (e.target.matches("[data-import]")) return importSave(e.target.files[0]);
@@ -155,7 +183,8 @@ let searchTimer;
 document.addEventListener("input", (e) => {
   if (e.target.id === "people-q") {
     clearTimeout(searchTimer);
-    searchTimer = setTimeout(() => { history.replaceState(null, "", `#people?q=${encodeURIComponent(e.target.value)}`); render(); }, 220);
+    const f = e.target.closest("form");
+    searchTimer = setTimeout(() => { history.replaceState(null, "", `#people?${new URLSearchParams(new FormData(f))}`); render(); }, 220);
   }
   if (e.target.id === "pick-q") {
     const q = e.target.value.toLowerCase();
@@ -183,6 +212,7 @@ async function saveEdit(f) {
   p.peak = Math.max(p.peak ?? p.rating, p.rating);
   p.retirementRisk = num(d.retirementRisk, 0, 1);
   p.judgeChance = num(d.judgeChance, 0, 1);
+  p.noSolo = !!d.noSolo;
   p.note = d.note;
   p.handEdited = true;
   await saveGame("auto", app.state);
@@ -193,24 +223,28 @@ async function saveEdit(f) {
 
 async function uploadPicture(id, file) {
   if (!file) return;
-  const url = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; r.readAsDataURL(file); });
-  const img = await new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = url; });
-  if (!img) return;
-  const S = 320, c = document.createElement("canvas");
-  c.width = S; c.height = S;
-  const s = Math.max(S / img.width, S / img.height);
-  c.getContext("2d").drawImage(img, (S - img.width * s) / 2, (S - img.height * s) / 2, img.width * s, img.height * s);
-  const small = c.toDataURL("image/jpeg", 0.86);
-  await putImage(id, small);
-  imageCache.set(id, small);
-  render();
+  try {
+    const url = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; r.readAsDataURL(file); });
+    const img = await new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = url; });
+    if (!img) throw new Error("That file isn't an image the browser can read");
+    // keep a larger picture so it looks sharp in full-screen ceremonies
+    const S = 900, c = document.createElement("canvas");
+    const s = Math.min(1, S / Math.max(img.width, img.height));
+    c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+    c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+    const small = c.toDataURL("image/jpeg", 0.88);
+    await putImage(id, small);
+    imageCache.set(id, small);
+    render();
+    toast("Picture saved");
+  } catch (err) { toast(`Could not use that picture: ${err.message}`); }
 }
 
 function createPerson() {
   const st = app.state;
   let n = 1, id;
   do { id = `custom${n++}`; } while (st.people[id]);
-  st.people[id] = { id, name: "New Beatboxer", country: "us", countries: ["us"], status: "active", rating: 55, potential: 75, peak: 55,
+  st.people[id] = { id, name: "New Beatboxer", country: "us", countries: ["us"], status: "active", rating: 60, potential: 75, peak: 60,
     elo: 1000, debut: st.year, lastCompeted: null, retirementRisk: 0.05, judgeChance: 0.2, titles: [], form: 0, hist: [], aliases: [], note: "", created: true };
   location.hash = `#bb/${id}`;
 }
@@ -219,30 +253,37 @@ async function customTournament(f) {
   const st = app.state;
   const d = Object.fromEntries(new FormData(f));
   const bracket = +d.bracket, field = Math.max(bracket, Math.min(64, +d.field || bracket));
-  const act = ranking(st, { by: "rating" });
+  const act = ranking(st, { by: "rating" }).filter((p) => !p.noSolo);
   let ids;
   if (d.mode === "pick") ids = app.picks.slice();
   else if (d.mode === "country") ids = act.filter((p) => p.country === d.country).slice(0, field).map((p) => p.id);
   else if (d.mode === "prospects") ids = act.filter((p) => p.rating >= 55).sort((a, b) => (b.potential - b.rating) - (a.potential - a.rating)).slice(0, field).map((p) => p.id);
   else ids = act.slice(0, field).map((p) => p.id);
-  if (ids.length < 2) { alertCard("Add at least two beatboxers."); return; }
+  if (ids.length < 2) { toast("Add at least two beatboxers."); return; }
   const rec = runCustom(st, { name: d.name, ids, bracket: Math.min(bracket, ids.length), third: !!d.third, progression: !!d.progression });
+  rec.judges = ranking(st, { by: "rating", status: "judge" }).slice(0, 5).map((p) => p.id);
   await saveGame("auto", st);
-  if (d.cutscene && st.settings.cutscenes) await playCutscene({ type: "champion", id: rec.champion, event: d.name, tier: "event", runnerUp: rec.runnerUp }, helpers, { sound: st.settings.sound });
+  if (d.live) await live(rec);
+  if (d.cutscene && setting("cutscenes")) await playCutscene({ type: "champion", id: rec.champion, event: d.name, tier: "event", runnerUp: rec.runnerUp }, helpers, { sound: setting("sound") });
   location.hash = `#event/${encodeURIComponent(rec.key)}`;
 }
-function alertCard(text) {
+function toast(text) {
   const n = document.createElement("div");
   n.className = "toast"; n.textContent = text;
   document.body.appendChild(n);
-  setTimeout(() => n.remove(), 2600);
+  setTimeout(() => n.remove(), 2800);
 }
 
 async function demo(type) {
-  const top = ranking(app.state, { by: "rating" });
-  const sc = type === "wildcards" ? { type, ids: top.slice(8, 20).map((p) => p.id), event: `GBB ${app.state.year}` }
+  const top = ranking(app.state, { by: "rating" }).filter((p) => !p.noSolo);
+  if (type === "live") {
+    const ids = top.slice(0, 8).map((p) => p.id);
+    const res = runBracket(app.state, ids, { bracket: 8, third: true, elimination: false });
+    return live({ ...res, name: "Preview battle", judges: ranking(app.state, { by: "rating", status: "judge" }).slice(0, 5).map((p) => p.id) });
+  }
+  const sc = type === "ceremony" ? { type, ids: top.slice(6, 14).map((p) => p.id), event: `Grand Beatbox Battle ${app.state.year}`, label: "Wildcard" }
     : type === "retirement" ? { type, id: top[0].id } : { type: "champion", id: top[0].id, event: `Grand Beatbox Battle ${app.state.year}`, tier: "gbb", runnerUp: top[1].id };
-  await playCutscene(sc, helpers, { sound: app.state.settings.sound });
+  await playCutscene(sc, helpers, { sound: setting("sound") });
 }
 
 function exportSave() {
@@ -262,6 +303,6 @@ async function importSave(file) {
     await saveGame("auto", app.state);
     location.hash = "#home";
     render();
-    alertCard("Save loaded");
-  } catch (err) { alertCard(`Could not load that file: ${err.message}`); }
+    toast("Save loaded");
+  } catch (err) { toast(`Could not load that file: ${err.message}`); }
 }

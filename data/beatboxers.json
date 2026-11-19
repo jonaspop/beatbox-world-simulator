@@ -17863,8 +17863,8 @@
     "rating": 67,
     "potential": 68,
     "peak_rating": 73,
-    "status": "active",
-    "retirement_risk": 0.26,
+    "status": "judge",
+    "retirement_risk": null,
     "judge_chance": 0.15,
     "debut": 2012,
     "last_competed": 2026,
@@ -17872,7 +17872,8 @@
     "record": "0-1",
     "elo": 1006,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": true,
+    "note": "Retired; judges in Hong Kong"
   },
   {
     "id": "heartzel",
@@ -24216,8 +24217,8 @@
     "rating": 66,
     "potential": 72,
     "peak_rating": 69,
-    "status": "active",
-    "retirement_risk": 0.12,
+    "status": "judge",
+    "retirement_risk": null,
     "judge_chance": 0.15,
     "debut": 2024,
     "last_competed": 2025,
@@ -24225,7 +24226,9 @@
     "record": "0-0",
     "elo": 1006,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": true,
+    "no_solo": true,
+    "note": "Loopstation specialist; does not enter solo events"
   },
   {
     "id": "krixo",

@@ -1472,8 +1472,9 @@
   "heartgrey": {
     "rating": 67,
     "potential": 68,
-    "status": "active",
-    "reviewed": true
+    "status": "judge",
+    "reviewed": true,
+    "note": "Retired; judges in Hong Kong"
   },
   "haka": {
     "rating": 67,
@@ -1550,8 +1551,10 @@
   "kristof": {
     "rating": 66,
     "potential": 72,
-    "status": "active",
-    "reviewed": true
+    "status": "judge",
+    "reviewed": true,
+    "no_solo": true,
+    "note": "Loopstation specialist; does not enter solo events"
   },
   "lafs": {
     "rating": 66,

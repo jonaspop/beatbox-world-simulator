@@ -17,7 +17,7 @@ function noiseBuffer(ac) {
   return b;
 }
 
-class Beat {
+export class Beat {
   constructor(bpm = 96, mood = "hype") {
     this.ac = ctxAudio();
     this.bpm = bpm;
@@ -269,9 +269,21 @@ const SCENES = {
     const colors = h.flag(p.country);
     const img = await loadImg(h.image(sc.id));
     const big = sc.tier === "gbb" || sc.tier === "bbwc";
-    const label = sc.tier === "bbwc" ? "WORLD CHAMPION" : sc.tier === "gbb" ? "GBB CHAMPION" : sc.tier === "national" ? "NATIONAL CHAMPION" : "CHAMPION";
-    return { duration: big ? 10.5 : 7.5, bpm: 98, slamAt: big ? 3.2 : 2.2, img, colors, p, label,
+    const label = sc.tier === "bbwc" ? "WORLD CHAMPION" : sc.tier === "gbb" ? "GBB CHAMPION" : sc.tier === "national" ? "NATIONAL CHAMPION"
+      : sc.tier === "qualifier" ? `QUALIFIED FOR GBB ${sc.ticketYear || ""}`.trim() : "CHAMPION";
+    const flagImg = await loadImg(h.flagUrl(p.country));
+    return { duration: big ? 10.5 : 7.5, bpm: 98, slamAt: big ? 3.2 : 2.2, img, colors, p, label, flagImg,
       record: h.record(sc.id), confetti: null, sub: sc.event, runnerUp: sc.runnerUp ? h.person(sc.runnerUp).name : null };
+  },
+  async ceremony(g, sc, h) {
+    // reveal from the last place up to number one
+    const order = sc.ids.map((id, i) => ({ id, place: i + 1 })).reverse();
+    const items = await Promise.all(order.map(async ({ id, place }) => {
+      const p = h.person(id);
+      return { p, place, img: await loadImg(h.image(id)), flag: await loadImg(h.flagUrl(p.country)), colors: h.flag(p.country) };
+    }));
+    const per = items.length > 12 ? 1.9 : 2.5;
+    return { duration: 2.2 + items.length * per + 1.2, bpm: 90, items, per, sub: sc.event, label: sc.label || "Wildcard" };
   },
   async wildcards(g, sc, h) {
     const people = sc.ids.map((id) => h.person(id));
@@ -323,7 +335,10 @@ function drawChampion(g, W, H, t, s, beat, dt) {
     g.fillStyle = "#ece7f3";
     g.font = `800 ${Math.max(16, W * 0.026)}px ${DISPLAY}`;
     g.globalAlpha = clamp01(k * 2 - 0.4);
-    g.fillText(`${s.label}  ·  ${s.p.countryName.toUpperCase()}`, W / 2, H * 0.62 + size * 0.42);
+    const lbl = `${s.label}  ·  ${s.p.countryName.toUpperCase()}`;
+    const ly = H * 0.62 + size * 0.42;
+    g.fillText(lbl, W / 2 + (s.flagImg ? 22 : 0), ly);
+    if (s.flagImg) { const lw = g.measureText(lbl).width; g.drawImage(s.flagImg, W / 2 - lw / 2 - 30, ly - 22, 36, 27); }
     g.font = `500 ${Math.max(12, W * 0.015)}px ${BODY}`;
     g.fillStyle = "rgba(236,231,243,0.75)";
     if (s.runnerUp) g.fillText(`beat ${s.runnerUp} in the final`, W / 2, H * 0.62 + size * 0.42 + 30);
@@ -344,6 +359,149 @@ function drawChampion(g, W, H, t, s, beat, dt) {
     g.fillText("AND YOUR CHAMPION IS", W / 2, H * 0.47 + 10);
   }
   crowd(g, W, H, phase, t);
+}
+
+const ord = (n) => { const t = n % 100, u = n % 10; return `${n}${t >= 11 && t <= 13 ? "TH" : u === 1 ? "ST" : u === 2 ? "ND" : u === 3 ? "RD" : "TH"}`; };
+
+function halftone(g, W, H, color, from = 0) {
+  g.fillStyle = color;
+  const step = 14;
+  for (let y = 0; y < H; y += step) {
+    for (let x = 0; x < W; x += step) {
+      const k = Math.max(0, (x / W) * 0.9 + (y / H) * 0.4 - 0.35 + from);
+      const r = Math.min(step * 0.48, k * step * 0.55);
+      if (r > 0.4) { g.beginPath(); g.arc(x + ((y / step) % 2 ? step / 2 : 0), y, r, 0, Math.PI * 2); g.fill(); }
+    }
+  }
+}
+
+function coverImage(g, img, W, H, zoom = 1) {
+  const s = Math.max(W / img.width, H / img.height) * zoom;
+  g.drawImage(img, (W - img.width * s) / 2, (H - img.height * s) / 2, img.width * s, img.height * s);
+}
+
+// a generated "poster" for beatboxers without a photo: their flag, halftone dots and giant initials
+function posterArt(g, W, H, it, k) {
+  g.fillStyle = "#0b0b0d"; g.fillRect(0, 0, W, H);
+  if (it.flag) {
+    g.save();
+    g.filter = "blur(26px) saturate(1.3) brightness(0.5)";
+    coverImage(g, it.flag, W, H, 1.15 + k * 0.05);
+    g.restore();
+    // dim it in every browser (some ignore canvas filters on SVG images)
+    g.fillStyle = "rgba(8,8,10,0.62)"; g.fillRect(0, 0, W, H);
+  }
+  halftone(g, W, H, "rgba(0,0,0,0.55)");
+  const corner = g.createLinearGradient(0, H, W * 0.55, H * 0.35);
+  corner.addColorStop(0, "rgba(5,5,6,0.9)"); corner.addColorStop(1, "rgba(5,5,6,0)");
+  g.fillStyle = corner; g.fillRect(0, 0, W, H);
+  g.save();
+  g.translate(W * 0.68, H * 0.52);
+  g.rotate(-0.08);
+  g.font = `900 ${Math.min(W * 0.5, H * 0.9)}px ${DISPLAY}`;
+  g.textAlign = "center"; g.textBaseline = "middle";
+  g.lineWidth = 3;
+  g.strokeStyle = "rgba(242,239,232,0.22)";
+  g.strokeText(initials(it.p.name), k * 30, 0);
+  g.restore();
+  // diagonal light streaks
+  g.save();
+  g.globalCompositeOperation = "lighter";
+  for (let i = 0; i < 3; i++) {
+    const x = W * (0.35 + i * 0.22) + k * 60;
+    const grad = g.createLinearGradient(x, 0, x + 120, H);
+    grad.addColorStop(0, "rgba(255,120,40,0)"); grad.addColorStop(0.5, "rgba(255,120,40,0.10)"); grad.addColorStop(1, "rgba(255,120,40,0)");
+    g.fillStyle = grad;
+    g.beginPath(); g.moveTo(x, 0); g.lineTo(x + 70, 0); g.lineTo(x + 260, H); g.lineTo(x + 190, H); g.fill();
+  }
+  g.restore();
+}
+
+function drawCeremony(g, W, H, t, s, beat) {
+  const i = Math.floor((t - 2.2) / s.per);
+  g.fillStyle = "#0b0b0d"; g.fillRect(0, 0, W, H);
+  if (t < 2.2) {
+    // opener
+    const k = ease(t / 1.2);
+    halftone(g, W, H, "rgba(255,91,31,0.18)", -0.2 + k * 0.3);
+    g.textAlign = "left";
+    g.fillStyle = "#f2efe8";
+    const fs = fitText(g, `${s.label.toUpperCase()} RESULTS`, W * 0.8, Math.min(W * 0.11, 130));
+    g.font = `900 ${fs}px ${DISPLAY}`;
+    g.fillText(`${s.label.toUpperCase()} RESULTS`, W * 0.07 - (1 - k) * 80, H * 0.52);
+    g.fillStyle = "#ff5b1f";
+    g.fillRect(W * 0.07, H * 0.52 + 18, W * 0.3 * k, 8);
+    g.font = `700 ${Math.max(14, W * 0.018)}px ${BODY}`;
+    g.fillStyle = "rgba(242,239,232,0.75)";
+    g.fillText(s.sub.toUpperCase(), W * 0.07, H * 0.52 - fs * 0.85);
+    return;
+  }
+  if (i >= s.items.length) {
+    // closer: everyone at once
+    const k = ease((t - (2.2 + s.items.length * s.per)) / 0.6);
+    g.globalAlpha = k;
+    g.fillStyle = "#f2efe8"; g.textAlign = "center";
+    g.font = `900 ${Math.min(W * 0.07, 70)}px ${DISPLAY}`;
+    g.fillText(s.sub.toUpperCase(), W / 2, H * 0.18);
+    const list = s.items.slice().reverse();
+    const cols = list.length > 10 ? 3 : 2, rows = Math.ceil(list.length / cols);
+    g.font = `800 ${Math.max(14, Math.min(26, H / (rows * 2.2)))}px ${DISPLAY}`;
+    list.forEach((it, j) => {
+      const c = j % cols, r = Math.floor(j / cols);
+      const x = W / 2 + (c - (cols - 1) / 2) * Math.min(340, W / cols);
+      g.fillStyle = "#ff5b1f";
+      g.fillText(`${it.place}`, x - 110, H * 0.28 + r * (H * 0.62 / rows));
+      g.fillStyle = "#f2efe8";
+      g.fillText(it.p.name.toUpperCase(), x + 10, H * 0.28 + r * (H * 0.62 / rows));
+    });
+    g.globalAlpha = 1;
+    return;
+  }
+  const it = s.items[i];
+  const local = t - 2.2 - i * s.per;
+  const k = clamp01(local / s.per);
+  if (!s[`hit${i}`]) { s[`hit${i}`] = true; if (beat.on) beat.crash(); }
+  // background: photo or generated poster art, slowly zooming
+  if (it.img) {
+    g.save(); coverImage(g, it.img, W, H, 1.04 + k * 0.06); g.restore();
+    const shade = g.createLinearGradient(0, H, W * 0.6, H * 0.2);
+    shade.addColorStop(0, "rgba(0,0,0,0.85)"); shade.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = shade; g.fillRect(0, 0, W, H);
+  } else posterArt(g, W, H, it, k);
+  // wipe-in
+  const wipe = 1 - ease(local / 0.35);
+  if (wipe > 0) {
+    g.fillStyle = "#ff5b1f";
+    g.beginPath(); g.moveTo(0, 0); g.lineTo(W * wipe * 1.3, 0); g.lineTo(W * wipe * 1.3 - 200, H); g.lineTo(0, H); g.fill();
+  }
+  // top-left event line + counter
+  g.textAlign = "left";
+  g.font = `700 ${Math.max(12, W * 0.014)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.85)";
+  g.fillText(`${s.sub.toUpperCase()}  ·  ${s.label.toUpperCase()} RESULTS`, 28, 40);
+  g.textAlign = "right";
+  g.fillText(`${it.place} / ${s.items.length}`, W - 28, 40);
+  // lower third, bottom-left
+  const slide = ease((local - 0.15) / 0.45);
+  const x0 = 28 - (1 - slide) * 400, base = H - 56;
+  const nameSize = fitText(g, it.p.name.toUpperCase(), W * 0.62, Math.min(W * 0.1, 120));
+  g.textAlign = "left";
+  g.save();
+  g.fillStyle = "#ff5b1f";
+  g.beginPath(); g.moveTo(x0, base - nameSize - 46); g.lineTo(x0 + 250, base - nameSize - 46); g.lineTo(x0 + 236, base - nameSize - 14); g.lineTo(x0, base - nameSize - 14); g.fill();
+  g.fillStyle = "#0b0b0d";
+  g.font = `900 ${22}px ${DISPLAY}`;
+  g.fillText(`${ord(it.place)} ${s.label.toUpperCase()}`, x0 + 12, base - nameSize - 22);
+  g.fillStyle = "#f2efe8";
+  g.font = `900 ${nameSize}px ${DISPLAY}`;
+  g.shadowColor = "rgba(0,0,0,0.6)"; g.shadowBlur = 18;
+  g.fillText(it.p.name.toUpperCase(), x0, base - 4);
+  g.shadowBlur = 0;
+  if (it.flag) g.drawImage(it.flag, x0, base + 8, 36, 27);
+  g.font = `700 ${Math.max(14, W * 0.017)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.85)";
+  g.fillText(it.p.countryName.toUpperCase(), x0 + (it.flag ? 46 : 0), base + 30);
+  g.restore();
 }
 
 function drawWildcards(g, W, H, t, s, beat) {
@@ -435,7 +593,7 @@ function drawComeback(g, W, H, t, s, beat) {
   crowd(g, W, H, beat.beatPhase, t);
 }
 
-const DRAW = { champion: drawChampion, wildcards: drawWildcards, retirement: drawRetirement, comeback: drawComeback };
+const DRAW = { champion: drawChampion, wildcards: drawWildcards, retirement: drawRetirement, comeback: drawComeback, ceremony: drawCeremony };
 
 export async function playCutscene(sc, helpers, { sound = true } = {}) {
   const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;

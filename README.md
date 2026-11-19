@@ -79,21 +79,35 @@ invitationals (La Cup, One One, Vokal Total, Bayreuth, NUE, Beatbox To World), B
 Month every two months, the GBB wildcard results in May, the Second League in August, BBWC every
 four years, GBB and its 7 to Smoke in September, and a season review on December 31.
 
-- **Battles**: elimination ranking, then a seeded bracket. Five judges vote; each judge favours the
-  stronger beatboxer, so upsets happen. The world ranking uses the Elo table in `data/elo_rules.json`.
+- **Formats**: an elimination ranking, then a seeded bracket. GBB is a top 20 with 8 going to the
+  battles; Beatbox of the Month also has top 8 battles. Five judges vote on every battle.
+- **Who enters what**: nobody already qualified for GBB enters a GBB qualifier; GBB-level names never
+  enter Beatbox of the Month or NUE, and La Cup gets one or two of them at most. BeatCity Japan is
+  Japanese apart from up to 4 internationals, and only one international can pass its elimination.
+  Scottish and Welsh beatboxers enter the UK Championships. Anyone marked "doesn't enter solo events"
+  (like Kristóf) only judges.
+- **Judges**: majors use the strongest judges; national championships use local retired names first
+  (Heartgrey judges Hong Kong) plus one or two international judges.
+- **Watch it live**: any event can be watched battle by battle: the elimination reveal, both
+  performers' rounds and each judge's vote. GBB and BBWC play live automatically (Settings).
+- **Wildcard ceremonies** for GBB and every GBB qualifier: a full-screen card per beatboxer with their
+  picture (or generated poster art) and their name and place in the bottom-left corner.
 - **Progression**: beating expectations raises a rating (more when there is room below potential),
   under-performing lowers it, and ups are bigger than downs. Young careers grow toward potential at
   the season review; long careers slowly decline.
-- **Retirement**: each season uses the beatboxer's retirement chance. Multiple GBB/BBWC champions
-  often step away after winning again. Many retirees become judges. Recent retirees can come back.
-- **New names**: every country gets new prospects each season, with the odd wonderkid.
+- **Retirement**: only people who have competed for six or more years and won something big for their
+  level can retire. Multiple GBB/BBWC champions often step away after winning again, and many become
+  judges. Recent retirees can come back. No beatboxers are generated: the scene is the real one plus
+  anyone you add yourself.
 - **Qualification**: GBB top 3, the 7 to Smoke winner and the Second League winner go to the next
-  GBB; qualifier champions go to the same year's GBB; wildcards fill the rest. BBWC takes national
-  champions since the last edition plus the previous top 16.
-- **Cutscenes** for GBB and BBWC champions, wildcard winners, legends retiring and comebacks.
+  GBB; qualifier champions go to the same year's GBB; wildcards fill the rest, and wildcard
+  runners-up replace anyone who drops out. BBWC takes national champions since the last edition plus
+  the previous top 16.
+- **Cutscenes** for GBB and BBWC champions, qualifier winners, legends retiring and comebacks.
   Follow a beatboxer on their profile to get a cutscene whenever they win.
 - **Editing**: open any profile to change name, country, status, rating, potential, retirement and
-  judge chance, or upload a picture. Edits and pictures stay in your browser.
+  judge chance, whether they enter solo events, or upload a picture. Edits and pictures stay in your browser.
+- **Flags** come from the flag-icons set (MIT licence), loaded from jsDelivr.
 - **Saves**: the game saves itself in the browser after every step; Settings can export and import a save file.
 
 ## Running locally

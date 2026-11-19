@@ -39,7 +39,7 @@ function guessMonth(id, editions = []) {
 // ---------- event formats ----------
 // field: how many enter, bracket: knockout size, pool: who can enter, bias: extra pull for some countries
 const FORMATS = {
-  gbb: { field: 20, bracket: 16, third: true, smoke: true },
+  gbb: { field: 20, bracket: 8, third: true },
   bbwc: { field: 48, bracket: 32, third: true },
   gbb_second_league: { field: 12, bracket: 8 },
   ebc: { field: 16, bracket: 8, pool: "europe" },
@@ -48,14 +48,14 @@ const FORMATS = {
   mba: { field: 12, bracket: 8, pool: "latin_america" },
   apac: { field: 8, bracket: 8, pool: ["asia", "oceania"] },
   amrq: { field: 12, bracket: 8, pool: "africa_mena" },
-  bcj: { field: 16, bracket: 8, pool: "all", bias: { country: "jp", v: 9 } },
+  bcj: { field: 16, bracket: 8, home: "jp", foreignMax: 4, foreignInBracket: 1 },
   btw: { field: 12, bracket: 8, pool: "all", bias: { region: "asia", v: 3 } },
-  lacup: { field: 16, bracket: 16, invite: "mix" },
+  lacup: { field: 16, bracket: 16, invite: "mix", maxGbbLevel: 2 },
   vokal_total: { field: 8, bracket: 8, invite: "6+2" },
   bayreuth: { field: 8, bracket: 8, invite: "6+2", bias: { region: "europe", v: 4 } },
   one_one: { field: 8, bracket: 8, invite: "6+2", smoke: true },
-  nue: { field: 20, bracket: 16, pool: "europe", bias: { country: "gb", v: 7 }, smoke: true },
-  botm: { field: 24, bracket: 16, pool: "botm" },
+  nue: { field: 20, bracket: 16, pool: "europe", bias: { country: "gb", v: 7 }, smoke: true, noGbbLevel: true },
+  botm: { field: 16, bracket: 8, pool: "botm", noGbbLevel: true },
   gbc_global: { field: 12, bracket: 8, pool: "europe", bias: { country: "de", v: 3 } },
 };
 const BOTM_COUNTRIES = new Set("de at ch nl be dk pl cz fr it lu".split(" "));
@@ -73,14 +73,14 @@ export function newGame(seed = (Date.now() % 2147483647)) {
       retirementRisk: b.retirement_risk ?? 0.08, judgeChance: b.judge_chance ?? 0.3,
       titles: (Object.values(b.titles || {}).flat()).map((t) => ({ comp: t.competition, year: t.year, cat: t.category, real: true })),
       form: 0, hist: rating != null ? [{ y: 2026, r: rating, e: b.elo ?? 1000 }] : [], aliases: b.aliases || [],
-      note: b.note || "", handEdited: !!b.hand_edited,
+      note: b.note || "", handEdited: !!b.hand_edited, noSolo: !!b.no_solo,
     };
   }
   const state = {
     version: SAVE_VERSION, seed, rngState: seed, year: START_YEAR, cursor: 0,
     people, season: null, archive: {}, news: [], customs: [], pending: [],
     qualified: {}, wildcardRunnersUp: {}, nationalChamps: {}, generated: 0,
-    settings: { cutscenes: true, sound: true, nationalCutscenes: false, favorites: [] },
+    settings: { cutscenes: true, sound: true, ceremonies: true, liveBig: true, liveQualifiers: false, nationalCutscenes: false, favorites: [] },
   };
   rngOf(state);
   // GBB 2027 places already decided in real life
@@ -108,7 +108,21 @@ function addQualified(state, year, id, reason) {
 }
 
 // ---------- helpers ----------
-export const activePeople = (state) => Object.values(state.people).filter((p) => p.status === "active" && p.rating != null);
+export const activePeople = (state) => Object.values(state.people).filter((p) => p.status === "active" && p.rating != null && !p.noSolo && p.country);
+
+// "GBB level": already in this year's GBB, or in the field of the most recent GBB
+export function gbbLevel(state, year) {
+  const ids = new Set((state.qualified[year] || []).map((q) => q.id));
+  const last = Object.values(state.archive).filter((a) => a.comp === "gbb" && !a.skipped).sort((a, b) => b.year - a.year)[0];
+  if (last) last.entrants.forEach((id) => ids.add(id));
+  else {
+    const real = (D.history.gbb || []).filter((e) => e.status === "completed").pop();
+    for (const p of real?.categories?.solo?.participants || []) if (p.beatboxer) ids.add(p.beatboxer);
+  }
+  return ids;
+}
+// the UK championships also take Scottish, Welsh, English and Northern Irish beatboxers
+const sameNation = (cc, nat) => cc === nat || (nat === "gb" && cc?.startsWith("gb-"));
 const eff = (p) => p.rating + (p.form || 0);
 const countryName = (cc) => D.countryNames[cc]?.name || D.countries[cc]?.name || (cc || "").toUpperCase();
 
@@ -123,6 +137,10 @@ export function buildSeason(state, year) {
   const act = activePeople(state);
   const byCountry = {};
   for (const p of act) if (p.country) (byCountry[p.country] ||= []).push(p);
+  // Wales/Scotland/England without their own 4+ field compete at the UK championships
+  for (const cc of Object.keys(byCountry)) {
+    if (cc.startsWith("gb-") && byCountry[cc].length < 4) { (byCountry.gb ||= []).push(...byCountry[cc]); delete byCountry[cc]; }
+  }
   const add = (compId, name, month, day, extra = {}) =>
     events.push({ key: `${compId}-${year}-${month}-${day}`, comp: compId, name, year, month, day, status: "upcoming", ...extra });
 
@@ -163,7 +181,7 @@ export const nextEvent = (state) => state.season.events.find((e) => e.status ===
 // ---------- picking entrants ----------
 function pool(state, f, ev) {
   let list = activePeople(state);
-  if (ev.national) list = list.filter((p) => p.country === ev.national);
+  if (ev.national) list = list.filter((p) => sameNation(p.country, ev.national));
   else if (f.pool === "botm") list = list.filter((p) => BOTM_COUNTRIES.has(p.country));
   else if (f.pool && f.pool !== "all") {
     const regions = [].concat(f.pool);
@@ -183,27 +201,58 @@ function pickEntrants(state, ev) {
       .sort((a, b) => b.s - a.s).slice(0, size).map((x) => x.p.id);
   }
   const qualifiedNow = new Set((state.qualified[ev.year] || []).map((q) => q.id));
+  const elite = gbbLevel(state, ev.year);
   if (f.invite) {
     const list = activePeople(state).filter((p) => !f.bias || !f.bias.region || inRegion(p.country, f.bias.region) || r.chance(0.35));
     const stars = list.map((p) => ({ p, s: eff(p) + r.normal(0, 4) })).sort((a, b) => b.s - a.s);
-    const prospects = list.filter((p) => p.rating >= 60).map((p) => ({ p, s: (p.potential - p.rating) * 1.4 + p.rating * 0.4 + r.normal(0, 4) }))
-      .sort((a, b) => b.s - a.s);
+    const prospects = list.filter((p) => p.rating >= 60 && !elite.has(p.id))
+      .map((p) => ({ p, s: (p.potential - p.rating) * 1.4 + p.rating * 0.4 + r.normal(0, 4) })).sort((a, b) => b.s - a.s);
     const out = [];
-    const take = (arr, n) => { for (const x of arr) { if (out.length >= n) break; if (!out.includes(x.p.id)) out.push(x.p.id); } };
-    if (f.invite === "mix") { take(stars, 6); take(prospects, 12); take(r.shuffle(stars.slice(10, 80)), f.field); }
-    else { take(stars.slice(0, 18).filter(() => r.chance(0.6)), 6); take(stars, 6); take(prospects, 8); }
+    let eliteIn = 0;
+    const take = (arr, n) => {
+      for (const x of arr) {
+        if (out.length >= n) break;
+        if (out.includes(x.p.id)) continue;
+        if (f.maxGbbLevel != null && elite.has(x.p.id)) { if (eliteIn >= f.maxGbbLevel) continue; eliteIn++; }
+        out.push(x.p.id);
+      }
+    };
+    if (f.invite === "mix") {
+      // La Cup: one or two big names, then prospects, national champions and comeback stories
+      take(stars.slice(0, 25).filter(() => r.chance(0.5)), r.int(1, 2));
+      take(prospects, 9);
+      const champs = (state.nationalChamps[ev.year - 1] || []).map((c) => state.people[c.id]).filter((p) => p?.status === "active");
+      take(r.shuffle(champs).map((p) => ({ p })), 13);
+      take(r.shuffle(stars.slice(10, 120)), f.field);
+    } else {
+      take(stars.slice(0, 18).filter(() => r.chance(0.6)), 6);
+      take(stars, 6);
+      take(prospects, 8);
+    }
     return out.slice(0, f.field);
   }
-  const list = pool(state, f, ev);
+  if (f.home) return pickHomeEvent(state, ev, f);
+  const list = pool(state, f, ev).filter((p) => !(ev.qualifier && qualifiedNow.has(p.id)) && !(f.noGbbLevel && elite.has(p.id)));
   const scored = list.map((p) => {
     let s = eff(p) + r.normal(0, ev.comp === "botm" ? 9 : 6);
     if (f.bias?.region && inRegion(p.country, f.bias.region)) s += f.bias.v;
     if (f.bias?.country && p.country === f.bias.country) s += f.bias.v;
-    if (ev.qualifier && qualifiedNow.has(p.id)) s -= 25; // already in GBB: usually skip qualifiers
-    if (ev.comp === "botm") { const attend = p.rating > 82 ? 0.08 : p.rating > 74 ? 0.3 : 0.75; if (!r.chance(attend)) s -= 100; }
+    if (ev.comp === "botm") { const attend = p.rating > 80 ? 0.1 : p.rating > 72 ? 0.35 : 0.75; if (!r.chance(attend)) s -= 100; }
     return { p, s };
   }).filter((x) => x.s > -50).sort((a, b) => b.s - a.s);
   return scored.slice(0, f.field).map((x) => x.p.id);
+}
+
+// BeatCity Japan: a Japanese field plus at most a few internationals
+function pickHomeEvent(state, ev, f) {
+  const r = rngOf(state);
+  const qualifiedNow = new Set((state.qualified[ev.year] || []).map((q) => q.id));
+  const all = activePeople(state).filter((p) => !qualifiedNow.has(p.id));
+  const score = (p) => eff(p) + r.normal(0, 5);
+  const home = all.filter((p) => p.country === f.home).map((p) => ({ p, s: score(p) })).sort((a, b) => b.s - a.s);
+  const away = all.filter((p) => p.country !== f.home).map((p) => ({ p, s: score(p) - 6 })).sort((a, b) => b.s - a.s);
+  const nAway = Math.min(f.foreignMax, away.length, r.int(1, f.foreignMax));
+  return away.slice(0, nAway).concat(home.slice(0, f.field - nAway)).map((x) => x.p.id);
 }
 
 // ---------- one battle, five judges ----------
@@ -212,9 +261,10 @@ export function battle(state, aId, bId, round) {
   const a = state.people[aId], b = state.people[bId];
   const ea = eff(a) + r.normal(0, 2.4), eb = eff(b) + r.normal(0, 2.4);
   const p = Math.min(0.97, Math.max(0.03, 1 / (1 + Math.pow(10, (eb - ea) / 14))));
-  let va = 0;
-  for (let j = 0; j < 5; j++) if (r.next() < p) va++;
-  return { round, a: aId, b: bId, w: va >= 3 ? aId : bId, votes: [va, 5 - va] };
+  const jv = [];
+  for (let j = 0; j < 5; j++) jv.push(r.next() < p ? 0 : 1); // 0 = vote for a, 1 = vote for b
+  const va = jv.filter((v) => v === 0).length;
+  return { round, a: aId, b: bId, w: va >= 3 ? aId : bId, votes: [va, 5 - va], jv };
 }
 
 const ROUND_NAME = { 64: "Top 64", 32: "Top 32", 16: "Top 16", 8: "Top 8", 4: "Semifinal", 2: "Final" };
@@ -228,12 +278,19 @@ function seedOrder(n) {
 }
 
 // elimination round + knockout bracket
-export function runBracket(state, entrants, { bracket = 16, third = false, elimination = true } = {}) {
+export function runBracket(state, entrants, { bracket = 16, third = false, elimination = true, home = null, foreignInBracket = null } = {}) {
   const r = rngOf(state);
   let size = 2;
   while (size * 2 <= Math.min(bracket, entrants.length)) size *= 2;
-  const elim = entrants.map((id) => ({ id, s: eff(state.people[id]) + (elimination ? r.normal(0, 3.2) : 0) }))
+  let elim = entrants.map((id) => ({ id, s: eff(state.people[id]) + (elimination ? r.normal(0, 3.2) : 0) }))
     .sort((a, b) => b.s - a.s).map((x) => x.id);
+  if (home && foreignInBracket != null) {
+    // only the best international(s) can pass the elimination; the others drop just below the cut
+    const foreign = elim.filter((id) => state.people[id].country !== home);
+    const keep = new Set(foreign.slice(0, foreignInBracket));
+    const inCut = elim.filter((id) => keep.has(id) || state.people[id].country === home).slice(0, size);
+    elim = inCut.concat(elim.filter((id) => !inCut.includes(id)));
+  }
   const seeds = elim.slice(0, size);
   let current = seedOrder(size).map((s) => seeds[s - 1]);
   const battles = [];
@@ -360,14 +417,22 @@ function applyPerformance(state, res, compId, { progression = true } = {}) {
 function pickJudges(state, ev, entrants) {
   const r = rngOf(state);
   const big = ["gbb", "bbwc", "gbb_7ts", "ebc"].includes(ev.comp);
-  let cands = Object.values(state.people).filter((p) => (p.status === "judge" || (p.status === "retired" && (p.peak || 0) >= 75)) && p.rating != null);
-  if (ev.national) {
-    const local = cands.filter((p) => p.country === ev.national);
-    cands = local.length >= 3 ? local : local.concat(activePeople(state).filter((p) => p.country === ev.national && !entrants.includes(p.id)));
-  }
-  return cands.map((p) => ({ id: p.id, s: (p.peak || p.rating) + r.normal(0, big ? 4 : 10) })).sort((a, b) => b.s - a.s)
-    .slice(0, ev.national ? 3 : 5).map((x) => x.id);
+  const out = new Set(entrants);
+  const pool = Object.values(state.people).filter((p) => !out.has(p.id) && p.rating != null && p.status !== "removed"
+    && (p.status === "judge" || (p.status === "retired" && ((p.peak || 0) >= 70 || p.titles.length))));
+  const rank = (list, noise) => list.map((p) => ({ id: p.id, s: (p.peak || p.rating) + p.titles.length * 1.5 + r.normal(0, noise) }))
+    .sort((a, b) => b.s - a.s).map((x) => x.id);
+  if (!ev.national) return rank(pool, big ? 4 : 9).slice(0, 5);
+  // nationals: local retired names and judges first, then one or two international judges
+  const local = rank(pool.filter((p) => sameNation(p.country, ev.national)), 6);
+  const localActive = rank(activePeople(state).filter((p) => sameNation(p.country, ev.national) && !out.has(p.id) && p.rating >= 65), 6);
+  const nLocal = Math.min(3, local.length + localActive.length);
+  const picked = local.concat(localActive).slice(0, nLocal);
+  const near = pool.filter((p) => !sameNation(p.country, ev.national) && (REGION_OF(p.country) === REGION_OF(ev.national) || r.chance(0.25)));
+  const intl = rank(near, 10).filter((id) => !picked.includes(id));
+  return picked.concat(intl.slice(0, Math.max(1, 5 - picked.length - (r.chance(0.5) ? 1 : 0))));
 }
+const REGION_OF = (cc) => ["europe", "north_america", "latin_america", "asia", "oceania", "africa_mena"].find((reg) => inRegion(cc, reg)) || "other";
 
 // ---------- running an event ----------
 export function runNext(state) {
@@ -403,12 +468,24 @@ export function runEvent(state, ev) {
 function runTournament(state, ev, cut) {
   const f = FORMATS[ev.comp] || { field: 16, bracket: 16 };
   let entrants;
-  if (ev.comp === "gbb") entrants = (state.qualified[ev.year] || []).map((q) => q.id).filter((id) => state.people[id]?.status === "active");
+  if (ev.comp === "gbb") {
+    entrants = (state.qualified[ev.year] || []).map((q) => q.id).filter((id) => state.people[id]?.status === "active");
+    // empty spots (unused qualifier tickets, retirements) go to the next wildcard runners-up, like real replacements
+    for (const id of state.wildcardRunnersUp[ev.year] || []) {
+      if (entrants.length >= f.field) break;
+      if (!entrants.includes(id) && state.people[id]?.status === "active") {
+        entrants.push(id);
+        addQualified(state, ev.year, id, "Replacement (wildcard runner-up)");
+      }
+    }
+  }
   else if (ev.comp === "gbb_second_league") entrants = (state.wildcardRunnersUp[ev.year] || []).filter((id) => state.people[id]?.status === "active").slice(0, f.field);
   else if (ev.comp === "bbwc") entrants = bbwcEntrants(state, ev.year);
   else entrants = pickEntrants(state, ev);
   if (entrants.length < 4) return { skipped: true, reason: "Not enough entrants" };
-  const res = runBracket(state, entrants, { bracket: f.bracket, third: !!f.third || entrants.length >= 12 });
+  if (ev.qualifier && state.settings.ceremonies !== false)
+    cut.push({ type: "ceremony", ids: entrants, event: ev.name, before: true, label: "Wildcard" });
+  const res = runBracket(state, entrants, { bracket: f.bracket, third: !!f.third || entrants.length >= 12, home: f.home, foreignInBracket: f.foreignInBracket });
   res.entrants = entrants;
   res.judges = pickJudges(state, ev, entrants);
   applyPerformance(state, res, ev.comp);
@@ -430,6 +507,7 @@ function runTournament(state, ev, cut) {
     if (ticket) {
       addQualified(state, y, ticket, `${ev.name} ${ticket === res.champion ? "Champion" : "top finisher"}`);
       news(state, `${state.people[ticket].name} qualifies for GBB ${y} through ${ev.name}`, "qualify", { id: ticket });
+      cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "qualifier", runnerUp: res.runnerUp, ticketYear: y });
     }
   }
   if (ev.comp === "gbb") {
@@ -443,7 +521,7 @@ function runTournament(state, ev, cut) {
     addQualified(state, ev.year + 1, res.champion, `GBB ${ev.year}: Second League Champion`);
     news(state, `${champ.name} wins the Second League and qualifies for GBB ${ev.year + 1}`, "qualify", { id: res.champion });
   }
-  if (!ev.national && !["gbb", "bbwc"].includes(ev.comp) && state.settings.favorites.includes(res.champion))
+  if (!ev.national && !ev.qualifier && !["gbb", "bbwc"].includes(ev.comp) && state.settings.favorites.includes(res.champion))
     cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "event" });
   if (f.smoke && ev.comp !== "gbb") {
     const pool7 = res.standings.slice(2, 12);
@@ -505,7 +583,7 @@ function runWildcards(state, ev, cut) {
   state.wildcardRunnersUp[y] = runnersUp;
   for (const id of winners) state.people[id].elo += D.eloRules.competitions.gbb.qualify || 0;
   news(state, `GBB ${y} wildcard results: ${winners.map((id) => state.people[id].name).join(", ")}`, "wildcards");
-  cut.push({ type: "wildcards", ids: winners, event: `GBB ${y}` });
+  cut.push({ type: "ceremony", ids: winners, event: `Grand Beatbox Battle ${y}`, label: "Wildcard" });
   return { winners, runnersUp, standings: winners.concat(runnersUp) };
 }
 
@@ -552,13 +630,12 @@ function seasonReview(state, ev, cut) {
       // retirement
       const startOfYear = p.hist.length ? p.hist[p.hist.length - 1].r : p.rating;
       const wonMajorNow = p.titles.some((t) => t.year === y && (t.comp === "gbb" || t.comp === "bbwc") && t.cat === "solo");
-      const idle = (p.lastCompeted ?? 0) < y;
-      let chance = p.retirementRisk * 0.4
-        + (idle ? (p.rating < 55 ? 0.09 : 0.03) : 0)          // hobby-level names who stop entering drift away
+      // only long careers that already won something big for their level can end
+      const eligible = yearsIn >= 6 && p.titles.length > 0;
+      let chance = !eligible ? 0 : p.retirementRisk * 0.5
         + (wonMajorNow && majorsOf(p) >= 2 ? 0.25 : 0)          // multiple GBB/BBWC champions often step away on top
-        + (startOfYear - p.rating > 4 ? 0.05 : 0);
-      if (yearsIn <= 4 && p.potential - p.rating >= 6) chance *= 0.4; // rising talents rarely quit
-      if (r.chance(Math.min(0.9, chance))) {
+        + (startOfYear - p.rating > 4 ? 0.04 : 0);
+      if (eligible && r.chance(Math.min(0.9, chance))) {
         p.status = r.chance(p.judgeChance) ? "judge" : "retired";
         p.retiredYear = y;
         retired.push(p.id);
@@ -585,48 +662,10 @@ function seasonReview(state, ev, cut) {
     p.elo = 1000 + (p.elo - 1000) * D.eloRules.season_fade;
     if (p.status === "active" || retired.includes(p.id)) p.hist.push({ y, r: Math.round(p.rating * 10) / 10, e: Math.round(p.elo) });
   }
-  // new prospects
-  const byCountry = {};
-  for (const p of activePeople(state)) if (p.country) (byCountry[p.country] ||= []).push(p);
-  for (const [cc, list] of Object.entries(byCountry)) {
-    const level = D.countries[cc]?.level ?? 60;
-    const n = Math.floor(list.length * 0.06 + r.next() * 1.3);
-    for (let i = 0; i < n; i++) rookies.push(makeProspect(state, cc, level, y + 1));
-  }
-  if (rookies.length) news(state, `${rookies.length} new names enter the scene for ${y + 1}`, "rookies");
   // next season
   state.year = y + 1;
   state.season = buildSeason(state, y + 1);
   return { retired, comebacks, rookies, standings: [] };
-}
-
-// ---------- prospect names ----------
-const SYL_A = ["Ka", "Ze", "Ri", "Vo", "Lo", "Mi", "Ny", "Ta", "Ko", "Bru", "Fe", "Ox", "Ry", "Sa", "Ve", "Qu", "Ji", "Dro", "Ul", "Pa",
-  "Neo", "Xa", "Bo", "Ki", "Zu", "Ha", "Lu", "Mo", "Re", "Sy", "Ty", "Wa", "Yo", "Ga", "De", "Ca", "Fi", "No", "Pe", "Ro"];
-const SYL_B = ["x", "zz", "k", "ro", "no", "ty", "lix", "ven", "dex", "mo", "ka", "rin", "zo", "bo", "ra", "ki", "on", "us", "el", "ax", "ix", "um", "ay", "o", "i"];
-const STYLES = [(s) => s, (s) => s.toUpperCase(), (s) => s.toLowerCase(), (s) => `${s}'`, (s) => `${s}${Math.floor(Math.random() * 9) + 1}`,
-  (s) => `${s} Beats`, (s) => `MC ${s}`, (s) => `${s}box`];
-function makeProspect(state, cc, level, debutYear) {
-  const r = rngOf(state);
-  let name, id;
-  for (let tries = 0; tries < 20; tries++) {
-    const base = r.pick(SYL_A) + r.pick(SYL_B) + (r.chance(0.3) ? r.pick(SYL_B) : "");
-    name = STYLES[Math.floor(r.next() * (r.chance(0.6) ? 1 : STYLES.length))](base);
-    id = name.toLowerCase().replace(/[^a-z0-9]/g, "");
-    if (id && !state.people[id]) break;
-    id = `${id}${++state.generated}`;
-    if (!state.people[id]) break;
-  }
-  const wonder = r.chance(0.025);
-  const lvl = (level - 70) / 5;
-  const rating = wonder ? r.range(58, 66) : Math.min(64, Math.max(36, r.normal(47, 5) + lvl));
-  const potential = wonder ? r.range(88, 95) : Math.min(95, Math.max(rating + 3, 55 + 33 * Math.pow(r.next(), 1.6) + lvl));
-  state.people[id] = {
-    id, name, country: cc, countries: [cc], status: "active", rating, potential, peak: rating, elo: 1000,
-    debut: debutYear, lastCompeted: null, retirementRisk: 0.05, judgeChance: 0.15, titles: [], form: r.normal(0, 2),
-    hist: [], aliases: [], note: "", generated: true,
-  };
-  return id;
 }
 
 // ---------- custom tournaments ----------
