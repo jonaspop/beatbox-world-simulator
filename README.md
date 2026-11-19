@@ -106,7 +106,9 @@ four years, GBB and its 7 to Smoke in September, and a season review on December
 - **Cutscenes** for GBB and BBWC champions, qualifier winners, legends retiring and comebacks.
   Follow a beatboxer on their profile to get a cutscene whenever they win.
 - **Editing**: open any profile to change name, country, status, rating, potential, retirement and
-  judge chance, whether they enter solo events, or upload a picture. Edits and pictures stay in your browser.
+  judge chance, whether they enter solo events, or add a picture (upload a file, or copy a picture
+  anywhere and press Ctrl+V on the profile). Edits and pictures stay in your browser.
+  Pictures listed in `data/pictures.json` (served from a `pictures/` folder) are built-in defaults for everyone.
 - **Flags** come from the flag-icons set (MIT licence), loaded from jsDelivr.
 - **Saves**: the game saves itself in the browser after every step; Settings can export and import a save file.
 

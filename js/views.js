@@ -1,5 +1,5 @@
 // HTML for each screen. Views read from the app context and return markup; main.js wires the actions.
-import { esc, round, avatarColors, imageCache, MONTH_NAMES } from "./data.js";
+import { esc, round, avatarColors, imageCache, localPictures, defaultPictures, MONTH_NAMES } from "./data.js";
 import { compName, nextEvent, nationalChampionGrid, championsOf, ordinal } from "./sim.js";
 
 let A; // app context: { state, data }
@@ -17,7 +17,7 @@ const initials = (name) => (name || "?").replace(/[^A-Za-z0-9 ]/g, "").split(/\s
 export function avatar(id, size = "sm") {
   const p = P(id);
   const img = imageCache.get(id);
-  if (img) return `<span class="av av-${size}"><img src="${img}" alt=""></span>`;
+  if (img) return `<span class="av av-${size}"><img src="${img}" alt="" loading="lazy" decoding="async"></span>`;
   const [a, c] = avatarColors(p?.country);
   return `<span class="av av-${size} gen" style="--fa:${a};--fc:${c}"><span>${esc(initials(p?.name))}</span></span>`;
 }
@@ -232,7 +232,9 @@ export function viewProfile(id) {
   <section class="profile">
     <div class="pf-pic">${avatar(id, "xl")}
       <label class="btn small">Upload picture<input type="file" accept="image/*" data-upload="${esc(id)}" hidden></label>
-      ${imageCache.get(id) ? `<button class="btn small ghost" data-act="rmpic" data-id="${esc(id)}">Remove picture</button>` : ""}
+      <span class="muted small pf-tip">Or copy a picture anywhere and press Ctrl+V here.</span>
+      ${localPictures.has(id) ? `<button class="btn small ghost" data-act="rmpic" data-id="${esc(id)}">Remove my picture</button>` : ""}
+      ${!localPictures.has(id) && defaultPictures.has(id) ? `<a class="muted small" href="${esc(defaultPictures.get(id).source)}" target="_blank" rel="noopener">Photo: Beatbox Wiki</a>` : ""}
     </div>
     <div class="pf-main">
       <p class="eyebrow">${flag(p.country)} ${esc(countryName(p.country))}${p.countries?.length > 1 ? ` · also ${p.countries.slice(1).map((c) => esc(countryName(c))).join(", ")}` : ""}</p>

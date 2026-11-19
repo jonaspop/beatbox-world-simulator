@@ -102,10 +102,11 @@ async function getJSON(path) {
 }
 
 export async function loadData(onProgress = () => {}) {
-  const [competitions, beatboxers, countries, countryNames, eloRules] = await Promise.all([
+  const [competitions, beatboxers, countries, countryNames, eloRules, pictures] = await Promise.all([
     getJSON("data/competitions.json"), getJSON("data/beatboxers.json"), getJSON("data/countries.json"),
-    getJSON("data/country_names.json"), getJSON("data/elo_rules.json"),
+    getJSON("data/country_names.json"), getJSON("data/elo_rules.json"), getJSON("data/pictures.json").catch(() => ({})),
   ]);
+  for (const [id, pic] of Object.entries(pictures)) defaultPictures.set(id, pic);
   onProgress(0.3);
   const history = {};
   let done = 0;
@@ -155,11 +156,19 @@ export const getImage = (id) => idb("images", "readonly", (s) => s.get(id));
 export const deleteImage = (id) => idb("images", "readwrite", (s) => s.delete(id));
 export const allImageKeys = () => idb("images", "readonly", (s) => s.getAllKeys());
 
-// in-memory picture cache so lists can draw thumbnails quickly
-export const imageCache = new Map();
+// pictures: the game ships default photos (data/pictures.json); your own uploads/pastes override them
+export const defaultPictures = new Map(); // id -> { src, source }
+export const localPictures = new Set();   // ids with a picture you added yourself
+export const imageCache = new Map();      // id -> url to draw
 export async function warmImages() {
+  for (const [id, pic] of defaultPictures) imageCache.set(id, pic.src);
   const keys = (await allImageKeys()) || [];
-  await Promise.all(keys.map(async (k) => imageCache.set(k, await getImage(k))));
+  await Promise.all(keys.map(async (k) => { imageCache.set(k, await getImage(k)); localPictures.add(k); }));
+}
+export function forgetLocalPicture(id) {
+  localPictures.delete(id);
+  if (defaultPictures.has(id)) imageCache.set(id, defaultPictures.get(id).src);
+  else imageCache.delete(id);
 }
 
 // ---------- formatting ----------

@@ -1,4 +1,4 @@
-import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
+import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, localPictures, forgetLocalPicture, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
 import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking } from "./sim.js";
 import * as V from "./views.js";
 import { playCutscene, setMuted } from "./cutscene.js";
@@ -222,7 +222,7 @@ document.addEventListener("click", async (e) => {
     st.settings.favorites = f.includes(id) ? f.filter((x) => x !== id) : f.concat(id);
     await saveGame("auto", st); return render();
   }
-  if (act === "rmpic") { await deleteImage(b.dataset.id); imageCache.delete(b.dataset.id); return render(); }
+  if (act === "rmpic") { await deleteImage(b.dataset.id); forgetLocalPicture(b.dataset.id); return render(); }
   if (act === "create") return createPerson();
   if (act === "unpick") { app.picks = app.picks.filter((x) => x !== b.dataset.id); return render(); }
   if (act === "addpick") { if (!app.picks.includes(b.dataset.id)) app.picks.push(b.dataset.id); return render(); }
@@ -262,6 +262,17 @@ document.addEventListener("input", (e) => {
     box.innerHTML = list.map((p) => `<button type="button" class="pick-r" data-act="addpick" data-id="${esc(p.id)}">${V.flag(p.country)} ${esc(p.name)} <span class="muted">${Math.round(p.rating)}</span></button>`).join("");
   }
 });
+// paste a copied picture (right-click → Copy image anywhere) straight onto the open profile
+document.addEventListener("paste", (e) => {
+  const r = route();
+  if (r.name !== "bb" || !app.state?.people[r.arg]) return;
+  if (e.target?.closest?.("input, textarea")) return;
+  const item = [...(e.clipboardData?.items || [])].find((it) => it.type.startsWith("image/"));
+  if (!item) { toast("Nothing to paste: copy a picture first (right-click it → Copy image)"); return; }
+  e.preventDefault();
+  uploadPicture(r.arg, item.getAsFile());
+});
+
 document.addEventListener("submit", async (e) => {
   e.preventDefault();
   const f = e.target;
@@ -304,6 +315,7 @@ async function uploadPicture(id, file) {
     const small = c.toDataURL("image/jpeg", 0.88);
     await putImage(id, small);
     imageCache.set(id, small);
+    localPictures.add(id);
     render();
     toast("Picture saved");
   } catch (err) { toast(`Could not use that picture: ${err.message}`); }
