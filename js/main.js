@@ -45,11 +45,13 @@ function render() {
   const views = {
     home: () => V.viewHome(), calendar: () => V.viewCalendar(), event: () => V.viewEvent(r.arg),
     people: () => V.viewPeople(r.params), rankings: () => V.viewPeople(r.params), bb: () => V.viewProfile(r.arg),
+    history: () => V.viewHistory(r.arg),
     champions: () => V.viewChampions(), countries: () => V.viewCountries(), custom: () => V.viewCustom(app.picks),
     settings: () => V.viewSettings(),
   };
   $main.innerHTML = (views[r.name] || views.home)();
-  const navName = r.name === "bb" || r.name === "rankings" ? "people" : r.name === "event" ? "calendar" : r.name;
+  const navName = r.name === "bb" || r.name === "rankings" ? "people" : r.name === "event" ? "calendar" : r.name === "history" ? "champions" : r.name;
+  window.scrollTo(0, 0);
   document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === `#${navName}`));
   updateStatus();
   if (r.name === "people") {

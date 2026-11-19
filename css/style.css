@@ -193,6 +193,14 @@ body.busy .status { color: var(--signal); }
 .br-b .v { font-family: var(--mono); font-size: 12px; color: var(--muted); }
 .br-b .win .v { color: var(--signal); font-weight: 700; }
 
+.plain.links a { font-weight: 700; border-bottom: 1px solid var(--line); }
+.plain.links a:hover { border-color: var(--signal); }
+.hist-cat { display: grid; gap: 18px; }
+.cat-h { font-size: 34px; display: flex; align-items: center; gap: 12px; }
+.cat-h::after { content: ""; flex: 1; height: 2px; background: var(--line); }
+.career td a { font-weight: 700; }
+.career td.gold { color: var(--gold); font-weight: 800; }
+
 /* ---------- tables ---------- */
 .tbl-wrap { overflow-x: auto; }
 .tbl { width: 100%; border-collapse: collapse; font-size: 13.5px; }

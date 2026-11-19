@@ -266,11 +266,120 @@ export function viewProfile(id) {
       </form>
     </section>
     <section class="card"><h2>Titles</h2>
-      <ul class="plain">${titles.map((t) => `<li><span class="yr">${t.year}</span>${esc(compName(t.comp))}${t.cat && t.cat !== "solo" ? ` <span class="muted">(${esc(t.cat.replace(/_/g, " "))})</span>` : ""}${t.real ? "" : ' <span class="chip sim">sim</span>'}</li>`).join("") || "<li class='muted'>No titles yet</li>"}</ul>
+      <ul class="plain links">${titles.map((t) => `<li><span class="yr">${t.year}</span><a href="${titleHref(id, t)}">${esc(compName(t.comp))}${t.cat && t.cat !== "solo" ? ` <span class="muted">(${esc(t.cat.replace(/_/g, " "))})</span>` : ""}</a>${t.real ? "" : ' <span class="chip sim">sim</span>'}</li>`).join("") || "<li class='muted'>No titles yet</li>"}</ul>
       <h2 class="mt">Simulated results</h2>
-      <ul class="plain">${results.map((r) => { const pl = r.standings.indexOf(id); return `<li><span class="yr">${r.year}</span><a href="#event/${encodeURIComponent(r.key)}">${esc(r.name.replace(` ${r.year}`, ""))}</a> <span class="muted">${pl === 0 ? "Champion" : pl >= 0 ? ordinal(pl + 1) : "entered"}</span></li>`; }).join("") || "<li class='muted'>Nothing simulated yet</li>"}</ul>
+      <ul class="plain links">${results.map((r) => { const pl = r.standings.indexOf(id); return `<li><span class="yr">${r.year}</span><a href="#event/${encodeURIComponent(r.key)}">${esc(r.name.replace(` ${r.year}`, ""))}</a> <span class="muted">${pl === 0 ? "Champion" : pl >= 0 ? ordinal(pl + 1) : "entered"}</span></li>`; }).join("") || "<li class='muted'>Nothing simulated yet</li>"}</ul>
     </section>
+  </div>
+  <section class="card"><h2>Career history</h2><p class="muted small">Every real event in the records. Click one to see its battles.</p>
+    <div class="tbl-wrap"><table class="tbl career"><thead><tr><th>Year</th><th>Event</th><th>Category</th><th>Result</th></tr></thead><tbody>
+    ${realAppearances(id).map((a) => `<tr><td class="yr">${a.year}</td><td><a href="${a.href}">${esc(a.name)}</a></td><td class="muted">${esc(a.cat)}</td><td class="${a.rank === 1 ? "gold" : ""}">${esc(a.result)}</td></tr>`).join("") || `<tr><td colspan="4" class="muted">No real events on record.</td></tr>`}
+    </tbody></table></div>
+  </section>
+  <div class="grid2" hidden>
   </div>`;
+}
+
+// ---------- real history: every event a beatboxer entered, and a page per real event ----------
+const CAT_LABEL = { solo: "Solo", solo_global: "Solo Global", "7_to_smoke": "7 to Smoke" };
+const LOST_AT = { Final: [2, "Runner-up"], "Third place": [4, "Fourth"], Semifinal: [4, "Semifinalist"], "Semifinal round": [4, "Semifinals"],
+  "Semifinal tiebreaker": [4, "Semifinals"], "Top 8": [8, "Top 8"], "Quarterfinal round": [8, "Quarterfinals"], "Quarterfinal tiebreaker": [8, "Quarterfinals"],
+  "Top 16": [16, "Top 16"], "Top 32": [32, "Top 32"], "Round of 64": [64, "Top 64"] };
+const bidOf = (r) => r?.beatboxer;
+
+function resultIn(d, id) {
+  if (bidOf(d.champion) === id) return [1, "Champion"];
+  if (bidOf(d.co_champion) === id) return [1, "Co-champion"];
+  if (bidOf(d.runner_up) === id) return [2, "Runner-up"];
+  if (bidOf(d.third) === id) return [3, "Third"];
+  const pts = (d.points || []).find((x) => x.beatboxer === id);
+  if (pts) return [50, `${pts.points} point${pts.points === 1 ? "" : "s"}`];
+  const pl = (d.placements || []).find((x) => x.beatboxer === id);
+  if (pl) return [pl.rank, ordinal(pl.rank)];
+  let best = null;
+  for (const b of d.battles || []) {
+    if (bidOf(b.a) !== id && bidOf(b.b) !== id) continue;
+    const lost = bidOf(b.winner) && bidOf(b.winner) !== id;
+    const info = LOST_AT[b.round] || [99, b.round];
+    const rank = lost ? info[0] : info[0] / 2;
+    if (!best || rank < best[0]) best = [rank, lost ? info[1] : `${info[1]}`];
+  }
+  if (best) return best;
+  const sd = (d.seeding || []).find((x) => x.beatboxer === id);
+  if (sd) return [100 + sd.rank, `Eliminations (${ordinal(sd.rank)})`];
+  if ((d.participants || []).some((x) => x.beatboxer === id)) return [200, "Entered"];
+  const wr = (d.wildcard_runners_up || []).find((x) => x.beatboxer === id);
+  if (wr) return [300, `Wildcard runner-up${wr.place ? ` (${ordinal(wr.place)})` : ""}`];
+  return null;
+}
+
+export function realAppearances(id) {
+  const out = [];
+  for (const [cid, eds] of Object.entries(A.data.history)) {
+    eds.forEach((e, idx) => {
+      for (const [cat, d] of Object.entries(e.categories || {})) {
+        const r = resultIn(d, id);
+        if (r) out.push({ year: e.year, month: e.month || 0, name: e.name, cat: CAT_LABEL[cat] || cat, rank: r[0], result: r[1], href: `#history/${cid}/${idx}` });
+      }
+    });
+  }
+  return out.sort((a, b) => b.year - a.year || b.month - a.month || a.name.localeCompare(b.name));
+}
+
+function titleHref(id, t) {
+  if (t.real) {
+    const eds = A.data.history[t.comp] || [];
+    const idx = eds.findIndex((e) => e.year === t.year && Object.values(e.categories || {}).some((d) => bidOf(d.champion) === id || bidOf(d.co_champion) === id));
+    return idx >= 0 ? `#history/${t.comp}/${idx}` : `#champions`;
+  }
+  const arch = Object.values(A.state.archive).filter((a) => a.year === t.year);
+  const hit = arch.find((a) => (a.comp === t.comp || (t.cat === "7_to_smoke" && a.comp === `${t.comp}_7ts`)) && a.champion === id)
+    || arch.find((a) => a.comp === t.comp && a.smoke?.champion === id);
+  return hit ? `#event/${encodeURIComponent(hit.key)}` : "#calendar";
+}
+
+export function viewHistory(arg) {
+  const [cid, idxStr] = (arg || "").split("/");
+  const e = (A.data.history[cid] || [])[+idxStr];
+  if (!e) return `<p class="muted">Event not found.</p>`;
+  const ev = { comp: cid, national: compName(cid) && cid.startsWith("nat_") ? cid.slice(4) : null };
+  const k = kindOf(ev);
+  const where = [e.dates, e.location].filter(Boolean).join(" · ");
+  const judges = (e.judges || []).map(bidOf).filter(Boolean);
+  const cats = Object.entries(e.categories || {}).sort(([a], [b]) => (a === "solo" ? -1 : b === "solo" ? 1 : 0));
+  return `<header class="ev-head k-${k}"><div><p class="eyebrow">${kindIcon(k)} Real results · ${esc(where || e.year)}</p><h1>${esc(e.name)}</h1></div>
+      <span class="chip">${esc(e.status === "upcoming" ? "Upcoming" : "History")}</span></header>
+    ${cats.map(([cat, d]) => historyCategory(cat, d)).join("") || `<section class="card"><p class="muted">No solo results recorded for this edition.</p></section>`}
+    ${judges.length ? `<section class="card"><h2>Judges</h2><ul class="plain">${judges.map((j) => `<li>${avatar(j)}${nameLink(j)}</li>`).join("")}</ul></section>` : ""}`;
+}
+
+function historyCategory(cat, d) {
+  const pod = [bidOf(d.champion), bidOf(d.runner_up), bidOf(d.third)].filter(Boolean);
+  const rounds = [];
+  for (const b of d.battles || []) {
+    let col = rounds.find((c) => c.name === b.round);
+    if (!col) rounds.push((col = { name: b.round, list: [] }));
+    col.list.push(b);
+  }
+  const score = (b) => (b.score || "").replace(/\s*votes?\*?/gi, "").replace(/\*\*/g, "").split(/\s*-\s*/);
+  const ranked = (d.seeding || d.placements || []).slice().sort((a, b) => a.rank - b.rank);
+  const judges = (d.judges || []).map(bidOf).filter(Boolean);
+  return `<section class="hist-cat">
+    <h2 class="cat-h">${esc(CAT_LABEL[cat] || cat)}</h2>
+    ${pod.length ? `<div class="podium">${pod.map((id, i) => `<a class="pod p${i + 1}" href="#bb/${encodeURIComponent(id)}">${avatar(id, "lg")}<span class="pl">${["Champion", "Runner-up", "Third"][i]}</span><b>${esc(P(id)?.name || id)}</b><span class="muted">${flag(P(id)?.country)} ${esc(countryName(P(id)?.country))}</span></a>`).join("")}</div>` : ""}
+    ${rounds.length ? `<section class="card"><h2>Battles</h2><div class="bracket">${rounds.map((c) => `
+      <div class="br-col"><h4>${esc(c.name)}</h4><div class="br-list">${c.list.map((b) => { const [sa, sb] = score(b); const w = bidOf(b.winner); return `
+        <div class="br-b">
+          <div class="${w === bidOf(b.a) ? "win" : ""}">${nameLink(bidOf(b.a))}<span class="v">${esc(sa || "")}</span></div>
+          <div class="${w === bidOf(b.b) ? "win" : ""}">${b.b ? nameLink(bidOf(b.b)) : "<span class='muted'>bye</span>"}<span class="v">${esc(sb || "")}</span></div>
+        </div>`; }).join("")}</div></div>`).join("")}</div></section>` : ""}
+    <div class="grid2">
+      ${d.points ? `<section class="card"><h2>Points</h2><table class="tbl"><tbody>${d.points.slice().sort((a, b) => b.points - a.points).map((x) => `<tr><td>${nameLink(x.beatboxer)}</td><td class="num">${x.points}</td></tr>`).join("")}</tbody></table></section>` : ""}
+      ${ranked.length ? `<section class="card"><h2>${d.seeding ? "Elimination ranking" : "Final standings"}</h2><ol class="plain two">${ranked.map((x) => `<li><span class="rk">${x.rank}</span>${nameLink(x.beatboxer)}</li>`).join("")}</ol></section>` : ""}
+      ${d.participants?.length ? `<section class="card"><h2>Entrants</h2><ul class="plain">${d.participants.map((x) => `<li>${nameLink(x.beatboxer)}${x.qualification ? `<span class="muted small">${esc(x.qualification)}</span>` : ""}</li>`).join("")}</ul></section>` : ""}
+      ${judges.length ? `<section class="card"><h2>Judges</h2><ul class="plain">${judges.map((j) => `<li>${avatar(j)}${nameLink(j)}</li>`).join("")}</ul></section>` : ""}
+    </div>
+  </section>`;
 }
 
 function sparkline(hist = []) {
