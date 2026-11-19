@@ -652,14 +652,14 @@
   },
   "hk": {
     "name": "Hong Kong",
-    "level": 67,
-    "active_beatboxers": 37,
+    "level": 65,
+    "active_beatboxers": 36,
     "top_beatboxers": [
       "corey",
       "hiccup",
-      "heartgrey",
       "theo",
-      "32"
+      "32",
+      "yao"
     ],
     "national_championship": "nat_hk",
     "national_champions": [
@@ -679,10 +679,9 @@
   },
   "hu": {
     "name": "Hungary",
-    "level": 58,
-    "active_beatboxers": 4,
+    "level": 52,
+    "active_beatboxers": 3,
     "top_beatboxers": [
-      "kristof",
       "blaz",
       "raptor",
       "shackle"

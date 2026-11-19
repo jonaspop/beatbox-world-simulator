@@ -179,7 +179,8 @@ def build(clean_dir):
                     break
             tables = parse_tables(lines)
             is_ru = bool(re.search(r"runner", sub, re.I))
-            draft_sec = any("draft" in p.lower() for p in path)
+            # exhibition sections (draft tag team, fantasy / legacy / exhibition battles) are not competition results
+            draft_sec = any(re.search(r"draft|fantasy|legacy|exhibition|showcase battle|circle jam", p, re.I) for p in path)
             if draft_sec or ("participant" in top and "ranking" in sub.lower()):
                 continue
             if c is None and (("participant" in top and (len(path) == 1 or is_ru)) or (top == "results" and len(path) == 1)):
