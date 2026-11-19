@@ -109,6 +109,8 @@ four years, GBB and its 7 to Smoke in September, and a season review on December
   judge chance, whether they enter solo events, or add a picture (upload a file, or copy a picture
   anywhere and press Ctrl+V on the profile). Edits and pictures stay in your browser.
   Pictures listed in `data/pictures.json` (served from a `pictures/` folder) are built-in defaults for everyone.
+  They come from beatbox.world (imported with the site creators' OK by `tools/fetch_bbworld_pictures.py`,
+  which reads only the A–Z listing pages, slowly). The photos themselves belong to their photographers.
 - **Flags** come from the flag-icons set (MIT licence), loaded from jsDelivr.
 - **Saves**: the game saves itself in the browser after every step; Settings can export and import a save file.
 
