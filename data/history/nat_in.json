@@ -1,0 +1,226 @@
+{
+  "competition": "nat_in",
+  "editions": [
+    {
+      "year": 2022,
+      "name": "Indian Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "December 17-18th, 2022",
+      "location": "Mumbai, India",
+      "venue": "Roaring Farm",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "jayton"
+        },
+        {
+          "beatboxer": "pash"
+        },
+        {
+          "beatboxer": "beasty"
+        },
+        {
+          "beatboxer": "beatness"
+        },
+        {
+          "beatboxer": "rythmind"
+        },
+        {
+          "beatboxer": "wawad"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "abx"
+          },
+          "runner_up": {
+            "beatboxer": "crash"
+          },
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "imran"
+              },
+              "b": {
+                "beatboxer": "crash"
+              },
+              "winner": {
+                "beatboxer": "crash"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "fuchi"
+              },
+              "b": {
+                "beatboxer": "coffee"
+              },
+              "winner": {
+                "beatboxer": "fuchi"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "venux"
+              },
+              "b": {
+                "beatboxer": "rohan"
+              },
+              "winner": {
+                "beatboxer": "venux"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "parichay"
+              },
+              "b": {
+                "beatboxer": "parikshit"
+              },
+              "winner": {
+                "beatboxer": "parichay"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "deepbhimani"
+              },
+              "b": {
+                "beatboxer": "abx"
+              },
+              "winner": {
+                "beatboxer": "abx"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "ensane"
+              },
+              "b": {
+                "beatboxer": "mda"
+              },
+              "winner": {
+                "beatboxer": "mda"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "shawn"
+              },
+              "b": {
+                "beatboxer": "ishan"
+              },
+              "winner": {
+                "beatboxer": "shawn"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kunalnag"
+              },
+              "b": {
+                "beatboxer": "slickick"
+              },
+              "winner": {
+                "beatboxer": "slickick"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "crash"
+              },
+              "b": {
+                "beatboxer": "fuchi"
+              },
+              "winner": {
+                "beatboxer": "crash"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "venux"
+              },
+              "b": {
+                "beatboxer": "parichay"
+              },
+              "winner": {
+                "beatboxer": "venux"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "abx"
+              },
+              "b": {
+                "beatboxer": "mda"
+              },
+              "winner": {
+                "beatboxer": "abx"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shawn"
+              },
+              "b": {
+                "beatboxer": "slickick"
+              },
+              "winner": {
+                "beatboxer": "shawn"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "crash"
+              },
+              "b": {
+                "beatboxer": "venux"
+              },
+              "winner": {
+                "beatboxer": "crash"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "abx"
+              },
+              "b": {
+                "beatboxer": "shawn"
+              },
+              "winner": {
+                "beatboxer": "abx"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "crash"
+              },
+              "b": {
+                "beatboxer": "abx"
+              },
+              "winner": {
+                "beatboxer": "abx"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

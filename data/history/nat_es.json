@@ -1,0 +1,649 @@
+{
+  "competition": "nat_es",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "Spanish Beatbox Battle 2023",
+      "status": "completed",
+      "dates": "January 20th, 2024",
+      "location": "Zaragoza, Spain",
+      "venue": "Sala La Rotonda del Centro Cívico Delicias",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "zekka"
+        },
+        {
+          "beatboxer": "kim"
+        },
+        {
+          "beatboxer": "bigben"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        },
+        {
+          "beatboxer": "robin"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "gako"
+          },
+          "runner_up": {
+            "beatboxer": "nils"
+          },
+          "third": {
+            "beatboxer": "idem"
+          },
+          "participants": [
+            {
+              "beatboxer": "viktor",
+              "qualification": "SBB 2022 3rd Place"
+            },
+            {
+              "beatboxer": "didi",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "nils",
+              "qualification": "Open Dos Hermanas 2023 Champion"
+            },
+            {
+              "beatboxer": "idem",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "juano",
+              "qualification": "Open Dos Hermanas 2023 Vice-Champion"
+            },
+            {
+              "beatboxer": "ike",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "fire",
+              "qualification": "Open Dos Hermanas 2023 3rd Place"
+            },
+            {
+              "beatboxer": "loug",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "gako",
+              "qualification": "Open Ciempozuelos 2023 Vice-Champion"
+            },
+            {
+              "beatboxer": "sasu",
+              "qualification": "6th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "tai",
+              "qualification": "Open Ciempozuelos 2023 3rd Place"
+            },
+            {
+              "beatboxer": "inumash",
+              "qualification": "7th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "nicu",
+              "qualification": "Open Urban CT 2023 Vice-Champion"
+            },
+            {
+              "beatboxer": "siosi",
+              "qualification": "9th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "aspx",
+              "qualification": "Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "nils"
+              },
+              "b": {
+                "beatboxer": "viktor"
+              },
+              "winner": {
+                "beatboxer": "nils"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "idem"
+              },
+              "b": {
+                "beatboxer": "didi"
+              },
+              "winner": {
+                "beatboxer": "idem"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gako"
+              },
+              "b": {
+                "beatboxer": "ike"
+              },
+              "winner": {
+                "beatboxer": "gako"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "juano"
+              },
+              "b": {
+                "beatboxer": "inumash"
+              },
+              "winner": {
+                "beatboxer": "inumash"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "nils"
+              },
+              "b": {
+                "beatboxer": "idem"
+              },
+              "winner": {
+                "beatboxer": "nils"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gako"
+              },
+              "b": {
+                "beatboxer": "inumash"
+              },
+              "winner": {
+                "beatboxer": "gako"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "idem"
+              },
+              "b": {
+                "beatboxer": "inumash"
+              },
+              "winner": {
+                "beatboxer": "idem"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "nils"
+              },
+              "b": {
+                "beatboxer": "gako"
+              },
+              "winner": {
+                "beatboxer": "gako"
+              }
+            }
+          ],
+          "notes": [
+            "Sasu acted as a replacement of SoundB3 (SBB 2022 Vice-Champion).",
+            "Inumash and Siosi acted as replacements and [md] Impaler (Open Ciempozuelos 2023 Champion), [es] Shadowless (Open Urban CT 2023 Champion) & [co] Evolved (Open Urban CT 2023 3rd Place) did not participate in the event.",
+            "K3SP (8th Wildcard Winner) & Rogue (10th Wildcard Winner) were unable to participate as replacements."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "15th Spanish Beatbox Battle",
+      "edition": 15,
+      "status": "completed",
+      "dates": "January 25th, 2025",
+      "location": "Zaragoza, Spain",
+      "venue": "El Túnel",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "gako"
+          },
+          "runner_up": {
+            "beatboxer": "juano"
+          },
+          "third": {
+            "beatboxer": "taiger"
+          },
+          "participants": [
+            {
+              "beatboxer": "gako",
+              "qualification": "SBB 2023 Champion"
+            },
+            {
+              "beatboxer": "dava",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "soundb3",
+              "qualification": "Urban CT 2024 Champion"
+            },
+            {
+              "beatboxer": "sasu",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "habix",
+              "qualification": "Urban CT 2024 Vice-Champion"
+            },
+            {
+              "beatboxer": "vraz",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "ike",
+              "qualification": "Urban CT 2024 3rd Place"
+            },
+            {
+              "beatboxer": "evolved",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "nicu",
+              "qualification": "3 Campionat de Catalunya de Beatbox Champion"
+            },
+            {
+              "beatboxer": "kreyzer",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "dmhop",
+              "qualification": "Madriz Beats Battle 2024 Champion"
+            },
+            {
+              "beatboxer": "cbm",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "juano",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "sbs",
+              "qualification": "12th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "didi",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "axlbbx",
+              "qualification": "14th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "winax",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "franky",
+              "qualification": "15th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "taiger",
+              "qualification": "Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gako"
+              },
+              "b": {
+                "beatboxer": "didi"
+              },
+              "winner": {
+                "beatboxer": "gako"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "soundb3"
+              },
+              "b": {
+                "beatboxer": "vraz"
+              },
+              "winner": {
+                "beatboxer": "soundb3"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "juano"
+              },
+              "b": {
+                "beatboxer": "habix"
+              },
+              "winner": {
+                "beatboxer": "juano"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "sasu"
+              },
+              "b": {
+                "beatboxer": "taiger"
+              },
+              "winner": {
+                "beatboxer": "taiger"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gako"
+              },
+              "b": {
+                "beatboxer": "soundb3"
+              },
+              "winner": {
+                "beatboxer": "gako"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "juano"
+              },
+              "b": {
+                "beatboxer": "taiger"
+              },
+              "winner": {
+                "beatboxer": "juano"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "soundb3"
+              },
+              "b": {
+                "beatboxer": "taiger"
+              },
+              "winner": {
+                "beatboxer": "taiger"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "gako"
+              },
+              "b": {
+                "beatboxer": "juano"
+              },
+              "winner": {
+                "beatboxer": "gako"
+              }
+            }
+          ],
+          "notes": [
+            "SBS, Axl-bbx and Franky acted as replacements for Nils (SBB 2023 Vice-Champion), IDEM (SBB 2023 3rd Place) & G-Crash (Wildcard Winner).",
+            "Lavi South (13th Wildcard Winner) was unable to participate as a replacement."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "16th Spanish Beatbox Battle",
+      "edition": 16,
+      "status": "completed",
+      "dates": "January 24th, 2026",
+      "location": "Zaragoza, Spain",
+      "venue": "El Túnel",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "nils"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "juano"
+          },
+          "runner_up": {
+            "beatboxer": "vraz"
+          },
+          "third": {
+            "beatboxer": "ike"
+          },
+          "participants": [
+            {
+              "beatboxer": "juano",
+              "qualification": "15th SBB Vice-Champion"
+            },
+            {
+              "beatboxer": "igitatssj",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "taiger",
+              "qualification": "15th SBB 3rd Place"
+            },
+            {
+              "beatboxer": "aspx",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "habix",
+              "qualification": "Open Compostela Street Festival 2025 Champion"
+            },
+            {
+              "beatboxer": "kreyzer",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "inumash",
+              "qualification": "Open Compostela Street Festival 2025 Vice-Champion"
+            },
+            {
+              "beatboxer": "cyclone",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "evolved",
+              "qualification": "Open Compostela Street Festival 2025 3rd Place"
+            },
+            {
+              "beatboxer": "dbs",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "vraz",
+              "qualification": "IV Campionat de Catalunya de Beatbox Champion"
+            },
+            {
+              "beatboxer": "viktor",
+              "qualification": "14th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "danphino",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "ighost",
+              "qualification": "15th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "jk47",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "axlbbx",
+              "qualification": "16th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "mysth",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "bandicot",
+              "qualification": "17th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "ike",
+              "qualification": "Wildcard Winner"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "juano"
+              },
+              "b": {
+                "beatboxer": "jk47"
+              },
+              "winner": {
+                "beatboxer": "juano"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ike"
+              },
+              "b": {
+                "beatboxer": "viktor"
+              },
+              "winner": {
+                "beatboxer": "ike"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vraz"
+              },
+              "b": {
+                "beatboxer": "taiger"
+              },
+              "winner": {
+                "beatboxer": "vraz"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "inumash"
+              },
+              "b": {
+                "beatboxer": "habix"
+              },
+              "winner": {
+                "beatboxer": "habix"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "juano"
+              },
+              "b": {
+                "beatboxer": "ike"
+              },
+              "winner": {
+                "beatboxer": "juano"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "vraz"
+              },
+              "b": {
+                "beatboxer": "habix"
+              },
+              "winner": {
+                "beatboxer": "vraz"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "ike"
+              },
+              "b": {
+                "beatboxer": "habix"
+              },
+              "winner": {
+                "beatboxer": "ike"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "juano"
+              },
+              "b": {
+                "beatboxer": "vraz"
+              },
+              "winner": {
+                "beatboxer": "juano"
+              }
+            }
+          ],
+          "notes": [
+            "Viktor, iGhost, Axl-bbx and Bandicot will act as replacements for [cl] Tincho (Wildcard Winner), [es] Gako (15th SBB Champion), [es] DIDI (Wildcard Winner) & [ro] El Constantin (Wildcard Winner).",
+            "KDK{{Cite|title=Also know as Fire|message=*}} (Wildcard Winner) was unable to participate."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1792 @@
+{
+  "competition": "nat_it",
+  "editions": [
+    {
+      "year": 2022,
+      "name": "Italian Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "November 12th, 2022",
+      "location": "Bologne, Italy",
+      "venue": "Sottotetto SoundClub",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "azel"
+        },
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "mexzee"
+        },
+        {
+          "beatboxer": "alem"
+        },
+        {
+          "beatboxer": "slizzer"
+        },
+        {
+          "beatboxer": "geopopoff"
+        },
+        {
+          "beatboxer": "eon"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "jbeat"
+          },
+          "runner_up": {
+            "beatboxer": "blackroll"
+          },
+          "third": {
+            "beatboxer": "rich"
+          },
+          "participants": [
+            {
+              "beatboxer": "jbeat",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "savo",
+              "qualification": "18th Wildcard Winner"
+            },
+            {
+              "beatboxer": "rich",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "leo",
+              "qualification": "19th Wildcard Winner"
+            },
+            {
+              "beatboxer": "olyv",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "effetto",
+              "qualification": "20th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ervinho",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dynamatt",
+              "qualification": "21st Wildcard Winner"
+            },
+            {
+              "beatboxer": "freeak",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "beatmap",
+              "qualification": "22nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "blackroll",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "rima",
+              "qualification": "23rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "joker",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "grant",
+              "qualification": "24th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mol",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "soko",
+              "qualification": "25th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "frankvenus",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "cappe",
+              "qualification": "25th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "karn",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "corbe",
+              "qualification": "Wildcard Runner-Up"
+            },
+            {
+              "beatboxer": "horaid",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "rizle",
+              "qualification": "Wildcard Runner-Up"
+            },
+            {
+              "beatboxer": "croxeet",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "pelo",
+              "qualification": "Wildcard Runner-Up"
+            },
+            {
+              "beatboxer": "orlando",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "gatto",
+              "qualification": "Wildcard Runner-Up"
+            },
+            {
+              "beatboxer": "albo",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "tara",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "osy",
+              "qualification": "16th Wildcard Winner"
+            },
+            {
+              "beatboxer": "misa",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "roy",
+              "qualification": "17th Wildcard Winner"
+            },
+            {
+              "beatboxer": "amtd",
+              "qualification": "Invited"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "jbeat"
+              },
+              "b": {
+                "beatboxer": "horaid"
+              },
+              "winner": {
+                "beatboxer": "jbeat"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "grant"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "olyv"
+              },
+              "b": {
+                "beatboxer": "corbe"
+              },
+              "winner": {
+                "beatboxer": "olyv"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "freeak"
+              },
+              "b": {
+                "beatboxer": "osy"
+              },
+              "winner": {
+                "beatboxer": "freeak"
+              },
+              "score": "3 Votes* - 1 Vote*"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "orlando"
+              },
+              "b": {
+                "beatboxer": "ervinho"
+              },
+              "winner": {
+                "beatboxer": "ervinho"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "effetto"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "roy"
+              },
+              "b": {
+                "beatboxer": "rich"
+              },
+              "winner": {
+                "beatboxer": "rich"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mol"
+              },
+              "b": {
+                "beatboxer": "frankvenus"
+              },
+              "winner": {
+                "beatboxer": "frankvenus"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jbeat"
+              },
+              "b": {
+                "beatboxer": "joker"
+              },
+              "winner": {
+                "beatboxer": "jbeat"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "olyv"
+              },
+              "b": {
+                "beatboxer": "freeak"
+              },
+              "winner": {
+                "beatboxer": "olyv"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ervinho"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "rich"
+              },
+              "b": {
+                "beatboxer": "frankvenus"
+              },
+              "winner": {
+                "beatboxer": "rich"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "jbeat"
+              },
+              "b": {
+                "beatboxer": "olyv"
+              },
+              "winner": {
+                "beatboxer": "jbeat"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "rich"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "olyv"
+              },
+              "b": {
+                "beatboxer": "rich"
+              },
+              "winner": {
+                "beatboxer": "rich"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "jbeat"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "jbeat"
+              }
+            }
+          ],
+          "notes": [
+            "Soko and Cappe were both designated winners of the 25th Wildcard.",
+            "Adel (10th Wildcard Winner) was unable to participate in the event."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Italian Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "February 18th, 2023",
+      "location": "Bologne, Italy",
+      "venue": "Mercato Sonato",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "aliendee"
+        },
+        {
+          "beatboxer": "kim"
+        },
+        {
+          "beatboxer": "bigben"
+        },
+        {
+          "beatboxer": "jbeat"
+        },
+        {
+          "beatboxer": "azel"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "blackroll"
+          },
+          "runner_up": {
+            "beatboxer": "dynamatt"
+          },
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "corbe"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "roy"
+              },
+              "b": {
+                "beatboxer": "horaid"
+              },
+              "winner": {
+                "beatboxer": "horaid"
+              },
+              "score": "0 Votes* - 4 Votes*"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "coinz"
+              },
+              "b": {
+                "beatboxer": "adel"
+              },
+              "winner": {
+                "beatboxer": "adel"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "karn"
+              },
+              "b": {
+                "beatboxer": "leo"
+              },
+              "winner": {
+                "beatboxer": "karn"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "mol"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "badpeace"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "grant"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "freeak"
+              },
+              "b": {
+                "beatboxer": "shishone"
+              },
+              "winner": {
+                "beatboxer": "freeak"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "horaid"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "adel"
+              },
+              "b": {
+                "beatboxer": "karn"
+              },
+              "winner": {
+                "beatboxer": "adel"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "badpeace"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "freeak"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "adel"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "4 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "badpeace"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Italian Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "March 9-10, 2024",
+      "location": "Venezia, Italy",
+      "venue": "Centro Sociale Rivolta",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "blackroll"
+        },
+        {
+          "beatboxer": "matej"
+        },
+        {
+          "beatboxer": "jbeat"
+        },
+        {
+          "beatboxer": "robin"
+        },
+        {
+          "beatboxer": "river"
+        },
+        {
+          "beatboxer": "supernova"
+        },
+        {
+          "beatboxer": "footboxg"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "dynamatt"
+          },
+          "runner_up": {
+            "beatboxer": "badpeace"
+          },
+          "third": {
+            "beatboxer": "orlando"
+          },
+          "participants": [
+            {
+              "beatboxer": "rich",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "simplesound",
+              "qualification": "18th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dynamatt",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "orlando",
+              "qualification": "19th Wildcard Winner"
+            },
+            {
+              "beatboxer": "albo",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "amtd",
+              "qualification": "20th Wildcard Winner"
+            },
+            {
+              "beatboxer": "olyv",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "karn",
+              "qualification": "21st Wildcard Winner"
+            },
+            {
+              "beatboxer": "joker",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "cappe",
+              "qualification": "22nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "adel",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "leo",
+              "qualification": "23rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "roy",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "beatiti",
+              "qualification": "24th Wildcard Winner"
+            },
+            {
+              "beatboxer": "horaido",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "beatmap",
+              "qualification": "25th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "corbe",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "badpeace",
+              "qualification": "Rank 1 Preliminary"
+            },
+            {
+              "beatboxer": "iv",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "coinz",
+              "qualification": "Rank 2 Preliminary"
+            },
+            {
+              "beatboxer": "shishone",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "praxys",
+              "qualification": "Rank 3 Preliminary"
+            },
+            {
+              "beatboxer": "mol",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "rogo",
+              "qualification": "Rank 4 Preliminary"
+            },
+            {
+              "beatboxer": "brook",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "savo",
+              "qualification": "Rank 5 Preliminary"
+            },
+            {
+              "beatboxer": "gianmaria",
+              "qualification": "16th Wildcard Winner"
+            },
+            {
+              "beatboxer": "jerko",
+              "qualification": "Rank 6 Preliminary"
+            },
+            {
+              "beatboxer": "quellochefabitteboxe",
+              "qualification": "17th Wildcard Winner"
+            },
+            {
+              "beatboxer": "soko",
+              "qualification": "Rank 7 Preliminary"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "albo"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "soko"
+              },
+              "b": {
+                "beatboxer": "olyv"
+              },
+              "winner": {
+                "beatboxer": "olyv"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "karn"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "cappe"
+              },
+              "b": {
+                "beatboxer": "adel"
+              },
+              "winner": {
+                "beatboxer": "adel"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "rich"
+              },
+              "b": {
+                "beatboxer": "brook"
+              },
+              "winner": {
+                "beatboxer": "rich"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mol"
+              },
+              "b": {
+                "beatboxer": "badpeace"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "corbe"
+              },
+              "b": {
+                "beatboxer": "gianmaria"
+              },
+              "winner": {
+                "beatboxer": "corbe"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "iv"
+              },
+              "b": {
+                "beatboxer": "orlando"
+              },
+              "winner": {
+                "beatboxer": "orlando"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "olyv"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "adel"
+              },
+              "winner": {
+                "beatboxer": "adel"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "rich"
+              },
+              "b": {
+                "beatboxer": "badpeace"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "corbe"
+              },
+              "b": {
+                "beatboxer": "orlando"
+              },
+              "winner": {
+                "beatboxer": "orlando"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "adel"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "badpeace"
+              },
+              "b": {
+                "beatboxer": "orlando"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "adel"
+              },
+              "b": {
+                "beatboxer": "orlando"
+              },
+              "winner": {
+                "beatboxer": "orlando"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "badpeace"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              }
+            }
+          ],
+          "notes": [
+            "Beatmap acted as a replacement for [it] Calvi (8th Wildcard Winner).",
+            "[it] N-S (10th Wildcard Winner) dropped out of the competition."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Italian Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "April 12-13, 2025",
+      "location": "Venezia, Italy",
+      "venue": "Centro Sociale Rivolta",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "shishone"
+          },
+          "runner_up": {
+            "beatboxer": "badpeace"
+          },
+          "third": {
+            "beatboxer": "joker"
+          },
+          "participants": [
+            {
+              "beatboxer": "joker",
+              "qualification": "Rovereto Vocal Festival 2024 Champion"
+            },
+            {
+              "beatboxer": "simplesound",
+              "qualification": "16th Wildcard Winner"
+            },
+            {
+              "beatboxer": "rich",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "veron",
+              "qualification": "17th Wildcard Winner"
+            },
+            {
+              "beatboxer": "albo",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "jerko",
+              "qualification": "18th Wildcard Winner"
+            },
+            {
+              "beatboxer": "shishone",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "roy",
+              "qualification": "19th Wildcard Winner"
+            },
+            {
+              "beatboxer": "karn",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "leo",
+              "qualification": "20th Wildcard Winner"
+            },
+            {
+              "beatboxer": "calvi",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "beatiti",
+              "qualification": "21st Wildcard Winner"
+            },
+            {
+              "beatboxer": "adel",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "beatmap",
+              "qualification": "22nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "olyv",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ns",
+              "qualification": "23rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "mol",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "soko",
+              "qualification": "24th Wildcard Winner"
+            },
+            {
+              "beatboxer": "cappe",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "sam",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "horaido",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "savo",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "martyn",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "badpeace",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "amtd",
+              "qualification": "15th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "sam"
+              },
+              "b": {
+                "beatboxer": "rich"
+              },
+              "winner": {
+                "beatboxer": "sam"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "horaido"
+              },
+              "b": {
+                "beatboxer": "badpeace"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "veron"
+              },
+              "winner": {
+                "beatboxer": "albo"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mol"
+              },
+              "b": {
+                "beatboxer": "amtd"
+              },
+              "winner": {
+                "beatboxer": "amtd"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "cappe"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "olyv"
+              },
+              "b": {
+                "beatboxer": "calvi"
+              },
+              "winner": {
+                "beatboxer": "olyv"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "leo"
+              },
+              "b": {
+                "beatboxer": "shishone"
+              },
+              "winner": {
+                "beatboxer": "shishone"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "karn"
+              },
+              "b": {
+                "beatboxer": "martyn"
+              },
+              "winner": {
+                "beatboxer": "martyn"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "sam"
+              },
+              "b": {
+                "beatboxer": "badpeace"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "amtd"
+              },
+              "winner": {
+                "beatboxer": "albo"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "olyv"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shishone"
+              },
+              "b": {
+                "beatboxer": "martyn"
+              },
+              "winner": {
+                "beatboxer": "shishone"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "badpeace"
+              },
+              "b": {
+                "beatboxer": "albo"
+              },
+              "winner": {
+                "beatboxer": "badpeace"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "shishone"
+              },
+              "winner": {
+                "beatboxer": "shishone"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "joker"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "badpeace"
+              },
+              "b": {
+                "beatboxer": "shishone"
+              },
+              "winner": {
+                "beatboxer": "shishone"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Italian Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "April 11, 2026",
+      "location": "Venezia, Italy",
+      "venue": "Centro Sociale Rivolta",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "dynamatt"
+        },
+        {
+          "beatboxer": "pacmax"
+        },
+        {
+          "beatboxer": "bookieblanco"
+        },
+        {
+          "beatboxer": "maxo"
+        },
+        {
+          "beatboxer": "osis"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "dynamatt"
+        },
+        {
+          "beatboxer": "pacmax"
+        },
+        {
+          "beatboxer": "maxo"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "albo"
+          },
+          "runner_up": {
+            "beatboxer": "leo"
+          },
+          "third": {
+            "beatboxer": "cappe"
+          },
+          "participants": [
+            {
+              "beatboxer": "albo",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "jerko",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "karn",
+              "qualification": "24th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ns",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "veron",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "justden",
+              "qualification": "25th Wildcard Winner"
+            },
+            {
+              "beatboxer": "quellochefabitteboxe",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "soko",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "madcandy",
+              "qualification": "26th Wildcard Winner"
+            },
+            {
+              "beatboxer": "cappe",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "savo",
+              "qualification": "16th Wildcard Winner"
+            },
+            {
+              "beatboxer": "kremel",
+              "qualification": "27th Wildcard Winner"
+            },
+            {
+              "beatboxer": "simplesound",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "roy",
+              "qualification": "17th Wildcard Winner"
+            },
+            {
+              "beatboxer": "sterpent",
+              "qualification": "28th Wildcard Winner"
+            },
+            {
+              "beatboxer": "calvi",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "croxeet",
+              "qualification": "18th Wildcard Winner"
+            },
+            {
+              "beatboxer": "crybbio",
+              "qualification": "29th Wildcard Winner"
+            },
+            {
+              "beatboxer": "leo",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "sterco",
+              "qualification": "19th Wildcard Winner"
+            },
+            {
+              "beatboxer": "skat",
+              "qualification": "30th Wildcard Winner"
+            },
+            {
+              "beatboxer": "joker",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dado",
+              "qualification": "20th Wildcard Winner"
+            },
+            {
+              "beatboxer": "drip",
+              "qualification": "32nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "amtd",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mol",
+              "qualification": "21st Wildcard Winner"
+            },
+            {
+              "beatboxer": "bobbyreeves",
+              "qualification": "33rd Wildcard Winner*"
+            },
+            {
+              "beatboxer": "martyn",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "beatiti",
+              "qualification": "22nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "1912",
+              "qualification": "Invited*"
+            },
+            {
+              "beatboxer": "feel",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "brook",
+              "qualification": "23rd Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "martyn"
+              },
+              "winner": {
+                "beatboxer": "albo"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "karn"
+              },
+              "b": {
+                "beatboxer": "calvi"
+              },
+              "winner": {
+                "beatboxer": "calvi"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "quellochefabitteboxe"
+              },
+              "b": {
+                "beatboxer": "veron"
+              },
+              "winner": {
+                "beatboxer": "veron"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "jerko"
+              },
+              "b": {
+                "beatboxer": "amtd"
+              },
+              "winner": {
+                "beatboxer": "jerko"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "cappe"
+              },
+              "b": {
+                "beatboxer": "feel"
+              },
+              "winner": {
+                "beatboxer": "cappe"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "roy"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "leo"
+              },
+              "winner": {
+                "beatboxer": "leo"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "ns"
+              },
+              "b": {
+                "beatboxer": "mol"
+              },
+              "winner": {
+                "beatboxer": "ns"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "calvi"
+              },
+              "winner": {
+                "beatboxer": "albo"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "veron"
+              },
+              "b": {
+                "beatboxer": "jerko"
+              },
+              "winner": {
+                "beatboxer": "jerko"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "cappe"
+              },
+              "b": {
+                "beatboxer": "joker"
+              },
+              "winner": {
+                "beatboxer": "cappe"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "leo"
+              },
+              "b": {
+                "beatboxer": "ns"
+              },
+              "winner": {
+                "beatboxer": "leo"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "jerko"
+              },
+              "winner": {
+                "beatboxer": "albo"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "cappe"
+              },
+              "b": {
+                "beatboxer": "leo"
+              },
+              "winner": {
+                "beatboxer": "leo"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "cappe"
+              },
+              "b": {
+                "beatboxer": "jerko"
+              },
+              "winner": {
+                "beatboxer": "cappe"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "albo"
+              },
+              "b": {
+                "beatboxer": "leo"
+              },
+              "winner": {
+                "beatboxer": "albo"
+              }
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "albo"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "ns"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "cappe"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "jerko"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "quellochefabitteboxe"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "joker"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "simplesound"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "karn"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "calvi"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "leo"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "roy"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "veron"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "amtd"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "feel"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "mol"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "martyn"
+            }
+          ],
+          "notes": [
+            "Bobby Reeves and 1912 acted as replacements for Horaido (11th Wildcard Winner) & garuto (31st Wildcard Winner)."
+          ]
+        }
+      }
+    }
+  ]
+}

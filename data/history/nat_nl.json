@@ -1,0 +1,434 @@
+{
+  "competition": "nat_nl",
+  "editions": [
+    {
+      "year": 2021,
+      "name": "Dutch Beatbox Battle 2021",
+      "status": "completed",
+      "dates": "September 10th, 2021",
+      "location": "Rotterdam, Netherlands",
+      "venue": "WORM",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "supernova"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "timmeh"
+          },
+          "runner_up": {
+            "beatboxer": "benja"
+          },
+          "third": {
+            "beatboxer": "klown"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "svm"
+              },
+              "b": {
+                "beatboxer": "klown"
+              },
+              "winner": {
+                "beatboxer": "klown"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ignis"
+              },
+              "b": {
+                "beatboxer": "timmeh"
+              },
+              "winner": {
+                "beatboxer": "timmeh"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "eshplume"
+              },
+              "b": {
+                "beatboxer": "deathrow"
+              },
+              "winner": {
+                "beatboxer": "eshplume"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "voxel"
+              },
+              "b": {
+                "beatboxer": "benja"
+              },
+              "winner": {
+                "beatboxer": "benja"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "klown"
+              },
+              "b": {
+                "beatboxer": "timmeh"
+              },
+              "winner": {
+                "beatboxer": "timmeh"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "eshplume"
+              },
+              "b": {
+                "beatboxer": "benja"
+              },
+              "winner": {
+                "beatboxer": "benja"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "klown"
+              },
+              "b": {
+                "beatboxer": "eshplume"
+              },
+              "winner": {
+                "beatboxer": "klown"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "timmeh"
+              },
+              "b": {
+                "beatboxer": "benja"
+              },
+              "winner": {
+                "beatboxer": "timmeh"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "name": "Dutch Beatbox Battle 2022",
+      "status": "completed",
+      "dates": "September 3rd, 2022",
+      "location": "Rotterdam, Netherlands",
+      "venue": "BIRD",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "supernova"
+        },
+        {
+          "beatboxer": "madox"
+        },
+        {
+          "beatboxer": "skiller"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "svm"
+          },
+          "runner_up": {
+            "beatboxer": "voxel"
+          },
+          "third": {
+            "beatboxer": "benja"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "svm"
+              },
+              "b": {
+                "beatboxer": "deathrow"
+              },
+              "winner": {
+                "beatboxer": "svm"
+              },
+              "score": "2 Or 3 Votes - 0 or 1 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "benja"
+              },
+              "b": {
+                "beatboxer": "timmeh"
+              },
+              "winner": {
+                "beatboxer": "benja"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "voxel"
+              },
+              "b": {
+                "beatboxer": "klown"
+              },
+              "winner": {
+                "beatboxer": "voxel"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "infernape"
+              },
+              "b": {
+                "beatboxer": "eshplume"
+              },
+              "winner": {
+                "beatboxer": "infernape"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "svm"
+              },
+              "b": {
+                "beatboxer": "benja"
+              },
+              "winner": {
+                "beatboxer": "svm"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "voxel"
+              },
+              "b": {
+                "beatboxer": "infernape"
+              },
+              "winner": {
+                "beatboxer": "voxel"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "benja"
+              },
+              "b": {
+                "beatboxer": "infernape"
+              },
+              "winner": {
+                "beatboxer": "benja"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "svm"
+              },
+              "b": {
+                "beatboxer": "voxel"
+              },
+              "winner": {
+                "beatboxer": "svm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Dutch Beatbox Battle 2023",
+      "status": "completed",
+      "dates": "September 9th & 24th, 2023",
+      "location": "Rotterdam & Helmond, Netherlands",
+      "venue": "Theater Zuidplein & De Cacaofabriek",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "svm"
+          },
+          "runner_up": {
+            "beatboxer": "deathrow"
+          },
+          "third": {
+            "beatboxer": "duzzy"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "oak"
+              },
+              "b": {
+                "beatboxer": "svm"
+              },
+              "winner": {
+                "beatboxer": "svm"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "duzzy"
+              },
+              "b": {
+                "beatboxer": "tuff"
+              },
+              "winner": {
+                "beatboxer": "duzzy"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "deathrow"
+              },
+              "b": {
+                "beatboxer": "infernape"
+              },
+              "winner": {
+                "beatboxer": "deathrow"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "klown"
+              },
+              "b": {
+                "beatboxer": "knarst"
+              },
+              "winner": {
+                "beatboxer": "knarst"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "svm"
+              },
+              "b": {
+                "beatboxer": "duzzy"
+              },
+              "winner": {
+                "beatboxer": "svm"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "deathrow"
+              },
+              "b": {
+                "beatboxer": "knarst"
+              },
+              "winner": {
+                "beatboxer": "deathrow"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "duzzy"
+              },
+              "b": {
+                "beatboxer": "knarst"
+              },
+              "winner": {
+                "beatboxer": "duzzy"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "svm"
+              },
+              "b": {
+                "beatboxer": "deathrow"
+              },
+              "winner": {
+                "beatboxer": "svm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Dutch Beatbox Battle 2026",
+      "status": "completed",
+      "country": "nl",
+      "source": "user",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "benja"
+          },
+          "runner_up": {
+            "beatboxer": "duzzy"
+          },
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "benja"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "duzzy"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "youri"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "infernape"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

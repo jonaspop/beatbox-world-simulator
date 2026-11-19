@@ -1,0 +1,734 @@
+{
+  "competition": "nat_tr",
+  "editions": [
+    {
+      "year": 2021,
+      "name": "Online Turkish Beatbox Championship 2021",
+      "status": "completed",
+      "dates": "December 19th, 2020",
+      "location": "Online",
+      "country": "Turkey",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "pingpongpo"
+        },
+        {
+          "beatboxer": "nerv"
+        },
+        {
+          "beatboxer": "antilt"
+        },
+        {
+          "beatboxer": "lexomafo"
+        },
+        {
+          "beatboxer": "pizzicato"
+        },
+        {
+          "beatboxer": "erosenn"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "lexomafo"
+          },
+          "runner_up": {
+            "beatboxer": "soulz"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "felix"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "clowzy"
+              },
+              "b": {
+                "beatboxer": "goozy"
+              },
+              "winner": {
+                "beatboxer": "goozy"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "felfena"
+              },
+              "b": {
+                "beatboxer": "pleomax"
+              },
+              "winner": {
+                "beatboxer": "felfena"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "helix"
+              },
+              "b": {
+                "beatboxer": "soulz"
+              },
+              "winner": {
+                "beatboxer": "soulz"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "goozy"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "felfena"
+              },
+              "b": {
+                "beatboxer": "soulz"
+              },
+              "winner": {
+                "beatboxer": "soulz"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "soulz"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              }
+            }
+          ],
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "lexomafo"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "clowzy"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "felfena"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "helix"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "soulz"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "pleomax"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "goozy"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "felix"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "rhist"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "mrcoldy"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "tnelian"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "saliva"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "enesalper"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "beatboxemre"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "ethereal"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "rollip"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Turkish Beatbox Tournament 2023",
+      "status": "completed",
+      "dates": "December 16th, 2023",
+      "location": "Ankara, Turkey",
+      "venue": "Nefes Bar",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "mehmetdikme"
+        },
+        {
+          "beatboxer": "boraozkan"
+        },
+        {
+          "beatboxer": "trapbox"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "soulz"
+          },
+          "runner_up": {
+            "beatboxer": "lexomafo"
+          },
+          "participants": [
+            {
+              "beatboxer": "soulz",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "lexomafo",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "raban",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "pleo",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "rhist",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "reony",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vilbuz",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "clowzy",
+              "qualification": "8th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "soulz"
+              },
+              "b": {
+                "beatboxer": "clowzy"
+              },
+              "winner": {
+                "beatboxer": "soulz"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pleo"
+              },
+              "b": {
+                "beatboxer": "rhist"
+              },
+              "winner": {
+                "beatboxer": "pleo"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "raban"
+              },
+              "b": {
+                "beatboxer": "reony"
+              },
+              "winner": {
+                "beatboxer": "raban"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "vilbuz"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "soulz"
+              },
+              "b": {
+                "beatboxer": "pleo"
+              },
+              "winner": {
+                "beatboxer": "soulz"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "raban"
+              },
+              "b": {
+                "beatboxer": "lexomafo"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "soulz"
+              },
+              "b": {
+                "beatboxer": "lexomafo"
+              },
+              "winner": {
+                "beatboxer": "soulz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Turkish Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "May 5th, 2024",
+      "location": "Istanbul, Turkey",
+      "venue": "Babylon",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "dlow"
+        },
+        {
+          "beatboxer": "sxin"
+        },
+        {
+          "beatboxer": "nme"
+        },
+        {
+          "beatboxer": "frosty"
+        },
+        {
+          "beatboxer": "dapoet"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "vilbuz"
+          },
+          "runner_up": {
+            "beatboxer": "acar"
+          },
+          "third": {
+            "beatboxer": "lexomafo"
+          },
+          "participants": [
+            {
+              "beatboxer": "soulz",
+              "qualification": "TBT 2023 Champion"
+            },
+            {
+              "beatboxer": "lexomafo",
+              "qualification": "TBT 2023 Vice-Champion"
+            },
+            {
+              "beatboxer": "vilbuz",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "pleo",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "raban",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "rhist",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "reony",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "acar",
+              "qualification": "6th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "soulz"
+              },
+              "b": {
+                "beatboxer": "acar"
+              },
+              "winner": {
+                "beatboxer": "acar"
+              },
+              "score": "1 Vote* - 2 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pleo"
+              },
+              "b": {
+                "beatboxer": "raban"
+              },
+              "winner": {
+                "beatboxer": "pleo"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vilbuz"
+              },
+              "b": {
+                "beatboxer": "rhist"
+              },
+              "winner": {
+                "beatboxer": "vilbuz"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "reony"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              },
+              "score": "4 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "acar"
+              },
+              "b": {
+                "beatboxer": "pleo"
+              },
+              "winner": {
+                "beatboxer": "acar"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "vilbuz"
+              },
+              "b": {
+                "beatboxer": "lexomafo"
+              },
+              "winner": {
+                "beatboxer": "vilbuz"
+              },
+              "score": "2 Votes* - 1 Vote*"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "pleo"
+              },
+              "b": {
+                "beatboxer": "lexomafo"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "acar"
+              },
+              "b": {
+                "beatboxer": "vilbuz"
+              },
+              "winner": {
+                "beatboxer": "vilbuz"
+              }
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "dawn",
+              "place": 7
+            },
+            {
+              "beatboxer": "helix",
+              "place": 8
+            },
+            {
+              "beatboxer": "inka",
+              "place": 9
+            },
+            {
+              "beatboxer": "clowzy",
+              "place": 10
+            },
+            {
+              "beatboxer": "complex",
+              "place": 11
+            },
+            {
+              "beatboxer": "waice",
+              "place": 12
+            },
+            {
+              "beatboxer": "rynex",
+              "place": 13
+            },
+            {
+              "beatboxer": "ukay",
+              "place": 14
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Turkish Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "December 31st - February 27th, 2026",
+      "location": "Online",
+      "country": "Turkey",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "vilbuz"
+          },
+          "runner_up": {
+            "beatboxer": "acar"
+          },
+          "participants": [
+            {
+              "beatboxer": "vilbuz",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "farlan",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "acar",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "rhist",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "lexomafo",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "akifozan",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "pleo",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "inka",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "bombacan",
+              "qualification": "Wildcard 9th Place"
+            },
+            {
+              "beatboxer": "anchovy",
+              "qualification": "Wildcard 10th Place"
+            },
+            {
+              "beatboxer": "v",
+              "qualification": "Wildcard 11th Place (TIE)"
+            },
+            {
+              "beatboxer": "m11",
+              "qualification": "Wildcard 11th Place (TIE)"
+            },
+            {
+              "beatboxer": "ahkahma",
+              "qualification": "Wildcard 11th Place (TIE)"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "zekka"
+            },
+            {
+              "beatboxer": "osis"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vilbuz"
+              },
+              "b": {
+                "beatboxer": "inka"
+              },
+              "winner": {
+                "beatboxer": "vilbuz"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pleo"
+              },
+              "b": {
+                "beatboxer": "farlan"
+              },
+              "winner": {
+                "beatboxer": "pleo"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "rhist"
+              },
+              "winner": {
+                "beatboxer": "lexomafo"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "acar"
+              },
+              "b": {
+                "beatboxer": "akifozan"
+              },
+              "winner": {
+                "beatboxer": "acar"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "vilbuz"
+              },
+              "b": {
+                "beatboxer": "pleo"
+              },
+              "winner": {
+                "beatboxer": "vilbuz"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "acar"
+              },
+              "winner": {
+                "beatboxer": "acar"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "vilbuz"
+              },
+              "b": {
+                "beatboxer": "acar"
+              },
+              "winner": {
+                "beatboxer": "vilbuz"
+              },
+              "score": "2 Votes - 1 Vote"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

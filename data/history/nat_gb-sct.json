@@ -1,0 +1,160 @@
+{
+  "competition": "nat_gb-sct",
+  "editions": [
+    {
+      "year": 2025,
+      "name": "Scottish Beatbox Championships 2025",
+      "status": "completed",
+      "dates": "August 30th, 2025",
+      "location": "Glasgow",
+      "country": "Scotland",
+      "venue": "Room 2",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "frosty"
+        },
+        {
+          "beatboxer": "epos"
+        },
+        {
+          "beatboxer": "undefined"
+        },
+        {
+          "beatboxer": "or4nge"
+        },
+        {
+          "beatboxer": "djshelltoemel"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "rcm"
+          },
+          "runner_up": {
+            "beatboxer": "fraj"
+          },
+          "participants": [
+            {
+              "beatboxer": "bandit"
+            },
+            {
+              "beatboxer": "drago"
+            },
+            {
+              "beatboxer": "napoleon"
+            },
+            {
+              "beatboxer": "riffik"
+            },
+            {
+              "beatboxer": "cherry"
+            },
+            {
+              "beatboxer": "fraj"
+            },
+            {
+              "beatboxer": "rcm"
+            },
+            {
+              "beatboxer": "sirefx"
+            },
+            {
+              "beatboxer": "daveyc"
+            },
+            {
+              "beatboxer": "l"
+            },
+            {
+              "beatboxer": "r3g"
+            },
+            {
+              "beatboxer": "tenie"
+            }
+          ],
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "rcm"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "fraj"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Scottish Beatbox Championships 2026",
+      "status": "completed",
+      "dates": "August 29th, 2026",
+      "location": "Glasgow",
+      "country": "Scotland",
+      "venue": "Room 2",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "rcm"
+        },
+        {
+          "beatboxer": "undefined"
+        },
+        {
+          "beatboxer": "biggtaj"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "fraj"
+          },
+          "runner_up": {
+            "beatboxer": "l"
+          },
+          "participants": [
+            {
+              "beatboxer": "bandit"
+            },
+            {
+              "beatboxer": "drago"
+            },
+            {
+              "beatboxer": "l"
+            },
+            {
+              "beatboxer": "cinabunny"
+            },
+            {
+              "beatboxer": "fraj"
+            },
+            {
+              "beatboxer": "r3g"
+            },
+            {
+              "beatboxer": "daveyc"
+            },
+            {
+              "beatboxer": "looty"
+            },
+            {
+              "beatboxer": "sirefx"
+            }
+          ],
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "fraj"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "l"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

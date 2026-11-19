@@ -1,0 +1,313 @@
+{
+  "competition": "nat_cz",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "Czech Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "October 19th, 2024",
+      "location": "Brno, Czech Republic",
+      "venue": "Music Lab",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "osis"
+        },
+        {
+          "beatboxer": "tinybeat"
+        },
+        {
+          "beatboxer": "cagi"
+        },
+        {
+          "beatboxer": "freest"
+        },
+        {
+          "beatboxer": "rushin"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "pj"
+          },
+          "runner_up": {
+            "beatboxer": "marwee"
+          },
+          "third": {
+            "beatboxer": "zipi"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zipi"
+              },
+              "b": {
+                "beatboxer": "dake"
+              },
+              "winner": {
+                "beatboxer": "zipi"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pj"
+              },
+              "b": {
+                "beatboxer": "trich"
+              },
+              "winner": {
+                "beatboxer": "pj"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "marwee"
+              },
+              "b": {
+                "beatboxer": "hylli"
+              },
+              "winner": {
+                "beatboxer": "marwee"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "restive"
+              },
+              "b": {
+                "beatboxer": "majkl"
+              },
+              "winner": {
+                "beatboxer": "restive"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "zipi"
+              },
+              "b": {
+                "beatboxer": "pj"
+              },
+              "winner": {
+                "beatboxer": "pj"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "marwee"
+              },
+              "b": {
+                "beatboxer": "restive"
+              },
+              "winner": {
+                "beatboxer": "marwee"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "zipi"
+              },
+              "b": {
+                "beatboxer": "restive"
+              },
+              "winner": {
+                "beatboxer": "zipi"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "pj"
+              },
+              "b": {
+                "beatboxer": "marwee"
+              },
+              "winner": {
+                "beatboxer": "pj"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Czech Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "October 11th, 2025",
+      "location": "Brno, Czech Republic",
+      "venue": "Kabinet MÚZ",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "sahzu"
+        },
+        {
+          "beatboxer": "maxo"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bucci"
+          },
+          "runner_up": {
+            "beatboxer": "zipi"
+          },
+          "third": {
+            "beatboxer": "marwee"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bucci"
+              },
+              "b": {
+                "beatboxer": "resty"
+              },
+              "winner": {
+                "beatboxer": "bucci"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "baron"
+              },
+              "b": {
+                "beatboxer": "hylli"
+              },
+              "winner": {
+                "beatboxer": "baron"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zipi"
+              },
+              "b": {
+                "beatboxer": "jackzou"
+              },
+              "winner": {
+                "beatboxer": "zipi"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "marwee"
+              },
+              "b": {
+                "beatboxer": "dodge"
+              },
+              "winner": {
+                "beatboxer": "marwee"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bucci"
+              },
+              "b": {
+                "beatboxer": "baron"
+              },
+              "winner": {
+                "beatboxer": "bucci"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "zipi"
+              },
+              "b": {
+                "beatboxer": "marwee"
+              },
+              "winner": {
+                "beatboxer": "zipi"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "baron"
+              },
+              "b": {
+                "beatboxer": "marwee"
+              },
+              "winner": {
+                "beatboxer": "marwee"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bucci"
+              },
+              "b": {
+                "beatboxer": "zipi"
+              },
+              "winner": {
+                "beatboxer": "bucci"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Czech Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "October 31, 2026",
+      "location": "Brno, Czech Republic",
+      "venue": "Kabinet MÚZ",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "pj"
+        },
+        {
+          "beatboxer": "crythix"
+        },
+        {
+          "beatboxer": "alexinho"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "zipi"
+          },
+          "runner_up": {
+            "beatboxer": "dodge"
+          },
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "zipi"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "dodge"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "competition": "nat_bo",
+  "editions": [
+    {
+      "year": 2025,
+      "name": "Bolivian Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "June 28th, 2025",
+      "location": "La Paz",
+      "country": "Bolivia",
+      "venue": "La Paz Espacio Inni",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "rezpdos"
+        },
+        {
+          "beatboxer": "jmiguelquirogaponce"
+        },
+        {
+          "beatboxer": "angelalarico"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "klate"
+          },
+          "runner_up": {
+            "beatboxer": "ellis"
+          },
+          "third": {
+            "beatboxer": "aiend"
+          },
+          "battles": [
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "klate"
+              },
+              "b": {
+                "beatboxer": "aiend"
+              },
+              "winner": {
+                "beatboxer": "klate"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ellis"
+              },
+              "b": {
+                "beatboxer": "tba"
+              },
+              "winner": {
+                "beatboxer": "ellis"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "aiend"
+              },
+              "b": {
+                "beatboxer": "tba"
+              },
+              "winner": {
+                "beatboxer": "aiend"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "klate"
+              },
+              "b": {
+                "beatboxer": "ellis"
+              },
+              "winner": {
+                "beatboxer": "klate"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

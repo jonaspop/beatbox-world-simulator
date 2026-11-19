@@ -1,0 +1,7064 @@
+{
+  "competition": "gbb",
+  "editions": [
+    {
+      "year": 2009,
+      "name": "Grand Beatbox Battle 2009",
+      "edition": 1,
+      "status": "completed",
+      "location": "Switzerland",
+      "country": "ch",
+      "source": "user",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "marzel"
+          },
+          "runner_up": {
+            "beatboxer": "knackeboul"
+          },
+          "judges": [
+            {
+              "beatboxer": "camero"
+            },
+            {
+              "beatboxer": "hampi"
+            },
+            {
+              "beatboxer": "stella"
+            },
+            {
+              "beatboxer": "roe"
+            },
+            {
+              "beatboxer": "ciaccolo"
+            },
+            {
+              "beatboxer": "zede"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "marzel"
+              },
+              "b": {
+                "beatboxer": "knackeboul"
+              },
+              "winner": {
+                "beatboxer": "marzel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2010,
+      "name": "Grand Beatbox Battle 2010",
+      "edition": 2,
+      "status": "completed",
+      "location": "Switzerland",
+      "country": "ch",
+      "source": "user",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "marzel"
+          },
+          "runner_up": {
+            "beatboxer": "beatbrenning"
+          },
+          "judges": [
+            {
+              "beatboxer": "beelow"
+            },
+            {
+              "beatboxer": "camero"
+            },
+            {
+              "beatboxer": "stella"
+            },
+            {
+              "beatboxer": "hampi"
+            },
+            {
+              "beatboxer": "roe"
+            },
+            {
+              "beatboxer": "chocolocolo"
+            },
+            {
+              "beatboxer": "knackeboul"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "marzel"
+              },
+              "b": {
+                "beatboxer": "philos"
+              },
+              "winner": {
+                "beatboxer": "marzel"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "keumart"
+              },
+              "b": {
+                "beatboxer": "denisthemenace"
+              },
+              "winner": {
+                "beatboxer": "keumart"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "beatbrenning"
+              },
+              "b": {
+                "beatboxer": "duke"
+              },
+              "winner": {
+                "beatboxer": "beatbrenning"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "stefflacheffe"
+              },
+              "b": {
+                "beatboxer": "bosibeatbox"
+              },
+              "winner": {
+                "beatboxer": "stefflacheffe"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "marzel"
+              },
+              "b": {
+                "beatboxer": "keumart"
+              },
+              "winner": {
+                "beatboxer": "marzel"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "beatbrenning"
+              },
+              "b": {
+                "beatboxer": "stefflacheffe"
+              },
+              "winner": {
+                "beatboxer": "beatbrenning"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "marzel"
+              },
+              "b": {
+                "beatboxer": "beatbrenning"
+              },
+              "winner": {
+                "beatboxer": "marzel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2011,
+      "name": "Grand Beatbox Battle 2011",
+      "edition": 3,
+      "status": "completed",
+      "location": "Switzerland",
+      "country": "ch",
+      "source": "user",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "skiller"
+          },
+          "runner_up": {
+            "beatboxer": "krnfx"
+          },
+          "judges": [
+            {
+              "beatboxer": "camero"
+            },
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "stella"
+            },
+            {
+              "beatboxer": "hampi"
+            },
+            {
+              "beatboxer": "beelow"
+            },
+            {
+              "beatboxer": "nexor"
+            },
+            {
+              "beatboxer": "lytos"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "krnfx"
+              },
+              "b": {
+                "beatboxer": "zeph"
+              },
+              "winner": {
+                "beatboxer": "krnfx"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "beatbrenning"
+              },
+              "b": {
+                "beatboxer": "denisthemenace"
+              },
+              "winner": {
+                "beatboxer": "beatbrenning"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "skiller"
+              },
+              "b": {
+                "beatboxer": "kim"
+              },
+              "winner": {
+                "beatboxer": "skiller"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "babeli"
+              },
+              "b": {
+                "beatboxer": "scottjackson"
+              },
+              "winner": {
+                "beatboxer": "babeli"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "krnfx"
+              },
+              "b": {
+                "beatboxer": "beatbrenning"
+              },
+              "winner": {
+                "beatboxer": "krnfx"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "skiller"
+              },
+              "b": {
+                "beatboxer": "babeli"
+              },
+              "winner": {
+                "beatboxer": "skiller"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "skiller"
+              },
+              "b": {
+                "beatboxer": "krnfx"
+              },
+              "winner": {
+                "beatboxer": "skiller"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2012,
+      "name": "Grand Beatbox Battle 2012",
+      "edition": 4,
+      "status": "completed",
+      "location": "Switzerland",
+      "country": "ch",
+      "source": "user",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "ballzee"
+          },
+          "runner_up": {
+            "beatboxer": "skiller"
+          },
+          "judges": [
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "beelow"
+            },
+            {
+              "beatboxer": "stefflacheffe"
+            },
+            {
+              "beatboxer": "kim"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ballzee"
+              },
+              "b": {
+                "beatboxer": "dharni"
+              },
+              "winner": {
+                "beatboxer": "ballzee"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "krnfx"
+              },
+              "b": {
+                "beatboxer": "ibarra"
+              },
+              "winner": {
+                "beatboxer": "krnfx"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "skiller"
+              },
+              "b": {
+                "beatboxer": "scottjackson"
+              },
+              "winner": {
+                "beatboxer": "skiller"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mczani"
+              },
+              "b": {
+                "beatboxer": "babeli"
+              },
+              "winner": {
+                "beatboxer": "mczani"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ballzee"
+              },
+              "b": {
+                "beatboxer": "krnfx"
+              },
+              "winner": {
+                "beatboxer": "ballzee"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "skiller"
+              },
+              "b": {
+                "beatboxer": "mczani"
+              },
+              "winner": {
+                "beatboxer": "skiller"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "ballzee"
+              },
+              "b": {
+                "beatboxer": "skiller"
+              },
+              "winner": {
+                "beatboxer": "ballzee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2013,
+      "name": "Grand Beatbox Battle 2013",
+      "edition": 5,
+      "status": "completed",
+      "dates": "March 15–16, 2013",
+      "location": "Basel, Switzerland",
+      "venue": "Kuppel (1st day) Kaserne (2nd day)",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "ballzee"
+        },
+        {
+          "beatboxer": "beelow"
+        },
+        {
+          "beatboxer": "bmg"
+        },
+        {
+          "beatboxer": "vahtang"
+        },
+        {
+          "beatboxer": "zede"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "pepouni"
+        },
+        {
+          "beatboxer": "ciaccolo"
+        },
+        {
+          "beatboxer": "ballzee"
+        },
+        {
+          "beatboxer": "zede"
+        },
+        {
+          "beatboxer": "bmg"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "dharni"
+          },
+          "runner_up": {
+            "beatboxer": "alem"
+          },
+          "third": {
+            "beatboxer": "twoh"
+          },
+          "participants": [
+            {
+              "beatboxer": "kim"
+            },
+            {
+              "beatboxer": "robeat"
+            },
+            {
+              "beatboxer": "tatsuya"
+            },
+            {
+              "beatboxer": "beatrhino"
+            },
+            {
+              "beatboxer": "babeli"
+            },
+            {
+              "beatboxer": "dome"
+            },
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "sh0h"
+            },
+            {
+              "beatboxer": "yasson"
+            },
+            {
+              "beatboxer": "keumart"
+            },
+            {
+              "beatboxer": "twoh"
+            },
+            {
+              "beatboxer": "primitiv"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "twoh"
+              },
+              "b": {
+                "beatboxer": "kim"
+              },
+              "winner": {
+                "beatboxer": "twoh"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "dharni"
+              },
+              "b": {
+                "beatboxer": "alem"
+              },
+              "winner": {
+                "beatboxer": "dharni"
+              },
+              "score": "5 - 0"
+            }
+          ],
+          "notes": [
+            "Beat Rhino was the 1st Wildcard Winner.",
+            "Babeli (2nd Wildcard Winner) and Sh0h (3rd Wildcard Winner) acted as replacements of [gb] Reeps One & [ca] KRNFX.",
+            "[no] D9 (4th Wildcard Winner) was unable to participate."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2014,
+      "name": "Grand Beatbox Battle 2014",
+      "edition": 6,
+      "status": "completed",
+      "dates": "February 28–March 1, 2014",
+      "location": "Basel, Switzerland",
+      "venue": "SUD & Kaserne Basel",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "beelow"
+        },
+        {
+          "beatboxer": "babeli"
+        },
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "alem"
+        },
+        {
+          "beatboxer": "philmerk"
+        },
+        {
+          "beatboxer": "reepsone"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "dharni"
+          },
+          "runner_up": {
+            "beatboxer": "twoh"
+          },
+          "third": {
+            "beatboxer": "kim"
+          },
+          "participants": [
+            {
+              "beatboxer": "dharni",
+              "qualification": "Grand Beatbox Battle 2013 Champion"
+            },
+            {
+              "beatboxer": "sidfx",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "alexinho",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "heartgrey",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "markooz",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "twoh",
+              "qualification": "8th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "wawad",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "jimix",
+              "qualification": "1st Public Voting Winner"
+            },
+            {
+              "beatboxer": "bart",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "funkaztek",
+              "qualification": "Swiss Representative"
+            },
+            {
+              "beatboxer": "kim",
+              "qualification": "5th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "dharni"
+              },
+              "b": {
+                "beatboxer": "alexinho"
+              },
+              "winner": {
+                "beatboxer": "dharni"
+              },
+              "score": "6 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "twoh"
+              },
+              "b": {
+                "beatboxer": "kim"
+              },
+              "winner": {
+                "beatboxer": "twoh"
+              },
+              "score": "6 votes - 0 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "kim"
+              },
+              "winner": {
+                "beatboxer": "kim"
+              },
+              "score": "2 votes - 4 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "dharni"
+              },
+              "b": {
+                "beatboxer": "twoh"
+              },
+              "winner": {
+                "beatboxer": "dharni"
+              },
+              "score": "6 votes - 0 votes"
+            }
+          ],
+          "notes": [
+            "Two.H acted as a replacement of [fr] Alem, who acted as a jury member."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "alexinho"
+          },
+          "participants": [
+            {
+              "beatboxer": "heartgrey"
+            },
+            {
+              "beatboxer": "efaybee"
+            },
+            {
+              "beatboxer": "twoh"
+            },
+            {
+              "beatboxer": "bmg"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "wawad"
+            },
+            {
+              "beatboxer": "fayabraz"
+            },
+            {
+              "beatboxer": "fozzy"
+            },
+            {
+              "beatboxer": "fredsup"
+            },
+            {
+              "beatboxer": "eon"
+            },
+            {
+              "beatboxer": "penkyx"
+            },
+            {
+              "beatboxer": "keumart"
+            },
+            {
+              "beatboxer": "hardbox"
+            },
+            {
+              "beatboxer": "beelow"
+            },
+            {
+              "beatboxer": "dizflash"
+            },
+            {
+              "beatboxer": "beatquest"
+            },
+            {
+              "beatboxer": "sidfx"
+            },
+            {
+              "beatboxer": "jimix"
+            },
+            {
+              "beatboxer": "reload"
+            },
+            {
+              "beatboxer": "imad"
+            },
+            {
+              "beatboxer": "diji"
+            },
+            {
+              "beatboxer": "chezame"
+            },
+            {
+              "beatboxer": "rammon"
+            },
+            {
+              "beatboxer": "sinjo"
+            },
+            {
+              "beatboxer": "rawclaw"
+            },
+            {
+              "beatboxer": "tash"
+            },
+            {
+              "beatboxer": "warai"
+            },
+            {
+              "beatboxer": "georgy"
+            },
+            {
+              "beatboxer": "thepounder"
+            },
+            {
+              "beatboxer": "wings"
+            },
+            {
+              "beatboxer": "babeli"
+            },
+            {
+              "beatboxer": "bbo"
+            },
+            {
+              "beatboxer": "verver"
+            },
+            {
+              "beatboxer": "gabyx"
+            },
+            {
+              "beatboxer": "nabil"
+            },
+            {
+              "beatboxer": "bart"
+            },
+            {
+              "beatboxer": "furax"
+            },
+            {
+              "beatboxer": "reeleybeats"
+            },
+            {
+              "beatboxer": "trash"
+            },
+            {
+              "beatboxer": "gasu"
+            },
+            {
+              "beatboxer": "cobli"
+            },
+            {
+              "beatboxer": "negrobeatbox"
+            },
+            {
+              "beatboxer": "samytry"
+            },
+            {
+              "beatboxer": "beatness"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "heartgrey",
+              "points": 0
+            },
+            {
+              "beatboxer": "efaybee",
+              "points": 3
+            },
+            {
+              "beatboxer": "twoh",
+              "points": 0
+            },
+            {
+              "beatboxer": "bmg",
+              "points": 0
+            },
+            {
+              "beatboxer": "alexinho",
+              "points": 7
+            },
+            {
+              "beatboxer": "wawad",
+              "points": 0
+            },
+            {
+              "beatboxer": "fayabraz",
+              "points": 0
+            },
+            {
+              "beatboxer": "fozzy",
+              "points": 0
+            }
+          ],
+          "notes": [
+            "[fr] Faya Braz",
+            "[gb-wls] Fozzy"
+          ]
+        }
+      }
+    },
+    {
+      "year": 2015,
+      "name": "Grand Beatbox Battle 2015",
+      "edition": 7,
+      "status": "completed",
+      "dates": "March 6–7, 2015",
+      "location": "Basel, Switzerland",
+      "venue": "Volkshaus Basel",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "geneshinozaki"
+          },
+          "runner_up": {
+            "beatboxer": "efaybee"
+          },
+          "participants": [
+            {
+              "beatboxer": "alexinho",
+              "qualification": "GBBB 2014 Semifinalist"
+            },
+            {
+              "beatboxer": "babeli",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "kim",
+              "qualification": "GBBB 2014 Semifiinalist"
+            },
+            {
+              "beatboxer": "efaybee",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "pash",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "slykku",
+              "qualification": "2nd Public Voting Winner"
+            },
+            {
+              "beatboxer": "geneshinozaki",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "jayton",
+              "qualification": "3rd Public Voting Winner*"
+            },
+            {
+              "beatboxer": "timmeh",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "funkaztek",
+              "qualification": "1st Swiss Wildcard Winner"
+            },
+            {
+              "beatboxer": "kennyurban",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "denisthemenace",
+              "qualification": "2nd Swiss Wildcard Winner"
+            },
+            {
+              "beatboxer": "bart",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "sidfx",
+              "qualification": "1st place (3196 Votes)"
+            },
+            {
+              "beatboxer": "slykku",
+              "qualification": "2nd place (1718 Votes)"
+            },
+            {
+              "beatboxer": "jayton",
+              "qualification": "3rd place (255 Votes)"
+            },
+            {
+              "beatboxer": "villain",
+              "qualification": "4th place (178 Votes)"
+            },
+            {
+              "beatboxer": "madox",
+              "qualification": "5th place (147 Votes)"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "geneshinozaki"
+              },
+              "b": {
+                "beatboxer": "jayton"
+              },
+              "winner": {
+                "beatboxer": "geneshinozaki"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "efaybee"
+              },
+              "b": {
+                "beatboxer": "babeli"
+              },
+              "winner": {
+                "beatboxer": "efaybee"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "geneshinozaki"
+              },
+              "b": {
+                "beatboxer": "efaybee"
+              },
+              "winner": {
+                "beatboxer": "geneshinozaki"
+              }
+            }
+          ],
+          "notes": [
+            "Jayton acted as a replacement for [gb] Sid FX (1st Public Voting Winner).",
+            "[it] Slykku** | **2nd place (1718 Votes)",
+            "[ru] Jayton** | **3rd place (255 Votes)"
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "alem"
+          },
+          "participants": [
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "kim"
+            },
+            {
+              "beatboxer": "geneshinozaki"
+            },
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "bart"
+            },
+            {
+              "beatboxer": "jayton"
+            },
+            {
+              "beatboxer": "kennyurban"
+            },
+            {
+              "beatboxer": "ibarra"
+            },
+            {
+              "beatboxer": "furax"
+            },
+            {
+              "beatboxer": "ibeat"
+            },
+            {
+              "beatboxer": "madox"
+            },
+            {
+              "beatboxer": "mb14"
+            },
+            {
+              "beatboxer": "samytry"
+            },
+            {
+              "beatboxer": "marco"
+            },
+            {
+              "beatboxer": "penkyx"
+            },
+            {
+              "beatboxer": "beatness"
+            },
+            {
+              "beatboxer": "warai"
+            },
+            {
+              "beatboxer": "timmeh"
+            },
+            {
+              "beatboxer": "honeycomb"
+            },
+            {
+              "beatboxer": "chezame"
+            },
+            {
+              "beatboxer": "imad"
+            },
+            {
+              "beatboxer": "fayabraz"
+            },
+            {
+              "beatboxer": "ebm"
+            },
+            {
+              "beatboxer": "ravobeat"
+            },
+            {
+              "beatboxer": "sachi"
+            },
+            {
+              "beatboxer": "sinjo"
+            },
+            {
+              "beatboxer": "bevis"
+            },
+            {
+              "beatboxer": "denisthemenace"
+            },
+            {
+              "beatboxer": "thepounder"
+            },
+            {
+              "beatboxer": "mouloudbox"
+            },
+            {
+              "beatboxer": "maicbandit"
+            },
+            {
+              "beatboxer": "spiteful"
+            },
+            {
+              "beatboxer": "rawclaw"
+            },
+            {
+              "beatboxer": "keumart"
+            },
+            {
+              "beatboxer": "kevinoneal"
+            },
+            {
+              "beatboxer": "pash"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "mando"
+            },
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "tyte"
+            },
+            {
+              "beatboxer": "funkaztek"
+            },
+            {
+              "beatboxer": "bigben"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "alem",
+              "points": 7
+            },
+            {
+              "beatboxer": "kim",
+              "points": 4
+            },
+            {
+              "beatboxer": "geneshinozaki",
+              "points": 0
+            },
+            {
+              "beatboxer": "dharni",
+              "points": 5
+            },
+            {
+              "beatboxer": "alexinho",
+              "points": 3
+            },
+            {
+              "beatboxer": "bart",
+              "points": 0
+            },
+            {
+              "beatboxer": "jayton",
+              "points": 3
+            },
+            {
+              "beatboxer": "kennyurban",
+              "points": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2016,
+      "name": "Grand Beatbox Battle 2016",
+      "edition": 8,
+      "status": "completed",
+      "dates": "March 4–5, 2016",
+      "location": "Basel, Switzerland",
+      "venue": "Volkshaus Basel",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "kennyurban"
+          },
+          "runner_up": {
+            "beatboxer": "napom"
+          },
+          "third": {
+            "beatboxer": "geneshinozaki"
+          },
+          "participants": [
+            {
+              "beatboxer": "geneshinozaki",
+              "qualification": "GBBB 2015 Showcase Champion"
+            },
+            {
+              "beatboxer": "bataco",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "efaybee",
+              "qualification": "GBBB 2015 Showcase Vice Champion"
+            },
+            {
+              "beatboxer": "funkaztek",
+              "qualification": "1st Swiss Wildcard Winner"
+            },
+            {
+              "beatboxer": "babeli",
+              "qualification": "GBBB 2015 Semifinalist"
+            },
+            {
+              "beatboxer": "arthurhenry",
+              "qualification": "2nd Swiss Wildcard Winner"
+            },
+            {
+              "beatboxer": "jayton",
+              "qualification": "GBBB 2015 Semifinalist"
+            },
+            {
+              "beatboxer": "zhangze",
+              "qualification": "China Beatbox Championship 2015 Winner"
+            },
+            {
+              "beatboxer": "pash",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "napom",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "bloomer",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "kailamullady",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "beatrhino",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "kennyurban",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "cosmin",
+              "qualification": "4th Wildcard Winner"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "beelow"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "reepsone"
+            },
+            {
+              "beatboxer": "mando"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "geneshinozaki"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "2 votes - 4 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "babeli"
+              },
+              "b": {
+                "beatboxer": "kennyurban"
+              },
+              "winner": {
+                "beatboxer": "kennyurban"
+              },
+              "score": "1 vote - 5 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "geneshinozaki"
+              },
+              "b": {
+                "beatboxer": "babeli"
+              },
+              "winner": {
+                "beatboxer": "geneshinozaki"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "kennyurban"
+              },
+              "winner": {
+                "beatboxer": "kennyurban"
+              }
+            }
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "alexinho"
+          },
+          "participants": [
+            {
+              "beatboxer": "bart"
+            },
+            {
+              "beatboxer": "bloomer"
+            },
+            {
+              "beatboxer": "kim"
+            },
+            {
+              "beatboxer": "kennyurban"
+            },
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "bataco"
+            },
+            {
+              "beatboxer": "alexinho"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "babeli"
+            },
+            {
+              "beatboxer": "bmg"
+            },
+            {
+              "beatboxer": "kaz"
+            },
+            {
+              "beatboxer": "funkaztek"
+            },
+            {
+              "beatboxer": "geneshinozaki"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "bart",
+              "points": 3
+            },
+            {
+              "beatboxer": "kim",
+              "points": 1
+            },
+            {
+              "beatboxer": "dharni",
+              "points": 2
+            },
+            {
+              "beatboxer": "bataco",
+              "points": 4
+            },
+            {
+              "beatboxer": "bloomer",
+              "points": 3
+            },
+            {
+              "beatboxer": "kennyurban",
+              "points": 0
+            },
+            {
+              "beatboxer": "napom",
+              "points": 0
+            },
+            {
+              "beatboxer": "alexinho",
+              "points": 7
+            }
+          ],
+          "notes": [
+            "[fr]** K.I.M. | [us] Kenny Urban"
+          ]
+        }
+      }
+    },
+    {
+      "year": 2017,
+      "name": "Grand Beatbox Battle 2017",
+      "edition": 9,
+      "status": "completed",
+      "dates": "March 17–18, 2017",
+      "location": "Basel, Switzerland",
+      "venue": "Voltahalle",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "napom"
+          },
+          "runner_up": {
+            "beatboxer": "hiss"
+          },
+          "third": {
+            "beatboxer": "alexinho"
+          },
+          "participants": [
+            {
+              "beatboxer": "kennyurban",
+              "qualification": "GBBB 2016 Champion"
+            },
+            {
+              "beatboxer": "jayton",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "napom",
+              "qualification": "GBBB 2016 Vice Champion"
+            },
+            {
+              "beatboxer": "slizzer",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "babeli",
+              "qualification": "GBBB 2016 4th place"
+            },
+            {
+              "beatboxer": "trungbao",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "efaybee",
+              "qualification": "GBBB 2016 5th place"
+            },
+            {
+              "beatboxer": "twoh",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "zhangze",
+              "qualification": "GBBB 2016 6th place"
+            },
+            {
+              "beatboxer": "bmg",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "alexinho",
+              "qualification": "GBBB 7 to Smoke 2016 Champion"
+            },
+            {
+              "beatboxer": "bart",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "hiss",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "chrisceliz",
+              "qualification": "10th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "thorsen",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "heartgrey",
+              "qualification": "China Beatbox Championship 2016 Champion"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "wawad"
+            },
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "geneshinozaki"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "twoh"
+              },
+              "winner": {
+                "beatboxer": "alexinho"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hiss"
+              },
+              "b": {
+                "beatboxer": "slizzer"
+              },
+              "winner": {
+                "beatboxer": "hiss"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "trungbao"
+              },
+              "b": {
+                "beatboxer": "efaybee"
+              },
+              "winner": {
+                "beatboxer": "trungbao"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "jayton"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "4 votes* - 0 votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "hiss"
+              },
+              "winner": {
+                "beatboxer": "hiss"
+              },
+              "score": "0 votes* - 2 votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "trungbao"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "trungbao"
+              },
+              "winner": {
+                "beatboxer": "alexinho"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "hiss"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "0 votes - 5 votes"
+            }
+          ],
+          "notes": [
+            "Chris Celiz acted as a replacement for [az] Zer0 (9th Wildcard Winner)."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "alexinho"
+          },
+          "participants": [
+            {
+              "beatboxer": "zhangze"
+            },
+            {
+              "beatboxer": "wawad"
+            },
+            {
+              "beatboxer": "pash"
+            },
+            {
+              "beatboxer": "geneshinozaki"
+            },
+            {
+              "beatboxer": "cosmin"
+            },
+            {
+              "beatboxer": "ahxin"
+            },
+            {
+              "beatboxer": "rythmind"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "marcel"
+            },
+            {
+              "beatboxer": "epos"
+            },
+            {
+              "beatboxer": "tatsuaki"
+            },
+            {
+              "beatboxer": "jewow"
+            },
+            {
+              "beatboxer": "sel"
+            },
+            {
+              "beatboxer": "hiss"
+            },
+            {
+              "beatboxer": "trungbao"
+            },
+            {
+              "beatboxer": "elgrande"
+            },
+            {
+              "beatboxer": "thefool"
+            },
+            {
+              "beatboxer": "heartgrey"
+            },
+            {
+              "beatboxer": "calfx"
+            },
+            {
+              "beatboxer": "loud"
+            },
+            {
+              "beatboxer": "georgy"
+            },
+            {
+              "beatboxer": "lupus"
+            },
+            {
+              "beatboxer": "supertel"
+            },
+            {
+              "beatboxer": "ravobeat"
+            },
+            {
+              "beatboxer": "tomato"
+            },
+            {
+              "beatboxer": "contrix"
+            },
+            {
+              "beatboxer": "beatrex"
+            },
+            {
+              "beatboxer": "maicbandit"
+            },
+            {
+              "beatboxer": "thorsen"
+            },
+            {
+              "beatboxer": "igitat"
+            },
+            {
+              "beatboxer": "voxel"
+            },
+            {
+              "beatboxer": "quam"
+            },
+            {
+              "beatboxer": "rawclaw"
+            },
+            {
+              "beatboxer": "laud"
+            },
+            {
+              "beatboxer": "piratheeban"
+            },
+            {
+              "beatboxer": "adel"
+            },
+            {
+              "beatboxer": "bbk"
+            },
+            {
+              "beatboxer": "dmb"
+            },
+            {
+              "beatboxer": "ettoman"
+            },
+            {
+              "beatboxer": "doppler"
+            },
+            {
+              "beatboxer": "nme"
+            },
+            {
+              "beatboxer": "samytry"
+            },
+            {
+              "beatboxer": "meek"
+            },
+            {
+              "beatboxer": "shok"
+            },
+            {
+              "beatboxer": "badpeace"
+            },
+            {
+              "beatboxer": "cnem"
+            },
+            {
+              "beatboxer": "sid"
+            },
+            {
+              "beatboxer": "beatness"
+            },
+            {
+              "beatboxer": "jayton"
+            },
+            {
+              "beatboxer": "zekka"
+            },
+            {
+              "beatboxer": "codfish"
+            },
+            {
+              "beatboxer": "chezame"
+            },
+            {
+              "beatboxer": "bloomer"
+            },
+            {
+              "beatboxer": "epock"
+            },
+            {
+              "beatboxer": "bronix"
+            },
+            {
+              "beatboxer": "thepounder"
+            },
+            {
+              "beatboxer": "djb3an"
+            },
+            {
+              "beatboxer": "chrisceliz"
+            },
+            {
+              "beatboxer": "slizzer"
+            },
+            {
+              "beatboxer": "scouilla"
+            },
+            {
+              "beatboxer": "sam"
+            },
+            {
+              "beatboxer": "frisco"
+            },
+            {
+              "beatboxer": "akinde"
+            },
+            {
+              "beatboxer": "kenozen"
+            },
+            {
+              "beatboxer": "horaid"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "keumart"
+            },
+            {
+              "beatboxer": "bart"
+            },
+            {
+              "beatboxer": "funkaztek"
+            },
+            {
+              "beatboxer": "wangxin"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "zhangze",
+              "points": 1
+            },
+            {
+              "beatboxer": "wawad",
+              "points": 0
+            },
+            {
+              "beatboxer": "pash",
+              "points": 4
+            },
+            {
+              "beatboxer": "geneshinozaki",
+              "points": 0
+            },
+            {
+              "beatboxer": "cosmin",
+              "points": 0
+            },
+            {
+              "beatboxer": "ahxin",
+              "points": 0
+            },
+            {
+              "beatboxer": "rythmind",
+              "points": 1
+            },
+            {
+              "beatboxer": "alexinho",
+              "points": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2018,
+      "name": "Grand Beatbox Battle 2018",
+      "edition": 10,
+      "status": "completed",
+      "dates": "March 2–3, 2018",
+      "location": "Basel, Switzerland",
+      "venue": "Volkshaus Basel",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "codfish"
+          },
+          "runner_up": {
+            "beatboxer": "dlow"
+          },
+          "third": {
+            "beatboxer": "hiss"
+          },
+          "participants": [
+            {
+              "beatboxer": "hiss",
+              "qualification": "GBBB 2017 Vice Champion"
+            },
+            {
+              "beatboxer": "chrisceliz",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "trungbao",
+              "qualification": "GBBB 2017 4th place"
+            },
+            {
+              "beatboxer": "helium",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "showgo",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "piratheeban",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "codfish",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "ish",
+              "qualification": "11th Wildcard Winner / People's Choice"
+            },
+            {
+              "beatboxer": "bigman",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "bataco",
+              "qualification": "Asian Beatbox Championship 2017 Winner"
+            },
+            {
+              "beatboxer": "dlow",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ahxin",
+              "qualification": "China Beatbox Championship 2017 Winner"
+            },
+            {
+              "beatboxer": "hhas",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "villain",
+              "qualification": "Great North Battle 2017 Winner"
+            },
+            {
+              "beatboxer": "rythmind",
+              "qualification": "7th Wildcard Winner"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "krnfx"
+            },
+            {
+              "beatboxer": "kennyurban"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "zhangze"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hiss"
+              },
+              "b": {
+                "beatboxer": "piratheeban"
+              },
+              "winner": {
+                "beatboxer": "hiss"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "trungbao"
+              },
+              "b": {
+                "beatboxer": "dlow"
+              },
+              "winner": {
+                "beatboxer": "dlow"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "codfish"
+              },
+              "b": {
+                "beatboxer": "hhas"
+              },
+              "winner": {
+                "beatboxer": "codfish"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "showgo"
+              },
+              "b": {
+                "beatboxer": "bataco"
+              },
+              "winner": {
+                "beatboxer": "bataco"
+              },
+              "score": "1 vote* - 3 votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "hiss"
+              },
+              "b": {
+                "beatboxer": "dlow"
+              },
+              "winner": {
+                "beatboxer": "dlow"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "codfish"
+              },
+              "b": {
+                "beatboxer": "bataco"
+              },
+              "winner": {
+                "beatboxer": "codfish"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "hiss"
+              },
+              "b": {
+                "beatboxer": "bataco"
+              },
+              "winner": {
+                "beatboxer": "hiss"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "dlow"
+              },
+              "b": {
+                "beatboxer": "codfish"
+              },
+              "winner": {
+                "beatboxer": "codfish"
+              },
+              "score": "2 votes - 3 votes"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "hiss"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "showgo"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "codfish"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "trungbao"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "dlow"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "hhas"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "bataco"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "piratheeban"
+            }
+          ],
+          "notes": [
+            "[be] FootboxG (11th Wildcard Winner) would have acted as a replacement for [kr] Two.H (5th Wildcard Winner)."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "colaps"
+          },
+          "participants": [
+            {
+              "beatboxer": "bloomer"
+            },
+            {
+              "beatboxer": "bart"
+            },
+            {
+              "beatboxer": "hiss"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "kenozen"
+            },
+            {
+              "beatboxer": "rythmind"
+            },
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "pash"
+            },
+            {
+              "beatboxer": "dhaze"
+            },
+            {
+              "beatboxer": "exclusifs"
+            },
+            {
+              "beatboxer": "marvelin"
+            },
+            {
+              "beatboxer": "wonzia"
+            },
+            {
+              "beatboxer": "killabee"
+            },
+            {
+              "beatboxer": "bronix"
+            },
+            {
+              "beatboxer": "puls8"
+            },
+            {
+              "beatboxer": "sel"
+            },
+            {
+              "beatboxer": "voxel"
+            },
+            {
+              "beatboxer": "meek"
+            },
+            {
+              "beatboxer": "akinde"
+            },
+            {
+              "beatboxer": "elgrande"
+            },
+            {
+              "beatboxer": "rawclaw"
+            },
+            {
+              "beatboxer": "adel"
+            },
+            {
+              "beatboxer": "gale"
+            },
+            {
+              "beatboxer": "bassbro"
+            },
+            {
+              "beatboxer": "badpeace"
+            },
+            {
+              "beatboxer": "hershe"
+            },
+            {
+              "beatboxer": "samytry"
+            },
+            {
+              "beatboxer": "loud"
+            },
+            {
+              "beatboxer": "tara"
+            },
+            {
+              "beatboxer": "mb14"
+            },
+            {
+              "beatboxer": "scratchy"
+            },
+            {
+              "beatboxer": "villain"
+            },
+            {
+              "beatboxer": "epos"
+            },
+            {
+              "beatboxer": "s"
+            },
+            {
+              "beatboxer": "sinjo"
+            },
+            {
+              "beatboxer": "ibarra"
+            },
+            {
+              "beatboxer": "dilip"
+            },
+            {
+              "beatboxer": "ish"
+            },
+            {
+              "beatboxer": "honeycomb"
+            },
+            {
+              "beatboxer": "bbk"
+            },
+            {
+              "beatboxer": "frosty"
+            },
+            {
+              "beatboxer": "supernova"
+            },
+            {
+              "beatboxer": "thorsen"
+            },
+            {
+              "beatboxer": "piratheeban"
+            },
+            {
+              "beatboxer": "helium"
+            },
+            {
+              "beatboxer": "ahxin"
+            },
+            {
+              "beatboxer": "bassventura"
+            },
+            {
+              "beatboxer": "jayton"
+            },
+            {
+              "beatboxer": "footboxg"
+            },
+            {
+              "beatboxer": "chiwawa"
+            },
+            {
+              "beatboxer": "trungbao"
+            },
+            {
+              "beatboxer": "graycloud"
+            },
+            {
+              "beatboxer": "joker"
+            },
+            {
+              "beatboxer": "akam"
+            },
+            {
+              "beatboxer": "epock"
+            },
+            {
+              "beatboxer": "river"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "beatness"
+            },
+            {
+              "beatboxer": "chrisceliz"
+            },
+            {
+              "beatboxer": "showgo"
+            },
+            {
+              "beatboxer": "ghiizmo"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "bloomer",
+              "points": 2
+            },
+            {
+              "beatboxer": "bart",
+              "points": 0
+            },
+            {
+              "beatboxer": "hiss",
+              "points": 0
+            },
+            {
+              "beatboxer": "napom",
+              "points": 1
+            },
+            {
+              "beatboxer": "kenozen",
+              "points": 1
+            },
+            {
+              "beatboxer": "rythmind",
+              "points": 1
+            },
+            {
+              "beatboxer": "colaps",
+              "points": 7
+            },
+            {
+              "beatboxer": "pash",
+              "points": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2019,
+      "name": "Grand Beatbox Battle 2019",
+      "edition": 11,
+      "status": "completed",
+      "dates": "April 12–14, 2019",
+      "location": "Warsaw, Poland",
+      "venue": "klub Stodola",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "dlow"
+          },
+          "runner_up": {
+            "beatboxer": "tomazacre"
+          },
+          "third": {
+            "beatboxer": "bart"
+          },
+          "participants": [
+            {
+              "beatboxer": "codfish",
+              "qualification": "GBBB 2018 Champion"
+            },
+            {
+              "beatboxer": "elisii",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dlow",
+              "qualification": "GBBB 2018 Vice Champion"
+            },
+            {
+              "beatboxer": "zekka",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "bataco",
+              "qualification": "GBBB 2018 4th place"
+            },
+            {
+              "beatboxer": "cloud",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "colaps",
+              "qualification": "GBBB 7 to Smoke 2018 Champion"
+            },
+            {
+              "beatboxer": "bart",
+              "qualification": "8th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "hhas",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "mb14",
+              "qualification": "8th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "showgo",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "vocodah",
+              "qualification": "10th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "trungbao",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "tomazacre",
+              "qualification": "10th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "footboxg",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "river",
+              "qualification": "12th Wildcard Winner*"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            },
+            {
+              "beatboxer": "reepsone"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "zede"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "bbk"
+            },
+            {
+              "beatboxer": "pepouni"
+            },
+            {
+              "beatboxer": "madox"
+            },
+            {
+              "beatboxer": "sinjo"
+            },
+            {
+              "beatboxer": "ciaccolo"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bart"
+              },
+              "b": {
+                "beatboxer": "mb14"
+              },
+              "winner": {
+                "beatboxer": "bart"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dlow"
+              },
+              "b": {
+                "beatboxer": "colaps"
+              },
+              "winner": {
+                "beatboxer": "dlow"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "tomazacre"
+              },
+              "winner": {
+                "beatboxer": "tomazacre"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "codfish"
+              },
+              "winner": {
+                "beatboxer": "codfish"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bart"
+              },
+              "b": {
+                "beatboxer": "dlow"
+              },
+              "winner": {
+                "beatboxer": "dlow"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "tomazacre"
+              },
+              "b": {
+                "beatboxer": "codfish"
+              },
+              "winner": {
+                "beatboxer": "tomazacre"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "bart"
+              },
+              "b": {
+                "beatboxer": "codfish"
+              },
+              "winner": {
+                "beatboxer": "bart"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "dlow"
+              },
+              "b": {
+                "beatboxer": "tomazacre"
+              },
+              "winner": {
+                "beatboxer": "dlow"
+              },
+              "score": "3 votes - 2 votes"
+            }
+          ],
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "bart"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "zekka"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "river"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "dlow"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "colaps"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "tomazacre"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "codfish"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "mb14"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "vocodah"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "elisii"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "showgo"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "footboxg"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "trungbao"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "bataco"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "hhas"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "cloud"
+            }
+          ],
+          "notes": [
+            "B-Art and MB14 were both designated winners of the 8th Wildcard.",
+            "Audical and Tomazacre were both designated winners of the 10th Wildcard.",
+            "River acted as a replacement for [kr] Wing (Asia Beatbox Championship 2018 Champion)."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "zekka"
+          },
+          "participants": [
+            {
+              "beatboxer": "markmartin"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "zekka"
+            },
+            {
+              "beatboxer": "mrandroide"
+            },
+            {
+              "beatboxer": "akinde"
+            },
+            {
+              "beatboxer": "soso"
+            },
+            {
+              "beatboxer": "vocodah"
+            },
+            {
+              "beatboxer": "footboxg"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "chezame"
+            },
+            {
+              "beatboxer": "mb14"
+            },
+            {
+              "beatboxer": "bart"
+            },
+            {
+              "beatboxer": "frosty"
+            },
+            {
+              "beatboxer": "colaps"
+            }
+          ],
+          "battles": [
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "markmartin"
+              },
+              "b": {
+                "beatboxer": "zekka"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "0 - 5"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "akinde"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "4 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "vocodah"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "alexinho"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "mrandroide"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "soso"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "4 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "footboxg"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              },
+              "score": "1 - 4"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "markmartin"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "akinde"
+              },
+              "winner": {
+                "beatboxer": "akinde"
+              },
+              "score": "2 - 3"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "akinde"
+              },
+              "b": {
+                "beatboxer": "vocodah"
+              },
+              "winner": {
+                "beatboxer": "akinde"
+              },
+              "score": "3 - 2"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "akinde"
+              },
+              "b": {
+                "beatboxer": "alexinho"
+              },
+              "winner": {
+                "beatboxer": "alexinho"
+              },
+              "score": "0 - 5"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "mrandroide"
+              },
+              "winner": {
+                "beatboxer": "alexinho"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "soso"
+              },
+              "winner": {
+                "beatboxer": "alexinho"
+              },
+              "score": "2 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "zekka"
+              },
+              "winner": {
+                "beatboxer": "alexinho"
+              },
+              "score": "4 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "markmartin"
+              },
+              "winner": {
+                "beatboxer": "alexinho"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "footboxg"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              },
+              "score": "0 - 5"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "vocodah"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "akinde"
+              },
+              "winner": {
+                "beatboxer": "akinde"
+              },
+              "score": "1 - 4"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "akinde"
+              },
+              "b": {
+                "beatboxer": "mrandroide"
+              },
+              "winner": {
+                "beatboxer": "mrandroide"
+              },
+              "score": "2 - 3"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "mrandroide"
+              },
+              "b": {
+                "beatboxer": "soso"
+              },
+              "winner": {
+                "beatboxer": "mrandroide"
+              },
+              "score": "4 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "mrandroide"
+              },
+              "b": {
+                "beatboxer": "zekka"
+              },
+              "winner": {
+                "beatboxer": "mrandroide"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "mrandroide"
+              },
+              "b": {
+                "beatboxer": "markmartin"
+              },
+              "winner": {
+                "beatboxer": "mrandroide"
+              },
+              "score": "3 - 2"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "mrandroide"
+              },
+              "b": {
+                "beatboxer": "alexinho"
+              },
+              "winner": {
+                "beatboxer": "mrandroide"
+              },
+              "score": "2 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "mrandroide"
+              },
+              "b": {
+                "beatboxer": "vocodah"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "2 - 3"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "footboxg"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "3 - 2"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "akinde"
+              },
+              "winner": {
+                "beatboxer": "akinde"
+              },
+              "score": "2 - 3"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "akinde"
+              },
+              "b": {
+                "beatboxer": "soso"
+              },
+              "winner": {
+                "beatboxer": "soso"
+              },
+              "score": "0 - 5"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "soso"
+              },
+              "b": {
+                "beatboxer": "zekka"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "0 - 5"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "markmartin",
+              "points": 0
+            },
+            {
+              "beatboxer": "zekka",
+              "points": 7
+            },
+            {
+              "beatboxer": "akinde",
+              "points": 4
+            },
+            {
+              "beatboxer": "vocodah",
+              "points": 2
+            },
+            {
+              "beatboxer": "alexinho",
+              "points": 5
+            },
+            {
+              "beatboxer": "mrandroide",
+              "points": 5
+            },
+            {
+              "beatboxer": "soso",
+              "points": 1
+            },
+            {
+              "beatboxer": "footboxg",
+              "points": 4
+            }
+          ],
+          "notes": [
+            "SO-SO acted as a replacement for [cl] Tomazacre. {{Cite|title=citation needed}}"
+          ]
+        }
+      }
+    },
+    {
+      "year": 2020,
+      "name": "Grand Beatbox Battle Online 2020",
+      "status": "completed",
+      "dates": "April 4–5, 2020",
+      "location": "Online",
+      "format_note": "Online edition",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "zer0"
+          },
+          "runner_up": {
+            "beatboxer": "vocodah"
+          },
+          "third": {
+            "beatboxer": "napom"
+          },
+          "participants": [
+            {
+              "beatboxer": "vocodah"
+            },
+            {
+              "beatboxer": "zer0"
+            },
+            {
+              "beatboxer": "piratheeban"
+            },
+            {
+              "beatboxer": "antilt"
+            },
+            {
+              "beatboxer": "mrandroide"
+            },
+            {
+              "beatboxer": "hiss"
+            },
+            {
+              "beatboxer": "hhas"
+            },
+            {
+              "beatboxer": "remix"
+            },
+            {
+              "beatboxer": "mighty"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "cloud"
+            },
+            {
+              "beatboxer": "balistix"
+            },
+            {
+              "beatboxer": "pacmax"
+            },
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "pingpongpo"
+            },
+            {
+              "beatboxer": "dudz"
+            },
+            {
+              "beatboxer": "jerry"
+            },
+            {
+              "beatboxer": "turtle"
+            },
+            {
+              "beatboxer": "peacerex"
+            },
+            {
+              "beatboxer": "mike"
+            },
+            {
+              "beatboxer": "zion"
+            },
+            {
+              "beatboxer": "match"
+            },
+            {
+              "beatboxer": "cold"
+            },
+            {
+              "beatboxer": "xiphire"
+            },
+            {
+              "beatboxer": "xflawz"
+            },
+            {
+              "beatboxer": "water"
+            },
+            {
+              "beatboxer": "s"
+            },
+            {
+              "beatboxer": "demellow"
+            },
+            {
+              "beatboxer": "omen"
+            },
+            {
+              "beatboxer": "freshmic"
+            },
+            {
+              "beatboxer": "jwat"
+            },
+            {
+              "beatboxer": "dimsub"
+            },
+            {
+              "beatboxer": "bozz"
+            },
+            {
+              "beatboxer": "deepfreeze"
+            },
+            {
+              "beatboxer": "blackened"
+            },
+            {
+              "beatboxer": "knowtrap"
+            },
+            {
+              "beatboxer": "klown"
+            },
+            {
+              "beatboxer": "benja"
+            },
+            {
+              "beatboxer": "max"
+            },
+            {
+              "beatboxer": "vampq"
+            },
+            {
+              "beatboxer": "sin"
+            },
+            {
+              "beatboxer": "milky"
+            },
+            {
+              "beatboxer": "brains"
+            },
+            {
+              "beatboxer": "rex"
+            },
+            {
+              "beatboxer": "bizkit"
+            },
+            {
+              "beatboxer": "tarik"
+            },
+            {
+              "beatboxer": "dmnbass"
+            },
+            {
+              "beatboxer": "jack"
+            },
+            {
+              "beatboxer": "adn54"
+            },
+            {
+              "beatboxer": "rawclaw"
+            },
+            {
+              "beatboxer": "exbitt"
+            },
+            {
+              "beatboxer": "synopsys"
+            },
+            {
+              "beatboxer": "gale"
+            },
+            {
+              "beatboxer": "shah"
+            },
+            {
+              "beatboxer": "mont"
+            },
+            {
+              "beatboxer": "sole"
+            },
+            {
+              "beatboxer": "inferno"
+            },
+            {
+              "beatboxer": "cali"
+            },
+            {
+              "beatboxer": "mrben"
+            },
+            {
+              "beatboxer": "y2k"
+            },
+            {
+              "beatboxer": "stalkrixx"
+            },
+            {
+              "beatboxer": "steamie"
+            },
+            {
+              "beatboxer": "sdope"
+            },
+            {
+              "beatboxer": "ziadswidan"
+            },
+            {
+              "beatboxer": "zag1r"
+            },
+            {
+              "beatboxer": "doublem"
+            },
+            {
+              "beatboxer": "beatdown"
+            },
+            {
+              "beatboxer": "scream"
+            },
+            {
+              "beatboxer": "bter"
+            },
+            {
+              "beatboxer": "frosty"
+            },
+            {
+              "beatboxer": "h1ppy"
+            },
+            {
+              "beatboxer": "indicator"
+            },
+            {
+              "beatboxer": "nandob"
+            },
+            {
+              "beatboxer": "osy"
+            },
+            {
+              "beatboxer": "tmy"
+            },
+            {
+              "beatboxer": "minko"
+            },
+            {
+              "beatboxer": "jewow"
+            },
+            {
+              "beatboxer": "epos"
+            },
+            {
+              "beatboxer": "kinginertia"
+            },
+            {
+              "beatboxer": "waali"
+            },
+            {
+              "beatboxer": "shay"
+            },
+            {
+              "beatboxer": "villain"
+            },
+            {
+              "beatboxer": "azel"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "chrisceliz"
+            },
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "kim"
+            },
+            {
+              "beatboxer": "reepsone"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "amit"
+            },
+            {
+              "beatboxer": "chezame"
+            },
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "timmeh"
+            },
+            {
+              "beatboxer": "thomson"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "piratheeban"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mrandroide"
+              },
+              "b": {
+                "beatboxer": "hhas"
+              },
+              "winner": {
+                "beatboxer": "hhas"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mighty"
+              },
+              "b": {
+                "beatboxer": "cloud"
+              },
+              "winner": {
+                "beatboxer": "cloud"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "pingpongpo"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "zer0"
+              },
+              "b": {
+                "beatboxer": "antilt"
+              },
+              "winner": {
+                "beatboxer": "zer0"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "hiss"
+              },
+              "b": {
+                "beatboxer": "remix"
+              },
+              "winner": {
+                "beatboxer": "remix"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "balistix"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "dudz"
+              },
+              "winner": {
+                "beatboxer": "dudz"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "hhas"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "4 votes* - 0 votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "cloud"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "cloud"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zer0"
+              },
+              "b": {
+                "beatboxer": "remix"
+              },
+              "winner": {
+                "beatboxer": "zer0"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "dudz"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "cloud"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "zer0"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "zer0"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "cloud"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "zer0"
+              },
+              "winner": {
+                "beatboxer": "zer0"
+              },
+              "score": "1 vote - 4 votes"
+            }
+          ],
+          "notes": [
+            "Piratheeban acted as a replacement for [uy] PWAD"
+          ]
+        }
+      }
+    },
+    {
+      "year": 2021,
+      "name": "Grand Beatbox Battle 2021",
+      "edition": 12,
+      "status": "completed",
+      "dates": "October 22–25, 2021",
+      "location": "Warsaw, Poland",
+      "venue": "EXPO XXI Progesja",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "colaps"
+          },
+          "runner_up": {
+            "beatboxer": "river"
+          },
+          "third": {
+            "beatboxer": "footboxg"
+          },
+          "participants": [
+            {
+              "beatboxer": "tomazacre",
+              "qualification": "GBB 2019 Vice Champion"
+            },
+            {
+              "beatboxer": "kinginertia",
+              "qualification": "Great North Battle 2019 Champion"
+            },
+            {
+              "beatboxer": "bart",
+              "qualification": "GBB 2019 3rd place"
+            },
+            {
+              "beatboxer": "hiss",
+              "qualification": "Asia Beatbox Championship 2019 Champion"
+            },
+            {
+              "beatboxer": "zekka",
+              "qualification": "GBB 2019 7 to Smoke Champion"
+            },
+            {
+              "beatboxer": "zer0",
+              "qualification": "Grand Beatbox Battle Online 2020 Champion"
+            },
+            {
+              "beatboxer": "trungbao",
+              "qualification": "1st GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "river",
+              "qualification": "1st GBB 2021 Wildcard Winner"
+            },
+            {
+              "beatboxer": "colaps",
+              "qualification": "3rd GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "alexinho",
+              "qualification": "2nd GBB 2021 Wildcard Winner"
+            },
+            {
+              "beatboxer": "vocodah",
+              "qualification": "4th GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "geneshinozaki",
+              "qualification": "3rd GBB 2021 Wildcard Winner"
+            },
+            {
+              "beatboxer": "mrandroide",
+              "qualification": "5th GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "stitch",
+              "qualification": "4th GBB 2021 Wildcard Winner"
+            },
+            {
+              "beatboxer": "helium",
+              "qualification": "7th GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "max",
+              "qualification": "5th GBB 2021 Wildcard Winner"
+            },
+            {
+              "beatboxer": "elisii",
+              "qualification": "8th GBB 2020 Wildcard Winner*"
+            },
+            {
+              "beatboxer": "alem",
+              "qualification": "7th GBB 2021 Wildcard Winner"
+            },
+            {
+              "beatboxer": "twoh",
+              "qualification": "9th GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "improver",
+              "qualification": "8th GBB 2021 Wildcard Winner*"
+            },
+            {
+              "beatboxer": "napom",
+              "qualification": "10th GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "footboxg",
+              "qualification": "9th GBB 2021 Wildcard Winner*"
+            },
+            {
+              "beatboxer": "dkoy",
+              "qualification": "11th GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "den",
+              "qualification": "10th GBB 2021 Wildcard Winner*"
+            },
+            {
+              "beatboxer": "kohey",
+              "qualification": "12th GBB 2020 Wildcard Winner"
+            },
+            {
+              "beatboxer": "heartzel",
+              "qualification": "11th GBB 2021 Wildcard Winner*"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "dlow"
+            },
+            {
+              "beatboxer": "kennyurban"
+            },
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "reepsone"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "kennyurban"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "kim"
+            },
+            {
+              "beatboxer": "ballzee"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dkoy"
+              },
+              "b": {
+                "beatboxer": "zer0"
+              },
+              "winner": {
+                "beatboxer": "dkoy"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "footboxg"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "geneshinozaki"
+              },
+              "b": {
+                "beatboxer": "bart"
+              },
+              "winner": {
+                "beatboxer": "bart"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "hiss"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "colaps"
+              },
+              "b": {
+                "beatboxer": "vocodah"
+              },
+              "winner": {
+                "beatboxer": "colaps"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "zekka"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "elisii"
+              },
+              "b": {
+                "beatboxer": "alem"
+              },
+              "winner": {
+                "beatboxer": "alem"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kinginertia"
+              },
+              "b": {
+                "beatboxer": "helium"
+              },
+              "winner": {
+                "beatboxer": "kinginertia"
+              },
+              "score": "3 votes* - 1 vote*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dkoy"
+              },
+              "b": {
+                "beatboxer": "footboxg"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bart"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "colaps"
+              },
+              "b": {
+                "beatboxer": "zekka"
+              },
+              "winner": {
+                "beatboxer": "colaps"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "alem"
+              },
+              "b": {
+                "beatboxer": "kinginertia"
+              },
+              "winner": {
+                "beatboxer": "kinginertia"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "colaps"
+              },
+              "b": {
+                "beatboxer": "kinginertia"
+              },
+              "winner": {
+                "beatboxer": "colaps"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "kinginertia"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              },
+              "score": "5 votes* - 0 votes*"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "colaps"
+              },
+              "winner": {
+                "beatboxer": "colaps"
+              },
+              "score": "1 vote - 4 votes"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "kinginertia"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "dkoy"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "geneshinozaki"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "napom"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "colaps"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "river"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "alexinho"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "elisii"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "alem"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "footboxg"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "hiss"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "vocodah"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "zekka"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "bart"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "zer0"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "helium"
+            },
+            {
+              "rank": 17,
+              "beatboxer": "improver"
+            },
+            {
+              "rank": 18,
+              "beatboxer": "max"
+            },
+            {
+              "rank": 19,
+              "beatboxer": "den"
+            },
+            {
+              "rank": 20,
+              "beatboxer": "kohey"
+            },
+            {
+              "rank": 21,
+              "beatboxer": "twoh"
+            },
+            {
+              "rank": 22,
+              "beatboxer": "stitch"
+            },
+            {
+              "rank": 23,
+              "beatboxer": "heartzel"
+            },
+            {
+              "rank": 24,
+              "beatboxer": "mrandroide"
+            },
+            {
+              "rank": 25,
+              "beatboxer": "tomazacre"
+            },
+            {
+              "rank": 26,
+              "beatboxer": "trungbao"
+            }
+          ],
+          "notes": [
+            "Elisii initially dropped out of GBB 2020 and forfeited his place to D-Koy. Swissbeatbox allowed him to qualify for GBB 2021 in light of the circumstances regarding the cancellation of the former event.",
+            "Improver acted as a replacement for [fr] MB14 (6th GBB 2020 Wildcard Winner).",
+            "FootboxG acted as a replacement for [jp] Show-Go (6th GBB 2021 Wildcard Winner).",
+            "DEN acted as a replacement for [fr] Wawad (2nd GBB 2020 Wildcard Winner).",
+            "Heartzel was given the opportunity to replace Helium due to uncertainty of the latter being able to leave Russia the week of the event. Helium was ultimately able to make it, and Swissbeatbox decided to honor Heartzel's participation.",
+            "Due to requests from Vocodah and D-Koy, they are both listed as \"Artist\" in the official battle videos."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "kinginertia"
+          },
+          "participants": [
+            {
+              "beatboxer": "remix"
+            },
+            {
+              "beatboxer": "trungbao"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "bigben"
+            },
+            {
+              "beatboxer": "bizkit"
+            },
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "dice"
+            },
+            {
+              "beatboxer": "eon"
+            },
+            {
+              "beatboxer": "footboxg"
+            },
+            {
+              "beatboxer": "fuga"
+            },
+            {
+              "beatboxer": "helium"
+            },
+            {
+              "beatboxer": "improver"
+            },
+            {
+              "beatboxer": "jordox"
+            },
+            {
+              "beatboxer": "kaji"
+            },
+            {
+              "beatboxer": "kohey"
+            },
+            {
+              "beatboxer": "max"
+            },
+            {
+              "beatboxer": "mrandroide"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "pono"
+            },
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "rusy"
+            },
+            {
+              "beatboxer": "stitch"
+            },
+            {
+              "beatboxer": "vocodah"
+            },
+            {
+              "beatboxer": "den"
+            },
+            {
+              "beatboxer": "zekka"
+            },
+            {
+              "beatboxer": "zer0"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            },
+            {
+              "beatboxer": "inkie"
+            },
+            {
+              "beatboxer": "nils"
+            },
+            {
+              "beatboxer": "jewow"
+            },
+            {
+              "beatboxer": "pacmax"
+            },
+            {
+              "beatboxer": "demellow"
+            },
+            {
+              "beatboxer": "brock"
+            },
+            {
+              "beatboxer": "gelber"
+            },
+            {
+              "beatboxer": "savo"
+            },
+            {
+              "beatboxer": "brook"
+            },
+            {
+              "beatboxer": "yunus"
+            },
+            {
+              "beatboxer": "watome"
+            },
+            {
+              "beatboxer": "elgrande"
+            },
+            {
+              "beatboxer": "klown"
+            },
+            {
+              "beatboxer": "bsfx"
+            },
+            {
+              "beatboxer": "s"
+            },
+            {
+              "beatboxer": "xankish"
+            },
+            {
+              "beatboxer": "elisii"
+            },
+            {
+              "beatboxer": "ignis"
+            },
+            {
+              "beatboxer": "slicer"
+            },
+            {
+              "beatboxer": "dawood"
+            },
+            {
+              "beatboxer": "joker"
+            },
+            {
+              "beatboxer": "horaid"
+            },
+            {
+              "beatboxer": "blackroll"
+            },
+            {
+              "beatboxer": "osis"
+            },
+            {
+              "beatboxer": "karn"
+            },
+            {
+              "beatboxer": "misa"
+            },
+            {
+              "beatboxer": "corbe"
+            },
+            {
+              "beatboxer": "shoter"
+            },
+            {
+              "beatboxer": "zota"
+            },
+            {
+              "beatboxer": "grooveson"
+            },
+            {
+              "beatboxer": "balance"
+            },
+            {
+              "beatboxer": "bookieblanco"
+            },
+            {
+              "beatboxer": "daviddertyp"
+            },
+            {
+              "beatboxer": "coldness"
+            },
+            {
+              "beatboxer": "osy"
+            },
+            {
+              "beatboxer": "bronix"
+            },
+            {
+              "beatboxer": "aelmight"
+            },
+            {
+              "beatboxer": "donkeyu"
+            },
+            {
+              "beatboxer": "hunty"
+            },
+            {
+              "beatboxer": "villain"
+            },
+            {
+              "beatboxer": "fenetix"
+            },
+            {
+              "beatboxer": "match"
+            },
+            {
+              "beatboxer": "brez"
+            },
+            {
+              "beatboxer": "epock"
+            },
+            {
+              "beatboxer": "epos"
+            },
+            {
+              "beatboxer": "jbeat"
+            },
+            {
+              "beatboxer": "bassventura"
+            },
+            {
+              "beatboxer": "voxel"
+            },
+            {
+              "beatboxer": "hobbit"
+            },
+            {
+              "beatboxer": "wing"
+            },
+            {
+              "beatboxer": "galush"
+            },
+            {
+              "beatboxer": "gwizz"
+            },
+            {
+              "beatboxer": "phylo"
+            },
+            {
+              "beatboxer": "bbk"
+            },
+            {
+              "beatboxer": "julard"
+            },
+            {
+              "beatboxer": "loki"
+            },
+            {
+              "beatboxer": "bobox"
+            },
+            {
+              "beatboxer": "oxyjinn"
+            },
+            {
+              "beatboxer": "janelf"
+            },
+            {
+              "beatboxer": "elian"
+            },
+            {
+              "beatboxer": "tomazacre"
+            },
+            {
+              "beatboxer": "bart"
+            },
+            {
+              "beatboxer": "glitch"
+            },
+            {
+              "beatboxer": "kinginertia"
+            },
+            {
+              "beatboxer": "frosty"
+            },
+            {
+              "beatboxer": "kenozen"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "sxin"
+            },
+            {
+              "beatboxer": "chezame"
+            },
+            {
+              "beatboxer": "asherthesmasher"
+            },
+            {
+              "beatboxer": "dkoy"
+            },
+            {
+              "beatboxer": "thefool"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "zekka",
+              "points": 1
+            },
+            {
+              "beatboxer": "improver",
+              "points": 1
+            },
+            {
+              "beatboxer": "napom",
+              "points": 2
+            },
+            {
+              "beatboxer": "vocodah",
+              "points": 5
+            },
+            {
+              "beatboxer": "bart",
+              "points": 2
+            },
+            {
+              "beatboxer": "bookieblanco",
+              "points": 0
+            },
+            {
+              "beatboxer": "kinginertia",
+              "points": 7
+            },
+            {
+              "beatboxer": "villain",
+              "points": 0
+            }
+          ],
+          "notes": [
+            "[ru] Improver 2",
+            "[us] NaPoM 3",
+            "[us] Vocodah 4",
+            "[es] Zekka 1",
+            "[fr] Arth'Urban{{Cite|message=*|title=Also know as Bookie Blanco}} 5",
+            "[us] Villain 8",
+            "[nl] B-Art 7",
+            "[us] King Inertia 6",
+            "Beatboxers in italics were listed in the pre-elimination, those who didn't showed out are  crossed out .",
+            "[za] Remix was invited to the pre-elimination due to winning the African Roar Beatbox Championship 2020 Online Edition."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Grand Beatbox Battle 2023",
+      "edition": 13,
+      "status": "completed",
+      "dates": "October 18-22, 2023",
+      "location": "Tokyo, Japan",
+      "venue": "EX Theater Roppongi (Main Event) Spotify O-EAST (7 to Smoke) 1OAK Tokyo, R3 Club Lounge & BAIA (Afterparties)",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "river"
+          },
+          "runner_up": {
+            "beatboxer": "napom"
+          },
+          "third": {
+            "beatboxer": "wing"
+          },
+          "participants": [
+            {
+              "beatboxer": "river",
+              "qualification": "GBB 2021 Solo Vice Champion"
+            },
+            {
+              "beatboxer": "helium",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "kinginertia",
+              "qualification": "GBB 2021 7 To Smoke Champion"
+            },
+            {
+              "beatboxer": "mrandroide",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "waali",
+              "qualification": "Maestro Beatbox America 2022 Champion"
+            },
+            {
+              "beatboxer": "den",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "momimaru",
+              "qualification": "BeatCity Japan 2023 Champion"
+            },
+            {
+              "beatboxer": "jp",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "pono",
+              "qualification": "Oceania Beatbox Championships 2023 Champion"
+            },
+            {
+              "beatboxer": "dilip",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "maxo",
+              "qualification": "European Beatbox Championship 2023 Champion"
+            },
+            {
+              "beatboxer": "zvd",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "wing",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "improver",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "aboice",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "hhas",
+              "qualification": "12th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "napom",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "bizkit",
+              "qualification": "13th Wildcard Winner*"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "dlow"
+            },
+            {
+              "beatboxer": "wawad"
+            },
+            {
+              "beatboxer": "geneshinozaki"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "momimaru"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mrandroide"
+              },
+              "b": {
+                "beatboxer": "aboice"
+              },
+              "winner": {
+                "beatboxer": "aboice"
+              },
+              "score": "0 votes* - 5 votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "wing"
+              },
+              "b": {
+                "beatboxer": "improver"
+              },
+              "winner": {
+                "beatboxer": "wing"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "dilip"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "aboice"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "wing"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "aboice"
+              },
+              "b": {
+                "beatboxer": "wing"
+              },
+              "winner": {
+                "beatboxer": "wing"
+              },
+              "score": "0 votes* - 5 votes*"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "3 votes - 2 votes"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "river"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "napom"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "wing"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "mrandroide"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "aboice"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "improver"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "dilip"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "momimaru"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "maxo"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "bizkit"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "helium"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "den"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "kinginertia"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "hhas"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "zvd"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "jp"
+            },
+            {
+              "rank": 17,
+              "beatboxer": "pono"
+            },
+            {
+              "rank": 18,
+              "beatboxer": "waali"
+            }
+          ],
+          "notes": [
+            "H-has acted as a replacement for [il] Max (11th Wildcard Winner), who would have acted as a replacement for [fr] Colaps (GBB 2021 Solo Champion), who only participated in Tag Team and Crew.",
+            "BizKit acted as a replacement for [be] FootboxG (GBB 2021 Solo 3rd Place), who only did a Showcase."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "alexinho"
+          },
+          "participants": [
+            {
+              "beatboxer": "hiccup"
+            },
+            {
+              "beatboxer": "nema"
+            },
+            {
+              "beatboxer": "funiverse"
+            },
+            {
+              "beatboxer": "mighty"
+            },
+            {
+              "beatboxer": "hoon"
+            },
+            {
+              "beatboxer": "shimba"
+            },
+            {
+              "beatboxer": "kgo"
+            },
+            {
+              "beatboxer": "toshiya"
+            },
+            {
+              "beatboxer": "tansui"
+            },
+            {
+              "beatboxer": "kapon"
+            },
+            {
+              "beatboxer": "xeldy"
+            },
+            {
+              "beatboxer": "chee"
+            },
+            {
+              "beatboxer": "tkm"
+            },
+            {
+              "beatboxer": "kaji"
+            },
+            {
+              "beatboxer": "coloa"
+            },
+            {
+              "beatboxer": "yamori"
+            },
+            {
+              "beatboxer": "tioneb"
+            },
+            {
+              "beatboxer": "maxo"
+            },
+            {
+              "beatboxer": "pacmax"
+            },
+            {
+              "beatboxer": "ettoman"
+            },
+            {
+              "beatboxer": "corey"
+            },
+            {
+              "beatboxer": "justin"
+            },
+            {
+              "beatboxer": "teller"
+            },
+            {
+              "beatboxer": "theo"
+            },
+            {
+              "beatboxer": "gpfinity"
+            },
+            {
+              "beatboxer": "tarasstanin"
+            },
+            {
+              "beatboxer": "vahtang"
+            },
+            {
+              "beatboxer": "helium"
+            },
+            {
+              "beatboxer": "marvelin"
+            },
+            {
+              "beatboxer": "bizkit"
+            },
+            {
+              "beatboxer": "jayton"
+            },
+            {
+              "beatboxer": "pash"
+            },
+            {
+              "beatboxer": "wahdafu"
+            },
+            {
+              "beatboxer": "bp"
+            },
+            {
+              "beatboxer": "kinginertia"
+            },
+            {
+              "beatboxer": "eon"
+            },
+            {
+              "beatboxer": "gale"
+            },
+            {
+              "beatboxer": "adk"
+            },
+            {
+              "beatboxer": "amit"
+            },
+            {
+              "beatboxer": "pono"
+            },
+            {
+              "beatboxer": "waali"
+            },
+            {
+              "beatboxer": "acar"
+            },
+            {
+              "beatboxer": "bloomer"
+            },
+            {
+              "beatboxer": "improver"
+            },
+            {
+              "beatboxer": "mrandroide"
+            },
+            {
+              "beatboxer": "gen"
+            },
+            {
+              "beatboxer": "jacknasty"
+            },
+            {
+              "beatboxer": "den"
+            },
+            {
+              "beatboxer": "yokodai"
+            },
+            {
+              "beatboxer": "justintan"
+            },
+            {
+              "beatboxer": "stitch"
+            },
+            {
+              "beatboxer": "afra"
+            },
+            {
+              "beatboxer": "sonu"
+            },
+            {
+              "beatboxer": "viva"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "napom"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "footboxg"
+            },
+            {
+              "beatboxer": "nexor"
+            },
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "funkaztek"
+            },
+            {
+              "beatboxer": "dilip"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "napom",
+              "points": 3
+            },
+            {
+              "beatboxer": "kinginertia",
+              "points": 0
+            },
+            {
+              "beatboxer": "alexinho",
+              "points": 7
+            },
+            {
+              "beatboxer": "vahtang",
+              "points": 0
+            },
+            {
+              "beatboxer": "pacmax",
+              "points": 1
+            },
+            {
+              "beatboxer": "maxo",
+              "points": 2
+            },
+            {
+              "beatboxer": "pash",
+              "points": 0
+            },
+            {
+              "beatboxer": "mighty",
+              "points": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Grand Beatbox Battle 2024",
+      "edition": 14,
+      "status": "completed",
+      "dates": "November 1st-4th, 2024",
+      "location": "Tokyo, Japan",
+      "venue": "Toyosu PIT (Main Event) Spotify O-EAST (7 to Smoke) Kiranah Garden Toyosu (Afterparty)",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "julard"
+          },
+          "runner_up": {
+            "beatboxer": "osis"
+          },
+          "third": {
+            "beatboxer": "remix"
+          },
+          "participants": [
+            {
+              "beatboxer": "wing",
+              "qualification": "GBB 2023 Solo 3rd place"
+            },
+            {
+              "beatboxer": "osis",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "alexinho",
+              "qualification": "GBB 2023 7 To Smoke Champion"
+            },
+            {
+              "beatboxer": "aboice",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "julard",
+              "qualification": "GBB 2023 U18 Champion"
+            },
+            {
+              "beatboxer": "steady",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "kaji",
+              "qualification": "Beatland Beatbox Battle 2023 Champion"
+            },
+            {
+              "beatboxer": "den",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "maxo",
+              "qualification": "Florida Beatbox Battle 2024 Champion"
+            },
+            {
+              "beatboxer": "pacmax",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "blackroll",
+              "qualification": "Great North Battle 2024 Champion"
+            },
+            {
+              "beatboxer": "helium",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "blycrepsley",
+              "qualification": "BeatCity Japan 2024 Champion"
+            },
+            {
+              "beatboxer": "stitch",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "remix",
+              "qualification": "Africa & Mena Region Qualifier 2024 Champion"
+            },
+            {
+              "beatboxer": "momimaru",
+              "qualification": "10th Wildcard Winner*"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "footboxg"
+            },
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "hiss"
+            },
+            {
+              "beatboxer": "napom"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "footboxg"
+            },
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "hiss"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "aboice"
+              },
+              "b": {
+                "beatboxer": "remix"
+              },
+              "winner": {
+                "beatboxer": "remix"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "helium"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "wing"
+              },
+              "b": {
+                "beatboxer": "kaji"
+              },
+              "winner": {
+                "beatboxer": "kaji"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "alexinho"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "remix"
+              },
+              "b": {
+                "beatboxer": "osis"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "1 vote - 4 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "remix"
+              },
+              "b": {
+                "beatboxer": "kaji"
+              },
+              "winner": {
+                "beatboxer": "remix"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "1 vote - 4 votes"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "aboice"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "alexinho"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "wing"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "osis"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "helium"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "kaji"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "julard"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "remix"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "blackroll"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "stitch"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "pacmax"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "den"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "maxo"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "steady"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "momimaru"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "blycrepsley"
+            }
+          ],
+          "notes": [
+            "[jp]  momimaru acted as a replacement for [ru] Improver (7th Wildcard Winner) due to his health problem."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "napom"
+          },
+          "participants": [
+            {
+              "beatboxer": "frosty"
+            },
+            {
+              "beatboxer": "tioneb"
+            },
+            {
+              "beatboxer": "pash"
+            },
+            {
+              "beatboxer": "jayton"
+            },
+            {
+              "beatboxer": "yaswede"
+            },
+            {
+              "beatboxer": "pacmax"
+            },
+            {
+              "beatboxer": "stitch"
+            },
+            {
+              "beatboxer": "bookieblanco"
+            },
+            {
+              "beatboxer": "hiccup"
+            },
+            {
+              "beatboxer": "cj"
+            },
+            {
+              "beatboxer": "kara"
+            },
+            {
+              "beatboxer": "yuske"
+            },
+            {
+              "beatboxer": "yuichi"
+            },
+            {
+              "beatboxer": "daimon"
+            },
+            {
+              "beatboxer": "tunecinoo"
+            },
+            {
+              "beatboxer": "epock"
+            },
+            {
+              "beatboxer": "shuma"
+            },
+            {
+              "beatboxer": "kristof"
+            },
+            {
+              "beatboxer": "blaz"
+            },
+            {
+              "beatboxer": "shackle"
+            },
+            {
+              "beatboxer": "raptor"
+            },
+            {
+              "beatboxer": "kalibu"
+            },
+            {
+              "beatboxer": "carnage"
+            },
+            {
+              "beatboxer": "indeion"
+            },
+            {
+              "beatboxer": "remix"
+            },
+            {
+              "beatboxer": "tatsuaki"
+            },
+            {
+              "beatboxer": "blackroll"
+            },
+            {
+              "beatboxer": "adikerang"
+            },
+            {
+              "beatboxer": "maxo"
+            },
+            {
+              "beatboxer": "rusy"
+            },
+            {
+              "beatboxer": "jewow"
+            },
+            {
+              "beatboxer": "aboice"
+            },
+            {
+              "beatboxer": "momimaru"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "ettoman"
+            },
+            {
+              "beatboxer": "theo"
+            },
+            {
+              "beatboxer": "mrcan"
+            },
+            {
+              "beatboxer": "32"
+            },
+            {
+              "beatboxer": "omena"
+            },
+            {
+              "beatboxer": "acar"
+            },
+            {
+              "beatboxer": "amjobs"
+            },
+            {
+              "beatboxer": "omen"
+            },
+            {
+              "beatboxer": "dispay"
+            },
+            {
+              "beatboxer": "ukan"
+            },
+            {
+              "beatboxer": "fusion"
+            },
+            {
+              "beatboxer": "raeve"
+            },
+            {
+              "beatboxer": "muaaz"
+            },
+            {
+              "beatboxer": "handfx"
+            },
+            {
+              "beatboxer": "ver"
+            },
+            {
+              "beatboxer": "fmtk"
+            },
+            {
+              "beatboxer": "cam"
+            },
+            {
+              "beatboxer": "ganzin"
+            },
+            {
+              "beatboxer": "74"
+            },
+            {
+              "beatboxer": "kulo"
+            },
+            {
+              "beatboxer": "nero"
+            },
+            {
+              "beatboxer": "lafs"
+            },
+            {
+              "beatboxer": "hoon"
+            },
+            {
+              "beatboxer": "bondog"
+            },
+            {
+              "beatboxer": "mighty"
+            },
+            {
+              "beatboxer": "jun"
+            },
+            {
+              "beatboxer": "kgo"
+            },
+            {
+              "beatboxer": "chocolate"
+            },
+            {
+              "beatboxer": "hanzo"
+            },
+            {
+              "beatboxer": "z5s"
+            },
+            {
+              "beatboxer": "s1on"
+            },
+            {
+              "beatboxer": "nema"
+            },
+            {
+              "beatboxer": "rtr"
+            },
+            {
+              "beatboxer": "ryusei"
+            },
+            {
+              "beatboxer": "neon"
+            },
+            {
+              "beatboxer": "drkoopa"
+            },
+            {
+              "beatboxer": "stan"
+            },
+            {
+              "beatboxer": "chloroplast"
+            },
+            {
+              "beatboxer": "mino"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "bizkit"
+            },
+            {
+              "beatboxer": "scottjackson"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "geopopoff"
+            },
+            {
+              "beatboxer": "eon"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "napom"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "mighty"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "maxo"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "pacmax"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "aboice"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "blackroll"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "bookieblanco"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "remix"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "stan"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "momimaru"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "rusy"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "neon"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "napom",
+              "points": 7
+            },
+            {
+              "beatboxer": "mighty",
+              "points": 0
+            },
+            {
+              "beatboxer": "maxo",
+              "points": 5
+            },
+            {
+              "beatboxer": "pacmax",
+              "points": 0
+            },
+            {
+              "beatboxer": "aboice",
+              "points": 1
+            },
+            {
+              "beatboxer": "blackroll",
+              "points": 4
+            },
+            {
+              "beatboxer": "bookieblanco",
+              "points": 0
+            },
+            {
+              "beatboxer": "remix",
+              "points": 4
+            }
+          ],
+          "notes": [
+            "Note: the 6th, 7th, 11th, 41st, 61st, 65th and 67th participant are unknown."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Grand Beatbox Battle 2025",
+      "edition": 15,
+      "status": "completed",
+      "dates": "October 31 - November 3, 2025",
+      "location": "Tokyo, Japan",
+      "venue": "EX Theater Roppongi (Main Event) Spotify O-East (7 to Smoke) R3 CLUB Lounge (Afterparty)",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "kristof"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "pacmax"
+          },
+          "runner_up": {
+            "beatboxer": "wing"
+          },
+          "third": {
+            "beatboxer": "blackroll"
+          },
+          "participants": [
+            {
+              "beatboxer": "osis",
+              "qualification": "GBB 2024 Solo Vice Champion"
+            },
+            {
+              "beatboxer": "pacmax",
+              "qualification": "BeatCity Japan 2025 Solo Champion"
+            },
+            {
+              "beatboxer": "remix",
+              "qualification": "GBB 2024 Solo 3rd Place"
+            },
+            {
+              "beatboxer": "kaji",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "napom",
+              "qualification": "GBB 2024 7 To Smoke Champion"
+            },
+            {
+              "beatboxer": "steady",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "exallos",
+              "qualification": "Maestro Beatbox America 2024 Champion"
+            },
+            {
+              "beatboxer": "wing",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "blackroll",
+              "qualification": "Florida Beatbox Battle 2025 Champion"
+            },
+            {
+              "beatboxer": "den",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "kinginertia",
+              "qualification": "Great North Battle 2025 Champion"
+            },
+            {
+              "beatboxer": "dropical",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "max",
+              "qualification": "Africa & Mena Region Qualifier 2025 Champion"
+            },
+            {
+              "beatboxer": "codfish",
+              "qualification": "8th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "pono",
+              "qualification": "Oceania Beatbox Battle 2025 Champion"
+            },
+            {
+              "beatboxer": "stitch",
+              "qualification": "11th Wildcard Winner*"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "dlow"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            },
+            {
+              "beatboxer": "ballzee"
+            },
+            {
+              "beatboxer": "trungbao"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "dlow"
+            },
+            {
+              "beatboxer": "trungbao"
+            },
+            {
+              "beatboxer": "footboxg"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "codfish"
+              },
+              "winner": {
+                "beatboxer": "kaji"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "osis"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "wing"
+              },
+              "b": {
+                "beatboxer": "den"
+              },
+              "winner": {
+                "beatboxer": "wing"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "wing"
+              },
+              "winner": {
+                "beatboxer": "wing"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "wing"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "3 votes - 2 votes"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "kaji"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "wing"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "napom"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "pacmax"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "osis"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "blackroll"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "den"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "codfish"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "kinginertia"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "remix"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "stitch"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "exallos"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "dropical"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "max"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "pono"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "steady"
+            }
+          ],
+          "notes": [
+            "[au] Codfish acted as a replacement for [fr] Julard (GBB 2024 Solo Champion). [ru] Improver (7th Wildcard Winner), who qualified through his ranking in the wildcard, decided to step back this year for personal reasons.",
+            "[my] Stitch acted as a replacement for [sa] ABO ICE (2nd Wildcard Winner) due to personal reasons."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "river"
+          },
+          "participants": [
+            {
+              "beatboxer": "cj"
+            },
+            {
+              "beatboxer": "bookieblanco"
+            },
+            {
+              "beatboxer": "serpent"
+            },
+            {
+              "beatboxer": "nema"
+            },
+            {
+              "beatboxer": "den"
+            },
+            {
+              "beatboxer": "exallos"
+            },
+            {
+              "beatboxer": "t2"
+            },
+            {
+              "beatboxer": "dropical"
+            },
+            {
+              "beatboxer": "miso"
+            },
+            {
+              "beatboxer": "kristof"
+            },
+            {
+              "beatboxer": "remix"
+            },
+            {
+              "beatboxer": "blape"
+            },
+            {
+              "beatboxer": "adikerang"
+            },
+            {
+              "beatboxer": "pono"
+            },
+            {
+              "beatboxer": "max"
+            },
+            {
+              "beatboxer": "kinginertia"
+            },
+            {
+              "beatboxer": "kalibu"
+            },
+            {
+              "beatboxer": "jene"
+            },
+            {
+              "beatboxer": "ippanjin"
+            },
+            {
+              "beatboxer": "gako"
+            },
+            {
+              "beatboxer": "juano"
+            },
+            {
+              "beatboxer": "vushev"
+            },
+            {
+              "beatboxer": "muaaz"
+            },
+            {
+              "beatboxer": "z5s"
+            },
+            {
+              "beatboxer": "daimon"
+            },
+            {
+              "beatboxer": "hiwaka"
+            },
+            {
+              "beatboxer": "ousei"
+            },
+            {
+              "beatboxer": "viva"
+            },
+            {
+              "beatboxer": "ponnpy"
+            },
+            {
+              "beatboxer": "74"
+            },
+            {
+              "beatboxer": "nero"
+            },
+            {
+              "beatboxer": "lafs"
+            },
+            {
+              "beatboxer": "reach"
+            },
+            {
+              "beatboxer": "s1on"
+            },
+            {
+              "beatboxer": "shuma"
+            },
+            {
+              "beatboxer": "miito"
+            },
+            {
+              "beatboxer": "hoon"
+            },
+            {
+              "beatboxer": "jackbryan"
+            },
+            {
+              "beatboxer": "rippick"
+            },
+            {
+              "beatboxer": "piratheeban"
+            },
+            {
+              "beatboxer": "ihack2win"
+            },
+            {
+              "beatboxer": "neon"
+            },
+            {
+              "beatboxer": "carnage"
+            },
+            {
+              "beatboxer": "funiverse"
+            },
+            {
+              "beatboxer": "ichijosan"
+            },
+            {
+              "beatboxer": "rtr"
+            },
+            {
+              "beatboxer": "yuichi"
+            },
+            {
+              "beatboxer": "tkm"
+            },
+            {
+              "beatboxer": "math"
+            },
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "oroshi"
+            },
+            {
+              "beatboxer": "marbow"
+            },
+            {
+              "beatboxer": "toshiya"
+            },
+            {
+              "beatboxer": "eulacio"
+            },
+            {
+              "beatboxer": "endo"
+            },
+            {
+              "beatboxer": "bm"
+            },
+            {
+              "beatboxer": "ganzin"
+            },
+            {
+              "beatboxer": "rusy"
+            },
+            {
+              "beatboxer": "acar"
+            },
+            {
+              "beatboxer": "momimaru"
+            },
+            {
+              "beatboxer": "ray"
+            },
+            {
+              "beatboxer": "stitch"
+            },
+            {
+              "beatboxer": "ettoman"
+            },
+            {
+              "beatboxer": "hitoyo"
+            },
+            {
+              "beatboxer": "dice"
+            },
+            {
+              "beatboxer": "kara"
+            },
+            {
+              "beatboxer": "novamc"
+            },
+            {
+              "beatboxer": "gelber"
+            },
+            {
+              "beatboxer": "daveh"
+            },
+            {
+              "beatboxer": "hiccup"
+            },
+            {
+              "beatboxer": "chenmk"
+            },
+            {
+              "beatboxer": "owngyu"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "scottjackson"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            },
+            {
+              "beatboxer": "bataco"
+            },
+            {
+              "beatboxer": "napom"
+            }
+          ],
+          "battles": [
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "kinginertia"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "2 - 3"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "remix"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "3 - 2"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "momimaru"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "4 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "nero"
+              },
+              "winner": {
+                "beatboxer": "nero"
+              },
+              "score": "1 - 4"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "nero"
+              },
+              "b": {
+                "beatboxer": "bookieblanco"
+              },
+              "winner": {
+                "beatboxer": "nero"
+              },
+              "score": "4 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "nero"
+              },
+              "b": {
+                "beatboxer": "cj"
+              },
+              "winner": {
+                "beatboxer": "cj"
+              },
+              "score": "0 - 5"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "cj"
+              },
+              "b": {
+                "beatboxer": "den"
+              },
+              "winner": {
+                "beatboxer": "den"
+              },
+              "score": "1 - 4"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "den"
+              },
+              "b": {
+                "beatboxer": "kinginertia"
+              },
+              "winner": {
+                "beatboxer": "kinginertia"
+              },
+              "score": "0 - 5"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "kinginertia"
+              },
+              "b": {
+                "beatboxer": "remix"
+              },
+              "winner": {
+                "beatboxer": "kinginertia"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "kinginertia"
+              },
+              "b": {
+                "beatboxer": "momimaru"
+              },
+              "winner": {
+                "beatboxer": "kinginertia"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "kinginertia"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "2 - 3"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "bookieblanco"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "5 - 0"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "nero"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "4 - 1"
+            },
+            {
+              "round": "7 to Smoke",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "cj"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "5 - 0"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "kinginertia",
+              "points": 3
+            },
+            {
+              "beatboxer": "river",
+              "points": 7
+            },
+            {
+              "beatboxer": "remix",
+              "points": 0
+            },
+            {
+              "beatboxer": "momimaru",
+              "points": 0
+            },
+            {
+              "beatboxer": "nero",
+              "points": 2
+            },
+            {
+              "beatboxer": "bookieblanco",
+              "points": 0
+            },
+            {
+              "beatboxer": "cj",
+              "points": 1
+            },
+            {
+              "beatboxer": "den",
+              "points": 1
+            }
+          ],
+          "notes": [
+            "Note: the 36th, 43rd, 44th, 56th, 64th, 66th, 78th and 80th participants are unknown."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Grand Beatbox Battle 2026",
+      "edition": 16,
+      "status": "completed",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "kristof"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "river"
+          },
+          "runner_up": {
+            "beatboxer": "dlow"
+          },
+          "third": {
+            "beatboxer": "blackroll"
+          },
+          "participants": [
+            {
+              "beatboxer": "pacmax",
+              "qualification": "GBB 2025 Solo Champion"
+            },
+            {
+              "beatboxer": "kaji",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "blackroll",
+              "qualification": "GBB 2025 Solo 3rd Place"
+            },
+            {
+              "beatboxer": "marvelous",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "river",
+              "qualification": "GBB 2025 7 To Smoke Champion"
+            },
+            {
+              "beatboxer": "kinginertia",
+              "qualification": "5th Wildcard Winner (GBC 2026 Champion)*"
+            },
+            {
+              "beatboxer": "astron",
+              "qualification": "Maestro Beatbox America 2026 Champion"
+            },
+            {
+              "beatboxer": "abx",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "waali",
+              "qualification": "Great North Battle 2026 Champion"
+            },
+            {
+              "beatboxer": "stitch",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "gelber",
+              "qualification": "Africa & Mena Region Qualifier 2026 Champion"
+            },
+            {
+              "beatboxer": "gwizz",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "bookieblanco",
+              "qualification": "BeatCity Japan 2026 Solo Champion"
+            },
+            {
+              "beatboxer": "hhas",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "patbox",
+              "qualification": "Florida Beatbox Battle 2026 Champion"
+            },
+            {
+              "beatboxer": "exallos",
+              "qualification": "10th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "dlow",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "hippy",
+              "qualification": "11th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "footboxg",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "epos",
+              "qualification": "12th Wildcard Winner*"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "wing"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "dharni"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "zede"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "skiller"
+            },
+            {
+              "beatboxer": "wing"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "hhas"
+              },
+              "winner": {
+                "beatboxer": "kaji"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "kinginertia"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "astron"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "dlow"
+              },
+              "winner": {
+                "beatboxer": "dlow"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "dlow"
+              },
+              "winner": {
+                "beatboxer": "dlow"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "dlow"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "4 Votes - 1 Vote"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "kaji"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "footboxg"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "astron"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "river"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "kinginertia"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "blackroll"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "dlow"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "hhas"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "exallos"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "pacmax"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "abx"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "bookieblanco"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "patbox"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "gwizz"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "marvelous"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "waali"
+            },
+            {
+              "rank": 17,
+              "beatboxer": "epos"
+            },
+            {
+              "rank": 18,
+              "beatboxer": "gelber"
+            },
+            {
+              "rank": 19,
+              "beatboxer": "hippy"
+            },
+            {
+              "rank": 20,
+              "beatboxer": "stitch"
+            }
+          ],
+          "notes": [
+            "[us] King Inertia, who originally qualified to GBB26 via getting 5th place in the wildcard competition, won the GBC26 qualifier. Therefore, [co] EXALLOS (10th Wildcard Winner) joined GBB26.",
+            "[il] Hippy acted as a replacement for [id] Given (APAC 2026 Qualifier winner) due to passport problems.",
+            "[gb] Epos acted as a replacement for [za] Remix (Comeback Wildcard Winner) due to family member health issues."
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "kinginertia"
+          },
+          "participants": [
+            {
+              "beatboxer": "abx"
+            },
+            {
+              "beatboxer": "astron"
+            },
+            {
+              "beatboxer": "albo"
+            },
+            {
+              "beatboxer": "aria"
+            },
+            {
+              "beatboxer": "auroras"
+            },
+            {
+              "beatboxer": "crythix"
+            },
+            {
+              "beatboxer": "crkzu"
+            },
+            {
+              "beatboxer": "clutch"
+            },
+            {
+              "beatboxer": "bizkit"
+            },
+            {
+              "beatboxer": "boulesto"
+            },
+            {
+              "beatboxer": "kinginertia"
+            },
+            {
+              "beatboxer": "pacmax"
+            },
+            {
+              "beatboxer": "hippy"
+            },
+            {
+              "beatboxer": "osy"
+            },
+            {
+              "beatboxer": "patbox"
+            },
+            {
+              "beatboxer": "smplz"
+            },
+            {
+              "beatboxer": "sillver"
+            },
+            {
+              "beatboxer": "robeat"
+            },
+            {
+              "beatboxer": "heartgrey"
+            },
+            {
+              "beatboxer": "lexomafo"
+            },
+            {
+              "beatboxer": "lesya"
+            },
+            {
+              "beatboxer": "m1xx1ng"
+            },
+            {
+              "beatboxer": "seawind"
+            },
+            {
+              "beatboxer": "zach"
+            },
+            {
+              "beatboxer": "spfx"
+            },
+            {
+              "beatboxer": "drkoopa"
+            },
+            {
+              "beatboxer": "exallos"
+            },
+            {
+              "beatboxer": "gelber"
+            },
+            {
+              "beatboxer": "dropical"
+            },
+            {
+              "beatboxer": "dbs"
+            },
+            {
+              "beatboxer": "joker"
+            },
+            {
+              "beatboxer": "chorus"
+            },
+            {
+              "beatboxer": "foxey"
+            },
+            {
+              "beatboxer": "spong"
+            },
+            {
+              "beatboxer": "sznajder"
+            },
+            {
+              "beatboxer": "tioneb"
+            },
+            {
+              "beatboxer": "trc"
+            },
+            {
+              "beatboxer": "shishone"
+            },
+            {
+              "beatboxer": "waali"
+            },
+            {
+              "beatboxer": "zvd"
+            },
+            {
+              "beatboxer": "yamori"
+            },
+            {
+              "beatboxer": "marwee"
+            },
+            {
+              "beatboxer": "calexy"
+            },
+            {
+              "beatboxer": "okaz"
+            },
+            {
+              "beatboxer": "seizuma"
+            },
+            {
+              "beatboxer": "jonhattan"
+            },
+            {
+              "beatboxer": "juano"
+            },
+            {
+              "beatboxer": "markovich"
+            },
+            {
+              "beatboxer": "mikesd"
+            },
+            {
+              "beatboxer": "carnage"
+            },
+            {
+              "beatboxer": "stan"
+            },
+            {
+              "beatboxer": "inovity"
+            },
+            {
+              "beatboxer": "handfx"
+            },
+            {
+              "beatboxer": "mosch"
+            },
+            {
+              "beatboxer": "bigg"
+            },
+            {
+              "beatboxer": "vloud"
+            },
+            {
+              "beatboxer": "nocial"
+            },
+            {
+              "beatboxer": "uku"
+            },
+            {
+              "beatboxer": "martinbenati"
+            },
+            {
+              "beatboxer": "kaji"
+            },
+            {
+              "beatboxer": "riskee"
+            },
+            {
+              "beatboxer": "raeve"
+            },
+            {
+              "beatboxer": "vilbuz"
+            },
+            {
+              "beatboxer": "bintbox"
+            },
+            {
+              "beatboxer": "galaxy"
+            },
+            {
+              "beatboxer": "ankersen"
+            },
+            {
+              "beatboxer": "lucid"
+            },
+            {
+              "beatboxer": "lesgo"
+            },
+            {
+              "beatboxer": "guardian"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "kim"
+            },
+            {
+              "beatboxer": "johnt"
+            },
+            {
+              "beatboxer": "slizzer"
+            },
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "nexor"
+            }
+          ],
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "kaji"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "kinginertia"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "markovich"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "bizkit"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "astron"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "waali"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "bigg"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "shishone"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "exallos"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "kinginertia",
+              "points": 7
+            },
+            {
+              "beatboxer": "markovich",
+              "points": 6
+            },
+            {
+              "beatboxer": "bizkit",
+              "points": 5
+            },
+            {
+              "beatboxer": "astron",
+              "points": 5
+            },
+            {
+              "beatboxer": "waali",
+              "points": 0
+            },
+            {
+              "beatboxer": "bigg",
+              "points": 0
+            },
+            {
+              "beatboxer": "shishone",
+              "points": 2
+            },
+            {
+              "beatboxer": "exallos",
+              "points": 3
+            }
+          ],
+          "notes": [
+            "WIP list. There were a total of 113 participants that showcased,  crossed  beatboxers were off the range."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2027,
+      "name": "Grand Beatbox Battle 2027",
+      "edition": 17,
+      "status": "upcoming",
+      "dates": "September 10 - 11, 2027",
+      "location": "Warsaw",
+      "country": "Poland",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "participants": [
+            {
+              "beatboxer": "river",
+              "qualification": "GBB 2026 Solo Champion"
+            },
+            {
+              "beatboxer": "dlow",
+              "qualification": "GBB 2026 Solo Vice-Champion"
+            },
+            {
+              "beatboxer": "blackroll",
+              "qualification": "GBB 2026 Solo 3rd Place"
+            },
+            {
+              "beatboxer": "kinginertia",
+              "qualification": "GBB 2026 7 to Smoke Champion"
+            },
+            {
+              "beatboxer": "markovich",
+              "qualification": "GBB 2026 7 to Smoke 2nd Place*"
+            },
+            {
+              "beatboxer": "battery",
+              "qualification": "GBB 2026: Second League Champion"
+            }
+          ],
+          "notes": [
+            "The Florida Beatbox Festival event is confirmed on the BeatHive app by TiONEB.",
+            "Due to a battle order error, [bg] Markovich lost the GBB 2026 7 to Smoke by one point. Therefore, he is also qualified for GBB 2027. This was confirmed in [bg] Markovich's Instagram story."
+          ]
+        }
+      }
+    }
+  ]
+}

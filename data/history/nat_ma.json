@@ -1,0 +1,305 @@
+{
+  "competition": "nat_ma",
+  "editions": [
+    {
+      "year": 2021,
+      "name": "Moroccan Beatbox Championship 2021",
+      "status": "completed",
+      "dates": "December 25th, 2021",
+      "location": "Casablanca, Morocco",
+      "venue": "Centre Culturel Les Étoiles",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "doublem"
+        },
+        {
+          "beatboxer": "nowissam"
+        },
+        {
+          "beatboxer": "yacin"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "fabley"
+          },
+          "runner_up": {
+            "beatboxer": "eshadow"
+          },
+          "third": {
+            "beatboxer": "minko"
+          },
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "nixon"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "firis"
+              },
+              "b": {
+                "beatboxer": "cowboy"
+              },
+              "winner": {
+                "beatboxer": "cowboy"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "baki"
+              },
+              "b": {
+                "beatboxer": "komaf"
+              },
+              "winner": {
+                "beatboxer": "baki"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "anu"
+              },
+              "b": {
+                "beatboxer": "saitama"
+              },
+              "winner": {
+                "beatboxer": "saitama"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "eshadow"
+              },
+              "b": {
+                "beatboxer": "mdk"
+              },
+              "winner": {
+                "beatboxer": "eshadow"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "bmic"
+              },
+              "b": {
+                "beatboxer": "an16"
+              },
+              "winner": {
+                "beatboxer": "an16"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "minko"
+              },
+              "b": {
+                "beatboxer": "volty"
+              },
+              "winner": {
+                "beatboxer": "minko"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "night"
+              },
+              "b": {
+                "beatboxer": "arouf"
+              },
+              "winner": {
+                "beatboxer": "night"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "cowboy"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "baki"
+              },
+              "b": {
+                "beatboxer": "saitama"
+              },
+              "winner": {
+                "beatboxer": "baki"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "eshadow"
+              },
+              "b": {
+                "beatboxer": "an16"
+              },
+              "winner": {
+                "beatboxer": "eshadow"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "minko"
+              },
+              "b": {
+                "beatboxer": "night"
+              },
+              "winner": {
+                "beatboxer": "minko"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "baki"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "eshadow"
+              },
+              "b": {
+                "beatboxer": "minko"
+              },
+              "winner": {
+                "beatboxer": "eshadow"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "baki"
+              },
+              "b": {
+                "beatboxer": "minko"
+              },
+              "winner": {
+                "beatboxer": "minko"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "eshadow"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "name": "Moroccan Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "December 24th, 2022",
+      "location": "Casablanca, Morocco",
+      "venue": "Centre Culturel Les Étoiles",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bmic"
+        },
+        {
+          "beatboxer": "nowissam"
+        },
+        {
+          "beatboxer": "doublem"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "fabley"
+          },
+          "runner_up": {
+            "beatboxer": "gman"
+          },
+          "third": {
+            "beatboxer": "mochy"
+          },
+          "battles": [
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "mochy"
+              },
+              "b": {
+                "beatboxer": "caliya"
+              },
+              "winner": {
+                "beatboxer": "mochy"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "gman"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "competition": "nat_pt",
+  "editions": [
+    {
+      "year": 2021,
+      "name": "Portuguese Beatbox Championship 2021",
+      "status": "completed",
+      "dates": "April 2nd, 2022",
+      "location": "Matosinhos, Portugal",
+      "venue": "Cámara Municipal de Matosinhos",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "orodreth"
+        },
+        {
+          "beatboxer": "prichia"
+        },
+        {
+          "beatboxer": "bart"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "mixfx"
+          },
+          "runner_up": {
+            "beatboxer": "jewow"
+          },
+          "third": {
+            "beatboxer": "freshmic"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "freshmic"
+              },
+              "b": {
+                "beatboxer": "lulucabit"
+              },
+              "winner": {
+                "beatboxer": "freshmic"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mixfx"
+              },
+              "b": {
+                "beatboxer": "skin"
+              },
+              "winner": {
+                "beatboxer": "mixfx"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jewow"
+              },
+              "b": {
+                "beatboxer": "baco"
+              },
+              "winner": {
+                "beatboxer": "jewow"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "p3tar"
+              },
+              "b": {
+                "beatboxer": "nuno"
+              },
+              "winner": {
+                "beatboxer": "p3tar"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "freshmic"
+              },
+              "b": {
+                "beatboxer": "mixfx"
+              },
+              "winner": {
+                "beatboxer": "mixfx"
+              },
+              "score": "0 Votes* - 2 Votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "jewow"
+              },
+              "b": {
+                "beatboxer": "p3tar"
+              },
+              "winner": {
+                "beatboxer": "jewow"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "freshmic"
+              },
+              "b": {
+                "beatboxer": "p3tar"
+              },
+              "winner": {
+                "beatboxer": "freshmic"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "mixfx"
+              },
+              "b": {
+                "beatboxer": "jewow"
+              },
+              "winner": {
+                "beatboxer": "mixfx"
+              },
+              "score": "3 Votes - 0 Votes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Portuguese Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "June 29th, 2024",
+      "location": "Coimbra, Portugal",
+      "venue": "SALA 8",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bookieblanco"
+        },
+        {
+          "beatboxer": "pacmax"
+        },
+        {
+          "beatboxer": "skelem"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "lulucabit"
+          },
+          "runner_up": {
+            "beatboxer": "mixfx"
+          },
+          "third": {
+            "beatboxer": "baco"
+          },
+          "participants": [
+            {
+              "beatboxer": "lulucabit",
+              "qualification": "Portugal Beatbox Cup 2023 Champion"
+            },
+            {
+              "beatboxer": "skin",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "napping",
+              "qualification": "DC’s Urban Challenge 2023 Champion"
+            },
+            {
+              "beatboxer": "sanjibeat",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dids",
+              "qualification": "DC’s Urban Challenge 2024 Champion"
+            },
+            {
+              "beatboxer": "mike",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mixfx",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "slump",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ale",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "baco",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dycastella",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "koral",
+              "qualification": "16th Wildcard Winner"
+            },
+            {
+              "beatboxer": "fraga",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "specc",
+              "qualification": "18th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "brains",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "aladin",
+              "qualification": "19th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "flash",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "nuno",
+              "qualification": "20th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "drezbeat",
+              "qualification": "10th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mixfx"
+              },
+              "b": {
+                "beatboxer": "ale"
+              },
+              "winner": {
+                "beatboxer": "mixfx"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "baco"
+              },
+              "b": {
+                "beatboxer": "drezbeat"
+              },
+              "winner": {
+                "beatboxer": "baco"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lulucabit"
+              },
+              "b": {
+                "beatboxer": "flash"
+              },
+              "winner": {
+                "beatboxer": "lulucabit"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "napping"
+              },
+              "b": {
+                "beatboxer": "dycastella"
+              },
+              "winner": {
+                "beatboxer": "dycastella"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "mixfx"
+              },
+              "b": {
+                "beatboxer": "baco"
+              },
+              "winner": {
+                "beatboxer": "mixfx"
+              },
+              "score": "2 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lulucabit"
+              },
+              "b": {
+                "beatboxer": "dycastella"
+              },
+              "winner": {
+                "beatboxer": "lulucabit"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "baco"
+              },
+              "b": {
+                "beatboxer": "dycastella"
+              },
+              "winner": {
+                "beatboxer": "baco"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "mixfx"
+              },
+              "b": {
+                "beatboxer": "lulucabit"
+              },
+              "winner": {
+                "beatboxer": "lulucabit"
+              },
+              "score": "0 Votes - 3 Votes"
+            }
+          ],
+          "notes": [
+            "Specc, Aladin & NUNO acted as replacements for DuuX (4th Wildcard Winner), Stalkrixx (5th Wildcard Winner) & Xoze (7th Wildcard Winner).",
+            "Dids was the 17th place wildcard but he was already qualified."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Portuguese Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "October 17, 2026",
+      "location": "Coimbra, Portugal",
+      "venue": "Salão Brazil",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "mixfx"
+        },
+        {
+          "beatboxer": "jewow"
+        },
+        {
+          "beatboxer": "bladykris"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "baco"
+          },
+          "runner_up": {
+            "beatboxer": "lulacabit"
+          },
+          "third": {
+            "beatboxer": "napping"
+          },
+          "participants": [
+            {
+              "beatboxer": "lulacabit"
+            },
+            {
+              "beatboxer": "ink",
+              "qualification": "TBD"
+            },
+            {
+              "beatboxer": "flash"
+            },
+            {
+              "beatboxer": "napping",
+              "qualification": "TBD"
+            },
+            {
+              "beatboxer": "metalmike"
+            },
+            {
+              "beatboxer": "serra",
+              "qualification": "TBD"
+            },
+            {
+              "beatboxer": "baco"
+            },
+            {
+              "beatboxer": "duux",
+              "qualification": "TBD"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lulucabit"
+              },
+              "b": {
+                "beatboxer": "ink"
+              },
+              "winner": {
+                "beatboxer": "lulucabit"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "flash"
+              },
+              "b": {
+                "beatboxer": "napping"
+              },
+              "winner": {
+                "beatboxer": "napping"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "metalmike"
+              },
+              "b": {
+                "beatboxer": "serra"
+              },
+              "winner": {
+                "beatboxer": "metalmike"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "baco"
+              },
+              "b": {
+                "beatboxer": "duux"
+              },
+              "winner": {
+                "beatboxer": "baco"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lulucabit"
+              },
+              "b": {
+                "beatboxer": "napping"
+              },
+              "winner": {
+                "beatboxer": "lulucabit"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "metalmike"
+              },
+              "b": {
+                "beatboxer": "baco"
+              },
+              "winner": {
+                "beatboxer": "baco"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "napping"
+              },
+              "b": {
+                "beatboxer": "metalmike"
+              },
+              "winner": {
+                "beatboxer": "napping"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "lulacabit"
+              },
+              "b": {
+                "beatboxer": "baco"
+              },
+              "winner": {
+                "beatboxer": "baco"
+              }
+            }
+          ],
+          "notes": [
+            "The maximum number of the participants is 40."
+          ]
+        }
+      }
+    }
+  ]
+}

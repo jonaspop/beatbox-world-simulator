@@ -1,0 +1,36 @@
+{
+  "competition": "nat_il",
+  "editions": [
+    {
+      "year": 2025,
+      "name": "Israeli Beatbox Championship 2025",
+      "status": "completed",
+      "country": "il",
+      "source": "user",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "max"
+          },
+          "runner_up": {
+            "beatboxer": "hippy"
+          },
+          "battles": [
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "max"
+              },
+              "b": {
+                "beatboxer": "hippy"
+              },
+              "winner": {
+                "beatboxer": "max"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

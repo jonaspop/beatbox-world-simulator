@@ -1,0 +1,1038 @@
+{
+  "competition": "nat_bg",
+  "editions": [
+    {
+      "year": 2022,
+      "name": "Bulgarian Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "May 14th, 2022",
+      "location": "Sofia, Bulgaria",
+      "venue": "Club Mixtape 5",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "dynamic"
+        },
+        {
+          "beatboxer": "maxo"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bassbro"
+          },
+          "runner_up": {
+            "beatboxer": "marto"
+          },
+          "third": {
+            "beatboxer": "m1xx1ng"
+          },
+          "participants": [
+            {
+              "beatboxer": "bassbro",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "prmo",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vesko",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "gecata",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mgf",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "vasnkata",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "m1xx1ng",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "nasko",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vushev",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "nvs",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "chillyo",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "theurbansamurai",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "marto",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "lightshader",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "butterfly",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "nitro",
+              "qualification": "16th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "nitro"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "prmo"
+              },
+              "b": {
+                "beatboxer": "butterfly"
+              },
+              "winner": {
+                "beatboxer": "prmo"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "nasko"
+              },
+              "b": {
+                "beatboxer": "vushev"
+              },
+              "winner": {
+                "beatboxer": "vushev"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "nvs"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "theurbansamurai"
+              },
+              "b": {
+                "beatboxer": "mgf"
+              },
+              "winner": {
+                "beatboxer": "theurbansamurai"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "vasnkata"
+              },
+              "b": {
+                "beatboxer": "chillyo"
+              },
+              "winner": {
+                "beatboxer": "chillyo"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "marto"
+              },
+              "b": {
+                "beatboxer": "gecata"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "lightshader"
+              },
+              "b": {
+                "beatboxer": "vesko"
+              },
+              "winner": {
+                "beatboxer": "lightshader"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "prmo"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vushev"
+              },
+              "b": {
+                "beatboxer": "m1xx1ng"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "theurbansamurai"
+              },
+              "b": {
+                "beatboxer": "chillyo"
+              },
+              "winner": {
+                "beatboxer": "theurbansamurai"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "marto"
+              },
+              "b": {
+                "beatboxer": "lightshader"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "m1xx1ng"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "theurbansamurai"
+              },
+              "b": {
+                "beatboxer": "marto"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "theurbansamurai"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "marto"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Bulgarian Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "May 26th, 2023",
+      "location": "Yambol, Bulgaria",
+      "venue": "Club American",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        },
+        {
+          "beatboxer": "maxo"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "m1xx1ng"
+          },
+          "runner_up": {
+            "beatboxer": "marto"
+          },
+          "third": {
+            "beatboxer": "mgf"
+          },
+          "participants": [
+            {
+              "beatboxer": "m1xx1ng",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "nasko",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vushev",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "hydro",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "marto",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "vasnkata",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "nvs",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mzon",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "chillyo",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "pachulco",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "firesky",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "onkz",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mgf",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "zheni",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "prmo",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dobi",
+              "qualification": "17th Wildcard Winner*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "dobi"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "prmo"
+              },
+              "b": {
+                "beatboxer": "nasko"
+              },
+              "winner": {
+                "beatboxer": "nasko"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "nvs"
+              },
+              "b": {
+                "beatboxer": "pachulco"
+              },
+              "winner": {
+                "beatboxer": "nvs"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "chillyo"
+              },
+              "b": {
+                "beatboxer": "mzon"
+              },
+              "winner": {
+                "beatboxer": "chillyo"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "vushev"
+              },
+              "b": {
+                "beatboxer": "zheni"
+              },
+              "winner": {
+                "beatboxer": "vushev"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mgf"
+              },
+              "b": {
+                "beatboxer": "hydro"
+              },
+              "winner": {
+                "beatboxer": "mgf"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "marto"
+              },
+              "b": {
+                "beatboxer": "onkz"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "firesky"
+              },
+              "b": {
+                "beatboxer": "vasnkata"
+              },
+              "winner": {
+                "beatboxer": "firesky"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "nasko"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "nvs"
+              },
+              "b": {
+                "beatboxer": "chillyo"
+              },
+              "winner": {
+                "beatboxer": "chillyo"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vushev"
+              },
+              "b": {
+                "beatboxer": "mgf"
+              },
+              "winner": {
+                "beatboxer": "mgf"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "marto"
+              },
+              "b": {
+                "beatboxer": "firesky"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "chillyo"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "mgf"
+              },
+              "b": {
+                "beatboxer": "marto"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "chillyo"
+              },
+              "b": {
+                "beatboxer": "mgf"
+              },
+              "winner": {
+                "beatboxer": "mgf"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "marto"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            }
+          ],
+          "notes": [
+            "Dobi acted as a replacement for BigAlio (16th Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Bulgarian Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "December 15th, 2024",
+      "location": "Plovdiv, Bulgaria",
+      "venue": "Bee Bop Cafe",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "maxo"
+        },
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "m1xx1ng"
+          },
+          "runner_up": {
+            "beatboxer": "bassbro"
+          },
+          "third": {
+            "beatboxer": "vushev"
+          },
+          "participants": [
+            {
+              "beatboxer": "m1xx1ng",
+              "qualification": "Gabrovo Mixed Up Festival 2023 Champion"
+            },
+            {
+              "beatboxer": "nasko",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "marto",
+              "qualification": "Gabrovo Mixed Up Festival 2023 Vice-Champion"
+            },
+            {
+              "beatboxer": "firesky",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "bassbro",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "nvs",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mgf",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "geko",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vushev",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "hydro",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vasnkata",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ultimate",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "chillyo",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dc",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "markovich",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "kyoseff",
+              "qualification": "15th Wildcard Winner*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "kyoseff"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "markovich"
+              },
+              "b": {
+                "beatboxer": "nasko"
+              },
+              "winner": {
+                "beatboxer": "markovich"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "vushev"
+              },
+              "b": {
+                "beatboxer": "geko"
+              },
+              "winner": {
+                "beatboxer": "vushev"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mgf"
+              },
+              "b": {
+                "beatboxer": "hydro"
+              },
+              "winner": {
+                "beatboxer": "mgf"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "ultimate"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "vasnkata"
+              },
+              "b": {
+                "beatboxer": "nvs"
+              },
+              "winner": {
+                "beatboxer": "vasnkata"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "chillyo"
+              },
+              "b": {
+                "beatboxer": "firesky"
+              },
+              "winner": {
+                "beatboxer": "chillyo"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "marto"
+              },
+              "b": {
+                "beatboxer": "dc"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "markovich"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vushev"
+              },
+              "b": {
+                "beatboxer": "mgf"
+              },
+              "winner": {
+                "beatboxer": "vushev"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "chillyo"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "chillyo"
+              },
+              "b": {
+                "beatboxer": "marto"
+              },
+              "winner": {
+                "beatboxer": "marto"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "vushev"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "marto"
+              },
+              "b": {
+                "beatboxer": "bassbro"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "vushev"
+              },
+              "b": {
+                "beatboxer": "marto"
+              },
+              "winner": {
+                "beatboxer": "vushev"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "bassbro"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            }
+          ],
+          "notes": [
+            "Kyoseff acted as a replacement for Shonka1a (12th Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Bulgarian Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "December 13th, 2025",
+      "location": "Sofia, Bulgaria",
+      "venue": "Toplocentrala",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bigben"
+        },
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "maxo"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        },
+        {
+          "beatboxer": "dynamic"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "m1xx1ng"
+          },
+          "runner_up": {
+            "beatboxer": "markovich"
+          },
+          "participants": [
+            {
+              "beatboxer": "vushev",
+              "qualification": "BBC 2025 QF1 Champion"
+            },
+            {
+              "beatboxer": "m1xx1ng",
+              "qualification": "BBC 2025 QF1 3rd Place"
+            },
+            {
+              "beatboxer": "firesky",
+              "qualification": "BBC 2025 QF2 Champion"
+            },
+            {
+              "beatboxer": "bassbro",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "nasko",
+              "qualification": "BBC 2025 QF3 Champion"
+            },
+            {
+              "beatboxer": "chillyo",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "markovich",
+              "qualification": "BBC 2025 QF1 Vice-Champion"
+            },
+            {
+              "beatboxer": "geko",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "marto",
+              "qualification": "BBC 2025 QF2 Vice-Champion"
+            },
+            {
+              "beatboxer": "dv",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mgf",
+              "qualification": "BBC 2025 QF3 Vice-Champion"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "firesky"
+              },
+              "b": {
+                "beatboxer": "geko"
+              },
+              "winner": {
+                "beatboxer": "firesky"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "firesky"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "markovich"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              }
+            }
+          ],
+          "notes": [
+            "4 Wildcard Winners attended a 120s elimination first."
+          ]
+        }
+      }
+    }
+  ]
+}

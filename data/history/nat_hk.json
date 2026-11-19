@@ -1,0 +1,343 @@
+{
+  "competition": "nat_hk",
+  "editions": [
+    {
+      "year": 2026,
+      "name": "Hong Kong Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "May 16th, 2026",
+      "location": "North Point, Hong Kong",
+      "venue": "MOM Livehouse",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "corey"
+        },
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "teller"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "theo"
+          },
+          "runner_up": {
+            "beatboxer": "3h"
+          },
+          "participants": [
+            {
+              "beatboxer": "zalit",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "dtt",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "silver",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "nodevil",
+              "qualification": "5th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "dodge5er",
+              "qualification": "Wildcard 6th Place"
+            },
+            {
+              "beatboxer": "keating",
+              "qualification": "Wildcard 7th Place"
+            },
+            {
+              "beatboxer": "halo",
+              "qualification": "Wildcard 8th Place"
+            },
+            {
+              "beatboxer": "hris",
+              "qualification": "Wildcard 9th Place"
+            },
+            {
+              "beatboxer": "kl",
+              "qualification": "Wildcard 10th Place"
+            },
+            {
+              "beatboxer": "gara",
+              "qualification": "Wildcard 11th Place"
+            },
+            {
+              "beatboxer": "ryan",
+              "qualification": "Wildcard 12th Place"
+            },
+            {
+              "beatboxer": "lemonaid",
+              "qualification": "Wildcard 13th Place"
+            },
+            {
+              "beatboxer": "gun",
+              "qualification": "Wildcard 14th Place"
+            },
+            {
+              "beatboxer": "tiger",
+              "qualification": "Wildcard 15th Place"
+            },
+            {
+              "beatboxer": "maxton",
+              "qualification": "Wildcard 16th Place"
+            },
+            {
+              "beatboxer": "enderben",
+              "qualification": "Wildcard 17th Place"
+            },
+            {
+              "beatboxer": "marsbars",
+              "qualification": "Wildcard 18th Place"
+            },
+            {
+              "beatboxer": "basky",
+              "qualification": "Wildcard 19th Place"
+            },
+            {
+              "beatboxer": "caspian",
+              "qualification": "Wildcard 20th Place"
+            },
+            {
+              "beatboxer": "dtm",
+              "qualification": "Wildcard 21st Place"
+            },
+            {
+              "beatboxer": "plasticbox",
+              "qualification": "Wildcard 22nd Place"
+            },
+            {
+              "beatboxer": "ape",
+              "qualification": "Wildcard 23rd Place"
+            },
+            {
+              "beatboxer": "joyboy",
+              "qualification": "Wildcard 24th Place"
+            },
+            {
+              "beatboxer": "kl"
+            },
+            {
+              "beatboxer": "dodge5er"
+            },
+            {
+              "beatboxer": "basky"
+            },
+            {
+              "beatboxer": "ryan"
+            },
+            {
+              "beatboxer": "dtm"
+            },
+            {
+              "beatboxer": "theo"
+            },
+            {
+              "beatboxer": "howard"
+            },
+            {
+              "beatboxer": "caspian"
+            },
+            {
+              "beatboxer": "lemonaid"
+            },
+            {
+              "beatboxer": "joyboy"
+            },
+            {
+              "beatboxer": "3h"
+            },
+            {
+              "beatboxer": "ape"
+            },
+            {
+              "beatboxer": "keating"
+            },
+            {
+              "beatboxer": "kel"
+            },
+            {
+              "beatboxer": "marsbars"
+            },
+            {
+              "beatboxer": "gun"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "heartgrey"
+            },
+            {
+              "beatboxer": "fatking"
+            },
+            {
+              "beatboxer": "corey"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zalit"
+              },
+              "b": {
+                "beatboxer": "theo"
+              },
+              "winner": {
+                "beatboxer": "theo"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "silver"
+              },
+              "b": {
+                "beatboxer": "ape"
+              },
+              "winner": {
+                "beatboxer": "silver"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dtt"
+              },
+              "b": {
+                "beatboxer": "3h"
+              },
+              "winner": {
+                "beatboxer": "3h"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "nodevil"
+              },
+              "b": {
+                "beatboxer": "dodge5er"
+              },
+              "winner": {
+                "beatboxer": "nodevil"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "theo"
+              },
+              "b": {
+                "beatboxer": "silver"
+              },
+              "winner": {
+                "beatboxer": "theo"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "3h"
+              },
+              "b": {
+                "beatboxer": "nodevil"
+              },
+              "winner": {
+                "beatboxer": "3h"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "theo"
+              },
+              "b": {
+                "beatboxer": "3h"
+              },
+              "winner": {
+                "beatboxer": "theo"
+              }
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "theo"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "3h"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "ape"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "dodge5er"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "gun"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "keating"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "basky"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "kl"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "ryan"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "dtm"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "howard"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "kel"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "lemonaid"
+            },
+            {
+              "rank": 14,
+              "beatboxer": "joyboy"
+            },
+            {
+              "rank": 15,
+              "beatboxer": "marsbars"
+            },
+            {
+              "rank": 16,
+              "beatboxer": "caspian"
+            }
+          ],
+          "notes": [
+            "NODEVIL acted as a replacement for GG (3rd Wildcard Winner)."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,849 @@
+{
+  "competition": "bayreuth",
+  "editions": [
+    {
+      "year": 2021,
+      "name": "Bayreuth Beatbox Battle 2021",
+      "status": "completed",
+      "dates": "November 27th, 2021",
+      "location": "Bayreuth, Germany",
+      "venue": "Reichshof Kulturbühne Bayreuth",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "madox"
+        },
+        {
+          "beatboxer": "chezame"
+        },
+        {
+          "beatboxer": "sxin"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "river"
+          },
+          "runner_up": {
+            "beatboxer": "gwizz"
+          },
+          "third": {
+            "beatboxer": "match"
+          },
+          "participants": [
+            {
+              "beatboxer": "river",
+              "qualification": "2020 1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "epock",
+              "qualification": "2020 2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "gwizz",
+              "qualification": "2020 4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "match",
+              "qualification": "2020 8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "aelmight",
+              "qualification": "Invited*"
+            },
+            {
+              "beatboxer": "elgrande",
+              "qualification": "Invited*"
+            },
+            {
+              "beatboxer": "eon",
+              "qualification": "Invited*"
+            },
+            {
+              "beatboxer": "osy",
+              "qualification": "Invited*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "elgrande"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "4 Points - 5 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "eon"
+              },
+              "b": {
+                "beatboxer": "ael"
+              },
+              "winner": {
+                "beatboxer": "eon"
+              },
+              "score": "4 Points - 2 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "match"
+              },
+              "b": {
+                "beatboxer": "osy"
+              },
+              "winner": {
+                "beatboxer": "match"
+              },
+              "score": "4 Points - 2 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "epock"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "6 Points - 0 Points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "eon"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "6 Points - 3 Points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "match"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "eon"
+              },
+              "b": {
+                "beatboxer": "match"
+              },
+              "winner": {
+                "beatboxer": "match"
+              },
+              "score": "0 Points - 6 Points"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "0 Points - 6 Points"
+            }
+          ],
+          "notes": [
+            "Ael, El Grande, Eon and Osy acted as replacements for [us] Balistix (2020 3rd Wildcard Winner), [bg] BassBro (2020 5th Wildcard Winner), [us] PingPong Po (2020 6th Wildcard Winner) & [nl] Benja (2020 7th Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "name": "Bayreuth Beatbox Battle 2022",
+      "status": "completed",
+      "dates": "November 19th, 2022",
+      "location": "Bayreuth, Germany",
+      "venue": "Reichshof Kulturbühne Bayreuth",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "colaps"
+        },
+        {
+          "beatboxer": "nexor"
+        },
+        {
+          "beatboxer": "river"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "vocodah"
+          },
+          "runner_up": {
+            "beatboxer": "osis"
+          },
+          "third": {
+            "beatboxer": "max"
+          },
+          "participants": [
+            {
+              "beatboxer": "epock"
+            },
+            {
+              "beatboxer": "gwizz"
+            },
+            {
+              "beatboxer": "kinginertia"
+            },
+            {
+              "beatboxer": "madox"
+            },
+            {
+              "beatboxer": "max"
+            },
+            {
+              "beatboxer": "osis"
+            },
+            {
+              "beatboxer": "osy"
+            },
+            {
+              "beatboxer": "vocodah"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "epock"
+              },
+              "b": {
+                "beatboxer": "max"
+              },
+              "winner": {
+                "beatboxer": "max"
+              },
+              "score": "0 Votes - 6 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "kinginertia"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "6 Votes* - 3 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "6 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osy"
+              },
+              "b": {
+                "beatboxer": "madox"
+              },
+              "winner": {
+                "beatboxer": "madox"
+              },
+              "score": "1 vote - 5 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "max"
+              },
+              "b": {
+                "beatboxer": "vocodah"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "2 votes - 4 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "madox"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "6 votes - 0 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "max"
+              },
+              "b": {
+                "beatboxer": "madox"
+              },
+              "winner": {
+                "beatboxer": "max"
+              },
+              "score": "6 votes - 0 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "vocodah"
+              },
+              "b": {
+                "beatboxer": "osis"
+              },
+              "winner": {
+                "beatboxer": "vocodah"
+              },
+              "score": "6 votes - 0 votes"
+            }
+          ],
+          "notes": [
+            "OSY acted as a replacement for [fr] PACMax."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Bayreuth Beatbox Battle 2023",
+      "status": "completed",
+      "dates": "November 18th, 2023",
+      "location": "Bayreuth, Germany",
+      "venue": "Reichshof Kulturbühne Bayreuth",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "dlow"
+        },
+        {
+          "beatboxer": "nexor"
+        },
+        {
+          "beatboxer": "river"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "pacmax"
+          },
+          "runner_up": {
+            "beatboxer": "gwizz"
+          },
+          "third": {
+            "beatboxer": "blackroll"
+          },
+          "participants": [
+            {
+              "beatboxer": "blackroll"
+            },
+            {
+              "beatboxer": "bassbro"
+            },
+            {
+              "beatboxer": "epock"
+            },
+            {
+              "beatboxer": "gwizz"
+            },
+            {
+              "beatboxer": "julard"
+            },
+            {
+              "beatboxer": "stan"
+            },
+            {
+              "beatboxer": "osis"
+            },
+            {
+              "beatboxer": "pacmax"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 points - 6 points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "epock"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "6 points - 0 points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "bassbro"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "4 points - 2 points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "4 points - 2 points"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "4 votes - 2 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Bayreuth Beatbox Battle 2024",
+      "status": "completed",
+      "dates": "November 30th, 2024",
+      "location": "Bayreuth, Germany",
+      "venue": "Reichshof Kulturbühne Bayreuth",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "alem"
+        },
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "nexor"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "julard"
+          },
+          "runner_up": {
+            "beatboxer": "joker"
+          },
+          "third": {
+            "beatboxer": "dynamatt"
+          },
+          "participants": [
+            {
+              "beatboxer": "bigg"
+            },
+            {
+              "beatboxer": "dynamatt"
+            },
+            {
+              "beatboxer": "gako"
+            },
+            {
+              "beatboxer": "gwizz"
+            },
+            {
+              "beatboxer": "julard"
+            },
+            {
+              "beatboxer": "lennsi"
+            },
+            {
+              "beatboxer": "joker"
+            },
+            {
+              "beatboxer": "zota"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "joker"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zota"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "gako"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "lennsi"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "joker"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "joker"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              }
+            }
+          ],
+          "notes": [
+            "Gako and Joker acted as replacements for [gb-wls] Graycloud & [be] stan."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Bayreuth Beatbox Battle 2025",
+      "status": "completed",
+      "dates": "November 8th, 2025",
+      "location": "Bayreuth, Germany",
+      "venue": "Reichshof Kulturbühne",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "nexor"
+        },
+        {
+          "beatboxer": "rythmind"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "gwizz"
+          },
+          "runner_up": {
+            "beatboxer": "epos"
+          },
+          "third": {
+            "beatboxer": "patbox"
+          },
+          "participants": [
+            {
+              "beatboxer": "dynamatt",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "crythix",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "epos",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "karma",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "patbox",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "gwizz",
+              "qualification": "1st Place Open Elimination"
+            },
+            {
+              "beatboxer": "uku",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "triizzy",
+              "qualification": "2nd Place Open Elimination"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "uku"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "epos"
+              },
+              "b": {
+                "beatboxer": "karma"
+              },
+              "winner": {
+                "beatboxer": "epos"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "patbox"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "patbox"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "triizzy"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "epos"
+              },
+              "winner": {
+                "beatboxer": "epos"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "patbox"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "patbox"
+              },
+              "winner": {
+                "beatboxer": "patbox"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "epos"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              }
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "gwizz",
+              "place": 3
+            },
+            {
+              "beatboxer": "trc",
+              "place": 4
+            },
+            {
+              "beatboxer": "acar",
+              "place": 5
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

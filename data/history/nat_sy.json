@@ -1,0 +1,229 @@
+{
+  "competition": "nat_sy",
+  "editions": [
+    {
+      "year": 2026,
+      "name": "Online Syrian Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "April 18, 2026",
+      "location": "Online",
+      "country": "Syria",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "caspian"
+        },
+        {
+          "beatboxer": "zota"
+        },
+        {
+          "beatboxer": "kuulest"
+        },
+        {
+          "beatboxer": "fabley"
+        },
+        {
+          "beatboxer": "dismay"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "dismay"
+        },
+        {
+          "beatboxer": "madni"
+        },
+        {
+          "beatboxer": "crythix"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "alfx"
+          },
+          "runner_up": {
+            "beatboxer": "koniki"
+          },
+          "third": {
+            "beatboxer": "ric0"
+          },
+          "participants": [
+            {
+              "beatboxer": "alfx",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "hamandosh",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "satorius",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "obada",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "koniki",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "ak",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ric0",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "esqar",
+              "qualification": "8th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "alfx"
+              },
+              "b": {
+                "beatboxer": "esqar"
+              },
+              "winner": {
+                "beatboxer": "alfx"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ric0"
+              },
+              "b": {
+                "beatboxer": "hamandosh"
+              },
+              "winner": {
+                "beatboxer": "ric0"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "koniki"
+              },
+              "b": {
+                "beatboxer": "obada"
+              },
+              "winner": {
+                "beatboxer": "koniki"
+              },
+              "score": "2 Votes* - 1 Vote*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "satoruis"
+              },
+              "b": {
+                "beatboxer": "ak"
+              },
+              "winner": {
+                "beatboxer": "satoruis"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "alfx"
+              },
+              "b": {
+                "beatboxer": "ric0"
+              },
+              "winner": {
+                "beatboxer": "alfx"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "koniki"
+              },
+              "b": {
+                "beatboxer": "satoruis"
+              },
+              "winner": {
+                "beatboxer": "koniki"
+              },
+              "score": "3 Votes* - 1 Vote*"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "ric0"
+              },
+              "b": {
+                "beatboxer": "satoruis"
+              },
+              "winner": {
+                "beatboxer": "ric0"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "alfx"
+              },
+              "b": {
+                "beatboxer": "koniki"
+              },
+              "winner": {
+                "beatboxer": "alfx"
+              },
+              "score": "5 Votes - 0 Votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "dreamy",
+              "place": 9
+            },
+            {
+              "beatboxer": "kareal",
+              "place": 10
+            },
+            {
+              "beatboxer": "karios",
+              "place": 11
+            },
+            {
+              "beatboxer": "escanor",
+              "place": 12
+            },
+            {
+              "beatboxer": "warrior",
+              "place": 13
+            },
+            {
+              "beatboxer": "orbix",
+              "place": 14
+            },
+            {
+              "beatboxer": "obayda",
+              "place": 15
+            },
+            {
+              "beatboxer": "atred",
+              "place": 16
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

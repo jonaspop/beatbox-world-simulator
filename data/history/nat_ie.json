@@ -1,0 +1,521 @@
+{
+  "competition": "nat_ie",
+  "editions": [
+    {
+      "year": 2022,
+      "name": "Irish Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "December 27th, 2022",
+      "location": "Dublin, Ireland",
+      "venue": "The Sound House",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "amaron"
+        },
+        {
+          "beatboxer": "dlow"
+        },
+        {
+          "beatboxer": "frosty"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "osis"
+          },
+          "runner_up": {
+            "beatboxer": "zach"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "ko"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "doppler"
+              },
+              "b": {
+                "beatboxer": "paul1"
+              },
+              "winner": {
+                "beatboxer": "doppler"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zach"
+              },
+              "b": {
+                "beatboxer": "meek"
+              },
+              "winner": {
+                "beatboxer": "zach"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tremor"
+              },
+              "b": {
+                "beatboxer": "shattered"
+              },
+              "winner": {
+                "beatboxer": "tremor"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "doppler"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "zach"
+              },
+              "b": {
+                "beatboxer": "tremor"
+              },
+              "winner": {
+                "beatboxer": "zach"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "zach"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Irish Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "December 17th, 2023",
+      "location": "Dublin, Ireland",
+      "venue": "The Sound House",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "dbs"
+          },
+          "runner_up": {
+            "beatboxer": "zach"
+          },
+          "judges": [
+            {
+              "beatboxer": "osis"
+            },
+            {
+              "beatboxer": "frosty"
+            },
+            {
+              "beatboxer": "pacmax"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dbs"
+              },
+              "b": {
+                "beatboxer": "loughneally"
+              },
+              "winner": {
+                "beatboxer": "dbs"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tremor"
+              },
+              "b": {
+                "beatboxer": "shattered"
+              },
+              "winner": {
+                "beatboxer": "tremor"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ko"
+              },
+              "b": {
+                "beatboxer": "reddion"
+              },
+              "winner": {
+                "beatboxer": "ko"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zach"
+              },
+              "b": {
+                "beatboxer": "paul"
+              },
+              "winner": {
+                "beatboxer": "zach"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "dbs"
+              },
+              "b": {
+                "beatboxer": "tremor"
+              },
+              "winner": {
+                "beatboxer": "dbs"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ko"
+              },
+              "b": {
+                "beatboxer": "zach"
+              },
+              "winner": {
+                "beatboxer": "zach"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "dbs"
+              },
+              "b": {
+                "beatboxer": "zach"
+              },
+              "winner": {
+                "beatboxer": "dbs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Irish Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "December 22nd, 2024",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "loughneally"
+          },
+          "runner_up": {
+            "beatboxer": "jonty"
+          },
+          "third": {
+            "beatboxer": "ko"
+          },
+          "judges": [
+            {
+              "beatboxer": "crythix"
+            },
+            {
+              "beatboxer": "dbs"
+            },
+            {
+              "beatboxer": "tremor"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "loughneally"
+              },
+              "b": {
+                "beatboxer": "fbh"
+              },
+              "winner": {
+                "beatboxer": "loughneally"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ko"
+              },
+              "b": {
+                "beatboxer": "cryptic"
+              },
+              "winner": {
+                "beatboxer": "ko"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jonty"
+              },
+              "b": {
+                "beatboxer": "jacken"
+              },
+              "winner": {
+                "beatboxer": "jonty"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shattered"
+              },
+              "b": {
+                "beatboxer": "dc"
+              },
+              "winner": {
+                "beatboxer": "shattered"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "loughneally"
+              },
+              "b": {
+                "beatboxer": "ko"
+              },
+              "winner": {
+                "beatboxer": "loughneally"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "jonty"
+              },
+              "b": {
+                "beatboxer": "shattered"
+              },
+              "winner": {
+                "beatboxer": "jonty"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "ko"
+              },
+              "b": {
+                "beatboxer": "shattered"
+              },
+              "winner": {
+                "beatboxer": "ko"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "loughneally"
+              },
+              "b": {
+                "beatboxer": "jonty"
+              },
+              "winner": {
+                "beatboxer": "loughneally"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Irish Beatbox Championships 2025",
+      "status": "completed",
+      "dates": "December 28th, 2025",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "zach"
+          },
+          "runner_up": {
+            "beatboxer": "loughneally"
+          },
+          "third": {
+            "beatboxer": "jacken"
+          },
+          "judges": [
+            {
+              "beatboxer": "osis"
+            },
+            {
+              "beatboxer": "epos"
+            },
+            {
+              "beatboxer": "dbs"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "loughneally"
+              },
+              "b": {
+                "beatboxer": "mossi"
+              },
+              "winner": {
+                "beatboxer": "loughneally"
+              },
+              "score": "2 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jacken"
+              },
+              "b": {
+                "beatboxer": "reddion"
+              },
+              "winner": {
+                "beatboxer": "jacken"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tremor"
+              },
+              "b": {
+                "beatboxer": "shattered"
+              },
+              "winner": {
+                "beatboxer": "shattered"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zach"
+              },
+              "b": {
+                "beatboxer": "dc"
+              },
+              "winner": {
+                "beatboxer": "zach"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "loughneally"
+              },
+              "b": {
+                "beatboxer": "jacken"
+              },
+              "winner": {
+                "beatboxer": "loughneally"
+              },
+              "score": "2 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "shattered"
+              },
+              "b": {
+                "beatboxer": "zach"
+              },
+              "winner": {
+                "beatboxer": "zach"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "jacken"
+              },
+              "b": {
+                "beatboxer": "shattered"
+              },
+              "winner": {
+                "beatboxer": "jacken"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "loughneally"
+              },
+              "b": {
+                "beatboxer": "zach"
+              },
+              "winner": {
+                "beatboxer": "zach"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Irish Beatbox Championships 2026",
+      "status": "results_missing",
+      "country": "ie",
+      "source": "user",
+      "judges": [
+        {
+          "beatboxer": "osis"
+        },
+        {
+          "beatboxer": "undefined"
+        },
+        {
+          "beatboxer": "crythix"
+        }
+      ],
+      "categories": {}
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "competition": "nat_be",
+  "editions": [
+    {
+      "year": 2022,
+      "name": "Belgian Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "November 19th, 2022",
+      "location": "Brussels, Belgium",
+      "venue": "MANÏ CLUB",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "fayabraz"
+        },
+        {
+          "beatboxer": "bmg"
+        },
+        {
+          "beatboxer": "supernova"
+        },
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "hurrakanethasoundztorm"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "footboxg"
+          },
+          "runner_up": {
+            "beatboxer": "bonzo"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bonzo"
+              },
+              "b": {
+                "beatboxer": "yaswede"
+              },
+              "winner": {
+                "beatboxer": "bonzo"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bonzo"
+              },
+              "b": {
+                "beatboxer": "dawood"
+              },
+              "winner": {
+                "beatboxer": "bonzo"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "footboxg"
+              },
+              "b": {
+                "beatboxer": "bonzo"
+              },
+              "winner": {
+                "beatboxer": "footboxg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Belgian Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "December 9th, 2023",
+      "location": "Brussels, Belgium",
+      "venue": "VK Concerts",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "river"
+        },
+        {
+          "beatboxer": "robeat"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        },
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "supernova"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "stan"
+          },
+          "runner_up": {
+            "beatboxer": "gwizz"
+          },
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "lesliebaker"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "vox"
+              },
+              "b": {
+                "beatboxer": "bonzo"
+              },
+              "winner": {
+                "beatboxer": "bonzo"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "ryan"
+              },
+              "b": {
+                "beatboxer": "bigben"
+              },
+              "winner": {
+                "beatboxer": "bigben"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "tcherno"
+              },
+              "b": {
+                "beatboxer": "dandum"
+              },
+              "winner": {
+                "beatboxer": "tcherno"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "glord"
+              },
+              "b": {
+                "beatboxer": "alex"
+              },
+              "winner": {
+                "beatboxer": "glord"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "karikol"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "shangai"
+              },
+              "b": {
+                "beatboxer": "gts"
+              },
+              "winner": {
+                "beatboxer": "gts"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "yaswede"
+              },
+              "b": {
+                "beatboxer": "taymone"
+              },
+              "winner": {
+                "beatboxer": "yaswede"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "bonzo"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigben"
+              },
+              "b": {
+                "beatboxer": "tcherno"
+              },
+              "winner": {
+                "beatboxer": "bigben"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "glord"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gts"
+              },
+              "b": {
+                "beatboxer": "yaswede"
+              },
+              "winner": {
+                "beatboxer": "gts"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "bigben"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "gts"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Belgian Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "April 5th, 2025",
+      "location": "Charleroi, Belgium",
+      "venue": "Centre Culturel Eden de Charleroi",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bellatrix"
+        },
+        {
+          "beatboxer": "slizzer"
+        },
+        {
+          "beatboxer": "eon"
+        },
+        {
+          "beatboxer": "geopopoff"
+        },
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "robeat"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "gwizz"
+          },
+          "runner_up": {
+            "beatboxer": "glord"
+          },
+          "participants": [
+            {
+              "beatboxer": "glord"
+            },
+            {
+              "beatboxer": "yaswede"
+            },
+            {
+              "beatboxer": "seb"
+            },
+            {
+              "beatboxer": "stan"
+            },
+            {
+              "beatboxer": "shangai"
+            },
+            {
+              "beatboxer": "dantum"
+            },
+            {
+              "beatboxer": "karikol"
+            },
+            {
+              "beatboxer": "vox"
+            },
+            {
+              "beatboxer": "supernova"
+            },
+            {
+              "beatboxer": "gwizz"
+            },
+            {
+              "beatboxer": "tcherno"
+            },
+            {
+              "beatboxer": "ales"
+            },
+            {
+              "beatboxer": "ryan"
+            },
+            {
+              "beatboxer": "r3kto"
+            },
+            {
+              "beatboxer": "sonar"
+            },
+            {
+              "beatboxer": "gts"
+            },
+            {
+              "beatboxer": "lesliebaker"
+            },
+            {
+              "beatboxer": "kosmi",
+              "qualification": "|"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "gts"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "ryan"
+              },
+              "b": {
+                "beatboxer": "lesliebaker"
+              },
+              "winner": {
+                "beatboxer": "ryan"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "r3kto"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "tcherno"
+              },
+              "b": {
+                "beatboxer": "sonar"
+              },
+              "winner": {
+                "beatboxer": "tcherno"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "shangai"
+              },
+              "b": {
+                "beatboxer": "vox"
+              },
+              "winner": {
+                "beatboxer": "shangai"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "yaswede"
+              },
+              "b": {
+                "beatboxer": "kosmi"
+              },
+              "winner": {
+                "beatboxer": "yaswede"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "supernova"
+              },
+              "b": {
+                "beatboxer": "karikol"
+              },
+              "winner": {
+                "beatboxer": "supernova"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dantum"
+              },
+              "b": {
+                "beatboxer": "glord"
+              },
+              "winner": {
+                "beatboxer": "glord"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "ryan"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "tcherno"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shangai"
+              },
+              "b": {
+                "beatboxer": "yaswede"
+              },
+              "winner": {
+                "beatboxer": "shangai"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "supernova"
+              },
+              "b": {
+                "beatboxer": "glord"
+              },
+              "winner": {
+                "beatboxer": "glord"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "shangai"
+              },
+              "b": {
+                "beatboxer": "glord"
+              },
+              "winner": {
+                "beatboxer": "glord"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "glord"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              }
+            }
+          ],
+          "notes": [
+            "Some participants are missing in this list."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Belgian Beatbox Championship 2026",
+      "status": "results_missing",
+      "dates": "November 28th, 2026",
+      "location": "Brussels",
+      "country": "Belgium",
+      "venue": "VK Concerts",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "rocco"
+        },
+        {
+          "beatboxer": "kimmy"
+        },
+        {
+          "beatboxer": "maxo"
+        },
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "gwizz"
+        }
+      ],
+      "categories": {}
+    }
+  ]
+}

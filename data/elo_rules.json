@@ -1,0 +1,343 @@
+{
+  "about": "Elo bonuses per competition, from the user's table. Bonuses stack: reaching a stage gives every step up to it (a GBB winner gets qualify + seed bonuses + top 8 + top 4 + final + win). Steps: qualify (entered the main event), seed_top15 / seed_top10 (GBB elimination ranking), top32, top16, top8, top4, third (won the 3rd place battle, given on top of top4), final (reached the final), win.",
+  "base_elo": 1000,
+  "season_fade": 0.8,
+  "battle_k": 12,
+  "battle_k_note": "Each battle also exchanges Elo. K is battle_k times (that competition's win bonus / 75), so with battle_k 12 a GBB battle moves 12 points at most and a small national battle about 1-2.",
+  "seven_to_smoke": {
+    "win": 30,
+    "qualify": 5,
+    "note": "Confirmed by the user: +30 for the winner, +5 for every entrant. Applies to every 7 to Smoke (GBB, One One, NUE, national ones)."
+  },
+  "default_national": {
+    "final": 2,
+    "win": 5
+  },
+  "competitions": {
+    "bbwc": {
+      "top32": 10,
+      "top16": 15,
+      "top8": 20,
+      "top4": 25,
+      "final": 35,
+      "win": 50
+    },
+    "gbb": {
+      "qualify": 15,
+      "seed_top15": 5,
+      "seed_top10": 10,
+      "top8": 25,
+      "top4": 50,
+      "third": 35,
+      "final": 50,
+      "win": 75
+    },
+    "gbb_second_league": {
+      "top8": 10,
+      "top4": 15,
+      "final": 20,
+      "win": 30
+    },
+    "ebc": {
+      "qualify": 5,
+      "top8": 10,
+      "top4": 15,
+      "final": 20,
+      "win": 30
+    },
+    "mba": {
+      "top8": 10,
+      "top4": 15,
+      "final": 20,
+      "win": 30
+    },
+    "apac": {
+      "top8": 10,
+      "top4": 15,
+      "final": 20,
+      "win": 30
+    },
+    "amrq": {
+      "top8": 10,
+      "top4": 15,
+      "final": 20,
+      "win": 30
+    },
+    "fbb": {
+      "top8": 15,
+      "top4": 20,
+      "final": 25,
+      "win": 35
+    },
+    "btw": {
+      "top8": 10,
+      "top4": 15,
+      "final": 20,
+      "win": 30
+    },
+    "gnb": {
+      "top16": 5,
+      "top8": 10,
+      "top4": 15,
+      "final": 20,
+      "win": 30
+    },
+    "nue": {
+      "top8": 5,
+      "top4": 10,
+      "final": 15,
+      "win": 20
+    },
+    "vokal_total": {
+      "top8": 5,
+      "top4": 10,
+      "final": 15,
+      "win": 20
+    },
+    "bayreuth": {
+      "top8": 5,
+      "top4": 10,
+      "final": 15,
+      "win": 20
+    },
+    "lacup": {
+      "top8": 5,
+      "top4": 10,
+      "final": 15,
+      "win": 20
+    },
+    "one_one": {
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "botm": {
+      "final": 5,
+      "win": 10
+    },
+    "bcj": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "gbc": {
+      "solo_global": {
+        "top8": 15,
+        "top4": 20,
+        "final": 25,
+        "win": 35
+      },
+      "solo": {
+        "top4": 2,
+        "final": 5,
+        "win": 10
+      }
+    },
+    "nat_fr": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "nat_us": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "nat_it": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "nat_be": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "nat_gb": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "nat_ar": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "nat_br": {
+      "top8": 2,
+      "top4": 5,
+      "final": 10,
+      "win": 15
+    },
+    "nat_dk": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_bg": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_ca": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_kr": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_cl": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_es": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_il": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_co": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_au": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_cn": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_nl": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_in": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_mx": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_ru": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_tr": {
+      "top4": 2,
+      "final": 5,
+      "win": 10
+    },
+    "nat_ie": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_za": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_at": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_bo": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_cz": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_eg": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_fi": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_hk": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_ir": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_lt": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_ma": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_pk": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_ph": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_pl": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_pt": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_sa": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_gb-sct": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_sk": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_se": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_sy": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_tw": {
+      "final": 2,
+      "win": 5
+    },
+    "nat_ve": {
+      "final": 2,
+      "win": 5
+    }
+  }
+}

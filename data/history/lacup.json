@@ -1,0 +1,643 @@
+{
+  "competition": "lacup",
+  "editions": [
+    {
+      "year": 2025,
+      "name": "La Cup 2025",
+      "status": "completed",
+      "dates": "February 14, 2025",
+      "location": "Mantes-la-Jolie, France",
+      "venue": "Espace Brassens",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "fredybeats"
+        },
+        {
+          "beatboxer": "bmg"
+        },
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "colaps"
+        },
+        {
+          "beatboxer": "slizzer"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "pacmax"
+          },
+          "runner_up": {
+            "beatboxer": "julard"
+          },
+          "third": {
+            "beatboxer": "zvd"
+          },
+          "participants": [
+            {
+              "beatboxer": "zvd"
+            },
+            {
+              "beatboxer": "gelber"
+            },
+            {
+              "beatboxer": "huckle"
+            },
+            {
+              "beatboxer": "battery"
+            },
+            {
+              "beatboxer": "max"
+            },
+            {
+              "beatboxer": "pacmax"
+            },
+            {
+              "beatboxer": "bigben"
+            },
+            {
+              "beatboxer": "gako"
+            },
+            {
+              "beatboxer": "bigg"
+            },
+            {
+              "beatboxer": "m1xx1ng"
+            },
+            {
+              "beatboxer": "akinde"
+            },
+            {
+              "beatboxer": "ahmadabazaid"
+            },
+            {
+              "beatboxer": "joker"
+            },
+            {
+              "beatboxer": "gwizz"
+            },
+            {
+              "beatboxer": "hobbit"
+            },
+            {
+              "beatboxer": "julard"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "bigben"
+              },
+              "winner": {
+                "beatboxer": "bigben"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "hobbit"
+              },
+              "b": {
+                "beatboxer": "gelber"
+              },
+              "winner": {
+                "beatboxer": "gelber"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "akinde"
+              },
+              "b": {
+                "beatboxer": "gako"
+              },
+              "winner": {
+                "beatboxer": "gako"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "ahmadabazaid"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "joker"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "max"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "huckle"
+              },
+              "b": {
+                "beatboxer": "m1xx1ng"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "zvd"
+              },
+              "b": {
+                "beatboxer": "battery"
+              },
+              "winner": {
+                "beatboxer": "zvd"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigben"
+              },
+              "b": {
+                "beatboxer": "gelber"
+              },
+              "winner": {
+                "beatboxer": "gelber"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gako"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "0 votes - 5 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "zvd"
+              },
+              "winner": {
+                "beatboxer": "zvd"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gelber"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "zvd"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "gelber"
+              },
+              "b": {
+                "beatboxer": "zvd"
+              },
+              "winner": {
+                "beatboxer": "zvd"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              }
+            }
+          ],
+          "notes": [
+            "[it] Dynamatt was invited to participate but dropped out of the competition.",
+            "[il] Gelber acted as a replacement for [de] Robeat for an unknown reason."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "La Cup 2026",
+      "status": "completed",
+      "dates": "February 20, 2026",
+      "location": "Mantes-la-Jolie, France",
+      "venue": "Espace Brassens",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bigben"
+        },
+        {
+          "beatboxer": "river"
+        },
+        {
+          "beatboxer": "slizzer"
+        },
+        {
+          "beatboxer": "fayabraz"
+        },
+        {
+          "beatboxer": "hobbit"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "gwizz"
+          },
+          "runner_up": {
+            "beatboxer": "synopsys"
+          },
+          "third": {
+            "beatboxer": "glord"
+          },
+          "participants": [
+            {
+              "beatboxer": "neon"
+            },
+            {
+              "beatboxer": "crythix"
+            },
+            {
+              "beatboxer": "sonus"
+            },
+            {
+              "beatboxer": "dynamatt"
+            },
+            {
+              "beatboxer": "tunecinoo"
+            },
+            {
+              "beatboxer": "bronix"
+            },
+            {
+              "beatboxer": "corey"
+            },
+            {
+              "beatboxer": "elip"
+            },
+            {
+              "beatboxer": "crkzu"
+            },
+            {
+              "beatboxer": "glord"
+            },
+            {
+              "beatboxer": "heartgrey"
+            },
+            {
+              "beatboxer": "synopsys"
+            },
+            {
+              "beatboxer": "elgrande"
+            },
+            {
+              "beatboxer": "juano"
+            },
+            {
+              "beatboxer": "hurrakane"
+            },
+            {
+              "beatboxer": "gwizz"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "gwizz"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "elgrande"
+              },
+              "b": {
+                "beatboxer": "neon"
+              },
+              "winner": {
+                "beatboxer": "elgrande"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "bronix"
+              },
+              "b": {
+                "beatboxer": "tunecinoo"
+              },
+              "winner": {
+                "beatboxer": "tunecinoo"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "heartgrey"
+              },
+              "b": {
+                "beatboxer": "crkzu"
+              },
+              "winner": {
+                "beatboxer": "crkzu"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "sonus"
+              },
+              "b": {
+                "beatboxer": "synopsys"
+              },
+              "winner": {
+                "beatboxer": "synopsys"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "hurrakane"
+              },
+              "b": {
+                "beatboxer": "elip"
+              },
+              "winner": {
+                "beatboxer": "hurrakane"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "glord"
+              },
+              "b": {
+                "beatboxer": "juano"
+              },
+              "winner": {
+                "beatboxer": "glord"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "elgrande"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tunecinoo"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "crkzu"
+              },
+              "b": {
+                "beatboxer": "synopsys"
+              },
+              "winner": {
+                "beatboxer": "synopsys"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hurrakane"
+              },
+              "b": {
+                "beatboxer": "glord"
+              },
+              "winner": {
+                "beatboxer": "glord"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "synopsys"
+              },
+              "b": {
+                "beatboxer": "glord"
+              },
+              "winner": {
+                "beatboxer": "synopsys"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "glord"
+              },
+              "winner": {
+                "beatboxer": "glord"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "synopsys"
+              },
+              "winner": {
+                "beatboxer": "gwizz"
+              }
+            }
+          ],
+          "notes": [
+            "[de] BP was unable to participate."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2027,
+      "name": "La Cup 2027",
+      "status": "upcoming",
+      "dates": "February 26, 2027",
+      "location": "Mantes-la-Jolie, France",
+      "venue": "Espace Brassens",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "participants": [
+            {
+              "beatboxer": "pacmax"
+            },
+            {
+              "beatboxer": "izen"
+            },
+            {
+              "beatboxer": "shishone"
+            },
+            {
+              "beatboxer": "mixfx"
+            },
+            {
+              "beatboxer": "glord"
+            },
+            {
+              "beatboxer": "fredybeats"
+            },
+            {
+              "beatboxer": "zaku",
+              "qualification": "TBA"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

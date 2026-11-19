@@ -1,0 +1,391 @@
+{
+  "competition": "nat_cl",
+  "editions": [
+    {
+      "year": 2025,
+      "name": "Chilean Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "December 13th, 2025",
+      "location": "Santiago de Chile",
+      "venue": "California Cantina",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "xiphire"
+          },
+          "runner_up": {
+            "beatboxer": "inferno"
+          },
+          "third": {
+            "beatboxer": "exbitt"
+          },
+          "participants": [
+            {
+              "beatboxer": "xiphire",
+              "qualification": "CNBC 2020-21 Champion"
+            },
+            {
+              "beatboxer": "waali",
+              "qualification": "1st 2024 Wildcard Winner"
+            },
+            {
+              "beatboxer": "spyder",
+              "qualification": "1st LNBC 2022 Champion"
+            },
+            {
+              "beatboxer": "exbitt",
+              "qualification": "2nd 2024 Wildcard Winner"
+            },
+            {
+              "beatboxer": "evilglasses",
+              "qualification": "1st LNBC 2022 Vice-Champion"
+            },
+            {
+              "beatboxer": "cdenio",
+              "qualification": "3rd 2024 Wildcard Winner"
+            },
+            {
+              "beatboxer": "inferno",
+              "qualification": "2nd LNBC 2022 Champion"
+            },
+            {
+              "beatboxer": "trifek",
+              "qualification": "4th 2024 Wildcard Winner"
+            },
+            {
+              "beatboxer": "glare",
+              "qualification": "2nd LNBC 2022 Vice-Champion"
+            },
+            {
+              "beatboxer": "tonio",
+              "qualification": "5th 2024 Wildcard Winner"
+            },
+            {
+              "beatboxer": "player",
+              "qualification": "3rd LNBC 2022 Champion"
+            },
+            {
+              "beatboxer": "blvckned",
+              "qualification": "1st 2025 Wildcard Winner"
+            },
+            {
+              "beatboxer": "penta",
+              "qualification": "3rd LNBC 2022 Vice-Champion"
+            },
+            {
+              "beatboxer": "onbeatz",
+              "qualification": "3rd 2025 Wildcard Winner"
+            },
+            {
+              "beatboxer": "r2",
+              "qualification": "4th LNBC 2022 Champion"
+            },
+            {
+              "beatboxer": "maharate",
+              "qualification": "4th 2025 Wildcard Winner"
+            },
+            {
+              "beatboxer": "rojaz",
+              "qualification": "4th LNBC 2022 Vice-Champion"
+            },
+            {
+              "beatboxer": "sarublack",
+              "qualification": "5th 2025 Wildcard Winner*"
+            },
+            {
+              "beatboxer": "pan",
+              "qualification": "2nd 2022 Regional Wildcard Winner"
+            },
+            {
+              "beatboxer": "suitt",
+              "qualification": "6th 2025 Wildcard Winner*"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "oes"
+            },
+            {
+              "beatboxer": "sharkz"
+            },
+            {
+              "beatboxer": "cetuz"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "ramed"
+            },
+            {
+              "beatboxer": "sharkz"
+            },
+            {
+              "beatboxer": "kodless"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "inferno"
+              },
+              "b": {
+                "beatboxer": "blvckned"
+              },
+              "winner": {
+                "beatboxer": "inferno"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "exbitt"
+              },
+              "b": {
+                "beatboxer": "maharate"
+              },
+              "winner": {
+                "beatboxer": "exbitt"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "xiphire"
+              },
+              "b": {
+                "beatboxer": "trifek"
+              },
+              "winner": {
+                "beatboxer": "xiphire"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "waali"
+              },
+              "b": {
+                "beatboxer": "sarublack"
+              },
+              "winner": {
+                "beatboxer": "waali"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "inferno"
+              },
+              "b": {
+                "beatboxer": "exbitt"
+              },
+              "winner": {
+                "beatboxer": "inferno"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "xiphire"
+              },
+              "b": {
+                "beatboxer": "waali"
+              },
+              "winner": {
+                "beatboxer": "xiphire"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "exbitt"
+              },
+              "b": {
+                "beatboxer": "waali"
+              },
+              "winner": {
+                "beatboxer": "exbitt"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "inferno"
+              },
+              "b": {
+                "beatboxer": "xiphire"
+              },
+              "winner": {
+                "beatboxer": "xiphire"
+              },
+              "score": "1 Vote - 2 Votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "swarm",
+              "place": 7
+            },
+            {
+              "beatboxer": "patobeats",
+              "place": 8
+            },
+            {
+              "beatboxer": "zyclick",
+              "place": 9
+            },
+            {
+              "beatboxer": "adn54",
+              "place": 10
+            },
+            {
+              "beatboxer": "sydrofx",
+              "place": 11
+            },
+            {
+              "beatboxer": "nikmoreno",
+              "place": 12
+            },
+            {
+              "beatboxer": "kenzosfx",
+              "place": 13
+            },
+            {
+              "beatboxer": "goddromeda",
+              "place": 14
+            },
+            {
+              "beatboxer": "mundaro",
+              "place": 15
+            },
+            {
+              "beatboxer": "tr4vox",
+              "place": 16
+            },
+            {
+              "beatboxer": "ryze",
+              "place": 17
+            },
+            {
+              "beatboxer": "pelo",
+              "place": 18
+            },
+            {
+              "beatboxer": "fragment",
+              "place": 19
+            },
+            {
+              "beatboxer": "teexay",
+              "place": 20
+            }
+          ],
+          "notes": [
+            "Sarublack and Suitt acted as replacements for [cl] Horus (1st 2022 Regional Wildcard Winner) & [cl] Tecito (2nd 2025 Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Chilean Beatbox Championship 2026",
+      "status": "results_missing",
+      "dates": "November 21st, 2026",
+      "location": "Recoleta, Santiago de Chile",
+      "venue": "La Casona de Hilda Parra",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "xiphire"
+        },
+        {
+          "beatboxer": "mrandroide"
+        },
+        {
+          "beatboxer": "mcsura"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "participants": [
+            {
+              "beatboxer": "inferno",
+              "qualification": "CNBC 2025 Vice-Champion"
+            },
+            {
+              "beatboxer": "zyclick",
+              "qualification": "Santiago Qualifier Vice-Champion"
+            },
+            {
+              "beatboxer": "exbitt",
+              "qualification": "CNBC 2025 3rd Place"
+            },
+            {
+              "beatboxer": "suitt",
+              "qualification": "Santiago Qualifier 3rd Place"
+            },
+            {
+              "beatboxer": "cdenio",
+              "qualification": "Online Qualifier Champion"
+            },
+            {
+              "beatboxer": "pan",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "spyder",
+              "qualification": "Online Qualifier Vice-Champion"
+            },
+            {
+              "beatboxer": "adn54",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "blvckned",
+              "qualification": "Concepción Qualifier Champion"
+            },
+            {
+              "beatboxer": "sarublack",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "fotzai",
+              "qualification": "Concepción Qualifier Vice-Champion"
+            },
+            {
+              "beatboxer": "tecito",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "trifek",
+              "qualification": "Concepción Qualifier 3rd Place"
+            },
+            {
+              "beatboxer": "evilglasses",
+              "qualification": "5th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "garu",
+              "qualification": "Santiago Qualifier Champion"
+            },
+            {
+              "beatboxer": "horus",
+              "qualification": "6th Wildcard Winner*"
+            }
+          ],
+          "notes": [
+            "EvilGlasses and Horus will act as replacements for [cl] Xiphire (CNBC 2025 Champion) & [cl] [br] Swarm (Online Qualifier 3rd Place)."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "competition": "one_one",
+  "editions": [
+    {
+      "year": 2021,
+      "name": "One One Battle International 2021",
+      "status": "completed",
+      "dates": "September 26th, 2021",
+      "location": "Carcassonne, France",
+      "venue": "Centre de Congrès, Le Dôme",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bigben"
+        },
+        {
+          "beatboxer": "azel"
+        },
+        {
+          "beatboxer": "fayabraz"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "colaps"
+          },
+          "runner_up": {
+            "beatboxer": "river"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "colaps"
+              },
+              "b": {
+                "beatboxer": "supernova"
+              },
+              "winner": {
+                "beatboxer": "colaps"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kenozen"
+              },
+              "b": {
+                "beatboxer": "benja"
+              },
+              "winner": {
+                "beatboxer": "benja"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "bart"
+              },
+              "winner": {
+                "beatboxer": "bart"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "prichia"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "colaps"
+              },
+              "b": {
+                "beatboxer": "benja"
+              },
+              "winner": {
+                "beatboxer": "colaps"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bart"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "colaps"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "colaps"
+              },
+              "score": "3 Votes - 0 Votes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "name": "One One Battle International 2022",
+      "status": "completed",
+      "dates": "October 2nd, 2022",
+      "location": "Carcassonne, France",
+      "venue": "Centre de Congrès, Le Dôme",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "alem"
+        },
+        {
+          "beatboxer": "river"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bookieblanco"
+          },
+          "runner_up": {
+            "beatboxer": "den"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "bassbro"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "timmeh"
+              },
+              "b": {
+                "beatboxer": "bookieblanco"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "den"
+              },
+              "b": {
+                "beatboxer": "graycloud"
+              },
+              "winner": {
+                "beatboxer": "den"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "osy"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "Win* - Lose*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bassbro"
+              },
+              "b": {
+                "beatboxer": "bookieblanco"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "den"
+              },
+              "b": {
+                "beatboxer": "osis"
+              },
+              "winner": {
+                "beatboxer": "den"
+              },
+              "score": "Win* - Lose*"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bookieblanco"
+              },
+              "b": {
+                "beatboxer": "den"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "One One Battle International 2023",
+      "status": "completed",
+      "dates": "October 1st, 2023",
+      "location": "Carcassonne, France",
+      "venue": "Centre de Congrès, Le Dôme",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "bellatrix"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "napom"
+          },
+          "runner_up": {
+            "beatboxer": "blackroll"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gwizz"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "aelmight"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "epock"
+              },
+              "b": {
+                "beatboxer": "alem"
+              },
+              "winner": {
+                "beatboxer": "alem"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "alem"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "napom"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "One One Battle International 2024",
+      "status": "completed",
+      "dates": "September 28th, 2024",
+      "location": "Carcassonne, France",
+      "venue": "Centre de Congrès, Le Dôme",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "hobbit"
+        },
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "julard"
+          },
+          "runner_up": {
+            "beatboxer": "bookieblanco"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "mixfx"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "mrandroide"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "graycloud"
+              },
+              "b": {
+                "beatboxer": "bookieblanco"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vushev"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bookieblanco"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "bookieblanco"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "3 Votes - 0 Votes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "One One Battle International 2026",
+      "status": "completed",
+      "dates": "March 28th, 2024",
+      "location": "Carcassonne, France",
+      "venue": "Centre de Congrès, Le Dôme",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "pacmax"
+        },
+        {
+          "beatboxer": "supernova"
+        },
+        {
+          "beatboxer": "zede"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bizkit"
+          },
+          "runner_up": {
+            "beatboxer": "seizuma"
+          },
+          "participants": [
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "gako"
+            },
+            {
+              "beatboxer": "crythix"
+            },
+            {
+              "beatboxer": "blayou"
+            },
+            {
+              "beatboxer": "bizkit"
+            },
+            {
+              "beatboxer": "funkaztek"
+            },
+            {
+              "beatboxer": "seizuma"
+            },
+            {
+              "beatboxer": "trc"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bizkit"
+              },
+              "b": {
+                "beatboxer": "trc"
+              },
+              "winner": {
+                "beatboxer": "bizkit"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gako"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "blayou"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "blayou"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "seizuma"
+              },
+              "b": {
+                "beatboxer": "funkaztek"
+              },
+              "winner": {
+                "beatboxer": "seizuma"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bizkit"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "bizkit"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blayou"
+              },
+              "b": {
+                "beatboxer": "seizuma"
+              },
+              "winner": {
+                "beatboxer": "seizuma"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bizkit"
+              },
+              "b": {
+                "beatboxer": "seizuma"
+              },
+              "winner": {
+                "beatboxer": "bizkit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

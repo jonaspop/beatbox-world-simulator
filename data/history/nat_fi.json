@@ -1,0 +1,582 @@
+{
+  "competition": "nat_fi",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "Finnish Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "September 7th, 2024",
+      "location": "Helsinki, Finland",
+      "venue": "Tiivistämö",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "seawind"
+        },
+        {
+          "beatboxer": "isku"
+        },
+        {
+          "beatboxer": "abox"
+        },
+        {
+          "beatboxer": "lazer"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "nolla"
+          },
+          "runner_up": {
+            "beatboxer": "dwin"
+          },
+          "third": {
+            "beatboxer": "valruus"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "nolla"
+              },
+              "b": {
+                "beatboxer": "lillfill"
+              },
+              "winner": {
+                "beatboxer": "nolla"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "eepzi"
+              },
+              "b": {
+                "beatboxer": "nikita"
+              },
+              "winner": {
+                "beatboxer": "nikita"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dwin"
+              },
+              "b": {
+                "beatboxer": "ryhis"
+              },
+              "winner": {
+                "beatboxer": "dwin"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "valruus"
+              },
+              "b": {
+                "beatboxer": "strychnine"
+              },
+              "winner": {
+                "beatboxer": "valruus"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "nolla"
+              },
+              "b": {
+                "beatboxer": "nikita"
+              },
+              "winner": {
+                "beatboxer": "nolla"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "dwin"
+              },
+              "b": {
+                "beatboxer": "valruus"
+              },
+              "winner": {
+                "beatboxer": "dwin"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "nikita"
+              },
+              "b": {
+                "beatboxer": "valruus"
+              },
+              "winner": {
+                "beatboxer": "valruus"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "nolla"
+              },
+              "b": {
+                "beatboxer": "dwin"
+              },
+              "winner": {
+                "beatboxer": "nolla"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Finnish Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "November 1st, 2025",
+      "location": "Helsinki, Finland",
+      "venue": "Free City of Kalasatama",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "lazer"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "nolla"
+          },
+          "runner_up": {
+            "beatboxer": "flocka"
+          },
+          "participants": [
+            {
+              "beatboxer": "nolla",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "kottis",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "flocka",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "dwin",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "karppi",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "tbox",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "abox",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "lillfill",
+              "qualification": "8th Wildcard Winner"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "viguration"
+            },
+            {
+              "beatboxer": "crkzu"
+            },
+            {
+              "beatboxer": "felixzenger"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "seawind"
+            },
+            {
+              "beatboxer": "benja"
+            },
+            {
+              "beatboxer": "bassventura"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "nolla"
+              },
+              "b": {
+                "beatboxer": "lillfill"
+              },
+              "winner": {
+                "beatboxer": "nolla"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "abox"
+              },
+              "b": {
+                "beatboxer": "kottis"
+              },
+              "winner": {
+                "beatboxer": "abox"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "karppi"
+              },
+              "b": {
+                "beatboxer": "dwin"
+              },
+              "winner": {
+                "beatboxer": "karppi"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "flocka"
+              },
+              "b": {
+                "beatboxer": "tbox"
+              },
+              "winner": {
+                "beatboxer": "flocka"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "nolla"
+              },
+              "b": {
+                "beatboxer": "abox"
+              },
+              "winner": {
+                "beatboxer": "nolla"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "karppi"
+              },
+              "b": {
+                "beatboxer": "flocka"
+              },
+              "winner": {
+                "beatboxer": "flocka"
+              },
+              "score": "0 Votes* - 2 Votes*"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "nolla"
+              },
+              "b": {
+                "beatboxer": "flocka"
+              },
+              "winner": {
+                "beatboxer": "nolla"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Finnish Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "November 14th, 2026",
+      "location": "Turku",
+      "country": "Finland",
+      "venue": "Skärgårdsbaren - Saaristobaari",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "karppi"
+          },
+          "runner_up": {
+            "beatboxer": "flocka"
+          },
+          "third": {
+            "beatboxer": "tbox"
+          },
+          "participants": [
+            {
+              "beatboxer": "karppi"
+            },
+            {
+              "beatboxer": "abox"
+            },
+            {
+              "beatboxer": "sampyla"
+            },
+            {
+              "beatboxer": "flocka"
+            },
+            {
+              "beatboxer": "tbox"
+            },
+            {
+              "beatboxer": "kottis"
+            },
+            {
+              "beatboxer": "ade"
+            },
+            {
+              "beatboxer": "strychnine"
+            },
+            {
+              "beatboxer": "dwin"
+            },
+            {
+              "beatboxer": "lillfill"
+            },
+            {
+              "beatboxer": "renzu"
+            },
+            {
+              "beatboxer": "nikita"
+            },
+            {
+              "beatboxer": "jakis"
+            },
+            {
+              "beatboxer": "lauha"
+            },
+            {
+              "beatboxer": "maggie"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "tmy"
+            },
+            {
+              "beatboxer": "rudirok"
+            },
+            {
+              "beatboxer": "nolla"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "flocka"
+              },
+              "b": {
+                "beatboxer": "nikita"
+              },
+              "winner": {
+                "beatboxer": "flocka"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lillfill"
+              },
+              "b": {
+                "beatboxer": "tbox"
+              },
+              "winner": {
+                "beatboxer": "tbox"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "abox"
+              },
+              "b": {
+                "beatboxer": "strychnine"
+              },
+              "winner": {
+                "beatboxer": "abox"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "karppi"
+              },
+              "b": {
+                "beatboxer": "dwin"
+              },
+              "winner": {
+                "beatboxer": "karppi"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "flocka"
+              },
+              "b": {
+                "beatboxer": "tbox"
+              },
+              "winner": {
+                "beatboxer": "flocka"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "abox"
+              },
+              "b": {
+                "beatboxer": "karppi"
+              },
+              "winner": {
+                "beatboxer": "karppi"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "tbox"
+              },
+              "b": {
+                "beatboxer": "abox"
+              },
+              "winner": {
+                "beatboxer": "tbox"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "flocka"
+              },
+              "b": {
+                "beatboxer": "karppi"
+              },
+              "winner": {
+                "beatboxer": "karppi"
+              }
+            }
+          ],
+          "notes": [
+            "[fi] Karppi** | **[fi] Abox** | [fi] Sampyla",
+            "[fi] [ee] Flocka** | **[fi] Tbox** | [fi] Kottis",
+            "[fi] Lill-Fill** | [fi] Renzu | **[fi] Nikita",
+            "Participants will be qualified via live elimination."
+          ]
+        },
+        "solo_global": {
+          "champion": {
+            "beatboxer": "tmy"
+          },
+          "runner_up": {
+            "beatboxer": "lillfill"
+          },
+          "third": {
+            "beatboxer": "happyfeet"
+          },
+          "judges": [
+            {
+              "beatboxer": "eepzi"
+            },
+            {
+              "beatboxer": "abox"
+            },
+            {
+              "beatboxer": "ade"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "tmy"
+              },
+              "b": {
+                "beatboxer": "happyfeet"
+              },
+              "winner": {
+                "beatboxer": "tmy"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lazer"
+              },
+              "b": {
+                "beatboxer": "lillfill"
+              },
+              "winner": {
+                "beatboxer": "lillfill"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "happyfeet"
+              },
+              "b": {
+                "beatboxer": "lazer"
+              },
+              "winner": {
+                "beatboxer": "happyfeet"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "tmy"
+              },
+              "b": {
+                "beatboxer": "lillfill"
+              },
+              "winner": {
+                "beatboxer": "tmy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

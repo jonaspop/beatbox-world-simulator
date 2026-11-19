@@ -1,0 +1,199 @@
+{
+  "competition": "nat_sa",
+  "editions": [
+    {
+      "year": 2020,
+      "name": "Saudi Arabia Beatbox Championship 2020",
+      "status": "completed",
+      "dates": "June 20th, 2020",
+      "location": "Online",
+      "country": "Saudi Arabia",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "omarsnops"
+        },
+        {
+          "beatboxer": "eon"
+        },
+        {
+          "beatboxer": "colaps"
+        },
+        {
+          "beatboxer": "kingcobra"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "ice"
+          },
+          "runner_up": {
+            "beatboxer": "gz7v"
+          },
+          "participants": [
+            {
+              "beatboxer": "zezo",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "rbeat",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ice",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "boe",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "gz7v",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "crimson",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "fantome",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "alry",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "eshfx",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mody",
+              "qualification": "14th Wildcard Winner"
+            },
+            {
+              "beatboxer": "rixx",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "kindi",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "improzex",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dano",
+              "qualification": "16th Wildcard Winner"
+            },
+            {
+              "beatboxer": "jod",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "kassper",
+              "qualification": "17th Wildcard Winner*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ice"
+              },
+              "b": {
+                "beatboxer": "zezo"
+              },
+              "winner": {
+                "beatboxer": "ice"
+              },
+              "score": "4 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "eshfx"
+              },
+              "b": {
+                "beatboxer": "improzex"
+              },
+              "winner": {
+                "beatboxer": "eshfx"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "fantome"
+              },
+              "b": {
+                "beatboxer": "crimson"
+              },
+              "winner": {
+                "beatboxer": "fantome"
+              },
+              "score": "3 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kassper"
+              },
+              "b": {
+                "beatboxer": "gz7v"
+              },
+              "winner": {
+                "beatboxer": "gz7v"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ice"
+              },
+              "b": {
+                "beatboxer": "eshfx"
+              },
+              "winner": {
+                "beatboxer": "ice"
+              },
+              "score": "3 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "fantome"
+              },
+              "b": {
+                "beatboxer": "gz7v"
+              },
+              "winner": {
+                "beatboxer": "gz7v"
+              },
+              "score": "0 Votes - 4 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "ice"
+              },
+              "b": {
+                "beatboxer": "gz7v"
+              },
+              "winner": {
+                "beatboxer": "ice"
+              },
+              "score": "3 Votes - 1 Vote"
+            }
+          ],
+          "notes": [
+            "[sa]  Kassper acted as a replacement for [sa] Uuat (12th Wildcard Winner)"
+          ]
+        }
+      }
+    }
+  ]
+}

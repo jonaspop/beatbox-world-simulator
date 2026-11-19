@@ -1,0 +1,452 @@
+{
+  "competition": "nat_lt",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "Lithuanian Beatbox Battle 2023",
+      "status": "completed",
+      "dates": "Septembr 7-9th, 2023",
+      "location": "Vilnius, Lithuania",
+      "venue": "Menų Fabrikas LOFTAS",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "kristof"
+        },
+        {
+          "beatboxer": "destiny"
+        },
+        {
+          "beatboxer": "domas"
+        },
+        {
+          "beatboxer": "slygrid"
+        },
+        {
+          "beatboxer": "gon"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "exile"
+          },
+          "runner_up": {
+            "beatboxer": "shamanas"
+          },
+          "third": {
+            "beatboxer": "paulaxs"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "exile"
+              },
+              "b": {
+                "beatboxer": "niko"
+              },
+              "winner": {
+                "beatboxer": "exile"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "paulaxs"
+              },
+              "b": {
+                "beatboxer": "lucario"
+              },
+              "winner": {
+                "beatboxer": "paulaxs"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shamanas"
+              },
+              "b": {
+                "beatboxer": "rezistor"
+              },
+              "winner": {
+                "beatboxer": "shamanas"
+              },
+              "score": "- - -"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "urban"
+              },
+              "b": {
+                "beatboxer": "pirsis"
+              },
+              "winner": {
+                "beatboxer": "urban"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "exile"
+              },
+              "b": {
+                "beatboxer": "paulaxs"
+              },
+              "winner": {
+                "beatboxer": "exile"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "shamanas"
+              },
+              "b": {
+                "beatboxer": "urban"
+              },
+              "winner": {
+                "beatboxer": "shamanas"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "paulaxs"
+              },
+              "b": {
+                "beatboxer": "urban"
+              },
+              "winner": {
+                "beatboxer": "paulaxs"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "exile"
+              },
+              "b": {
+                "beatboxer": "shamanas"
+              },
+              "winner": {
+                "beatboxer": "exile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Lithuanian Beatbox Battle 2024",
+      "status": "completed",
+      "dates": "Septembr 6-7th, 2024",
+      "location": "Vilnius, Lithuania",
+      "venue": "Menų Fabrikas LOFTAS",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "kim"
+        },
+        {
+          "beatboxer": "slygrid"
+        },
+        {
+          "beatboxer": "destiny"
+        },
+        {
+          "beatboxer": "exile"
+        },
+        {
+          "beatboxer": "domas"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "lucario"
+          },
+          "runner_up": {
+            "beatboxer": "shamanas"
+          },
+          "third": {
+            "beatboxer": "elip"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shamanas"
+              },
+              "b": {
+                "beatboxer": "niko"
+              },
+              "winner": {
+                "beatboxer": "shamanas"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "erkinis"
+              },
+              "b": {
+                "beatboxer": "nyx"
+              },
+              "winner": {
+                "beatboxer": "nyx"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "elip"
+              },
+              "b": {
+                "beatboxer": "hydra"
+              },
+              "winner": {
+                "beatboxer": "elip"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lucario"
+              },
+              "b": {
+                "beatboxer": "donnybell"
+              },
+              "winner": {
+                "beatboxer": "lucario"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "shamanas"
+              },
+              "b": {
+                "beatboxer": "nyx"
+              },
+              "winner": {
+                "beatboxer": "shamanas"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "elip"
+              },
+              "b": {
+                "beatboxer": "lucario"
+              },
+              "winner": {
+                "beatboxer": "lucario"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "nyx"
+              },
+              "b": {
+                "beatboxer": "elip"
+              },
+              "winner": {
+                "beatboxer": "elip"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "shamanas"
+              },
+              "b": {
+                "beatboxer": "lucario"
+              },
+              "winner": {
+                "beatboxer": "lucario"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Lithuanian Beatbox Battle 2025",
+      "status": "completed",
+      "dates": "December 6, 2025",
+      "location": "Kaunas, Lithuania",
+      "venue": "ERDVE",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "gon"
+        },
+        {
+          "beatboxer": "destiny"
+        },
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "karolenas"
+        },
+        {
+          "beatboxer": "slygrid"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "elip"
+          },
+          "runner_up": {
+            "beatboxer": "lukario"
+          },
+          "third": {
+            "beatboxer": "shamanas"
+          },
+          "participants": [
+            {
+              "beatboxer": "elip"
+            },
+            {
+              "beatboxer": "lukario"
+            },
+            {
+              "beatboxer": "shamanas"
+            },
+            {
+              "beatboxer": "paulaxs"
+            },
+            {
+              "beatboxer": "niko"
+            },
+            {
+              "beatboxer": "nyx"
+            },
+            {
+              "beatboxer": "spaceman"
+            },
+            {
+              "beatboxer": "jakuza"
+            },
+            {
+              "beatboxer": "sebas"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "elip"
+              },
+              "b": {
+                "beatboxer": "jakuza"
+              },
+              "winner": {
+                "beatboxer": "elip"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "paulax"
+              },
+              "b": {
+                "beatboxer": "niko"
+              },
+              "winner": {
+                "beatboxer": "paulax"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lukario"
+              },
+              "b": {
+                "beatboxer": "spaceman"
+              },
+              "winner": {
+                "beatboxer": "lukario"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "nyx"
+              },
+              "b": {
+                "beatboxer": "shamanas"
+              },
+              "winner": {
+                "beatboxer": "shamanas"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "elip"
+              },
+              "b": {
+                "beatboxer": "paulax"
+              },
+              "winner": {
+                "beatboxer": "elip"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lukario"
+              },
+              "b": {
+                "beatboxer": "shamanas"
+              },
+              "winner": {
+                "beatboxer": "lukario"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "shamanas"
+              },
+              "b": {
+                "beatboxer": "paulax"
+              },
+              "winner": {
+                "beatboxer": "shamanas"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "elip"
+              },
+              "b": {
+                "beatboxer": "lukario"
+              },
+              "winner": {
+                "beatboxer": "elip"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

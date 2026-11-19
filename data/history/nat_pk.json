@@ -1,0 +1,139 @@
+{
+  "competition": "nat_pk",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "Pakistan Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "January 27th, 2024",
+      "location": "Karachi, Pakistan",
+      "venue": "Arts Council of Pakistan Karachi",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "multiple"
+        },
+        {
+          "beatboxer": "bilalrehman"
+        },
+        {
+          "beatboxer": "roomiat"
+        },
+        {
+          "beatboxer": "khizar"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "majuh"
+          },
+          "runner_up": {
+            "beatboxer": "ketone"
+          },
+          "third": {
+            "beatboxer": "sherry"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "majuh"
+              },
+              "b": {
+                "beatboxer": "aaa"
+              },
+              "winner": {
+                "beatboxer": "majuh"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "sherry"
+              },
+              "b": {
+                "beatboxer": "sarosh"
+              },
+              "winner": {
+                "beatboxer": "sherry"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ketone"
+              },
+              "b": {
+                "beatboxer": "buraqali"
+              },
+              "winner": {
+                "beatboxer": "ketone"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hamad"
+              },
+              "b": {
+                "beatboxer": "void"
+              },
+              "winner": {
+                "beatboxer": "void"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "majuh"
+              },
+              "b": {
+                "beatboxer": "sherry"
+              },
+              "winner": {
+                "beatboxer": "majuh"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ketone"
+              },
+              "b": {
+                "beatboxer": "void"
+              },
+              "winner": {
+                "beatboxer": "ketone"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "sherry"
+              },
+              "b": {
+                "beatboxer": "void"
+              },
+              "winner": {
+                "beatboxer": "sherry"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "majuh"
+              },
+              "b": {
+                "beatboxer": "ketone"
+              },
+              "winner": {
+                "beatboxer": "majuh"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

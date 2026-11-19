@@ -1,0 +1,657 @@
+{
+  "competition": "nat_ve",
+  "editions": [
+    {
+      "year": 2021,
+      "name": "Venezuela Beatbox Championship 2021",
+      "status": "completed",
+      "dates": "November 21st, 2021",
+      "location": "Online",
+      "country": "Venezuela",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "raul"
+        },
+        {
+          "beatboxer": "barthfh"
+        },
+        {
+          "beatboxer": "jimmythomas"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "skander"
+          },
+          "runner_up": {
+            "beatboxer": "isac"
+          },
+          "third": {
+            "beatboxer": "roro"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "isac"
+              },
+              "b": {
+                "beatboxer": "kamtek"
+              },
+              "winner": {
+                "beatboxer": "isac"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "crow"
+              },
+              "b": {
+                "beatboxer": "bbh"
+              },
+              "winner": {
+                "beatboxer": "crow"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "roro"
+              },
+              "b": {
+                "beatboxer": "morse"
+              },
+              "winner": {
+                "beatboxer": "roro"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "skander"
+              },
+              "b": {
+                "beatboxer": "kzong"
+              },
+              "winner": {
+                "beatboxer": "skander"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "isac"
+              },
+              "b": {
+                "beatboxer": "crow"
+              },
+              "winner": {
+                "beatboxer": "isac"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "roro"
+              },
+              "b": {
+                "beatboxer": "skander"
+              },
+              "winner": {
+                "beatboxer": "skander"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "crow"
+              },
+              "b": {
+                "beatboxer": "roro"
+              },
+              "winner": {
+                "beatboxer": "roro"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "isac"
+              },
+              "b": {
+                "beatboxer": "skander"
+              },
+              "winner": {
+                "beatboxer": "skander"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Venezuela Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "September 16th, 2023",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "jimmythomas"
+        },
+        {
+          "beatboxer": "exallos"
+        },
+        {
+          "beatboxer": "lenard"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "isac"
+          },
+          "runner_up": {
+            "beatboxer": "roro"
+          },
+          "third": {
+            "beatboxer": "crow"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "isac"
+              },
+              "b": {
+                "beatboxer": "calavrox"
+              },
+              "winner": {
+                "beatboxer": "isac"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zinho"
+              },
+              "b": {
+                "beatboxer": "koopa"
+              },
+              "winner": {
+                "beatboxer": "zinho"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "roro"
+              },
+              "b": {
+                "beatboxer": "manubrio"
+              },
+              "winner": {
+                "beatboxer": "roro"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "crow"
+              },
+              "b": {
+                "beatboxer": "tac"
+              },
+              "winner": {
+                "beatboxer": "crow"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "isac"
+              },
+              "b": {
+                "beatboxer": "zinho"
+              },
+              "winner": {
+                "beatboxer": "isac"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "roro"
+              },
+              "b": {
+                "beatboxer": "crow"
+              },
+              "winner": {
+                "beatboxer": "roro"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "zinho"
+              },
+              "b": {
+                "beatboxer": "crow"
+              },
+              "winner": {
+                "beatboxer": "crow"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "isac"
+              },
+              "b": {
+                "beatboxer": "roro"
+              },
+              "winner": {
+                "beatboxer": "isac"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Venezuela Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "June 23rd & November 17th, 2024",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "zinho"
+          },
+          "runner_up": {
+            "beatboxer": "kamtek"
+          },
+          "third": {
+            "beatboxer": "calavrox"
+          },
+          "judges": [
+            {
+              "beatboxer": "jimmythomas"
+            },
+            {
+              "beatboxer": "beatmeda"
+            },
+            {
+              "beatboxer": "bbh"
+            },
+            {
+              "beatboxer": "skander"
+            },
+            {
+              "beatboxer": "lenard"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zinho"
+              },
+              "b": {
+                "beatboxer": "lz"
+              },
+              "winner": {
+                "beatboxer": "zinho"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "roro"
+              },
+              "b": {
+                "beatboxer": "blizz"
+              },
+              "winner": {
+                "beatboxer": "roro"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "calavrox"
+              },
+              "b": {
+                "beatboxer": "crow"
+              },
+              "winner": {
+                "beatboxer": "calavrox"
+              },
+              "score": "4 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kamtek"
+              },
+              "b": {
+                "beatboxer": "tac"
+              },
+              "winner": {
+                "beatboxer": "kamtek"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "zinho"
+              },
+              "b": {
+                "beatboxer": "roro"
+              },
+              "winner": {
+                "beatboxer": "zinho"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "calavrox"
+              },
+              "b": {
+                "beatboxer": "kamtek"
+              },
+              "winner": {
+                "beatboxer": "kamtek"
+              },
+              "score": "0 Votes* - 4 Votes*"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "roro"
+              },
+              "b": {
+                "beatboxer": "calavrox"
+              },
+              "winner": {
+                "beatboxer": "calavrox"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "zinho"
+              },
+              "b": {
+                "beatboxer": "kamtek"
+              },
+              "winner": {
+                "beatboxer": "zinho"
+              },
+              "score": "4 Votes - 1 Vote"
+            }
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "calavrox"
+          },
+          "judges": [
+            {
+              "beatboxer": "zinho"
+            },
+            {
+              "beatboxer": "kzong"
+            },
+            {
+              "beatboxer": "bbh"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "calavrox",
+              "points": 7
+            },
+            {
+              "beatboxer": "incat",
+              "points": 0
+            },
+            {
+              "beatboxer": "lz",
+              "points": 0
+            },
+            {
+              "beatboxer": "morse",
+              "points": 0
+            },
+            {
+              "beatboxer": "blizz",
+              "points": 3
+            },
+            {
+              "beatboxer": "juanlevit",
+              "points": 0
+            },
+            {
+              "beatboxer": "tac",
+              "points": 0
+            },
+            {
+              "beatboxer": "brian",
+              "points": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Venezuela Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "July 13th & November 16th, 2025",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "blizz"
+          },
+          "runner_up": {
+            "beatboxer": "isac"
+          },
+          "third": {
+            "beatboxer": "calavrox"
+          },
+          "judges": [
+            {
+              "beatboxer": "zinho"
+            },
+            {
+              "beatboxer": "skander"
+            },
+            {
+              "beatboxer": "bbh"
+            },
+            {
+              "beatboxer": "jimmythomas"
+            },
+            {
+              "beatboxer": "funlock"
+            },
+            {
+              "beatboxer": "kzong"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "blizz"
+              },
+              "b": {
+                "beatboxer": "shaoling"
+              },
+              "winner": {
+                "beatboxer": "blizz"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "roro"
+              },
+              "b": {
+                "beatboxer": "crow"
+              },
+              "winner": {
+                "beatboxer": "crow"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "calavrox"
+              },
+              "b": {
+                "beatboxer": "lamzbeat"
+              },
+              "winner": {
+                "beatboxer": "calavrox"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "isac"
+              },
+              "b": {
+                "beatboxer": "guss"
+              },
+              "winner": {
+                "beatboxer": "isac"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blizz"
+              },
+              "b": {
+                "beatboxer": "crow"
+              },
+              "winner": {
+                "beatboxer": "blizz"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "calavrox"
+              },
+              "b": {
+                "beatboxer": "isac"
+              },
+              "winner": {
+                "beatboxer": "isac"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "crow"
+              },
+              "b": {
+                "beatboxer": "calavrox"
+              },
+              "winner": {
+                "beatboxer": "calavrox"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "blizz"
+              },
+              "b": {
+                "beatboxer": "isac"
+              },
+              "winner": {
+                "beatboxer": "blizz"
+              },
+              "score": "3 Votes - 2 Votes"
+            }
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "bbh"
+          },
+          "judges": [
+            {
+              "beatboxer": "zinho"
+            },
+            {
+              "beatboxer": "tac"
+            },
+            {
+              "beatboxer": "calavrox"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "bbh",
+              "points": 7
+            },
+            {
+              "beatboxer": "koopa",
+              "points": 0
+            },
+            {
+              "beatboxer": "blizz",
+              "points": 3
+            },
+            {
+              "beatboxer": "shaoling",
+              "points": 0
+            },
+            {
+              "beatboxer": "lamzbeat",
+              "points": 4
+            },
+            {
+              "beatboxer": "xennid",
+              "points": 0
+            },
+            {
+              "beatboxer": "foca",
+              "points": 3
+            },
+            {
+              "beatboxer": "guss",
+              "points": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "competition": "nat_ar",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "Argentina Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "January 25th, 2025",
+      "location": "Villa Crespo, Buenos Aires, Argentina",
+      "venue": "Club Cultural Matienzo",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "iacho"
+        },
+        {
+          "beatboxer": "beaxionaryo"
+        },
+        {
+          "beatboxer": "phenom"
+        },
+        {
+          "beatboxer": "rbbtdibsty"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "desconocido"
+          },
+          "runner_up": {
+            "beatboxer": "astron"
+          },
+          "third": {
+            "beatboxer": "sakai"
+          },
+          "participants": [
+            {
+              "beatboxer": "freeway",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "sakai",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "sharkz",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "rama",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "niktef",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "zennix",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "astron",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "delyam",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "desconocido",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "padab",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "cubito",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "pipikush",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "w",
+              "qualification": "Invited"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "desconocido"
+              },
+              "b": {
+                "beatboxer": "w"
+              },
+              "winner": {
+                "beatboxer": "desconocido"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "sakai"
+              },
+              "b": {
+                "beatboxer": "astron"
+              },
+              "winner": {
+                "beatboxer": "astron"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "w"
+              },
+              "b": {
+                "beatboxer": "sakai"
+              },
+              "winner": {
+                "beatboxer": "sakai"
+              },
+              "score": "Lose* - Win*"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "desconocido"
+              },
+              "b": {
+                "beatboxer": "astron"
+              },
+              "winner": {
+                "beatboxer": "desconocido"
+              }
+            }
+          ],
+          "notes": [
+            "Jona (Invited), Blas (Invited), LBBX (Invited), Kembloke (Invited), Nube (Whatsapp Qualifier) and Fuego (Whatsapp Qualifier) didn't participate in the event."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Argentina Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "November 21st, 2025",
+      "location": "Villa Ortúzar, Buenos Aires",
+      "country": "Argentina",
+      "venue": "Otra Historia Club Cultural",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "beaxionaryo"
+        },
+        {
+          "beatboxer": "rbbtdibsty"
+        },
+        {
+          "beatboxer": "phenom"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "sharkz"
+          },
+          "runner_up": {
+            "beatboxer": "w"
+          },
+          "participants": [
+            {
+              "beatboxer": "w",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "cubito",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "sharkz",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "vybrahlma",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "indrah",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "sakai",
+              "qualification": "Show Qualifier"
+            },
+            {
+              "beatboxer": "zennix",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "beatriz",
+              "qualification": "Show Qualifier"
+            },
+            {
+              "beatboxer": "niktef",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "kembloke",
+              "qualification": "Show Qualifier"
+            },
+            {
+              "beatboxer": "blas",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "sheol",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "jona",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "mati",
+              "qualification": "Wildcard Winner"
+            },
+            {
+              "beatboxer": "pachi",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "delyam",
+              "qualification": "Audio Winner"
+            },
+            {
+              "beatboxer": "sikop",
+              "qualification": "Invited"
+            },
+            {
+              "beatboxer": "zekiel",
+              "qualification": "Audio Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "vybrahlma"
+              },
+              "b": {
+                "beatboxer": "sharkz"
+              },
+              "winner": {
+                "beatboxer": "sharkz"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "w"
+              },
+              "b": {
+                "beatboxer": "jona"
+              },
+              "winner": {
+                "beatboxer": "w"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "sharkz"
+              },
+              "b": {
+                "beatboxer": "w"
+              },
+              "winner": {
+                "beatboxer": "sharkz"
+              }
+            }
+          ],
+          "notes": [
+            "Sikop (Invited) acted as a replacement for LBBX (Invited)."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "competition": "nat_ph",
+  "editions": [
+    {
+      "year": 2026,
+      "name": "Philippine Beatbox Battle Championship 2026",
+      "status": "completed",
+      "dates": "May 9, 2026 (Grand Finals)",
+      "location": "Metro Manila, Philippine",
+      "venue": "The BNKR Creative Grounds",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "flobeat"
+        },
+        {
+          "beatboxer": "leaf"
+        },
+        {
+          "beatboxer": "leaf"
+        },
+        {
+          "beatboxer": "leaf"
+        },
+        {
+          "beatboxer": "beatboxgor"
+        },
+        {
+          "beatboxer": "colaps"
+        },
+        {
+          "beatboxer": "yoskq"
+        },
+        {
+          "beatboxer": "yoskq"
+        },
+        {
+          "beatboxer": "carm"
+        },
+        {
+          "beatboxer": "leaf"
+        },
+        {
+          "beatboxer": "krixo"
+        },
+        {
+          "beatboxer": "gwho"
+        },
+        {
+          "beatboxer": "zipporah"
+        },
+        {
+          "beatboxer": "zipporah"
+        },
+        {
+          "beatboxer": "gwho"
+        },
+        {
+          "beatboxer": "gwho"
+        },
+        {
+          "beatboxer": "binibiningbeats"
+        },
+        {
+          "beatboxer": "mckoy"
+        },
+        {
+          "beatboxer": "djbusted"
+        },
+        {
+          "beatboxer": "djbusted"
+        },
+        {
+          "beatboxer": "djbusted"
+        },
+        {
+          "beatboxer": "djbusted"
+        },
+        {
+          "beatboxer": "djbusted"
+        },
+        {
+          "beatboxer": "djbusted"
+        },
+        {
+          "beatboxer": "lorenzfear"
+        },
+        {
+          "beatboxer": "mckoy"
+        },
+        {
+          "beatboxer": "yoskq"
+        },
+        {
+          "beatboxer": "djbusted"
+        },
+        {
+          "beatboxer": "czar"
+        },
+        {
+          "beatboxer": "beatboxgor"
+        },
+        {
+          "beatboxer": "neilllanes"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "3rdy"
+          },
+          "runner_up": {
+            "beatboxer": "lightmix"
+          },
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "3rdy"
+              },
+              "b": {
+                "beatboxer": "dismay"
+              },
+              "winner": {
+                "beatboxer": "3rdy"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dozer"
+              },
+              "b": {
+                "beatboxer": "chrisbox"
+              },
+              "winner": {
+                "beatboxer": "chrisbox"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "zappy"
+              },
+              "b": {
+                "beatboxer": "roxorbeat"
+              },
+              "winner": {
+                "beatboxer": "zappy"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "jom"
+              },
+              "b": {
+                "beatboxer": "joseph"
+              },
+              "winner": {
+                "beatboxer": "joseph"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "hyberius"
+              },
+              "b": {
+                "beatboxer": "raiko"
+              },
+              "winner": {
+                "beatboxer": "hyberius"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "rabbi"
+              },
+              "b": {
+                "beatboxer": "lightmix"
+              },
+              "winner": {
+                "beatboxer": "lightmix"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "viel"
+              },
+              "b": {
+                "beatboxer": "augustine"
+              },
+              "winner": {
+                "beatboxer": "augustine"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "leo"
+              },
+              "b": {
+                "beatboxer": "humanvoice"
+              },
+              "winner": {
+                "beatboxer": "humanvoice"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "3rdy"
+              },
+              "b": {
+                "beatboxer": "chrisbox"
+              },
+              "winner": {
+                "beatboxer": "3rdy"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zappy"
+              },
+              "b": {
+                "beatboxer": "joseph"
+              },
+              "winner": {
+                "beatboxer": "zappy"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hyberius"
+              },
+              "b": {
+                "beatboxer": "lightmix"
+              },
+              "winner": {
+                "beatboxer": "lightmix"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "augustine"
+              },
+              "b": {
+                "beatboxer": "humanvoice"
+              },
+              "winner": {
+                "beatboxer": "humanvoice"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "3rdy"
+              },
+              "b": {
+                "beatboxer": "zappy"
+              },
+              "winner": {
+                "beatboxer": "3rdy"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lightmix"
+              },
+              "b": {
+                "beatboxer": "humanvoice"
+              },
+              "winner": {
+                "beatboxer": "lightmix"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "3rdy"
+              },
+              "b": {
+                "beatboxer": "lightmix"
+              },
+              "winner": {
+                "beatboxer": "3rdy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1024 @@
+{
+  "competition": "nat_br",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "Brazilian Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "December 16th, 2023",
+      "location": "São Paulo, Brazil",
+      "venue": "Vale do Anhangabaú",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "spin"
+        },
+        {
+          "beatboxer": "raphael"
+        },
+        {
+          "beatboxer": "dudz"
+        },
+        {
+          "beatboxer": "dudz"
+        },
+        {
+          "beatboxer": "poison"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "penido"
+          },
+          "runner_up": {
+            "beatboxer": "aaron"
+          },
+          "participants": [
+            {
+              "beatboxer": "nourish",
+              "qualification": "CNBB 2021 Champion"
+            },
+            {
+              "beatboxer": "penido",
+              "qualification": "1st place Salve Classificatório"
+            },
+            {
+              "beatboxer": "magnum",
+              "qualification": "A Liga do Beat 2023 Champion"
+            },
+            {
+              "beatboxer": "bigjohnny",
+              "qualification": "2nd place Salve Classificatório"
+            },
+            {
+              "beatboxer": "aaron",
+              "qualification": "A Liga do Beat 2023 Vice-Champion"
+            },
+            {
+              "beatboxer": "kage",
+              "qualification": "3rd place Salve Classificatório"
+            },
+            {
+              "beatboxer": "bl",
+              "qualification": "A Liga do Beat 2022 Champion"
+            },
+            {
+              "beatboxer": "samplus",
+              "qualification": "4th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "duckzy",
+              "qualification": "1st Historic Batalha do Vidro Online Champion"
+            },
+            {
+              "beatboxer": "kdb",
+              "qualification": "5th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "caxa",
+              "qualification": "2nd Historic Batalha do Vidro Champion"
+            },
+            {
+              "beatboxer": "szin",
+              "qualification": "6th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "k2",
+              "qualification": "3rd place General Ranking"
+            },
+            {
+              "beatboxer": "pix",
+              "qualification": "7th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "math",
+              "qualification": "A Liga do Beat 2018 Champion"
+            },
+            {
+              "beatboxer": "danibrits",
+              "qualification": "Invited*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "bigjohnny"
+              },
+              "b": {
+                "beatboxer": "danibrits"
+              },
+              "winner": {
+                "beatboxer": "bigjohnny"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kage"
+              },
+              "b": {
+                "beatboxer": "duckzy"
+              },
+              "winner": {
+                "beatboxer": "duckzy"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "k2"
+              },
+              "b": {
+                "beatboxer": "kdb"
+              },
+              "winner": {
+                "beatboxer": "kdb"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "samplus"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "pix"
+              },
+              "b": {
+                "beatboxer": "math"
+              },
+              "winner": {
+                "beatboxer": "math"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "nourish"
+              },
+              "b": {
+                "beatboxer": "magnum"
+              },
+              "winner": {
+                "beatboxer": "magnum"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "bl"
+              },
+              "b": {
+                "beatboxer": "szin"
+              },
+              "winner": {
+                "beatboxer": "szin"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "penido"
+              },
+              "b": {
+                "beatboxer": "caxa"
+              },
+              "winner": {
+                "beatboxer": "penido"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigjohnny"
+              },
+              "b": {
+                "beatboxer": "duckzy"
+              },
+              "winner": {
+                "beatboxer": "bigjohnny"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kdb"
+              },
+              "b": {
+                "beatboxer": "aaron"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "math"
+              },
+              "b": {
+                "beatboxer": "magnum"
+              },
+              "winner": {
+                "beatboxer": "magnum"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "szin"
+              },
+              "b": {
+                "beatboxer": "penido"
+              },
+              "winner": {
+                "beatboxer": "penido"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bigjohnny"
+              },
+              "b": {
+                "beatboxer": "aaron"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "magnum"
+              },
+              "b": {
+                "beatboxer": "penido"
+              },
+              "winner": {
+                "beatboxer": "penido"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "penido"
+              },
+              "winner": {
+                "beatboxer": "penido"
+              },
+              "score": "1 Vote - 2 Votes"
+            }
+          ],
+          "notes": [
+            "Dani Brits acted as a replacement for Kaizonaro (CNDB 2022 Vice-Champion)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Brazilian Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "November 30-December 1, 2024",
+      "location": "Cangaiba, São Paulo",
+      "country": "Brazil",
+      "venue": "Teatro Flávio Império",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "dudz"
+        },
+        {
+          "beatboxer": "raphael"
+        },
+        {
+          "beatboxer": "poison"
+        },
+        {
+          "beatboxer": "fernandinho"
+        },
+        {
+          "beatboxer": "tvs"
+        },
+        {
+          "beatboxer": "beatkong"
+        },
+        {
+          "beatboxer": "phenom"
+        },
+        {
+          "beatboxer": "dudz"
+        },
+        {
+          "beatboxer": "waali"
+        },
+        {
+          "beatboxer": "kenozen"
+        },
+        {
+          "beatboxer": "tvs"
+        },
+        {
+          "beatboxer": "mautari"
+        },
+        {
+          "beatboxer": "ordinal"
+        },
+        {
+          "beatboxer": "conundrum"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "aaron"
+          },
+          "runner_up": {
+            "beatboxer": "duckzy"
+          },
+          "participants": [
+            {
+              "beatboxer": "math",
+              "qualification": "A Liga do Beat 2018 Champion"
+            },
+            {
+              "beatboxer": "kage",
+              "qualification": "2nd place Salve Classificatório"
+            },
+            {
+              "beatboxer": "kaizonaro",
+              "qualification": "A Liga do Beat 2019 Champion"
+            },
+            {
+              "beatboxer": "kbeats",
+              "qualification": "3rd place Salve Classificatório"
+            },
+            {
+              "beatboxer": "pellito",
+              "qualification": "A Liga do Beat 2020 Champion"
+            },
+            {
+              "beatboxer": "caxa",
+              "qualification": "4th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "mvs",
+              "qualification": "A Liga do Beat 2021 Champion"
+            },
+            {
+              "beatboxer": "pix",
+              "qualification": "5th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "nourish",
+              "qualification": "CNDB 2021 Champion"
+            },
+            {
+              "beatboxer": "guilherme",
+              "qualification": "6th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "penido",
+              "qualification": "CNDB 2023 Champion"
+            },
+            {
+              "beatboxer": "kazu",
+              "qualification": "7th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "magnum",
+              "qualification": "A Liga do Beat 2023 & 2024 Champion"
+            },
+            {
+              "beatboxer": "szin",
+              "qualification": "9th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "duckzy",
+              "qualification": "1st Historic Batalha do Vidro Online Champion"
+            },
+            {
+              "beatboxer": "teacher",
+              "qualification": "10th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "bigjohnny",
+              "qualification": "A Liga do Beat 2024 Highlight"
+            },
+            {
+              "beatboxer": "ngn",
+              "qualification": "12th place Salve Classificatório*"
+            },
+            {
+              "beatboxer": "edurap",
+              "qualification": "Batalha de Goiás 2024 Champion"
+            },
+            {
+              "beatboxer": "lilkey",
+              "qualification": "13th place Salve Classificatório*"
+            },
+            {
+              "beatboxer": "nandob",
+              "qualification": "Pre-Seletiva Online 2024 Champion"
+            },
+            {
+              "beatboxer": "moreno",
+              "qualification": "14th place Salve Classificatório*"
+            },
+            {
+              "beatboxer": "kdb",
+              "qualification": "Pre-Seletiva Online 2024 Vice-Champion"
+            },
+            {
+              "beatboxer": "penna",
+              "qualification": "15th place Salve Classificatório*"
+            },
+            {
+              "beatboxer": "aaron",
+              "qualification": "1st place Salve Classificatório"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "nourish"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "4 Votes - 1 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "pix"
+              },
+              "b": {
+                "beatboxer": "bigjohnny"
+              },
+              "winner": {
+                "beatboxer": "pix"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "penido"
+              },
+              "b": {
+                "beatboxer": "kage"
+              },
+              "winner": {
+                "beatboxer": "penido"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "nandob"
+              },
+              "b": {
+                "beatboxer": "szin"
+              },
+              "winner": {
+                "beatboxer": "nandob"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "duckzy"
+              },
+              "b": {
+                "beatboxer": "mvs"
+              },
+              "winner": {
+                "beatboxer": "duckzy"
+              },
+              "score": "4 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "pellito"
+              },
+              "b": {
+                "beatboxer": "lilkey"
+              },
+              "winner": {
+                "beatboxer": "pellito"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kdb"
+              },
+              "b": {
+                "beatboxer": "magnum"
+              },
+              "winner": {
+                "beatboxer": "magnum"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kbeats"
+              },
+              "b": {
+                "beatboxer": "kaizonaro"
+              },
+              "winner": {
+                "beatboxer": "kbeats"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "pix"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "penido"
+              },
+              "b": {
+                "beatboxer": "nandob"
+              },
+              "winner": {
+                "beatboxer": "nandob"
+              },
+              "score": "1 Vote* - 3 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "duckzy"
+              },
+              "b": {
+                "beatboxer": "pellito"
+              },
+              "winner": {
+                "beatboxer": "duckzy"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "magnum"
+              },
+              "b": {
+                "beatboxer": "kbeats"
+              },
+              "winner": {
+                "beatboxer": "magnum"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "nandob"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "duckzy"
+              },
+              "b": {
+                "beatboxer": "magnum"
+              },
+              "winner": {
+                "beatboxer": "duckzy"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "duckzy"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "5 Votes - 0 Votes"
+            }
+          ],
+          "notes": [
+            "NGN, LILKey, Moreno and P_nna acted as replacements for LK (CNBB 2018 Champion), Velkans (A Liga do Beat 2024 Highlight), Juaum (8th place Salve Classificatório) & Musical (11th place Salve Classificatório)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Brazilian Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "December 6-7, 2025",
+      "location": "Bela Vista, São Paulo",
+      "country": "Brazil",
+      "venue": "instituto Brasileiro de Teatro",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "dudz"
+        },
+        {
+          "beatboxer": "dudz"
+        },
+        {
+          "beatboxer": "italo"
+        },
+        {
+          "beatboxer": "nourish"
+        },
+        {
+          "beatboxer": "bl"
+        },
+        {
+          "beatboxer": "mautari"
+        },
+        {
+          "beatboxer": "spin"
+        },
+        {
+          "beatboxer": "bl"
+        },
+        {
+          "beatboxer": "spin"
+        },
+        {
+          "beatboxer": "dudz"
+        },
+        {
+          "beatboxer": "lk"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "aaron"
+          },
+          "runner_up": {
+            "beatboxer": "jojo"
+          },
+          "third": {
+            "beatboxer": "magnum"
+          },
+          "participants": [
+            {
+              "beatboxer": "kaizonaro",
+              "qualification": "A Liga do Beat 2019 Champion"
+            },
+            {
+              "beatboxer": "malagueta",
+              "qualification": "Beatmaster 69 Champion"
+            },
+            {
+              "beatboxer": "pellito",
+              "qualification": "A Liga do Beat 2020 Champion"
+            },
+            {
+              "beatboxer": "duckzy",
+              "qualification": "1st place Salve Classificatório"
+            },
+            {
+              "beatboxer": "magnum",
+              "qualification": "A Liga do Beat 2023 & 2024 Champion"
+            },
+            {
+              "beatboxer": "math",
+              "qualification": "2nd place Salve Classificatório"
+            },
+            {
+              "beatboxer": "aaron",
+              "qualification": "CNDB 2024 Champion"
+            },
+            {
+              "beatboxer": "guilherme",
+              "qualification": "3rd place Salve Classificatório"
+            },
+            {
+              "beatboxer": "kdb",
+              "qualification": "A Liga do Beat 2025 Champion"
+            },
+            {
+              "beatboxer": "furlas",
+              "qualification": "4th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "cahbeats",
+              "qualification": "CNDB 2024 Highlight"
+            },
+            {
+              "beatboxer": "shake",
+              "qualification": "6th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "calavrox",
+              "qualification": "A Liga do Beat 2024 Highlight"
+            },
+            {
+              "beatboxer": "kage",
+              "qualification": "7th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "szin",
+              "qualification": "Beatmaster Highlight"
+            },
+            {
+              "beatboxer": "penna",
+              "qualification": "8th place Salve Classificatório"
+            },
+            {
+              "beatboxer": "kazu",
+              "qualification": "Estadual Beatbox Goiás 2025 Vice-Champion"
+            },
+            {
+              "beatboxer": "musical",
+              "qualification": "9th place Salve Classificatório*"
+            },
+            {
+              "beatboxer": "jojo",
+              "qualification": "Batalha de Vidro 50 Champion"
+            },
+            {
+              "beatboxer": "rekin",
+              "qualification": "10th place Salve Classificatório*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "cahbeats"
+              },
+              "b": {
+                "beatboxer": "kage"
+              },
+              "winner": {
+                "beatboxer": "cahbeats"
+              },
+              "score": "4 Votes - 1 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "magnum"
+              },
+              "b": {
+                "beatboxer": "musical"
+              },
+              "winner": {
+                "beatboxer": "magnum"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "pellito"
+              },
+              "b": {
+                "beatboxer": "kazu"
+              },
+              "winner": {
+                "beatboxer": "pellito"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "malagueta"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kdb"
+              },
+              "b": {
+                "beatboxer": "szin"
+              },
+              "winner": {
+                "beatboxer": "kdb"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kaizonaro"
+              },
+              "b": {
+                "beatboxer": "math"
+              },
+              "winner": {
+                "beatboxer": "math"
+              }
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "jojo"
+              },
+              "b": {
+                "beatboxer": "penna"
+              },
+              "winner": {
+                "beatboxer": "jojo"
+              },
+              "score": "4 Votes - 1 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "duckzy"
+              },
+              "b": {
+                "beatboxer": "calavrox"
+              },
+              "winner": {
+                "beatboxer": "duckzy"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "cahbeats"
+              },
+              "b": {
+                "beatboxer": "magnum"
+              },
+              "winner": {
+                "beatboxer": "magnum"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pellito"
+              },
+              "b": {
+                "beatboxer": "aaron"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kdb"
+              },
+              "b": {
+                "beatboxer": "math"
+              },
+              "winner": {
+                "beatboxer": "kdb"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jojo"
+              },
+              "b": {
+                "beatboxer": "duckzy"
+              },
+              "winner": {
+                "beatboxer": "jojo"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "magnum"
+              },
+              "b": {
+                "beatboxer": "aaron"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "kdb"
+              },
+              "b": {
+                "beatboxer": "jojo"
+              },
+              "winner": {
+                "beatboxer": "jojo"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "magnum"
+              },
+              "b": {
+                "beatboxer": "kdb"
+              },
+              "winner": {
+                "beatboxer": "magnum"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "aaron"
+              },
+              "b": {
+                "beatboxer": "jojo"
+              },
+              "winner": {
+                "beatboxer": "aaron"
+              },
+              "score": "5 Votes - 0 Votes"
+            }
+          ],
+          "notes": [
+            "Musical and Rekin acted as replacements for [br] MvS{{Cite|title=Also know as Shy|message=*}} (A Liga do Beat 2021 Champion) & [br] [cl] Swarm (5th place Salve Classificatório)."
+          ]
+        }
+      }
+    }
+  ]
+}

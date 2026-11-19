@@ -1,0 +1,604 @@
+{
+  "competition": "vokal_total",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "Vokal Total 2023",
+      "status": "completed",
+      "dates": "July 19–22, 2023",
+      "location": "Graz, Austria",
+      "venue": "Dom in Berg",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bart"
+        },
+        {
+          "beatboxer": "geneshinozaki"
+        },
+        {
+          "beatboxer": "nexor"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "river"
+          },
+          "runner_up": {
+            "beatboxer": "napom"
+          },
+          "third": {
+            "beatboxer": "blackroll"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "5 Points - 4 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "max"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "6 Points - 0 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "bassbro"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "5 Points - 1 Point"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "elian"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "0 Points - 6 Points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "river"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "1 Point - 5 Points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "napom"
+              },
+              "score": "0 Points - 6 Points"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "osis"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "5 Points - 1 Point"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "river"
+              },
+              "b": {
+                "beatboxer": "napom"
+              },
+              "winner": {
+                "beatboxer": "river"
+              },
+              "score": "5 Points - 4 Points"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Vokal Total 2024",
+      "status": "completed",
+      "dates": "July 16–20, 2024",
+      "location": "Graz, Austria",
+      "venue": "Dom in Berg",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "nexor"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        },
+        {
+          "beatboxer": "river"
+        },
+        {
+          "beatboxer": "slizzer"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "blackroll"
+          },
+          "runner_up": {
+            "beatboxer": "osis"
+          },
+          "third": {
+            "beatboxer": "stan"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jollux"
+              },
+              "b": {
+                "beatboxer": "osis"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "1 point - 9 points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bizkit"
+              },
+              "b": {
+                "beatboxer": "kaji"
+              },
+              "winner": {
+                "beatboxer": "bizkit"
+              },
+              "score": "10 points* - 5 points*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "dilip"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "10 points - 0 points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "1 point - 9 points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "bizkit"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "6 points - 4 points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "0 points - 10 points"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "bizkit"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "2 Points - 8 Points"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "1 point - 9 points"
+            }
+          ],
+          "notes": [
+            "All participants for both categories were invited."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Vokal Total 2025",
+      "status": "completed",
+      "dates": "July 15–19, 2025",
+      "location": "Graz, Austria",
+      "venue": "Dom in Berg",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "matej"
+        },
+        {
+          "beatboxer": "geneshinozaki"
+        },
+        {
+          "beatboxer": "chrisceliz"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "dynamatt"
+          },
+          "runner_up": {
+            "beatboxer": "bizkit"
+          },
+          "third": {
+            "beatboxer": "julard"
+          },
+          "judges": [
+            {
+              "beatboxer": "beasty"
+            },
+            {
+              "beatboxer": "chrisceliz"
+            },
+            {
+              "beatboxer": "dlow"
+            },
+            {
+              "beatboxer": "nexor"
+            },
+            {
+              "beatboxer": "wawad"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "dudz"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "10 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "gts"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "10 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "epos"
+              },
+              "b": {
+                "beatboxer": "bigg"
+              },
+              "winner": {
+                "beatboxer": "epos"
+              },
+              "score": "6 votes - 4 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bizkit"
+              },
+              "b": {
+                "beatboxer": "gelber"
+              },
+              "winner": {
+                "beatboxer": "bizkit"
+              },
+              "score": "10 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "dynamatt"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "4 votes - 6 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "epos"
+              },
+              "b": {
+                "beatboxer": "bizkit"
+              },
+              "winner": {
+                "beatboxer": "bizkit"
+              },
+              "score": "4 votes - 6 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "julard"
+              },
+              "b": {
+                "beatboxer": "epos"
+              },
+              "winner": {
+                "beatboxer": "julard"
+              },
+              "score": "8 votes* - 7 votes*"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "dynamatt"
+              },
+              "b": {
+                "beatboxer": "bizkit"
+              },
+              "winner": {
+                "beatboxer": "dynamatt"
+              },
+              "score": "7 votes - 3 votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "pacmax",
+              "place": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Vokal Total 2026",
+      "status": "completed",
+      "dates": "July 14–18, 2026",
+      "location": "Graz, Austria",
+      "venue": "Dom in Berg",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "osis"
+          },
+          "runner_up": {
+            "beatboxer": "stan"
+          },
+          "third": {
+            "beatboxer": "zekka"
+          },
+          "judges": [
+            {
+              "beatboxer": "bmg"
+            },
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "hobbit"
+            },
+            {
+              "beatboxer": "nexor"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "julard"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "7 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "gelber"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "7 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "frosty"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "albo"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "zekka"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              },
+              "score": "8 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "0 Votes - 10 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "zekka"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "zekka"
+              },
+              "score": "10 votes - 0 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "osis"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "osis"
+              }
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "taibbo",
+              "place": 4
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

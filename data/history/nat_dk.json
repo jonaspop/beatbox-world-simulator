@@ -1,0 +1,1303 @@
+{
+  "competition": "nat_dk",
+  "editions": [
+    {
+      "year": 2019,
+      "name": "Danish Beatbox Championship 2019",
+      "status": "completed",
+      "dates": "September 7st & October 5th, 2019",
+      "location": "Odense & Copenhagen, Denmark",
+      "venue": "Studenterhus & Bryggens Fødselsdag",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bozz"
+          },
+          "runner_up": {
+            "beatboxer": "s"
+          },
+          "third": {
+            "beatboxer": "yunus"
+          },
+          "judges": [
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "kim"
+            },
+            {
+              "beatboxer": "eon"
+            },
+            {
+              "beatboxer": "thepounder"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "chung"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "siig"
+              },
+              "b": {
+                "beatboxer": "bnarley"
+              },
+              "winner": {
+                "beatboxer": "siig"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "kev"
+              },
+              "winner": {
+                "beatboxer": "s"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "yunus"
+              },
+              "b": {
+                "beatboxer": "sole"
+              },
+              "winner": {
+                "beatboxer": "yunus"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "siig"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "yunus"
+              },
+              "winner": {
+                "beatboxer": "s"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "yunus"
+              },
+              "b": {
+                "beatboxer": "siig"
+              },
+              "winner": {
+                "beatboxer": "yunus"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "s"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2020,
+      "name": "Danish Beatbox Championship 2020",
+      "status": "completed",
+      "dates": "October 17th, 2020",
+      "location": "Copenhagen, Denmark",
+      "venue": "Stairway",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "thorsen"
+        },
+        {
+          "beatboxer": "thepounder"
+        },
+        {
+          "beatboxer": "dannybense"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bozz"
+          },
+          "runner_up": {
+            "beatboxer": "s"
+          },
+          "third": {
+            "beatboxer": "simplesound"
+          },
+          "participants": [
+            {
+              "beatboxer": "silva"
+            },
+            {
+              "beatboxer": "s"
+            },
+            {
+              "beatboxer": "siig"
+            },
+            {
+              "beatboxer": "mohg"
+            },
+            {
+              "beatboxer": "mokzbbx"
+            },
+            {
+              "beatboxer": "totti"
+            },
+            {
+              "beatboxer": "krytptic"
+            },
+            {
+              "beatboxer": "sixten"
+            },
+            {
+              "beatboxer": "cr1t1c4l"
+            },
+            {
+              "beatboxer": "nielsjensen"
+            },
+            {
+              "beatboxer": "oberes"
+            },
+            {
+              "beatboxer": "simplesound"
+            },
+            {
+              "beatboxer": "bnarley"
+            },
+            {
+              "beatboxer": "crythix"
+            },
+            {
+              "beatboxer": "aykay"
+            },
+            {
+              "beatboxer": "chung"
+            },
+            {
+              "beatboxer": "mundlam"
+            },
+            {
+              "beatboxer": "bozz",
+              "qualification": "|"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "nielsjensen"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kryptic"
+              },
+              "b": {
+                "beatboxer": "chung"
+              },
+              "winner": {
+                "beatboxer": "chung"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "pavo"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "sixten"
+              },
+              "winner": {
+                "beatboxer": "s"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "chung"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "s"
+              },
+              "winner": {
+                "beatboxer": "s"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "chung"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "s"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2021,
+      "name": "Danish Beatbox Championship 2021",
+      "status": "completed",
+      "dates": "December 11th, 2021",
+      "location": "Copenhagen, Denmark",
+      "venue": "Stairway",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "thorsen"
+        },
+        {
+          "beatboxer": "kba"
+        },
+        {
+          "beatboxer": "kba"
+        },
+        {
+          "beatboxer": "bozz"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "s"
+          },
+          "runner_up": {
+            "beatboxer": "simplesound"
+          },
+          "third": {
+            "beatboxer": "kryptic"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "miitnik"
+              },
+              "winner": {
+                "beatboxer": "s"
+              },
+              "score": "3 Points - 0 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "sixteen"
+              },
+              "b": {
+                "beatboxer": "silva"
+              },
+              "winner": {
+                "beatboxer": "silva"
+              },
+              "score": "1 Point - 2 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kryptic"
+              },
+              "b": {
+                "beatboxer": "bnarley"
+              },
+              "winner": {
+                "beatboxer": "kryptic"
+              },
+              "score": "2 Points - 1 Point"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "hertz"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              },
+              "score": "2 Points - 1 Point"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "silva"
+              },
+              "winner": {
+                "beatboxer": "s"
+              },
+              "score": "3 Points - 0 Points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "kryptic"
+              },
+              "b": {
+                "beatboxer": "simplesound"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              },
+              "score": "0 Points* - 2 Points*"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "silva"
+              },
+              "b": {
+                "beatboxer": "kryptic"
+              },
+              "winner": {
+                "beatboxer": "kryptic"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "simplesound"
+              },
+              "winner": {
+                "beatboxer": "s"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "name": "Danish Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "June 18th & October 15th, 2022",
+      "location": "Copenhagen, Denmark",
+      "venue": "Tangesbo Skole & Spillestedet Stengade",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "calexy"
+          },
+          "runner_up": {
+            "beatboxer": "simplesound"
+          },
+          "third": {
+            "beatboxer": "hertz"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "calexy"
+              },
+              "b": {
+                "beatboxer": "bnarley"
+              },
+              "winner": {
+                "beatboxer": "calexy"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mugzi"
+              },
+              "b": {
+                "beatboxer": "mokzbbx"
+              },
+              "winner": {
+                "beatboxer": "mugzi"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hertz"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "hertz"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "sbk"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "calexy"
+              },
+              "b": {
+                "beatboxer": "mugzi"
+              },
+              "winner": {
+                "beatboxer": "calexy"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "hertz"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "hertz"
+              },
+              "b": {
+                "beatboxer": "mugzi"
+              },
+              "winner": {
+                "beatboxer": "hertz"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "calexy"
+              },
+              "b": {
+                "beatboxer": "simplesound"
+              },
+              "winner": {
+                "beatboxer": "calexy"
+              },
+              "score": "5 votes - 0 votes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "name": "Danish Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "8th October & December 9th, 2023",
+      "location": "Copenhagen & Fredriksberg, Denmark",
+      "venue": "Støberiets Café & Urban 13",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "s"
+          },
+          "runner_up": {
+            "beatboxer": "crythix"
+          },
+          "third": {
+            "beatboxer": "bozz"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "mugzi"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "ankersen"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "bnarley"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "guardian"
+              },
+              "winner": {
+                "beatboxer": "s"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "simplesound"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "s"
+              },
+              "winner": {
+                "beatboxer": "s"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "bozz"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "s"
+              },
+              "winner": {
+                "beatboxer": "s"
+              }
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "crythix"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "bozz"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "s"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "simplesound"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "ankersen"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "guardian"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "bnarley"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "mugzi"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Danish Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "November 30 & December 1, 2024",
+      "location": "Copenhagen, Denmark",
+      "venue": "Turning Tables Danmark (Main Event) Kapellet (Under 13)",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "s"
+        },
+        {
+          "beatboxer": "jazz"
+        },
+        {
+          "beatboxer": "calexy"
+        },
+        {
+          "beatboxer": "calexy"
+        },
+        {
+          "beatboxer": "pacmax"
+        },
+        {
+          "beatboxer": "kba"
+        },
+        {
+          "beatboxer": "pacmax"
+        },
+        {
+          "beatboxer": "roxorloops"
+        },
+        {
+          "beatboxer": "rawclaw"
+        },
+        {
+          "beatboxer": "simonadel"
+        },
+        {
+          "beatboxer": "onz"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "crythix"
+          },
+          "runner_up": {
+            "beatboxer": "bozz"
+          },
+          "third": {
+            "beatboxer": "ankersen"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "groovy"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "mugzi"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              },
+              "score": "2 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "guardian"
+              },
+              "winner": {
+                "beatboxer": "ankersen"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "mokzbbx"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "bozz"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "ankersen"
+              },
+              "winner": {
+                "beatboxer": "ankersen"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "bozz"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              }
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "simplesound"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "bozz"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "ankersen"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "crythix"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "mugzi"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "guardian"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "mokzbbx"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "groovy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Danish Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "October 11, 2025 (Solo & Loopstation) December 6,2025 (Under 14)",
+      "location": "Copenhagen, Denmark",
+      "venue": "Operaen (Main) Kapellet (Under 14)",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "ankersen"
+          },
+          "runner_up": {
+            "beatboxer": "bozz"
+          },
+          "third": {
+            "beatboxer": "simplesound"
+          },
+          "participants": [
+            {
+              "beatboxer": "hertz"
+            },
+            {
+              "beatboxer": "mbl"
+            },
+            {
+              "beatboxer": "guardian"
+            },
+            {
+              "beatboxer": "sebbix"
+            },
+            {
+              "beatboxer": "groovy"
+            },
+            {
+              "beatboxer": "silva"
+            },
+            {
+              "beatboxer": "simplesound"
+            },
+            {
+              "beatboxer": "johnnygade"
+            },
+            {
+              "beatboxer": "mugzi"
+            },
+            {
+              "beatboxer": "mokzbbx"
+            },
+            {
+              "beatboxer": "ankersen"
+            },
+            {
+              "beatboxer": "salvenur"
+            },
+            {
+              "beatboxer": "bozz"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "groovy"
+              },
+              "winner": {
+                "beatboxer": "ankersen"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "mugzi"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "mokzbbx"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "guardian"
+              },
+              "b": {
+                "beatboxer": "hertz"
+              },
+              "winner": {
+                "beatboxer": "guardian"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "simplesound"
+              },
+              "winner": {
+                "beatboxer": "ankersen"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "guardian"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "guardian"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "bozz"
+              },
+              "winner": {
+                "beatboxer": "ankersen"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Danish Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "October 10, 2026",
+      "location": "Albertslund, Denmark",
+      "venue": "Forbrændingen",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "pe4enkata"
+        },
+        {
+          "beatboxer": "kba"
+        },
+        {
+          "beatboxer": "thorsen"
+        },
+        {
+          "beatboxer": "jesperwildmand"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "crythix"
+          },
+          "runner_up": {
+            "beatboxer": "ankersen"
+          },
+          "third": {
+            "beatboxer": "bozz"
+          },
+          "participants": [
+            {
+              "beatboxer": "mokzbbx"
+            },
+            {
+              "beatboxer": "guardian"
+            },
+            {
+              "beatboxer": "frilton"
+            },
+            {
+              "beatboxer": "ankersen"
+            },
+            {
+              "beatboxer": "mbl"
+            },
+            {
+              "beatboxer": "groovy"
+            },
+            {
+              "beatboxer": "s"
+            },
+            {
+              "beatboxer": "simplesound"
+            },
+            {
+              "beatboxer": "bozz"
+            },
+            {
+              "beatboxer": "sebbix"
+            },
+            {
+              "beatboxer": "reyork"
+            },
+            {
+              "beatboxer": "fadeaway"
+            },
+            {
+              "beatboxer": "pavo"
+            },
+            {
+              "beatboxer": "totti"
+            },
+            {
+              "beatboxer": "crythix"
+            },
+            {
+              "beatboxer": "rawclaw"
+            },
+            {
+              "beatboxer": "silva"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "totti"
+              },
+              "winner": {
+                "beatboxer": "ankersen"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "s"
+              },
+              "b": {
+                "beatboxer": "simplesound"
+              },
+              "winner": {
+                "beatboxer": "simplesound"
+              },
+              "score": "2 votes - 3 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "rawclaw"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bozz"
+              },
+              "b": {
+                "beatboxer": "guardian"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              },
+              "score": "4 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "simplesound"
+              },
+              "winner": {
+                "beatboxer": "ankersen"
+              },
+              "score": "3 votes - 2 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "crythix"
+              },
+              "b": {
+                "beatboxer": "bozz"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              },
+              "score": "5 votes - 0 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "simplesound"
+              },
+              "b": {
+                "beatboxer": "bozz"
+              },
+              "winner": {
+                "beatboxer": "bozz"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "ankersen"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "crythix"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

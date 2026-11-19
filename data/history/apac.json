@@ -1,0 +1,647 @@
+{
+  "competition": "apac",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "Oceania Beatbox Championships 2023",
+      "status": "completed",
+      "dates": "March 1-9, 2023 (Quarterfinals) March 10-16, 2023 (Semifinals) March 17-23, 2023 (Small Final & Final)",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "crkzu"
+        },
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "ettoman"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "pono"
+          },
+          "runner_up": {
+            "beatboxer": "chills"
+          },
+          "third": {
+            "beatboxer": "ollielee"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pono"
+              },
+              "b": {
+                "beatboxer": "waferboi"
+              },
+              "winner": {
+                "beatboxer": "pono"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "brunny"
+              },
+              "b": {
+                "beatboxer": "sonicboom"
+              },
+              "winner": {
+                "beatboxer": "brunny"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "chills"
+              },
+              "b": {
+                "beatboxer": "rype"
+              },
+              "winner": {
+                "beatboxer": "chills"
+              },
+              "score": "2 votes - 1 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ollielee"
+              },
+              "b": {
+                "beatboxer": "mrc"
+              },
+              "winner": {
+                "beatboxer": "ollielee"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "pono"
+              },
+              "b": {
+                "beatboxer": "brunny"
+              },
+              "winner": {
+                "beatboxer": "pono"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "chills"
+              },
+              "b": {
+                "beatboxer": "ollielee"
+              },
+              "winner": {
+                "beatboxer": "chills"
+              },
+              "score": "2 votes - 1 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "ollielee"
+              },
+              "b": {
+                "beatboxer": "brunny"
+              },
+              "winner": {
+                "beatboxer": "ollielee"
+              },
+              "score": "2 votes - 1 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "pono"
+              },
+              "b": {
+                "beatboxer": "chills"
+              },
+              "winner": {
+                "beatboxer": "pono"
+              },
+              "score": "3 votes - 0 votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "kuuda",
+              "place": 17
+            },
+            {
+              "beatboxer": "gintysucks",
+              "place": 18
+            },
+            {
+              "beatboxer": "haarlem",
+              "place": 19
+            },
+            {
+              "beatboxer": "adam",
+              "place": 20
+            },
+            {
+              "beatboxer": "mocadium",
+              "place": 21
+            },
+            {
+              "beatboxer": "djshredder",
+              "place": 22
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Oceania Beatbox Battle 2025",
+      "status": "completed",
+      "dates": "June - July, 2025",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "mrc"
+        },
+        {
+          "beatboxer": "piratheeban"
+        },
+        {
+          "beatboxer": "crkzu"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "pono"
+          },
+          "runner_up": {
+            "beatboxer": "codfish"
+          },
+          "third": {
+            "beatboxer": "given"
+          },
+          "participants": [
+            {
+              "beatboxer": "jp",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "pono",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "given",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "alty",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "codfish",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "leevy",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "marvelous",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ginp0",
+              "qualification": "8th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jp"
+              },
+              "b": {
+                "beatboxer": "ginp0"
+              },
+              "winner": {
+                "beatboxer": "jp"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "marvelous"
+              },
+              "b": {
+                "beatboxer": "pono"
+              },
+              "winner": {
+                "beatboxer": "pono"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "given"
+              },
+              "b": {
+                "beatboxer": "leevy"
+              },
+              "winner": {
+                "beatboxer": "given"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "codfish"
+              },
+              "b": {
+                "beatboxer": "alty"
+              },
+              "winner": {
+                "beatboxer": "codfish"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "jp"
+              },
+              "b": {
+                "beatboxer": "pono"
+              },
+              "winner": {
+                "beatboxer": "pono"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "given"
+              },
+              "b": {
+                "beatboxer": "codfish"
+              },
+              "winner": {
+                "beatboxer": "codfish"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "jp"
+              },
+              "b": {
+                "beatboxer": "given"
+              },
+              "winner": {
+                "beatboxer": "given"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "pono"
+              },
+              "b": {
+                "beatboxer": "codfish"
+              },
+              "winner": {
+                "beatboxer": "pono"
+              },
+              "score": "2 Votes - 1 Vote"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "jyab",
+              "place": 9
+            },
+            {
+              "beatboxer": "hyberius",
+              "place": 10
+            },
+            {
+              "beatboxer": "zayn",
+              "place": 11
+            },
+            {
+              "beatboxer": "zoan",
+              "place": 12
+            },
+            {
+              "beatboxer": "brunny",
+              "place": 13
+            },
+            {
+              "beatboxer": "floky",
+              "place": 14
+            },
+            {
+              "beatboxer": "lightmix",
+              "place": 15
+            },
+            {
+              "beatboxer": "iamblood",
+              "place": 16
+            },
+            {
+              "beatboxer": "galang",
+              "place": 17
+            },
+            {
+              "beatboxer": "alaztar",
+              "place": 18
+            },
+            {
+              "beatboxer": "anga",
+              "place": 19
+            },
+            {
+              "beatboxer": "taqin",
+              "place": 20
+            },
+            {
+              "beatboxer": "evolution",
+              "place": 21
+            },
+            {
+              "beatboxer": "vyonnuga",
+              "place": 21
+            },
+            {
+              "beatboxer": "gale",
+              "place": 23
+            },
+            {
+              "beatboxer": "handfx",
+              "place": 24
+            },
+            {
+              "beatboxer": "jonhattan",
+              "place": 24
+            },
+            {
+              "beatboxer": "hyperstyle",
+              "place": 26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "APAC Region Qualifier 2026",
+      "status": "completed",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "tomthum"
+        },
+        {
+          "beatboxer": "chrisceliz"
+        },
+        {
+          "beatboxer": "ettoman"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "crkzu"
+        },
+        {
+          "beatboxer": "petrsarancha"
+        },
+        {
+          "beatboxer": "paulvannido"
+        },
+        {
+          "beatboxer": "max"
+        },
+        {
+          "beatboxer": "ettoman"
+        },
+        {
+          "beatboxer": "heartgrey"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "given"
+          },
+          "runner_up": {
+            "beatboxer": "afq"
+          },
+          "participants": [
+            {
+              "beatboxer": "toshiya",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "bhargav",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "nero",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "ani",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "afq",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "1nter",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "given",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "sudarshan",
+              "qualification": "8th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "toshiya"
+              },
+              "b": {
+                "beatboxer": "sudarshan"
+              },
+              "winner": {
+                "beatboxer": "sudarshan"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "given"
+              },
+              "b": {
+                "beatboxer": "bhargav"
+              },
+              "winner": {
+                "beatboxer": "given"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "afq"
+              },
+              "b": {
+                "beatboxer": "ani"
+              },
+              "winner": {
+                "beatboxer": "afq"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "nero"
+              },
+              "b": {
+                "beatboxer": "1nter"
+              },
+              "winner": {
+                "beatboxer": "nero"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "sudarshan"
+              },
+              "b": {
+                "beatboxer": "given"
+              },
+              "winner": {
+                "beatboxer": "given"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "afq"
+              },
+              "b": {
+                "beatboxer": "nero"
+              },
+              "winner": {
+                "beatboxer": "afq"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "given"
+              },
+              "b": {
+                "beatboxer": "afq"
+              },
+              "winner": {
+                "beatboxer": "given"
+              },
+              "score": "3 Votes - 0 Votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "pvrth",
+              "place": 9
+            },
+            {
+              "beatboxer": "kulo",
+              "place": 10
+            },
+            {
+              "beatboxer": "ginp0",
+              "place": 11
+            },
+            {
+              "beatboxer": "gary",
+              "place": 12
+            },
+            {
+              "beatboxer": "majuh",
+              "place": 13
+            },
+            {
+              "beatboxer": "amethyst",
+              "place": 14
+            },
+            {
+              "beatboxer": "delayer",
+              "place": 15
+            },
+            {
+              "beatboxer": "chaser",
+              "place": 16
+            },
+            {
+              "beatboxer": "pixm",
+              "place": 17
+            },
+            {
+              "beatboxer": "tjason",
+              "place": 18
+            },
+            {
+              "beatboxer": "lianji",
+              "place": 19
+            },
+            {
+              "beatboxer": "yah",
+              "place": 20
+            },
+            {
+              "beatboxer": "r3con",
+              "place": 21
+            },
+            {
+              "beatboxer": "natiq",
+              "place": 22
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

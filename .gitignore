@@ -1,0 +1,8 @@
+# local working files
+edit/
+.claude/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini

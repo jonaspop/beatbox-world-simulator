@@ -1,0 +1,201 @@
+{
+  "competition": "nat_sk",
+  "editions": [
+    {
+      "year": 2026,
+      "name": "Slovak Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "September 12th, 2026",
+      "location": "Bratislava",
+      "country": "Slovakia",
+      "venue": "PINK WHALE",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "crythix"
+        },
+        {
+          "beatboxer": "pj"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "shoter"
+          },
+          "runner_up": {
+            "beatboxer": "arcayd"
+          },
+          "third": {
+            "beatboxer": "rushin"
+          },
+          "participants": [
+            {
+              "beatboxer": "adamson"
+            },
+            {
+              "beatboxer": "ady"
+            },
+            {
+              "beatboxer": "arcayd"
+            },
+            {
+              "beatboxer": "dizflash"
+            },
+            {
+              "beatboxer": "hankyi"
+            },
+            {
+              "beatboxer": "kerychek"
+            },
+            {
+              "beatboxer": "milardo"
+            },
+            {
+              "beatboxer": "nikkey"
+            },
+            {
+              "beatboxer": "rushin"
+            },
+            {
+              "beatboxer": "sahzu"
+            },
+            {
+              "beatboxer": "shoter"
+            },
+            {
+              "beatboxer": "dodo"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shoter"
+              },
+              "b": {
+                "beatboxer": "dodo"
+              },
+              "winner": {
+                "beatboxer": "shoter"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "rushin"
+              },
+              "b": {
+                "beatboxer": "tba"
+              },
+              "winner": {
+                "beatboxer": "rushin"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hankyi"
+              },
+              "b": {
+                "beatboxer": "tba"
+              },
+              "winner": {
+                "beatboxer": "hankyi"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "arcayd"
+              },
+              "b": {
+                "beatboxer": "tba"
+              },
+              "winner": {
+                "beatboxer": "arcayd"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "shoter"
+              },
+              "b": {
+                "beatboxer": "rushin"
+              },
+              "winner": {
+                "beatboxer": "shoter"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "hankyi"
+              },
+              "b": {
+                "beatboxer": "arcayd"
+              },
+              "winner": {
+                "beatboxer": "arcayd"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "rushin"
+              },
+              "b": {
+                "beatboxer": "hankyi"
+              },
+              "winner": {
+                "beatboxer": "rushin"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "shoter"
+              },
+              "b": {
+                "beatboxer": "arcayd"
+              },
+              "winner": {
+                "beatboxer": "shoter"
+              }
+            }
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "bigm"
+          },
+          "runner_up": {
+            "beatboxer": "crythix"
+          },
+          "placements": [
+            {
+              "rank": 1,
+              "beatboxer": "bigm"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "crythix"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "dw"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "leon"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

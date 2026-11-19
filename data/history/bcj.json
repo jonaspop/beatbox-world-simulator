@@ -1,0 +1,745 @@
+{
+  "competition": "bcj",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "BeatCity Japan 2023",
+      "status": "completed",
+      "dates": "February 25, 2023",
+      "location": "Tokyo, Japan",
+      "venue": "Spotify O-EAST",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "afra"
+        },
+        {
+          "beatboxer": "kennyurban"
+        },
+        {
+          "beatboxer": "napom"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "momimaru"
+          },
+          "runner_up": {
+            "beatboxer": "rusy"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ray"
+              },
+              "b": {
+                "beatboxer": "tkm"
+              },
+              "winner": {
+                "beatboxer": "ray"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "rusy"
+              },
+              "b": {
+                "beatboxer": "gen"
+              },
+              "winner": {
+                "beatboxer": "rusy"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "darren"
+              },
+              "winner": {
+                "beatboxer": "kaji"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "momimaru"
+              },
+              "b": {
+                "beatboxer": "chee"
+              },
+              "winner": {
+                "beatboxer": "momimaru"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ray"
+              },
+              "b": {
+                "beatboxer": "rusy"
+              },
+              "winner": {
+                "beatboxer": "rusy"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "kaji"
+              },
+              "b": {
+                "beatboxer": "momimaru"
+              },
+              "winner": {
+                "beatboxer": "momimaru"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "rusy"
+              },
+              "b": {
+                "beatboxer": "momimaru"
+              },
+              "winner": {
+                "beatboxer": "momimaru"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "BeatCity Japan 2024",
+      "status": "completed",
+      "dates": "September 7, 2024",
+      "location": "Tokyo, Japan",
+      "venue": "EX Theater Roppongi",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "dlow"
+        },
+        {
+          "beatboxer": "reepsone"
+        },
+        {
+          "beatboxer": "hiss"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "blycrepsley"
+          },
+          "runner_up": {
+            "beatboxer": "neon"
+          },
+          "participants": [
+            {
+              "beatboxer": "ray",
+              "qualification": "Sapporo Elimination Winner"
+            },
+            {
+              "beatboxer": "74",
+              "qualification": "Tokyo Elimination Winner"
+            },
+            {
+              "beatboxer": "yuki",
+              "qualification": "Fukuoka Elimination Winner"
+            },
+            {
+              "beatboxer": "blycrepsley",
+              "qualification": "1st Wildcard Winner*"
+            },
+            {
+              "beatboxer": "dubox",
+              "qualification": "Okinawa Elimination Winner"
+            },
+            {
+              "beatboxer": "darren",
+              "qualification": "1st Wildcard Winner*"
+            },
+            {
+              "beatboxer": "logics",
+              "qualification": "Sendai Elimination Winner"
+            },
+            {
+              "beatboxer": "nishikigoi",
+              "qualification": "1st Wildcard Winner*"
+            },
+            {
+              "beatboxer": "neon",
+              "qualification": "Nagoya Elimination Winner"
+            },
+            {
+              "beatboxer": "s1on",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "jene",
+              "qualification": "Osaka Elimination Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ray"
+              },
+              "b": {
+                "beatboxer": "dubox"
+              },
+              "winner": {
+                "beatboxer": "ray"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "logics"
+              },
+              "b": {
+                "beatboxer": "neon"
+              },
+              "winner": {
+                "beatboxer": "neon"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jene"
+              },
+              "b": {
+                "beatboxer": "74"
+              },
+              "winner": {
+                "beatboxer": "jene"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "yuki"
+              },
+              "b": {
+                "beatboxer": "blycrepsley"
+              },
+              "winner": {
+                "beatboxer": "blycrepsley"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ray"
+              },
+              "b": {
+                "beatboxer": "neon"
+              },
+              "winner": {
+                "beatboxer": "neon"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "jene"
+              },
+              "b": {
+                "beatboxer": "blycrepsley"
+              },
+              "winner": {
+                "beatboxer": "blycrepsley"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "neon"
+              },
+              "b": {
+                "beatboxer": "blycrepsley"
+              },
+              "winner": {
+                "beatboxer": "blycrepsley"
+              },
+              "score": "1 vote - 2 votes"
+            }
+          ],
+          "notes": [
+            "Bly Crepsley, Darren, and Nishiki Goi were all designated winners of the 1st Wildcard.",
+            "Wildcard winners attended elimination first."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "BeatCity Japan 2025",
+      "status": "completed",
+      "dates": "August 10, 2025",
+      "location": "Tokyo, Japan",
+      "venue": "Zepp Shinjuku",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "pacmax"
+          },
+          "runner_up": {
+            "beatboxer": "rusy"
+          },
+          "participants": [
+            {
+              "beatboxer": "hhas",
+              "qualification": "BeatCity Japan 2025 Pre Winner"
+            },
+            {
+              "beatboxer": "momimaru",
+              "qualification": "Kansai Area Winner"
+            },
+            {
+              "beatboxer": "neon",
+              "qualification": "Chuubu Area Winner"
+            },
+            {
+              "beatboxer": "reach",
+              "qualification": "Kanto Area Winner"
+            },
+            {
+              "beatboxer": "rusy",
+              "qualification": "Hokkaido Area Winner"
+            },
+            {
+              "beatboxer": "bookieblanco",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "ansh",
+              "qualification": "Kyushu & Okinawa Area Winner"
+            },
+            {
+              "beatboxer": "stitch",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "tkm",
+              "qualification": "Tohoku Area Winner"
+            },
+            {
+              "beatboxer": "pacmax",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "nero",
+              "qualification": "Chugoku & Shikoku Area Winner"
+            },
+            {
+              "beatboxer": "cj",
+              "qualification": "4th Wildcard Winner"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "dharni"
+            },
+            {
+              "beatboxer": "alem"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "reach"
+              },
+              "b": {
+                "beatboxer": "rusy"
+              },
+              "winner": {
+                "beatboxer": "rusy"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ansh"
+              },
+              "b": {
+                "beatboxer": "momimaru"
+              },
+              "winner": {
+                "beatboxer": "ansh"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tkm"
+              },
+              "b": {
+                "beatboxer": "nero"
+              },
+              "winner": {
+                "beatboxer": "tkm"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "neon"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "rusy"
+              },
+              "b": {
+                "beatboxer": "ansh"
+              },
+              "winner": {
+                "beatboxer": "rusy"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "tkm"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "rusy"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              }
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "battery",
+              "place": 5
+            },
+            {
+              "beatboxer": "waddle",
+              "place": 6
+            },
+            {
+              "beatboxer": "adikerang",
+              "place": 7
+            },
+            {
+              "beatboxer": "s1on",
+              "place": 8
+            },
+            {
+              "beatboxer": "ver",
+              "place": 9
+            },
+            {
+              "beatboxer": "rikumatsushima",
+              "place": 10
+            },
+            {
+              "beatboxer": "ippanjin",
+              "place": 11
+            },
+            {
+              "beatboxer": "shinji",
+              "place": 11
+            }
+          ],
+          "notes": [
+            "The wildcard winners (Bookie Blanco, Stitch, PACMax & CJ) and BeatCity Japan 2025 Pre Winner (H-has) attended elimination first."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "BeatCity Japan 2026",
+      "status": "completed",
+      "dates": "May 5 & 6, 2026",
+      "location": "Tokyo, Japan",
+      "venue": "TOYOSU PIT",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bookieblanco"
+          },
+          "runner_up": {
+            "beatboxer": "s1on"
+          },
+          "participants": [
+            {
+              "beatboxer": "ver",
+              "qualification": "East Area Prelim Champion"
+            },
+            {
+              "beatboxer": "rikumatsushima",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "rtr",
+              "qualification": "West Area Prelim Champion"
+            },
+            {
+              "beatboxer": "gz7v",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "s1on",
+              "qualification": "South Area Prelim Champion"
+            },
+            {
+              "beatboxer": "bookieblanco",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "corey",
+              "qualification": "North Area Prelim Champion"
+            },
+            {
+              "beatboxer": "adikerang",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "akky",
+              "qualification": "Area Prelims Redemption Selection 1"
+            },
+            {
+              "beatboxer": "viva",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "yuichi",
+              "qualification": "Area Prelims Redemption Selection 2"
+            },
+            {
+              "beatboxer": "blycrepsley",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "neon",
+              "qualification": "Area Prelims Redemption Selection 3"
+            },
+            {
+              "beatboxer": "waddle",
+              "qualification": "9th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "mariohash",
+              "qualification": "Area Prelims Redemption Selection 4"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "bataco"
+            },
+            {
+              "beatboxer": "geneshinozaki"
+            },
+            {
+              "beatboxer": "hiss"
+            }
+          ],
+          "wildcard_judges": [
+            {
+              "beatboxer": "geneshinozaki"
+            },
+            {
+              "beatboxer": "bataco"
+            },
+            {
+              "beatboxer": "dlow"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ver"
+              },
+              "b": {
+                "beatboxer": "bookieblanco"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "adikerang"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "rtr"
+              },
+              "b": {
+                "beatboxer": "viva"
+              },
+              "winner": {
+                "beatboxer": "viva"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "s1on"
+              },
+              "b": {
+                "beatboxer": "blycrepsley"
+              },
+              "winner": {
+                "beatboxer": "s1on"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bookieblanco"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "viva"
+              },
+              "b": {
+                "beatboxer": "s1on"
+              },
+              "winner": {
+                "beatboxer": "s1on"
+              },
+              "score": "1 vote - 2 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bookieblanco"
+              },
+              "b": {
+                "beatboxer": "s1on"
+              },
+              "winner": {
+                "beatboxer": "bookieblanco"
+              }
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "bookieblanco"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "rikumatsushima"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "waddle"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "viva"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "gz7v"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "adikerang"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "blycrepsley"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "rtab",
+              "place": 8
+            }
+          ],
+          "notes": [
+            "Wildcard winners attended the elimination round first.",
+            "Area Prelims Redemption Explaination: Colaps & NaPoM selected 4 standout players from all area prelims (East / West / South / North), excluding winners (Same area selections possible). The winner entered the 1st Round.",
+            "[jp] Waddle acted as a replacement for [ir] CJ (2nd Wildcard Winner). [jp] RTAB (Wildcard 8th Place) wasn't able to attend the event due to a health issue."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "competition": "nat_au",
+  "editions": [
+    {
+      "year": 2025,
+      "name": "Australian Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "October 18, 2025",
+      "location": "Chippendale, Sydney",
+      "country": "Australia",
+      "venue": "Lansdowne Hotel",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "lukerative"
+        },
+        {
+          "beatboxer": "warlock"
+        },
+        {
+          "beatboxer": "mrc"
+        },
+        {
+          "beatboxer": "mrc"
+        },
+        {
+          "beatboxer": "y2k"
+        },
+        {
+          "beatboxer": "y2k"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "tarik"
+          },
+          "runner_up": {
+            "beatboxer": "chills"
+          },
+          "third": {
+            "beatboxer": "buddyman"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "clr"
+              },
+              "b": {
+                "beatboxer": "nxhp"
+              },
+              "winner": {
+                "beatboxer": "clr"
+              },
+              "score": "2 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "brunny"
+              },
+              "b": {
+                "beatboxer": "chills"
+              },
+              "winner": {
+                "beatboxer": "chills"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "buddyman"
+              },
+              "b": {
+                "beatboxer": "raydo"
+              },
+              "winner": {
+                "beatboxer": "buddyman"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tarik"
+              },
+              "b": {
+                "beatboxer": "dopeyfx"
+              },
+              "winner": {
+                "beatboxer": "tarik"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "clr"
+              },
+              "b": {
+                "beatboxer": "chills"
+              },
+              "winner": {
+                "beatboxer": "chills"
+              },
+              "score": "1 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "buddyman"
+              },
+              "b": {
+                "beatboxer": "tarik"
+              },
+              "winner": {
+                "beatboxer": "tarik"
+              },
+              "score": "1 Votes - 2 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "clr"
+              },
+              "b": {
+                "beatboxer": "buddyman"
+              },
+              "winner": {
+                "beatboxer": "buddyman"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "chills"
+              },
+              "b": {
+                "beatboxer": "tarik"
+              },
+              "winner": {
+                "beatboxer": "tarik"
+              }
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "clr"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "tarik"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "buddyman"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "brunny"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "chills"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "raydo"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "dopeyfx"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "nxhp"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Australian Beatbox Championship 2026",
+      "status": "results_missing",
+      "dates": "November 28, 2026",
+      "location": "Brisbane, Queensland",
+      "country": "Australia",
+      "venue": "The Brightside",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "jeddles"
+        },
+        {
+          "beatboxer": "tomthum"
+        },
+        {
+          "beatboxer": "lukerative"
+        },
+        {
+          "beatboxer": "gale"
+        },
+        {
+          "beatboxer": "djreks"
+        },
+        {
+          "beatboxer": "hopeone"
+        }
+      ],
+      "categories": {}
+    }
+  ]
+}

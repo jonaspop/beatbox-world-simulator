@@ -1,0 +1,614 @@
+{
+  "competition": "nat_se",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "Swedish Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "May 25th, 2024",
+      "location": "Gothenburg, Sweden",
+      "venue": "Frilagret",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "rawclaw"
+        },
+        {
+          "beatboxer": "donoso"
+        },
+        {
+          "beatboxer": "abeone"
+        },
+        {
+          "beatboxer": "gavin"
+        },
+        {
+          "beatboxer": "daniel"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "rawclaw"
+        },
+        {
+          "beatboxer": "wunknown"
+        },
+        {
+          "beatboxer": "exallos"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "philipfeelhip"
+          },
+          "runner_up": {
+            "beatboxer": "rewd"
+          },
+          "third": {
+            "beatboxer": "ville"
+          },
+          "participants": [
+            {
+              "beatboxer": "rewd",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "philipfeelhip",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "ihigh",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ville",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "lian",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "obada",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "erkania",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dmb",
+              "qualification": "Wildcard Runner-up*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dmb"
+              },
+              "b": {
+                "beatboxer": "rewd"
+              },
+              "winner": {
+                "beatboxer": "rewd"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ville"
+              },
+              "b": {
+                "beatboxer": "lian"
+              },
+              "winner": {
+                "beatboxer": "ville"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "erkania"
+              },
+              "b": {
+                "beatboxer": "philipfeelhip"
+              },
+              "winner": {
+                "beatboxer": "philipfeelhip"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "obada"
+              },
+              "b": {
+                "beatboxer": "ihigh"
+              },
+              "winner": {
+                "beatboxer": "ihigh"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "rewd"
+              },
+              "b": {
+                "beatboxer": "ville"
+              },
+              "winner": {
+                "beatboxer": "rewd"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "philipfeelhip"
+              },
+              "b": {
+                "beatboxer": "ihigh"
+              },
+              "winner": {
+                "beatboxer": "philipfeelhip"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "ihigh"
+              },
+              "b": {
+                "beatboxer": "ville"
+              },
+              "winner": {
+                "beatboxer": "ville"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "rewd"
+              },
+              "b": {
+                "beatboxer": "philipfeelhip"
+              },
+              "winner": {
+                "beatboxer": "philipfeelhip"
+              }
+            }
+          ],
+          "notes": [
+            "DMB acted as a replacement for FLAWAPAWA (3rd Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Swedish Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "April 12th, 2025",
+      "location": "Borlänge, Sweden",
+      "venue": "Brunnsviks Folkhögskola",
+      "source": "beatbox.fandom.com",
+      "wildcard_judges": [
+        {
+          "beatboxer": "osis"
+        },
+        {
+          "beatboxer": "crythix"
+        },
+        {
+          "beatboxer": "mrfex"
+        }
+      ],
+      "categories": {
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "crythix"
+          },
+          "judges": [
+            {
+              "beatboxer": "hugo"
+            },
+            {
+              "beatboxer": "erkania"
+            },
+            {
+              "beatboxer": "magma"
+            }
+          ],
+          "points": [
+            {
+              "beatboxer": "rawclaw",
+              "points": 1
+            },
+            {
+              "beatboxer": "crythix",
+              "points": 7
+            },
+            {
+              "beatboxer": "duzzy",
+              "points": 4
+            },
+            {
+              "beatboxer": "ihigh",
+              "points": 0
+            },
+            {
+              "beatboxer": "hans",
+              "points": 0
+            },
+            {
+              "beatboxer": "obada",
+              "points": 0
+            },
+            {
+              "beatboxer": "ville",
+              "points": 2
+            },
+            {
+              "beatboxer": "rewd",
+              "points": 0
+            }
+          ]
+        },
+        "solo": {
+          "champion": {
+            "beatboxer": "bhop"
+          },
+          "runner_up": {
+            "beatboxer": "gneben"
+          },
+          "third": {
+            "beatboxer": "rewd"
+          },
+          "participants": [
+            {
+              "beatboxer": "rewd",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "bhop",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "dmb",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "swedishness",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "gneben",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ihigh",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "hans",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "ville",
+              "qualification": "9th Wildcard Winner*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "rewd"
+              },
+              "b": {
+                "beatboxer": "hans"
+              },
+              "winner": {
+                "beatboxer": "rewd"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gneben"
+              },
+              "b": {
+                "beatboxer": "swedishness"
+              },
+              "winner": {
+                "beatboxer": "gneben"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dmb"
+              },
+              "b": {
+                "beatboxer": "ville"
+              },
+              "winner": {
+                "beatboxer": "dmb"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ihigh"
+              },
+              "b": {
+                "beatboxer": "bhop"
+              },
+              "winner": {
+                "beatboxer": "bhop"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "rewd"
+              },
+              "b": {
+                "beatboxer": "gneben"
+              },
+              "winner": {
+                "beatboxer": "gneben"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "dmb"
+              },
+              "b": {
+                "beatboxer": "bhop"
+              },
+              "winner": {
+                "beatboxer": "bhop"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "rewd"
+              },
+              "b": {
+                "beatboxer": "dmb"
+              },
+              "winner": {
+                "beatboxer": "rewd"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "gneben"
+              },
+              "b": {
+                "beatboxer": "bhop"
+              },
+              "winner": {
+                "beatboxer": "bhop"
+              }
+            }
+          ],
+          "notes": [
+            "Ville acted as a replacement of Addirex (6th Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Swedish Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "May 9, 2026",
+      "location": "Gothenburg, Sweden",
+      "venue": "Spike Brewery",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "philipfeelhip"
+        },
+        {
+          "beatboxer": "bhop"
+        },
+        {
+          "beatboxer": "simplesound"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "haka"
+          },
+          "runner_up": {
+            "beatboxer": "rewd"
+          },
+          "third": {
+            "beatboxer": "ville"
+          },
+          "participants": [
+            {
+              "beatboxer": "heptt"
+            },
+            {
+              "beatboxer": "haka"
+            },
+            {
+              "beatboxer": "rewd"
+            },
+            {
+              "beatboxer": "miio"
+            },
+            {
+              "beatboxer": "himpi"
+            },
+            {
+              "beatboxer": "aruwe"
+            },
+            {
+              "beatboxer": "gneben"
+            },
+            {
+              "beatboxer": "simon"
+            },
+            {
+              "beatboxer": "addirex"
+            },
+            {
+              "beatboxer": "noel"
+            },
+            {
+              "beatboxer": "bomie"
+            },
+            {
+              "beatboxer": "hugo"
+            },
+            {
+              "beatboxer": "erkania"
+            },
+            {
+              "beatboxer": "johnxray"
+            },
+            {
+              "beatboxer": "ville"
+            },
+            {
+              "beatboxer": "obada"
+            },
+            {
+              "beatboxer": "samsvard"
+            },
+            {
+              "beatboxer": "swed"
+            },
+            {
+              "beatboxer": "hansbbx"
+            },
+            {
+              "beatboxer": "ohnardo"
+            },
+            {
+              "beatboxer": "bbxh"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ville"
+              },
+              "b": {
+                "beatboxer": "hansbbx"
+              },
+              "winner": {
+                "beatboxer": "ville"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "rewd"
+              },
+              "b": {
+                "beatboxer": "gneben"
+              },
+              "winner": {
+                "beatboxer": "rewd"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hugo"
+              },
+              "b": {
+                "beatboxer": "addirex"
+              },
+              "winner": {
+                "beatboxer": "hugo"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "haka"
+              },
+              "b": {
+                "beatboxer": "obada"
+              },
+              "winner": {
+                "beatboxer": "haka"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ville"
+              },
+              "b": {
+                "beatboxer": "rewd"
+              },
+              "winner": {
+                "beatboxer": "rewd"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "hugo"
+              },
+              "b": {
+                "beatboxer": "haka"
+              },
+              "winner": {
+                "beatboxer": "haka"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "ville"
+              },
+              "b": {
+                "beatboxer": "hugo"
+              },
+              "winner": {
+                "beatboxer": "ville"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "rewd"
+              },
+              "b": {
+                "beatboxer": "haka"
+              },
+              "winner": {
+                "beatboxer": "haka"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

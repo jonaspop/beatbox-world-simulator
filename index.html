@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Beatbox World Simulator</title>
+  <meta name="description" content="Simulate the beatbox scene season by season: national championships, GBB, BBWC and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"></span>Beatbox World <b>Sim</b></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#home">Home</a><a href="#calendar">Calendar</a><a href="#rankings">Rankings</a><a href="#people">Beatboxers</a>
+      <a href="#champions">Champions</a><a href="#countries">Countries</a><a href="#custom">Custom</a><a href="#settings">Settings</a>
+    </nav>
+    <div class="top-ctl">
+      <div class="status" id="status" aria-live="polite"></div>
+      <button class="btn primary" data-act="next" title="Run the next event on the calendar">Next ▸</button>
+    </div>
+  </header>
+  <main id="main" class="wrap"></main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

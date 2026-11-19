@@ -1,0 +1,886 @@
+[
+  {
+    "id": "gbb",
+    "name": "Grand Beatbox Battle",
+    "short_name": "GBB",
+    "organizer": "Swissbeatbox",
+    "scope": "world",
+    "first_year": 2009,
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": [
+          1,
+          2,
+          3
+        ],
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 1
+      },
+      {
+        "category": "7_to_smoke",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 1
+      }
+    ],
+    "notes": "Top 3 in Solo and the 7 to Smoke winner qualify for the next GBB; the rest come from wildcards and qualifier events.",
+    "history_file": "history/gbb.json"
+  },
+  {
+    "id": "gbb_second_league",
+    "name": "GBB Second League",
+    "short_name": "GBB SL",
+    "organizer": "Swissbeatbox",
+    "scope": "world",
+    "first_year": 2026,
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 1
+      }
+    ],
+    "notes": "Contested by GBB wildcard runners-up; the winner qualifies for the next GBB.",
+    "history_file": "history/gbb_second_league.json"
+  },
+  {
+    "id": "bbwc",
+    "name": "Beatbox Battle World Championship",
+    "short_name": "BBWC",
+    "organizer": "Beatbox Battle Network",
+    "scope": "world",
+    "first_year": 2005,
+    "cycle_years": 4,
+    "next_edition": 2027,
+    "categories": [
+      "solo"
+    ],
+    "entry_rules": [
+      {
+        "type": "national_champion",
+        "window": "since_previous_edition",
+        "description": "Won a national championship in the years since the previous BBWC."
+      },
+      {
+        "type": "previous_edition_placement",
+        "top": 16,
+        "description": "Reached the top 16 at the previous BBWC."
+      }
+    ],
+    "notes": "Held about every four years; the 7th edition is in 2027.",
+    "history_file": "history/bbwc.json"
+  },
+  {
+    "id": "ebc",
+    "name": "European Beatbox Championship",
+    "short_name": "EBC",
+    "organizer": "Beatbox Europe",
+    "scope": "continental",
+    "region": "europe",
+    "next_edition": 2027,
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "notes": "Returns in 2027.",
+    "history_file": "history/ebc.json"
+  },
+  {
+    "id": "fbb",
+    "name": "Florida Beatbox Battle",
+    "short_name": "FBB",
+    "organizer": "Florida Beatbox Festival",
+    "scope": "international",
+    "host_city": "Agen",
+    "country": "fr",
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "history_file": "history/fbb.json"
+  },
+  {
+    "id": "gnb",
+    "name": "Great North Battle",
+    "short_name": "GNB",
+    "organizer": "Beatbox Canada",
+    "scope": "international",
+    "country": "ca",
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "history_file": "history/gnb.json"
+  },
+  {
+    "id": "gbc",
+    "name": "German Beatbox Championship",
+    "short_name": "GBC",
+    "organizer": "German Beatbox Championship",
+    "scope": "national",
+    "country": "de",
+    "categories": [
+      "solo",
+      "solo_global",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "qualifies": [
+      {
+        "category": "solo_global",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "notes": "Solo is the German national title; Solo Global is open to everyone and its champion goes to GBB.",
+    "id_note": "German national championship",
+    "history_file": "history/gbc.json"
+  },
+  {
+    "id": "apac",
+    "name": "APAC Region Qualifier",
+    "short_name": "APAC",
+    "organizer": "Swissbeatbox",
+    "scope": "regional",
+    "region": "asia_pacific",
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "notes": "Earlier editions ran as Oceania Beatbox Championships (2023) and Oceania Beatbox Battle (2025).",
+    "history_file": "history/apac.json"
+  },
+  {
+    "id": "amrq",
+    "name": "Africa & MENA Region Qualifier",
+    "short_name": "AMRQ",
+    "organizer": "Swissbeatbox",
+    "scope": "regional",
+    "region": "africa_mena",
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "history_file": "history/amrq.json"
+  },
+  {
+    "id": "bcj",
+    "name": "BeatCity Japan",
+    "short_name": "BCJ",
+    "organizer": "BeatCity",
+    "scope": "national_open",
+    "country": "jp",
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "history_file": "history/bcj.json"
+  },
+  {
+    "id": "mba",
+    "name": "Maestro Beatbox America",
+    "short_name": "MBA",
+    "scope": "continental",
+    "region": "south_america",
+    "categories": [
+      "solo"
+    ],
+    "qualifies": [
+      {
+        "category": "solo",
+        "place": 1,
+        "to": "gbb",
+        "to_category": "solo",
+        "year_offset": 0
+      }
+    ],
+    "notes": "South American championship; the winner goes to GBB.",
+    "history_file": "history/mba.json"
+  },
+  {
+    "id": "btw",
+    "name": "Beatbox To World",
+    "short_name": "BTW",
+    "scope": "international",
+    "frequency": "yearly",
+    "categories": [
+      "solo"
+    ],
+    "notes": "Big yearly international battle, back in 2026 after a break.",
+    "history_file": "history/btw.json"
+  },
+  {
+    "id": "lacup",
+    "name": "La Cup",
+    "short_name": "La Cup",
+    "scope": "invitational",
+    "categories": [
+      "solo"
+    ],
+    "notes": "Field picked loosely: upcoming prospects, well-known title winners, new national champions and comebacks.",
+    "history_file": "history/lacup.json"
+  },
+  {
+    "id": "botm",
+    "name": "Beatbox of the Month",
+    "short_name": "BOTM",
+    "scope": "open",
+    "country": "de",
+    "frequency": "every_2_months",
+    "categories": [
+      "solo"
+    ],
+    "notes": "Open event mostly attended by Europeans near Germany. Upcoming names use it to test new battle ideas; it gives a small level-up.",
+    "history_file": "history/botm.json"
+  },
+  {
+    "id": "vokal_total",
+    "name": "Vokal Total",
+    "short_name": "VT",
+    "scope": "invitational",
+    "categories": [
+      "solo"
+    ],
+    "entry": {
+      "invited": 6,
+      "wildcards": 2
+    },
+    "notes": "Six strong invited beatboxers plus two prospects through wildcards.",
+    "history_file": "history/vokal_total.json"
+  },
+  {
+    "id": "bayreuth",
+    "name": "Bayreuth Beatbox Battle",
+    "short_name": "BBB",
+    "scope": "invitational",
+    "country": "de",
+    "categories": [
+      "solo"
+    ],
+    "entry": {
+      "invited": 6,
+      "wildcards": 2
+    },
+    "notes": "Same idea as Vokal Total: invited names plus wildcard prospects.",
+    "history_file": "history/bayreuth.json"
+  },
+  {
+    "id": "nue",
+    "name": "NUE Beatbox Battles",
+    "short_name": "NUE",
+    "scope": "international",
+    "country": "gb",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "notes": "A big event in the UK.",
+    "history_file": "history/nue.json"
+  },
+  {
+    "id": "one_one",
+    "name": "One One Battle International",
+    "short_name": "One One",
+    "scope": "invitational",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "entry": {
+      "invited": "prospects and proven beatboxers",
+      "wildcards": 2
+    },
+    "notes": "Invite-only battle mixing prospects and proven beatboxers, plus two wildcard spots.",
+    "history_file": "history/one_one.json"
+  },
+  {
+    "id": "nat_ar",
+    "name": "Argentina Beatbox Championship",
+    "scope": "national",
+    "country": "ar",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ar.json"
+  },
+  {
+    "id": "nat_at",
+    "name": "Austria Beatbox Championship",
+    "scope": "national",
+    "country": "at",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_at.json"
+  },
+  {
+    "id": "nat_au",
+    "name": "Australia Beatbox Championship",
+    "scope": "national",
+    "country": "au",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_au.json"
+  },
+  {
+    "id": "nat_be",
+    "name": "Belgium Beatbox Championship",
+    "scope": "national",
+    "country": "be",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_be.json"
+  },
+  {
+    "id": "nat_bg",
+    "name": "Bulgaria Beatbox Championship",
+    "scope": "national",
+    "country": "bg",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_bg.json"
+  },
+  {
+    "id": "nat_bo",
+    "name": "Bolivia Beatbox Championship",
+    "scope": "national",
+    "country": "bo",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_bo.json"
+  },
+  {
+    "id": "nat_br",
+    "name": "Brazil Beatbox Championship",
+    "scope": "national",
+    "country": "br",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_br.json"
+  },
+  {
+    "id": "nat_ca",
+    "name": "Canada Beatbox Championship",
+    "scope": "national",
+    "country": "ca",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ca.json"
+  },
+  {
+    "id": "nat_cl",
+    "name": "Chile Beatbox Championship",
+    "scope": "national",
+    "country": "cl",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_cl.json"
+  },
+  {
+    "id": "nat_cn",
+    "name": "China Beatbox Championship",
+    "scope": "national",
+    "country": "cn",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_cn.json"
+  },
+  {
+    "id": "nat_co",
+    "name": "Colombia Beatbox Championship",
+    "scope": "national",
+    "country": "co",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_co.json"
+  },
+  {
+    "id": "nat_cz",
+    "name": "Czech Republic Beatbox Championship",
+    "scope": "national",
+    "country": "cz",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_cz.json"
+  },
+  {
+    "id": "nat_dk",
+    "name": "Denmark Beatbox Championship",
+    "scope": "national",
+    "country": "dk",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_dk.json"
+  },
+  {
+    "id": "nat_eg",
+    "name": "Egypt Beatbox Championship",
+    "scope": "national",
+    "country": "eg",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_eg.json"
+  },
+  {
+    "id": "nat_es",
+    "name": "Spanish Beatbox Battle",
+    "scope": "national",
+    "country": "es",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_es.json"
+  },
+  {
+    "id": "nat_fi",
+    "name": "Finland Beatbox Championship",
+    "scope": "national",
+    "country": "fi",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_fi.json"
+  },
+  {
+    "id": "nat_fr",
+    "name": "France Beatbox Championship",
+    "scope": "national",
+    "country": "fr",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_fr.json"
+  },
+  {
+    "id": "nat_gb",
+    "name": "UK Beatbox Championships",
+    "scope": "national",
+    "country": "gb",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_gb.json"
+  },
+  {
+    "id": "nat_gb-sct",
+    "name": "Scottish Beatbox Championships",
+    "scope": "national",
+    "country": "gb-sct",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_gb-sct.json"
+  },
+  {
+    "id": "nat_hk",
+    "name": "Hong Kong Beatbox Championship",
+    "scope": "national",
+    "country": "hk",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_hk.json"
+  },
+  {
+    "id": "nat_ie",
+    "name": "Ireland Beatbox Championship",
+    "scope": "national",
+    "country": "ie",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ie.json"
+  },
+  {
+    "id": "nat_il",
+    "name": "Israel Beatbox Championship",
+    "scope": "national",
+    "country": "il",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_il.json"
+  },
+  {
+    "id": "nat_in",
+    "name": "India Beatbox Championship",
+    "scope": "national",
+    "country": "in",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_in.json"
+  },
+  {
+    "id": "nat_ir",
+    "name": "Iran Beatbox Championship",
+    "scope": "national",
+    "country": "ir",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ir.json"
+  },
+  {
+    "id": "nat_it",
+    "name": "Italy Beatbox Championship",
+    "scope": "national",
+    "country": "it",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_it.json"
+  },
+  {
+    "id": "nat_kr",
+    "name": "Korea Beatbox Championship",
+    "scope": "national",
+    "country": "kr",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_kr.json"
+  },
+  {
+    "id": "nat_lt",
+    "name": "Lithuanian Beatbox Battle",
+    "scope": "national",
+    "country": "lt",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_lt.json"
+  },
+  {
+    "id": "nat_ma",
+    "name": "Morocco Beatbox Championship",
+    "scope": "national",
+    "country": "ma",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ma.json"
+  },
+  {
+    "id": "nat_mx",
+    "name": "Mexico Beatbox Championship",
+    "scope": "national",
+    "country": "mx",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_mx.json"
+  },
+  {
+    "id": "nat_nl",
+    "name": "Dutch Beatbox Battle",
+    "scope": "national",
+    "country": "nl",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_nl.json"
+  },
+  {
+    "id": "nat_ph",
+    "name": "Philippines Beatbox Championship",
+    "scope": "national",
+    "country": "ph",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ph.json"
+  },
+  {
+    "id": "nat_pk",
+    "name": "Pakistan Beatbox Championship",
+    "scope": "national",
+    "country": "pk",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_pk.json"
+  },
+  {
+    "id": "nat_pl",
+    "name": "Polish Beatbox Battle",
+    "scope": "national",
+    "country": "pl",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_pl.json"
+  },
+  {
+    "id": "nat_pt",
+    "name": "Portugal Beatbox Championship",
+    "scope": "national",
+    "country": "pt",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_pt.json"
+  },
+  {
+    "id": "nat_ru",
+    "name": "Russia Beatbox Championship",
+    "scope": "national",
+    "country": "ru",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ru.json"
+  },
+  {
+    "id": "nat_sa",
+    "name": "Saudi Arabia Beatbox Championship",
+    "scope": "national",
+    "country": "sa",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_sa.json"
+  },
+  {
+    "id": "nat_se",
+    "name": "Sweden Beatbox Championship",
+    "scope": "national",
+    "country": "se",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_se.json"
+  },
+  {
+    "id": "nat_sk",
+    "name": "Slovakia Beatbox Championship",
+    "scope": "national",
+    "country": "sk",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_sk.json"
+  },
+  {
+    "id": "nat_sy",
+    "name": "Syria Beatbox Championship",
+    "scope": "national",
+    "country": "sy",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_sy.json"
+  },
+  {
+    "id": "nat_tr",
+    "name": "Turkey Beatbox Championship",
+    "scope": "national",
+    "country": "tr",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_tr.json"
+  },
+  {
+    "id": "nat_tw",
+    "name": "Taiwan Beatbox Championship",
+    "scope": "national",
+    "country": "tw",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_tw.json"
+  },
+  {
+    "id": "nat_us",
+    "name": "USA Beatbox Championships",
+    "scope": "national",
+    "country": "us",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_us.json"
+  },
+  {
+    "id": "nat_ve",
+    "name": "Venezuela Beatbox Championship",
+    "scope": "national",
+    "country": "ve",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_ve.json"
+  },
+  {
+    "id": "nat_za",
+    "name": "South Africa Beatbox Championship",
+    "scope": "national",
+    "country": "za",
+    "categories": [
+      "solo",
+      "7_to_smoke"
+    ],
+    "national_title_category": "solo",
+    "history_file": "history/nat_za.json"
+  }
+]

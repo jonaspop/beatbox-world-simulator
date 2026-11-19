@@ -1,0 +1,541 @@
+{
+  "competition": "nat_at",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "Austrian Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "December 16th, 2023",
+      "location": "Vienna, Austria",
+      "venue": "The LOFT",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "matej"
+        },
+        {
+          "beatboxer": "euzn"
+        },
+        {
+          "beatboxer": "robeat"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bigg"
+          },
+          "runner_up": {
+            "beatboxer": "vega"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "dizflash"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "carnage"
+              },
+              "b": {
+                "beatboxer": "ginge"
+              },
+              "winner": {
+                "beatboxer": "carnage"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vega"
+              },
+              "b": {
+                "beatboxer": "beathoven"
+              },
+              "winner": {
+                "beatboxer": "vega"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "da"
+              },
+              "b": {
+                "beatboxer": "samuel"
+              },
+              "winner": {
+                "beatboxer": "da"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "carnage"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "vega"
+              },
+              "b": {
+                "beatboxer": "da"
+              },
+              "winner": {
+                "beatboxer": "vega"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "vega"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "Austrian Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "November 30th, 2024",
+      "location": "Vienna, Austria",
+      "venue": "Arena Wien",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "osis"
+        },
+        {
+          "beatboxer": "azel"
+        },
+        {
+          "beatboxer": "zekka"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "uku"
+          },
+          "runner_up": {
+            "beatboxer": "lonjey"
+          },
+          "third": {
+            "beatboxer": "marko"
+          },
+          "participants": [
+            {
+              "beatboxer": "bato",
+              "qualification": "UABC 2024 Champion"
+            },
+            {
+              "beatboxer": "iwx",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vega",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "noel",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "lonjey",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "silent",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "da",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "beathoven",
+              "qualification": "15th Wildcard Winner"
+            },
+            {
+              "beatboxer": "lilchess",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "bank",
+              "qualification": "16th Wildcard Winner"
+            },
+            {
+              "beatboxer": "marko",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "thb",
+              "qualification": "17th Wildcard Winner"
+            },
+            {
+              "beatboxer": "carnage",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "noah",
+              "qualification": "19th Wildcard Winner"
+            },
+            {
+              "beatboxer": "uku",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "jemi",
+              "qualification": "20th Wildcard Winner"
+            },
+            {
+              "beatboxer": "samuel",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "beany",
+              "qualification": "21st Wildcard Winner"
+            },
+            {
+              "beatboxer": "raoul",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "mulug",
+              "qualification": "22nd Wildcard Winner*"
+            },
+            {
+              "beatboxer": "marich",
+              "qualification": "10th Wildcard Winner"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lonjey"
+              },
+              "b": {
+                "beatboxer": "vega"
+              },
+              "winner": {
+                "beatboxer": "lonjey"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "marko"
+              },
+              "b": {
+                "beatboxer": "thb"
+              },
+              "winner": {
+                "beatboxer": "marko"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "da"
+              },
+              "b": {
+                "beatboxer": "noel"
+              },
+              "winner": {
+                "beatboxer": "da"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "uku"
+              },
+              "b": {
+                "beatboxer": "bato"
+              },
+              "winner": {
+                "beatboxer": "uku"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "lonjey"
+              },
+              "b": {
+                "beatboxer": "marko"
+              },
+              "winner": {
+                "beatboxer": "lonjey"
+              },
+              "score": "2 votes - 1 vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "da"
+              },
+              "b": {
+                "beatboxer": "uku"
+              },
+              "winner": {
+                "beatboxer": "uku"
+              },
+              "score": "0 votes - 3 votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "marko"
+              },
+              "b": {
+                "beatboxer": "da"
+              },
+              "winner": {
+                "beatboxer": "marko"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "lonjey"
+              },
+              "b": {
+                "beatboxer": "uku"
+              },
+              "winner": {
+                "beatboxer": "uku"
+              }
+            }
+          ],
+          "notes": [
+            "Mulug acted as a replacement for [at] Ludwig (14th Wildcard Winner).",
+            "[at] WeirdBassBBX (18th Wildcard Winner) didn‘t show up to the event.",
+            "Iwx and Jemi didn't perform elimination after missing their cue when being called to the stage."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Austrian Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "September 27th, 2025",
+      "location": "Vienna, Austria",
+      "venue": "Arena Wien",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bigg"
+          },
+          "runner_up": {
+            "beatboxer": "uku"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "lilamp"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bato"
+              },
+              "b": {
+                "beatboxer": "noel"
+              },
+              "winner": {
+                "beatboxer": "bato"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "uku"
+              },
+              "b": {
+                "beatboxer": "lilchess"
+              },
+              "winner": {
+                "beatboxer": "uku"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "caspian"
+              },
+              "b": {
+                "beatboxer": "mulug"
+              },
+              "winner": {
+                "beatboxer": "caspian"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "bato"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "uku"
+              },
+              "b": {
+                "beatboxer": "caspian"
+              },
+              "winner": {
+                "beatboxer": "uku"
+              },
+              "score": "3 votes - 0 votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "uku"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Austrian Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "September 18th, 2026",
+      "location": "Vienna",
+      "country": "Austria",
+      "venue": "Arena Wien",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "bigg"
+          },
+          "runner_up": {
+            "beatboxer": "bato"
+          },
+          "judges": [
+            {
+              "beatboxer": "geneshinozaki"
+            },
+            {
+              "beatboxer": "chrisceliz"
+            },
+            {
+              "beatboxer": "pe4enkata"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "carnage"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "lilchess"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "bato"
+              },
+              "b": {
+                "beatboxer": "silent"
+              },
+              "winner": {
+                "beatboxer": "bato"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "bigg"
+              },
+              "b": {
+                "beatboxer": "bato"
+              },
+              "winner": {
+                "beatboxer": "bigg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

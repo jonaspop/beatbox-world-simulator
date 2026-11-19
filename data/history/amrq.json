@@ -1,0 +1,672 @@
+{
+  "competition": "amrq",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "Africa   Mena Region Qualifier 2024",
+      "status": "completed",
+      "dates": "June-July",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "pe4enkata"
+        },
+        {
+          "beatboxer": "footboxg"
+        },
+        {
+          "beatboxer": "napom"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "kim"
+        },
+        {
+          "beatboxer": "paulvannido"
+        },
+        {
+          "beatboxer": "pepouni"
+        },
+        {
+          "beatboxer": "jewow"
+        },
+        {
+          "beatboxer": "pacmax"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "remix"
+          },
+          "runner_up": {
+            "beatboxer": "hippy"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "lexomafo"
+              },
+              "b": {
+                "beatboxer": "gelber"
+              },
+              "winner": {
+                "beatboxer": "gelber"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hippy"
+              },
+              "b": {
+                "beatboxer": "ash"
+              },
+              "winner": {
+                "beatboxer": "hippy"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "zirpa"
+              },
+              "b": {
+                "beatboxer": "fabley"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "remix"
+              },
+              "b": {
+                "beatboxer": "gz7v"
+              },
+              "winner": {
+                "beatboxer": "remix"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gelber"
+              },
+              "b": {
+                "beatboxer": "hippy"
+              },
+              "winner": {
+                "beatboxer": "hippy"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "remix"
+              },
+              "winner": {
+                "beatboxer": "remix"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "hippy"
+              },
+              "b": {
+                "beatboxer": "remix"
+              },
+              "winner": {
+                "beatboxer": "remix"
+              },
+              "score": "1 Vote - 2 Votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "acar",
+              "place": 9
+            },
+            {
+              "beatboxer": "soulz",
+              "place": 10
+            },
+            {
+              "beatboxer": "apocalips",
+              "place": 11
+            },
+            {
+              "beatboxer": "levels",
+              "place": 12
+            },
+            {
+              "beatboxer": "broly",
+              "place": 13
+            },
+            {
+              "beatboxer": "pleo",
+              "place": 14
+            },
+            {
+              "beatboxer": "bp",
+              "place": 15
+            },
+            {
+              "beatboxer": "raban",
+              "place": 16
+            },
+            {
+              "beatboxer": "aokcraft",
+              "place": 17
+            },
+            {
+              "beatboxer": "edenbeatbox",
+              "place": 18
+            },
+            {
+              "beatboxer": "vilbuz",
+              "place": 18
+            },
+            {
+              "beatboxer": "bradje",
+              "place": 20
+            },
+            {
+              "beatboxer": "elblanco225",
+              "place": 21
+            },
+            {
+              "beatboxer": "an16",
+              "place": 22
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "Africa   Mena Region Qualifier 2025",
+      "status": "completed",
+      "dates": "June - July, 2025",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "remix"
+        },
+        {
+          "beatboxer": "kinginertia"
+        },
+        {
+          "beatboxer": "aboice"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "remix"
+        },
+        {
+          "beatboxer": "fredybeats"
+        },
+        {
+          "beatboxer": "paulvannido"
+        },
+        {
+          "beatboxer": "pacmax"
+        },
+        {
+          "beatboxer": "pepouni"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "max"
+          },
+          "runner_up": {
+            "beatboxer": "hippy"
+          },
+          "participants": [
+            {
+              "beatboxer": "max",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "patbox",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "hippy",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "acar",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "lexomafo",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "tido",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vilbuz",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "syak",
+              "qualification": "9th Wildcard Winner*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "max"
+              },
+              "b": {
+                "beatboxer": "vilbuz"
+              },
+              "winner": {
+                "beatboxer": "max"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "syak"
+              },
+              "b": {
+                "beatboxer": "acar"
+              },
+              "winner": {
+                "beatboxer": "syak"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "hippy"
+              },
+              "b": {
+                "beatboxer": "lexomafo"
+              },
+              "winner": {
+                "beatboxer": "hippy"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "patbox"
+              },
+              "b": {
+                "beatboxer": "tido"
+              },
+              "winner": {
+                "beatboxer": "patbox"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "max"
+              },
+              "b": {
+                "beatboxer": "syak"
+              },
+              "winner": {
+                "beatboxer": "max"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "hippy"
+              },
+              "b": {
+                "beatboxer": "patbox"
+              },
+              "winner": {
+                "beatboxer": "hippy"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "max"
+              },
+              "b": {
+                "beatboxer": "hippy"
+              },
+              "winner": {
+                "beatboxer": "max"
+              },
+              "score": "3 votes - 0 votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "eshadow",
+              "place": 10
+            },
+            {
+              "beatboxer": "soulz",
+              "place": 11
+            },
+            {
+              "beatboxer": "stingo",
+              "place": 12
+            },
+            {
+              "beatboxer": "ash",
+              "place": 13
+            },
+            {
+              "beatboxer": "levels",
+              "place": 14
+            },
+            {
+              "beatboxer": "hush",
+              "place": 15
+            },
+            {
+              "beatboxer": "bp",
+              "place": 16
+            },
+            {
+              "beatboxer": "broly",
+              "place": 17
+            },
+            {
+              "beatboxer": "jdb",
+              "place": 18
+            },
+            {
+              "beatboxer": "daishi",
+              "place": 19
+            },
+            {
+              "beatboxer": "pleo",
+              "place": 20
+            },
+            {
+              "beatboxer": "spectal",
+              "place": 21
+            },
+            {
+              "beatboxer": "coztox",
+              "place": 22
+            },
+            {
+              "beatboxer": "shehab",
+              "place": 23
+            }
+          ],
+          "notes": [
+            "Syak act as a replacement for [kw] Zirpa (4th Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Africa   Mena Region Qualifier 2026",
+      "status": "completed",
+      "location": "Online",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "petrsarancha"
+        },
+        {
+          "beatboxer": "fayabraz"
+        },
+        {
+          "beatboxer": "max"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "crkzu"
+        },
+        {
+          "beatboxer": "petrsarancha"
+        },
+        {
+          "beatboxer": "paulvannido"
+        },
+        {
+          "beatboxer": "max"
+        },
+        {
+          "beatboxer": "bassventura"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "gelber"
+          },
+          "runner_up": {
+            "beatboxer": "fabley"
+          },
+          "participants": [
+            {
+              "beatboxer": "gelber",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "duzzy",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "fabley",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "coztox",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "acar"
+            },
+            {
+              "beatboxer": "bp",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vilbuz",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "onyx",
+              "qualification": "8th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "moazelsayed",
+              "qualification": "9th Place"
+            },
+            {
+              "beatboxer": "apocalips",
+              "qualification": "10th Place"
+            },
+            {
+              "beatboxer": "hush",
+              "qualification": "11th Place"
+            },
+            {
+              "beatboxer": "cipher",
+              "qualification": "12th Place"
+            },
+            {
+              "beatboxer": "ash",
+              "qualification": "13th Place"
+            },
+            {
+              "beatboxer": "broly",
+              "qualification": "14th Place"
+            },
+            {
+              "beatboxer": "bombacan",
+              "qualification": "15th Place"
+            },
+            {
+              "beatboxer": "spectal",
+              "qualification": "16th Place"
+            },
+            {
+              "beatboxer": "ahkahma",
+              "qualification": "17th Place"
+            },
+            {
+              "beatboxer": "jdb",
+              "qualification": "18th Place"
+            },
+            {
+              "beatboxer": "seifkilla",
+              "qualification": "19th Place"
+            },
+            {
+              "beatboxer": "komaf",
+              "qualification": "20th Place"
+            },
+            {
+              "beatboxer": "ltk",
+              "qualification": "21st Place"
+            },
+            {
+              "beatboxer": "ezoo",
+              "qualification": "22nd Place (TIE)"
+            },
+            {
+              "beatboxer": "kortu",
+              "qualification": "22nd Place (TIE)"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gelber"
+              },
+              "b": {
+                "beatboxer": "onyx"
+              },
+              "winner": {
+                "beatboxer": "gelber"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "vilbuz"
+              },
+              "b": {
+                "beatboxer": "duzzy"
+              },
+              "winner": {
+                "beatboxer": "vilbuz"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "bp"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "acar"
+              },
+              "b": {
+                "beatboxer": "coztox"
+              },
+              "winner": {
+                "beatboxer": "acar"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "gelber"
+              },
+              "b": {
+                "beatboxer": "vilbuz"
+              },
+              "winner": {
+                "beatboxer": "gelber"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "fabley"
+              },
+              "b": {
+                "beatboxer": "acar"
+              },
+              "winner": {
+                "beatboxer": "fabley"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "gelber"
+              },
+              "b": {
+                "beatboxer": "fabley"
+              },
+              "winner": {
+                "beatboxer": "gelber"
+              },
+              "score": "2 Votes - 1 Vote"
+            }
+          ],
+          "notes": [
+            "[za] Onyx will act as a replacement for [za] Remix (Original 3rd Wildcard Winner), who is already qualified for GBB26 via the Comeback Wildcard. Due to this, the latter was excluded from the ranking.",
+            "In the official announcement, the name “Moaz Elsayed” was misspelled as “Moaz Elsyed”.",
+            "In the official announcement, the name “Cipher” was misspelled as “Ciper”."
+          ]
+        }
+      }
+    }
+  ]
+}

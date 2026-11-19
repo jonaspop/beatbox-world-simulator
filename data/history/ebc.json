@@ -1,0 +1,156 @@
+{
+  "competition": "ebc",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "European Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "May 18, 2023 (Special Battles) May 19-20, 2023 (Live Group Stage) May 20, 2023 (Live K.O Battles) May 21, 2023 (Draft Tag Team Battles)",
+      "location": "Graz, Austria",
+      "venue": "Mi Casa (18th) PPC (19th-20th) Thomawirt (21st)",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "blackroll"
+        },
+        {
+          "beatboxer": "bronix"
+        },
+        {
+          "beatboxer": "stan"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "maxo"
+          },
+          "runner_up": {
+            "beatboxer": "blackroll"
+          },
+          "third": {
+            "beatboxer": "pacmax"
+          },
+          "judges": [
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "bigben"
+            },
+            {
+              "beatboxer": "river"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "zion"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "6 Points - 0 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "maxo"
+              },
+              "b": {
+                "beatboxer": "bronix"
+              },
+              "winner": {
+                "beatboxer": "maxo"
+              },
+              "score": "5 Points - 1 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "osis"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "6 Points - 0 Points"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "pacmax"
+              },
+              "b": {
+                "beatboxer": "bassbro"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "6 Points - 0 Points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "maxo"
+              },
+              "winner": {
+                "beatboxer": "maxo"
+              },
+              "score": "0 Points - 6 Points"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "blackroll"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "blackroll"
+              },
+              "score": "4 Points - 2 Points"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "pacmax"
+              },
+              "winner": {
+                "beatboxer": "pacmax"
+              },
+              "score": "0 Points - 6 Points"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "maxo"
+              },
+              "b": {
+                "beatboxer": "blackroll"
+              },
+              "winner": {
+                "beatboxer": "maxo"
+              },
+              "score": "5 Points - 1 Point"
+            }
+          ],
+          "format_note": "Live group stage (four groups of four, top two advance) followed by an 8-person knockout bracket."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "competition": "nat_tw",
+  "editions": [
+    {
+      "year": 2026,
+      "name": "Taiwan Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "August 15, 2026",
+      "location": "Taichung, Taiwan",
+      "venue": "Sound Livehouse",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "corey"
+        },
+        {
+          "beatboxer": "theo"
+        },
+        {
+          "beatboxer": "jimix"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "den"
+        },
+        {
+          "beatboxer": "exallos"
+        },
+        {
+          "beatboxer": "patbox"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "brian"
+          },
+          "runner_up": {
+            "beatboxer": "zeratab"
+          },
+          "third": {
+            "beatboxer": "easonhuang"
+          },
+          "participants": [
+            {
+              "beatboxer": "johan",
+              "qualification": "TWBC2026 Taichung Qualifier Winner"
+            },
+            {
+              "beatboxer": "ian",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "easonhuang",
+              "qualification": "TWBC2026 Taipei Qualifier Winner"
+            },
+            {
+              "beatboxer": "parker",
+              "qualification": "9th Wildcard Winner"
+            },
+            {
+              "beatboxer": "zeratab",
+              "qualification": "TWBC2026 Tainan Qualifier Winner"
+            },
+            {
+              "beatboxer": "jlee",
+              "qualification": "10th Wildcard Winner"
+            },
+            {
+              "beatboxer": "gx",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "xiaoji",
+              "qualification": "11th Wildcard Winner"
+            },
+            {
+              "beatboxer": "daniel",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "chloroplast",
+              "qualification": "12th Wildcard Winner"
+            },
+            {
+              "beatboxer": "brian",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "bigguy",
+              "qualification": "13th Wildcard Winner"
+            },
+            {
+              "beatboxer": "wewill",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "vit",
+              "qualification": "14th Wildcard Winner*"
+            },
+            {
+              "beatboxer": "curty",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "gose",
+              "qualification": "15th Wildcard Winner*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "brian"
+              },
+              "b": {
+                "beatboxer": "ian"
+              },
+              "winner": {
+                "beatboxer": "brian"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "gose"
+              },
+              "b": {
+                "beatboxer": "johan"
+              },
+              "winner": {
+                "beatboxer": "johan"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "curty"
+              },
+              "b": {
+                "beatboxer": "zeratab"
+              },
+              "winner": {
+                "beatboxer": "zeratab"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "easonhuang"
+              },
+              "b": {
+                "beatboxer": "vit"
+              },
+              "winner": {
+                "beatboxer": "easonhuang"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "brian"
+              },
+              "b": {
+                "beatboxer": "johan"
+              },
+              "winner": {
+                "beatboxer": "brian"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "zeratab"
+              },
+              "b": {
+                "beatboxer": "easonhuang"
+              },
+              "winner": {
+                "beatboxer": "zeratab"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "easonhuang"
+              },
+              "b": {
+                "beatboxer": "johan"
+              },
+              "winner": {
+                "beatboxer": "easonhuang"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "brian"
+              },
+              "b": {
+                "beatboxer": "zeratab"
+              },
+              "winner": {
+                "beatboxer": "brian"
+              },
+              "score": "3 Votes - 0 Votes"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "gose",
+              "place": 14
+            },
+            {
+              "beatboxer": "vit",
+              "place": 15
+            },
+            {
+              "beatboxer": "delayer",
+              "place": 16
+            },
+            {
+              "beatboxer": "johan",
+              "place": 17
+            },
+            {
+              "beatboxer": "victure",
+              "place": 18
+            },
+            {
+              "beatboxer": "just",
+              "place": 19
+            },
+            {
+              "beatboxer": "chaser",
+              "place": 20
+            }
+          ],
+          "notes": [
+            "[id] VIT & [tw] Gose acted as replacements for [tw] Gary (2nd Wildcard Winner), [cn] WHW (3rd Wildcard Winner)."
+          ]
+        }
+      }
+    }
+  ]
+}

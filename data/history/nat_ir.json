@@ -1,0 +1,147 @@
+{
+  "competition": "nat_ir",
+  "editions": [
+    {
+      "year": 2022,
+      "name": "Iranian Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "March 31th, 2022",
+      "location": "Tehran, Iran",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "bigw"
+        },
+        {
+          "beatboxer": "sali"
+        },
+        {
+          "beatboxer": "masih"
+        },
+        {
+          "beatboxer": "dexloop"
+        },
+        {
+          "beatboxer": "u3fstein"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "cj"
+          },
+          "runner_up": {
+            "beatboxer": "kara"
+          },
+          "third": {
+            "beatboxer": "viktor"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "kara"
+              },
+              "b": {
+                "beatboxer": "magb"
+              },
+              "winner": {
+                "beatboxer": "kara"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mrvibe"
+              },
+              "b": {
+                "beatboxer": "mrschiwifty"
+              },
+              "winner": {
+                "beatboxer": "mrvibe"
+              },
+              "score": "3 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "cj"
+              },
+              "b": {
+                "beatboxer": "trool"
+              },
+              "winner": {
+                "beatboxer": "cj"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "viktor"
+              },
+              "b": {
+                "beatboxer": "havash"
+              },
+              "winner": {
+                "beatboxer": "viktor"
+              },
+              "score": "3 Votes* - 0 Votes*"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "kara"
+              },
+              "b": {
+                "beatboxer": "mrvibe"
+              },
+              "winner": {
+                "beatboxer": "kara"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "cj"
+              },
+              "b": {
+                "beatboxer": "viktor"
+              },
+              "winner": {
+                "beatboxer": "cj"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "mrvibe"
+              },
+              "b": {
+                "beatboxer": "viktor"
+              },
+              "winner": {
+                "beatboxer": "viktor"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "kara"
+              },
+              "b": {
+                "beatboxer": "cj"
+              },
+              "winner": {
+                "beatboxer": "cj"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

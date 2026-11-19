@@ -1,0 +1,1622 @@
+{
+  "am": {
+    "name": "AM",
+    "level": 48,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "sevan"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ar": {
+    "name": "Argentina",
+    "level": 73,
+    "active_beatboxers": 27,
+    "top_beatboxers": [
+      "astron",
+      "zota",
+      "desconocido",
+      "w",
+      "sharkz"
+    ],
+    "national_championship": "nat_ar",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "desconocido"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "sharkz"
+      }
+    ]
+  },
+  "at": {
+    "name": "Austria",
+    "level": 64,
+    "active_beatboxers": 24,
+    "top_beatboxers": [
+      "bigg",
+      "uku",
+      "bato",
+      "lonjey",
+      "vega"
+    ],
+    "national_championship": "nat_at",
+    "national_champions": [
+      {
+        "year": 2023,
+        "beatboxer": "bigg"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "uku"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "bigg"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "bigg"
+      }
+    ]
+  },
+  "au": {
+    "name": "Australia",
+    "level": 64,
+    "active_beatboxers": 8,
+    "top_beatboxers": [
+      "chills",
+      "tarik",
+      "brunny",
+      "buddyman",
+      "clr"
+    ],
+    "national_championship": "nat_au",
+    "national_champions": [
+      {
+        "year": 2025,
+        "beatboxer": "tarik"
+      }
+    ]
+  },
+  "az": {
+    "name": "Azerbaijan",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ba": {
+    "name": "BA",
+    "level": 40,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "wobaval"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "bd": {
+    "name": "BD",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "be": {
+    "name": "Belgium",
+    "level": 72,
+    "active_beatboxers": 17,
+    "top_beatboxers": [
+      "gwizz",
+      "stan",
+      "glord",
+      "yaswede",
+      "shangai"
+    ],
+    "national_championship": "nat_be",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "footboxg"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "stan"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "gwizz"
+      }
+    ]
+  },
+  "bg": {
+    "name": "Bulgaria",
+    "level": 68,
+    "active_beatboxers": 16,
+    "top_beatboxers": [
+      "m1xx1ng",
+      "markovich",
+      "marto",
+      "vushev",
+      "mgf"
+    ],
+    "national_championship": "nat_bg",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "bassbro"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "m1xx1ng"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "m1xx1ng"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "m1xx1ng"
+      }
+    ]
+  },
+  "bo": {
+    "name": "Bolivia",
+    "level": 56,
+    "active_beatboxers": 4,
+    "top_beatboxers": [
+      "klate",
+      "raul",
+      "ellis",
+      "aiend"
+    ],
+    "national_championship": "nat_bo",
+    "national_champions": [
+      {
+        "year": 2025,
+        "beatboxer": "klate"
+      }
+    ]
+  },
+  "br": {
+    "name": "Brazil",
+    "level": 74,
+    "active_beatboxers": 33,
+    "top_beatboxers": [
+      "aaron",
+      "duckzy",
+      "penido",
+      "magnum",
+      "jojo"
+    ],
+    "national_championship": "nat_br",
+    "national_champions": [
+      {
+        "year": 2023,
+        "beatboxer": "penido"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "aaron"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "aaron"
+      }
+    ]
+  },
+  "by": {
+    "name": "Belarus",
+    "level": 40,
+    "active_beatboxers": 2,
+    "top_beatboxers": [
+      "achur",
+      "yanx"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ca": {
+    "name": "Canada",
+    "level": 74,
+    "active_beatboxers": 38,
+    "top_beatboxers": [
+      "den",
+      "vino",
+      "bigsquid",
+      "jordox",
+      "cimax"
+    ],
+    "national_championship": "nat_ca",
+    "national_champions": [
+      {
+        "year": 2023,
+        "beatboxer": "vino"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "den"
+      }
+    ]
+  },
+  "ch": {
+    "name": "Switzerland",
+    "level": 60,
+    "active_beatboxers": 8,
+    "top_beatboxers": [
+      "aria",
+      "lesya",
+      "okaz",
+      "riskee",
+      "spfx"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ci": {
+    "name": "Ivory Coast",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "cl": {
+    "name": "Chile",
+    "level": 70,
+    "active_beatboxers": 20,
+    "top_beatboxers": [
+      "waali",
+      "xiphire",
+      "cdenio",
+      "exbitt",
+      "inferno"
+    ],
+    "national_championship": "nat_cl",
+    "national_champions": [
+      {
+        "year": 2025,
+        "beatboxer": "xiphire"
+      }
+    ]
+  },
+  "cn": {
+    "name": "China",
+    "level": 72,
+    "active_beatboxers": 181,
+    "top_beatboxers": [
+      "battery",
+      "fang9yan",
+      "3h",
+      "jm",
+      "fast"
+    ],
+    "national_championship": "nat_cn",
+    "national_champions": [
+      {
+        "year": 2023,
+        "beatboxer": "jm"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "battery"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "corey"
+      }
+    ]
+  },
+  "co": {
+    "name": "Colombia",
+    "level": 68,
+    "active_beatboxers": 6,
+    "top_beatboxers": [
+      "exallos",
+      "beatmeda",
+      "jollux",
+      "ordinal",
+      "evolved"
+    ],
+    "national_championship": "nat_co",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "ordinal"
+      }
+    ]
+  },
+  "cu": {
+    "name": "CU",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "cz": {
+    "name": "Czech Republic",
+    "level": 64,
+    "active_beatboxers": 14,
+    "top_beatboxers": [
+      "bucci",
+      "pj",
+      "zipi",
+      "marwee",
+      "dodge"
+    ],
+    "national_championship": "nat_cz",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "pj"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "bucci"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "zipi"
+      }
+    ]
+  },
+  "de": {
+    "name": "Germany",
+    "level": 70,
+    "active_beatboxers": 87,
+    "top_beatboxers": [
+      "bp",
+      "kalisto",
+      "karma",
+      "carnage",
+      "lesgo"
+    ],
+    "national_championship": "gbc",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "zota"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "zota"
+      }
+    ]
+  },
+  "dk": {
+    "name": "Denmark",
+    "level": 72,
+    "active_beatboxers": 21,
+    "top_beatboxers": [
+      "crythix",
+      "ankersen",
+      "calexy",
+      "bozz",
+      "s"
+    ],
+    "national_championship": "nat_dk",
+    "national_champions": [
+      {
+        "year": 2019,
+        "beatboxer": "bozz"
+      },
+      {
+        "year": 2020,
+        "beatboxer": "bozz"
+      },
+      {
+        "year": 2021,
+        "beatboxer": "s"
+      },
+      {
+        "year": 2022,
+        "beatboxer": "calexy"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "s"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "crythix"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "ankersen"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "crythix"
+      }
+    ]
+  },
+  "do": {
+    "name": "DO",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ec": {
+    "name": "Ecuador",
+    "level": 40,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "axlbbx"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ee": {
+    "name": "Estonia",
+    "level": 54,
+    "active_beatboxers": 2,
+    "top_beatboxers": [
+      "seawind",
+      "flocka"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "eg": {
+    "name": "Egypt",
+    "level": 62,
+    "active_beatboxers": 11,
+    "top_beatboxers": [
+      "mody",
+      "coztox",
+      "ash",
+      "shehab",
+      "abdotarek"
+    ],
+    "national_championship": "nat_eg",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "coztox"
+      }
+    ]
+  },
+  "es": {
+    "name": "Spain",
+    "level": 74,
+    "active_beatboxers": 30,
+    "top_beatboxers": [
+      "zekka",
+      "gako",
+      "juano",
+      "dbs",
+      "vraz"
+    ],
+    "national_championship": "nat_es",
+    "national_champions": [
+      {
+        "year": 2023,
+        "beatboxer": "gako"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "gako"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "juano"
+      }
+    ]
+  },
+  "fi": {
+    "name": "Finland",
+    "level": 59,
+    "active_beatboxers": 19,
+    "top_beatboxers": [
+      "nolla",
+      "karppi",
+      "lillfill",
+      "dwin",
+      "valruus"
+    ],
+    "national_championship": "nat_fi",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "nolla"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "nolla"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "karppi"
+      }
+    ]
+  },
+  "fr": {
+    "name": "France",
+    "level": 82,
+    "active_beatboxers": 66,
+    "top_beatboxers": [
+      "pacmax",
+      "patbox",
+      "julard",
+      "bookieblanco",
+      "blayou"
+    ],
+    "national_championship": "nat_fr",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "bookieblanco"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "pacmax"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "patbox"
+      }
+    ]
+  },
+  "gb": {
+    "name": "United Kingdom",
+    "level": 75,
+    "active_beatboxers": 36,
+    "top_beatboxers": [
+      "epos",
+      "frosty",
+      "lucid",
+      "aspie",
+      "milky"
+    ],
+    "national_championship": "nat_gb",
+    "national_champions": [
+      {
+        "year": 2025,
+        "beatboxer": "epos"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "izen"
+      }
+    ]
+  },
+  "gb-sct": {
+    "name": "Scotland",
+    "level": 58,
+    "active_beatboxers": 15,
+    "top_beatboxers": [
+      "fraj",
+      "rcm",
+      "l",
+      "bandit",
+      "cherry"
+    ],
+    "national_championship": "nat_gb-sct",
+    "national_champions": [
+      {
+        "year": 2025,
+        "beatboxer": "rcm"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "fraj"
+      }
+    ]
+  },
+  "gb-wls": {
+    "name": "Wales",
+    "level": 62,
+    "active_beatboxers": 3,
+    "top_beatboxers": [
+      "izen",
+      "graycloud",
+      "kyleeshvans"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ge": {
+    "name": "Georgia",
+    "level": 56,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "gts"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "gr": {
+    "name": "Greece",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "gt": {
+    "name": "GT",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "hk": {
+    "name": "Hong Kong",
+    "level": 67,
+    "active_beatboxers": 37,
+    "top_beatboxers": [
+      "corey",
+      "hiccup",
+      "heartgrey",
+      "theo",
+      "32"
+    ],
+    "national_championship": "nat_hk",
+    "national_champions": [
+      {
+        "year": 2026,
+        "beatboxer": "theo"
+      }
+    ]
+  },
+  "hn": {
+    "name": "HN",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "hu": {
+    "name": "Hungary",
+    "level": 58,
+    "active_beatboxers": 4,
+    "top_beatboxers": [
+      "kristof",
+      "blaz",
+      "raptor",
+      "shackle"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "id": {
+    "name": "Indonesia",
+    "level": 66,
+    "active_beatboxers": 4,
+    "top_beatboxers": [
+      "given",
+      "marvelous",
+      "adikerang",
+      "vit"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ie": {
+    "name": "Ireland",
+    "level": 69,
+    "active_beatboxers": 12,
+    "top_beatboxers": [
+      "osis",
+      "zach",
+      "loughneally",
+      "jonty",
+      "jacken"
+    ],
+    "national_championship": "nat_ie",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "osis"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "dbs"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "loughneally"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "zach"
+      }
+    ]
+  },
+  "il": {
+    "name": "Israel",
+    "level": 69,
+    "active_beatboxers": 6,
+    "top_beatboxers": [
+      "max",
+      "hippy",
+      "gelber",
+      "daveh",
+      "mrcan"
+    ],
+    "national_championship": "nat_il",
+    "national_champions": [
+      {
+        "year": 2025,
+        "beatboxer": "max"
+      }
+    ]
+  },
+  "in": {
+    "name": "India",
+    "level": 70,
+    "active_beatboxers": 8,
+    "top_beatboxers": [
+      "abx",
+      "dilip",
+      "sudarshan",
+      "ani",
+      "bhargav"
+    ],
+    "national_championship": "nat_in",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "abx"
+      }
+    ]
+  },
+  "ir": {
+    "name": "Iran",
+    "level": 61,
+    "active_beatboxers": 3,
+    "top_beatboxers": [
+      "cj",
+      "kara",
+      "wasp"
+    ],
+    "national_championship": "nat_ir",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "cj"
+      }
+    ]
+  },
+  "is": {
+    "name": "IS",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "it": {
+    "name": "Italy",
+    "level": 80,
+    "active_beatboxers": 53,
+    "top_beatboxers": [
+      "blackroll",
+      "dynamatt",
+      "shishone",
+      "jerko",
+      "albo"
+    ],
+    "national_championship": "nat_it",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "jbeat"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "blackroll"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "dynamatt"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "shishone"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "albo"
+      }
+    ]
+  },
+  "jo": {
+    "name": "Jordan",
+    "level": 52,
+    "active_beatboxers": 2,
+    "top_beatboxers": [
+      "samer",
+      "maj"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "jp": {
+    "name": "Japan",
+    "level": 80,
+    "active_beatboxers": 59,
+    "top_beatboxers": [
+      "kaji",
+      "nero",
+      "s1on",
+      "jene",
+      "toshiya"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "kg": {
+    "name": "KG",
+    "level": 40,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "kanti"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "kr": {
+    "name": "South Korea",
+    "level": 76,
+    "active_beatboxers": 33,
+    "top_beatboxers": [
+      "mighty",
+      "steady",
+      "cloud",
+      "hhas",
+      "jackbryan"
+    ],
+    "national_championship": "nat_kr",
+    "national_champions": [
+      {
+        "year": 2017,
+        "beatboxer": "wing"
+      },
+      {
+        "year": 2018,
+        "beatboxer": "hiss"
+      },
+      {
+        "year": 2019,
+        "beatboxer": "cloud"
+      },
+      {
+        "year": 2022,
+        "beatboxer": "huckle"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "poem"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "hhas"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "jackbryan"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "mighty"
+      }
+    ]
+  },
+  "kw": {
+    "name": "Kuwait",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "kz": {
+    "name": "Kazakhstan",
+    "level": 62,
+    "active_beatboxers": 3,
+    "top_beatboxers": [
+      "dropical",
+      "t3ranos",
+      "dvrksup"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "lk": {
+    "name": "LK",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "lt": {
+    "name": "Lithuania",
+    "level": 59,
+    "active_beatboxers": 14,
+    "top_beatboxers": [
+      "elip",
+      "lukario",
+      "lucario",
+      "shamanas",
+      "paulaxs"
+    ],
+    "national_championship": "nat_lt",
+    "national_champions": [
+      {
+        "year": 2023,
+        "beatboxer": "exile"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "lucario"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "elip"
+      }
+    ]
+  },
+  "lu": {
+    "name": "Luxembourg",
+    "level": 40,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "lonybbx"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ly": {
+    "name": "LY",
+    "level": 40,
+    "active_beatboxers": 2,
+    "top_beatboxers": [
+      "broly",
+      "ezoo"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ma": {
+    "name": "Morocco",
+    "level": 58,
+    "active_beatboxers": 2,
+    "top_beatboxers": [
+      "fabley",
+      "komaf"
+    ],
+    "national_championship": "nat_ma",
+    "national_champions": [
+      {
+        "year": 2021,
+        "beatboxer": "fabley"
+      },
+      {
+        "year": 2022,
+        "beatboxer": "fabley"
+      }
+    ]
+  },
+  "mg": {
+    "name": "Madagascar",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "mm": {
+    "name": "MM",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "mn": {
+    "name": "MN",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "mt": {
+    "name": "MT",
+    "level": 40,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "gianmaria"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "mx": {
+    "name": "Mexico",
+    "level": 63,
+    "active_beatboxers": 15,
+    "top_beatboxers": [
+      "mike",
+      "hg",
+      "kendall",
+      "enenra",
+      "jha"
+    ],
+    "national_championship": "nat_mx",
+    "national_champions": [
+      {
+        "year": 2023,
+        "beatboxer": "ramed"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "mike"
+      }
+    ]
+  },
+  "my": {
+    "name": "Malaysia",
+    "level": 68,
+    "active_beatboxers": 6,
+    "top_beatboxers": [
+      "stitch",
+      "jp",
+      "afq",
+      "leevy",
+      "novamc"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "na": {
+    "name": "NA",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ni": {
+    "name": "Nicaragua",
+    "level": 56,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "lean"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "nl": {
+    "name": "Netherlands",
+    "level": 67,
+    "active_beatboxers": 6,
+    "top_beatboxers": [
+      "benja",
+      "duzzy",
+      "infernape",
+      "hurrakane",
+      "voxel"
+    ],
+    "national_championship": "nat_nl",
+    "national_champions": [
+      {
+        "year": 2021,
+        "beatboxer": "timmeh"
+      },
+      {
+        "year": 2022,
+        "beatboxer": "svm"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "svm"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "benja"
+      }
+    ]
+  },
+  "no": {
+    "name": "Norway",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "nz": {
+    "name": "New Zealand",
+    "level": 53,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "crkzu"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "pe": {
+    "name": "Peru",
+    "level": 60,
+    "active_beatboxers": 4,
+    "top_beatboxers": [
+      "elgrande",
+      "dmhop",
+      "nexuss",
+      "praxys"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ph": {
+    "name": "Philippines",
+    "level": 58,
+    "active_beatboxers": 16,
+    "top_beatboxers": [
+      "3rdy",
+      "ginp0",
+      "lightmix",
+      "humanvoice",
+      "zappy"
+    ],
+    "national_championship": "nat_ph",
+    "national_champions": [
+      {
+        "year": 2026,
+        "beatboxer": "3rdy"
+      }
+    ]
+  },
+  "pk": {
+    "name": "Pakistan",
+    "level": 53,
+    "active_beatboxers": 8,
+    "top_beatboxers": [
+      "majuh",
+      "ketone",
+      "sherry",
+      "aaa",
+      "buraqali"
+    ],
+    "national_championship": "nat_pk",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "majuh"
+      }
+    ]
+  },
+  "pl": {
+    "name": "Poland",
+    "level": 69,
+    "active_beatboxers": 62,
+    "top_beatboxers": [
+      "jmbeats",
+      "zaku",
+      "sillver",
+      "xankish",
+      "ktg"
+    ],
+    "national_championship": "nat_pl",
+    "national_champions": [
+      {
+        "year": 2021,
+        "beatboxer": "xankish"
+      },
+      {
+        "year": 2022,
+        "beatboxer": "watome"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "sznajder"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "sznajder"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "jmbeats"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "zaku"
+      }
+    ]
+  },
+  "pr": {
+    "name": "PR",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "pt": {
+    "name": "Portugal",
+    "level": 65,
+    "active_beatboxers": 25,
+    "top_beatboxers": [
+      "jewow",
+      "mixfx",
+      "lulucabit",
+      "baco",
+      "brains"
+    ],
+    "national_championship": "nat_pt",
+    "national_champions": [
+      {
+        "year": 2021,
+        "beatboxer": "mixfx"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "lulucabit"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "baco"
+      }
+    ]
+  },
+  "ro": {
+    "name": "Romania",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ru": {
+    "name": "Russia",
+    "level": 69,
+    "active_beatboxers": 50,
+    "top_beatboxers": [
+      "scream",
+      "taeyang",
+      "zagirkart",
+      "checkmate",
+      "valex"
+    ],
+    "national_championship": "nat_ru",
+    "national_champions": [
+      {
+        "year": 2017,
+        "beatboxer": "helium"
+      },
+      {
+        "year": 2018,
+        "beatboxer": "tarasstanin"
+      },
+      {
+        "year": 2019,
+        "beatboxer": "improver"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "checkmate"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "scream"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "zagirkart"
+      }
+    ]
+  },
+  "sa": {
+    "name": "Saudi Arabia",
+    "level": 52,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "gz7v"
+    ],
+    "national_championship": "nat_sa",
+    "national_champions": [
+      {
+        "year": 2020,
+        "beatboxer": "ice"
+      }
+    ]
+  },
+  "sd": {
+    "name": "SD",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "se": {
+    "name": "Sweden",
+    "level": 66,
+    "active_beatboxers": 27,
+    "top_beatboxers": [
+      "bhop",
+      "rewd",
+      "haka",
+      "philipfeelhip",
+      "ville"
+    ],
+    "national_championship": "nat_se",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "philipfeelhip"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "bhop"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "haka"
+      }
+    ]
+  },
+  "sg": {
+    "name": "Singapore",
+    "level": 64,
+    "active_beatboxers": 7,
+    "top_beatboxers": [
+      "handfx",
+      "raeve",
+      "muaaz",
+      "alty",
+      "auroras"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "si": {
+    "name": "Slovenia",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "sk": {
+    "name": "Slovakia",
+    "level": 57,
+    "active_beatboxers": 12,
+    "top_beatboxers": [
+      "shoter",
+      "arcayd",
+      "rushin",
+      "adamson",
+      "ady"
+    ],
+    "national_championship": "nat_sk",
+    "national_champions": [
+      {
+        "year": 2026,
+        "beatboxer": "shoter"
+      }
+    ]
+  },
+  "sv": {
+    "name": "SV",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "sy": {
+    "name": "Syria",
+    "level": 55,
+    "active_beatboxers": 11,
+    "top_beatboxers": [
+      "alfx",
+      "koniki",
+      "ric0",
+      "ahmadabazaid",
+      "ak"
+    ],
+    "national_championship": "nat_sy",
+    "national_champions": [
+      {
+        "year": 2026,
+        "beatboxer": "alfx"
+      }
+    ]
+  },
+  "th": {
+    "name": "Thailand",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "tn": {
+    "name": "Tunisia",
+    "level": 60,
+    "active_beatboxers": 3,
+    "top_beatboxers": [
+      "syak",
+      "tunecinoo",
+      "apocalips"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "tr": {
+    "name": "Turkey",
+    "level": 67,
+    "active_beatboxers": 17,
+    "top_beatboxers": [
+      "acar",
+      "vilbuz",
+      "lexomafo",
+      "soulz",
+      "pleo"
+    ],
+    "national_championship": "nat_tr",
+    "national_champions": [
+      {
+        "year": 2021,
+        "beatboxer": "lexomafo"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "soulz"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "vilbuz"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "vilbuz"
+      }
+    ]
+  },
+  "tw": {
+    "name": "Taiwan",
+    "level": 60,
+    "active_beatboxers": 17,
+    "top_beatboxers": [
+      "brian",
+      "chloroplast",
+      "omena",
+      "zeratab",
+      "gary"
+    ],
+    "national_championship": "nat_tw",
+    "national_champions": [
+      {
+        "year": 2026,
+        "beatboxer": "brian"
+      }
+    ]
+  },
+  "ua": {
+    "name": "Ukraine",
+    "level": 40,
+    "active_beatboxers": 1,
+    "top_beatboxers": [
+      "mirrwall"
+    ],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "us": {
+    "name": "United States",
+    "level": 83,
+    "active_beatboxers": 126,
+    "top_beatboxers": [
+      "kinginertia",
+      "bizkit",
+      "zvd",
+      "derrick",
+      "pono"
+    ],
+    "national_championship": "nat_us",
+    "national_champions": [
+      {
+        "year": 2022,
+        "beatboxer": "pono"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "zvd"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "bizkit"
+      }
+    ]
+  },
+  "uz": {
+    "name": "UZ",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "ve": {
+    "name": "Venezuela",
+    "level": 69,
+    "active_beatboxers": 18,
+    "top_beatboxers": [
+      "bbh",
+      "calavrox",
+      "blizz",
+      "isac",
+      "zinho"
+    ],
+    "national_championship": "nat_ve",
+    "national_champions": [
+      {
+        "year": 2021,
+        "beatboxer": "skander"
+      },
+      {
+        "year": 2023,
+        "beatboxer": "isac"
+      },
+      {
+        "year": 2024,
+        "beatboxer": "zinho"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "blizz"
+      }
+    ]
+  },
+  "vn": {
+    "name": "Vietnam",
+    "level": null,
+    "active_beatboxers": 0,
+    "top_beatboxers": [],
+    "national_championship": null,
+    "national_champions": []
+  },
+  "za": {
+    "name": "South Africa",
+    "level": 73,
+    "active_beatboxers": 17,
+    "top_beatboxers": [
+      "remix",
+      "tido",
+      "levels",
+      "onyx",
+      "cipher"
+    ],
+    "national_championship": "nat_za",
+    "national_champions": [
+      {
+        "year": 2024,
+        "beatboxer": "spectal"
+      },
+      {
+        "year": 2025,
+        "beatboxer": "tido"
+      },
+      {
+        "year": 2026,
+        "beatboxer": "levels"
+      }
+    ]
+  }
+}

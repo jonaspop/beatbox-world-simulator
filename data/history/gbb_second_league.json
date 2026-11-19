@@ -1,0 +1,336 @@
+{
+  "competition": "gbb_second_league",
+  "editions": [
+    {
+      "year": 2026,
+      "name": "Grand Beatbox Battle 2026  Second League",
+      "status": "completed",
+      "dates": "August 8, 2026",
+      "location": "Beijing, China",
+      "venue": "MAO Livehouse (Donglang)",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "colaps"
+        },
+        {
+          "beatboxer": "alem"
+        },
+        {
+          "beatboxer": "alexinho"
+        },
+        {
+          "beatboxer": "zhangze"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "colaps"
+        },
+        {
+          "beatboxer": "zede"
+        },
+        {
+          "beatboxer": "napom"
+        },
+        {
+          "beatboxer": "skiller"
+        },
+        {
+          "beatboxer": "wing"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "battery"
+          },
+          "runner_up": {
+            "beatboxer": "m1xx1ng"
+          },
+          "third": {
+            "beatboxer": "stan"
+          },
+          "participants": [
+            {
+              "beatboxer": "m1xx1ng",
+              "qualification": "All Star Beatbox Championship 2026 Champion"
+            },
+            {
+              "beatboxer": "corey",
+              "qualification": "Shenzhen Qualifier Champion"
+            },
+            {
+              "beatboxer": "battery",
+              "qualification": "Zhengzhou Qualifier Champion"
+            },
+            {
+              "beatboxer": "theo",
+              "qualification": "Shenzhen Qualifier Vice-Champion"
+            },
+            {
+              "beatboxer": "fast",
+              "qualification": "Zhengzhou Qualifier Vice-Champion"
+            },
+            {
+              "beatboxer": "jp",
+              "qualification": "GBB 2026 Solo Wildcard 13th Place"
+            },
+            {
+              "beatboxer": "fang9yan",
+              "qualification": "Chengdu Qualifier Champion"
+            },
+            {
+              "beatboxer": "crythix",
+              "qualification": "GBB 2026 Solo Wildcard 16th Place"
+            },
+            {
+              "beatboxer": "freedan",
+              "qualification": "Chengdu Qualifier Vice-Champion"
+            },
+            {
+              "beatboxer": "stan",
+              "qualification": "GBB 2026 Solo Wildcard 17th Place"
+            },
+            {
+              "beatboxer": "whw",
+              "qualification": "Nanjing Qualifier Vice-Champion"
+            },
+            {
+              "beatboxer": "dilip",
+              "qualification": "GBB 2026 Solo Wildcard 19th Place"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "fang9yan"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "fast"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "crythix"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jp"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "stan"
+              },
+              "winner": {
+                "beatboxer": "m1xx1ng"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "stan"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "stan"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "m1xx1ng"
+              },
+              "b": {
+                "beatboxer": "battery"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "1 Vote - 2 Votes"
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "m1xx1ng"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "jp"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "battery"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "fast"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "stan"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "crythix"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "corey"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "fang9yan"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "dilip"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "theo"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "whw"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "freedan"
+            }
+          ],
+          "wildcard_runners_up": [
+            {
+              "beatboxer": "exallos",
+              "place": 10
+            },
+            {
+              "beatboxer": "hippy",
+              "place": 11
+            },
+            {
+              "beatboxer": "epos",
+              "place": 12
+            },
+            {
+              "beatboxer": "j4ke",
+              "place": 14
+            },
+            {
+              "beatboxer": "codfish",
+              "place": 15
+            },
+            {
+              "beatboxer": "trc",
+              "place": 18
+            },
+            {
+              "beatboxer": "lexomafo",
+              "place": 20
+            },
+            {
+              "beatboxer": "aaron",
+              "place": 21
+            },
+            {
+              "beatboxer": "owngyu",
+              "place": 22
+            },
+            {
+              "beatboxer": "viva",
+              "place": 23
+            },
+            {
+              "beatboxer": "derrick",
+              "place": 24
+            },
+            {
+              "beatboxer": "remix",
+              "place": 25
+            },
+            {
+              "beatboxer": "duckzy",
+              "place": 26
+            },
+            {
+              "beatboxer": "mrandroide",
+              "place": 27
+            },
+            {
+              "beatboxer": "zvd",
+              "place": 28
+            },
+            {
+              "beatboxer": "waali",
+              "place": 29
+            },
+            {
+              "beatboxer": "sight",
+              "place": 30
+            }
+          ],
+          "notes": [
+            "[tw] Brian (Nanjing Qualifier Champion) dropped out the event."
+          ]
+        }
+      }
+    }
+  ]
+}

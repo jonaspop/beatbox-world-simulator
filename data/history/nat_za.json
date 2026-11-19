@@ -1,0 +1,530 @@
+{
+  "competition": "nat_za",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "South African Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "May 4th, 2024",
+      "location": "Tierpoort, South Africa",
+      "venue": "Klitsgras Drumming",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "remix"
+        },
+        {
+          "beatboxer": "jedeye"
+        },
+        {
+          "beatboxer": "steamie"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "spectal"
+          },
+          "runner_up": {
+            "beatboxer": "levels"
+          },
+          "third": {
+            "beatboxer": "tido"
+          },
+          "participants": [
+            {
+              "beatboxer": "levels",
+              "qualification": "1st Wildcard Winner"
+            },
+            {
+              "beatboxer": "tido",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "spectal",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "melod",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "onyx",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "dondon",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "condor",
+              "qualification": "8th Wildcard Winner"
+            },
+            {
+              "beatboxer": "jdb",
+              "qualification": "9th Wildcard Winner*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "jdb"
+              },
+              "winner": {
+                "beatboxer": "tido"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "spectal"
+              },
+              "b": {
+                "beatboxer": "condor"
+              },
+              "winner": {
+                "beatboxer": "spectal"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "melod"
+              },
+              "b": {
+                "beatboxer": "levels"
+              },
+              "winner": {
+                "beatboxer": "levels"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "onyx"
+              },
+              "b": {
+                "beatboxer": "dondon"
+              },
+              "winner": {
+                "beatboxer": "dondon"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "spectal"
+              },
+              "winner": {
+                "beatboxer": "spectal"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "levels"
+              },
+              "b": {
+                "beatboxer": "dondon"
+              },
+              "winner": {
+                "beatboxer": "levels"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "dondon"
+              },
+              "winner": {
+                "beatboxer": "tido"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "spectal"
+              },
+              "b": {
+                "beatboxer": "levels"
+              },
+              "winner": {
+                "beatboxer": "spectal"
+              }
+            }
+          ],
+          "notes": [
+            "JDB acted as a replacement for Shmee (4th Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "South African Beatbox Battle 2025",
+      "status": "completed",
+      "dates": "September 6, 2025",
+      "location": "Johannesburg",
+      "country": "South Africa",
+      "venue": "Democracy Bar",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "remix"
+        },
+        {
+          "beatboxer": "paulvannido"
+        },
+        {
+          "beatboxer": "jedeye"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "fabley"
+        },
+        {
+          "beatboxer": "duckzy"
+        },
+        {
+          "beatboxer": "aboice"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "tido"
+          },
+          "runner_up": {
+            "beatboxer": "dondon"
+          },
+          "third": {
+            "beatboxer": "levels"
+          },
+          "participants": [
+            {
+              "beatboxer": "spectal",
+              "qualification": "2nd Wildcard Winner"
+            },
+            {
+              "beatboxer": "dondon",
+              "qualification": "6th Wildcard Winner"
+            },
+            {
+              "beatboxer": "levels",
+              "qualification": "3rd Wildcard Winner"
+            },
+            {
+              "beatboxer": "condor",
+              "qualification": "7th Wildcard Winner"
+            },
+            {
+              "beatboxer": "tido",
+              "qualification": "4th Wildcard Winner"
+            },
+            {
+              "beatboxer": "jdb",
+              "qualification": "Wildcard Runner-Up*"
+            },
+            {
+              "beatboxer": "cipher",
+              "qualification": "5th Wildcard Winner"
+            },
+            {
+              "beatboxer": "tyson",
+              "qualification": "Wildcard Runner-Up*"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "tyson"
+              },
+              "winner": {
+                "beatboxer": "tido"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "spectal"
+              },
+              "b": {
+                "beatboxer": "cipher"
+              },
+              "winner": {
+                "beatboxer": "cipher"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "levels"
+              },
+              "b": {
+                "beatboxer": "jdb"
+              },
+              "winner": {
+                "beatboxer": "levels"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dondon"
+              },
+              "b": {
+                "beatboxer": "condor"
+              },
+              "winner": {
+                "beatboxer": "dondon"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "cipher"
+              },
+              "winner": {
+                "beatboxer": "tido"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "levels"
+              },
+              "b": {
+                "beatboxer": "dondon"
+              },
+              "winner": {
+                "beatboxer": "dondon"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "cipher"
+              },
+              "b": {
+                "beatboxer": "levels"
+              },
+              "winner": {
+                "beatboxer": "levels"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "dondon"
+              },
+              "winner": {
+                "beatboxer": "tido"
+              }
+            }
+          ],
+          "notes": [
+            "JDB & Tyson acted as replacements for Shmee (1st Wildcard Winner) & Onyx (8th Wildcard Winner)."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "name": "Online South African Beatbox Championship 2026",
+      "status": "completed",
+      "dates": "November 15th, 2026",
+      "location": "Online",
+      "country": "South Africa",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "acar"
+        },
+        {
+          "beatboxer": "paulvannido"
+        },
+        {
+          "beatboxer": "fabley"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "levels"
+          },
+          "runner_up": {
+            "beatboxer": "tido"
+          },
+          "third": {
+            "beatboxer": "cipher"
+          },
+          "participants": [
+            {
+              "beatboxer": "spectal"
+            },
+            {
+              "beatboxer": "discountapple"
+            },
+            {
+              "beatboxer": "levels"
+            },
+            {
+              "beatboxer": "barriator"
+            },
+            {
+              "beatboxer": "tido"
+            },
+            {
+              "beatboxer": "drworsie"
+            },
+            {
+              "beatboxer": "ltk"
+            },
+            {
+              "beatboxer": "cipher"
+            },
+            {
+              "beatboxer": "dondon"
+            },
+            {
+              "beatboxer": "beatnover"
+            },
+            {
+              "beatboxer": "techbeats"
+            },
+            {
+              "beatboxer": "jdb"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "cipher"
+              },
+              "b": {
+                "beatboxer": "barriator"
+              },
+              "winner": {
+                "beatboxer": "cipher"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "levels"
+              },
+              "b": {
+                "beatboxer": "jdb"
+              },
+              "winner": {
+                "beatboxer": "levels"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "drworsie"
+              },
+              "winner": {
+                "beatboxer": "tido"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "spectal"
+              },
+              "b": {
+                "beatboxer": "dondon"
+              },
+              "winner": {
+                "beatboxer": "spectal"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "cipher"
+              },
+              "b": {
+                "beatboxer": "levels"
+              },
+              "winner": {
+                "beatboxer": "levels"
+              },
+              "score": "0 Votes - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "tido"
+              },
+              "b": {
+                "beatboxer": "spectal"
+              },
+              "winner": {
+                "beatboxer": "tido"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "cipher"
+              },
+              "b": {
+                "beatboxer": "spectal"
+              },
+              "winner": {
+                "beatboxer": "cipher"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "levels"
+              },
+              "b": {
+                "beatboxer": "tido"
+              },
+              "winner": {
+                "beatboxer": "levels"
+              },
+              "score": "2 Votes - 1 Vote"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1549 @@
+{
+  "competition": "nat_cn",
+  "editions": [
+    {
+      "year": 2023,
+      "name": "China Beatbox Championship 2023",
+      "status": "completed",
+      "dates": "August 16-17th, 2023",
+      "location": "Guangzhou, China",
+      "venue": "MAO Livehouse (Yongqingfang)",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "jm"
+          },
+          "runner_up": {
+            "beatboxer": "corey"
+          },
+          "third": {
+            "beatboxer": "nd"
+          },
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "covon"
+              },
+              "b": {
+                "beatboxer": "jm"
+              },
+              "winner": {
+                "beatboxer": "jm"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "068"
+              },
+              "b": {
+                "beatboxer": "cheeze"
+              },
+              "winner": {
+                "beatboxer": "cheeze"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "shichunhua"
+              },
+              "b": {
+                "beatboxer": "3h"
+              },
+              "winner": {
+                "beatboxer": "shichunhua"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "randomt"
+              },
+              "b": {
+                "beatboxer": "fang9yan"
+              },
+              "winner": {
+                "beatboxer": "fang9yan"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "puhang"
+              },
+              "b": {
+                "beatboxer": "mao9"
+              },
+              "winner": {
+                "beatboxer": "mao9"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dison"
+              },
+              "b": {
+                "beatboxer": "nd"
+              },
+              "winner": {
+                "beatboxer": "nd"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "blackbubble"
+              },
+              "b": {
+                "beatboxer": "alone"
+              },
+              "winner": {
+                "beatboxer": "alone"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "gk"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "jm"
+              },
+              "b": {
+                "beatboxer": "cheeze"
+              },
+              "winner": {
+                "beatboxer": "jm"
+              },
+              "score": "3 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shichunhua"
+              },
+              "b": {
+                "beatboxer": "fang9yan"
+              },
+              "winner": {
+                "beatboxer": "fang9yan"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mao9"
+              },
+              "b": {
+                "beatboxer": "nd"
+              },
+              "winner": {
+                "beatboxer": "nd"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "alone"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "1 Vote - 2 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "jm"
+              },
+              "b": {
+                "beatboxer": "fang9yan"
+              },
+              "winner": {
+                "beatboxer": "jm"
+              },
+              "score": "2 Votes - 1 Vote"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "nd"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "0 Votes - 3 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "fang9yan"
+              },
+              "b": {
+                "beatboxer": "nd"
+              },
+              "winner": {
+                "beatboxer": "nd"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "jm"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "jm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "name": "China Beatbox Championship 2024",
+      "status": "completed",
+      "dates": "August 16-17, 2024",
+      "location": "Guangzhou, China",
+      "venue": "MAO Livehouse (Taigucang)",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "battery"
+          },
+          "runner_up": {
+            "beatboxer": "fang9yan"
+          },
+          "third": {
+            "beatboxer": "dumpling"
+          },
+          "participants": [
+            {
+              "beatboxer": "15",
+              "qualification": "BeatPower United Beatbox Championship (Chongqing) Champion"
+            },
+            {
+              "beatboxer": "dumpling",
+              "qualification": "CNBC 2024 Division Champion (Jiangsu)"
+            },
+            {
+              "beatboxer": "battery",
+              "qualification": "CNBC 2024 Video Showcase Champion"
+            },
+            {
+              "beatboxer": "wanwusangzhi"
+            },
+            {
+              "beatboxer": "recover"
+            },
+            {
+              "beatboxer": "tjh"
+            },
+            {
+              "beatboxer": "qingyuan"
+            },
+            {
+              "beatboxer": "onefour"
+            },
+            {
+              "beatboxer": "silence"
+            },
+            {
+              "beatboxer": "expiredsandwich"
+            },
+            {
+              "beatboxer": "fog"
+            },
+            {
+              "beatboxer": "jjjbbbsss"
+            },
+            {
+              "beatboxer": "flwhy"
+            },
+            {
+              "beatboxer": "atuboxiang"
+            },
+            {
+              "beatboxer": "xiaogu"
+            },
+            {
+              "beatboxer": "laocai"
+            },
+            {
+              "beatboxer": "han3"
+            },
+            {
+              "beatboxer": "reaper"
+            },
+            {
+              "beatboxer": "song"
+            },
+            {
+              "beatboxer": "3h"
+            },
+            {
+              "beatboxer": "puputete"
+            },
+            {
+              "beatboxer": "zhouxiaomai"
+            },
+            {
+              "beatboxer": "duncan"
+            },
+            {
+              "beatboxer": "aowu"
+            },
+            {
+              "beatboxer": "sx"
+            },
+            {
+              "beatboxer": "gk"
+            },
+            {
+              "beatboxer": "cgjelly"
+            },
+            {
+              "beatboxer": "teacat"
+            },
+            {
+              "beatboxer": "jh"
+            },
+            {
+              "beatboxer": "akamagongshou"
+            },
+            {
+              "beatboxer": "smellyflower"
+            },
+            {
+              "beatboxer": "cjf"
+            },
+            {
+              "beatboxer": "shenlu"
+            },
+            {
+              "beatboxer": "cyn"
+            },
+            {
+              "beatboxer": "yroldsmalloldman"
+            },
+            {
+              "beatboxer": "rv"
+            },
+            {
+              "beatboxer": "theo"
+            },
+            {
+              "beatboxer": "dison"
+            },
+            {
+              "beatboxer": "thunder"
+            },
+            {
+              "beatboxer": "jc"
+            },
+            {
+              "beatboxer": "alan"
+            },
+            {
+              "beatboxer": "ellie"
+            },
+            {
+              "beatboxer": "secretary"
+            },
+            {
+              "beatboxer": "marinatedrawshrimp"
+            },
+            {
+              "beatboxer": "fang9yan"
+            },
+            {
+              "beatboxer": "mallon"
+            },
+            {
+              "beatboxer": "vc"
+            },
+            {
+              "beatboxer": "feng"
+            },
+            {
+              "beatboxer": "forest"
+            },
+            {
+              "beatboxer": "alone"
+            },
+            {
+              "beatboxer": "corey"
+            },
+            {
+              "beatboxer": "fefive"
+            },
+            {
+              "beatboxer": "zn"
+            },
+            {
+              "beatboxer": "dust"
+            },
+            {
+              "beatboxer": "lingming"
+            },
+            {
+              "beatboxer": "mingo"
+            },
+            {
+              "beatboxer": "yskm"
+            },
+            {
+              "beatboxer": "ahyan"
+            },
+            {
+              "beatboxer": "900myoungboysmom"
+            },
+            {
+              "beatboxer": "ch95"
+            },
+            {
+              "beatboxer": "oreo"
+            },
+            {
+              "beatboxer": "ling"
+            },
+            {
+              "beatboxer": "kon"
+            },
+            {
+              "beatboxer": "rob"
+            },
+            {
+              "beatboxer": "yitu"
+            },
+            {
+              "beatboxer": "zhamainanhai"
+            },
+            {
+              "beatboxer": "xr"
+            },
+            {
+              "beatboxer": "delayer"
+            },
+            {
+              "beatboxer": "jdy"
+            },
+            {
+              "beatboxer": "puhang"
+            },
+            {
+              "beatboxer": "fthree"
+            },
+            {
+              "beatboxer": "huey"
+            },
+            {
+              "beatboxer": "wg"
+            },
+            {
+              "beatboxer": "zzo"
+            },
+            {
+              "beatboxer": "ruqiu"
+            },
+            {
+              "beatboxer": "luhong"
+            },
+            {
+              "beatboxer": "uwu"
+            },
+            {
+              "beatboxer": "cchuan"
+            },
+            {
+              "beatboxer": "chenchengyu"
+            },
+            {
+              "beatboxer": "bingo"
+            },
+            {
+              "beatboxer": "shallowhite"
+            },
+            {
+              "beatboxer": "xintai"
+            },
+            {
+              "beatboxer": "xixizhang"
+            },
+            {
+              "beatboxer": "bobo"
+            },
+            {
+              "beatboxer": "melon"
+            },
+            {
+              "beatboxer": "maom"
+            },
+            {
+              "beatboxer": "mao9"
+            },
+            {
+              "beatboxer": "steven"
+            },
+            {
+              "beatboxer": "psybird"
+            },
+            {
+              "beatboxer": "kangkang"
+            },
+            {
+              "beatboxer": "ly"
+            },
+            {
+              "beatboxer": "jijin"
+            },
+            {
+              "beatboxer": "nd"
+            },
+            {
+              "beatboxer": "fasite"
+            },
+            {
+              "beatboxer": "atom"
+            },
+            {
+              "beatboxer": "leon"
+            },
+            {
+              "beatboxer": "lt"
+            },
+            {
+              "beatboxer": "heartgrey"
+            },
+            {
+              "beatboxer": "ziao"
+            },
+            {
+              "beatboxer": "ga"
+            },
+            {
+              "beatboxer": "popcan"
+            },
+            {
+              "beatboxer": "randomt"
+            },
+            {
+              "beatboxer": "magnus"
+            },
+            {
+              "beatboxer": "professorlulu"
+            },
+            {
+              "beatboxer": "wuanbear"
+            },
+            {
+              "beatboxer": "zk"
+            },
+            {
+              "beatboxer": "teller"
+            },
+            {
+              "beatboxer": "theway"
+            },
+            {
+              "beatboxer": "fengduanduan"
+            },
+            {
+              "beatboxer": "blackbubble"
+            },
+            {
+              "beatboxer": "upaduan"
+            },
+            {
+              "beatboxer": "honking"
+            },
+            {
+              "beatboxer": "beefjerky"
+            },
+            {
+              "beatboxer": "bacon"
+            },
+            {
+              "beatboxer": "morgan"
+            },
+            {
+              "beatboxer": "32"
+            },
+            {
+              "beatboxer": "roxanne"
+            },
+            {
+              "beatboxer": "hanni"
+            },
+            {
+              "beatboxer": "skyblue"
+            },
+            {
+              "beatboxer": "dayangyouxia"
+            },
+            {
+              "beatboxer": "young"
+            },
+            {
+              "beatboxer": "39"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dumpling"
+              },
+              "b": {
+                "beatboxer": "ch95"
+              },
+              "winner": {
+                "beatboxer": "dumpling"
+              },
+              "score": "4 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mao9"
+              },
+              "b": {
+                "beatboxer": "nd"
+              },
+              "winner": {
+                "beatboxer": "mao9"
+              },
+              "score": "4 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "kon"
+              },
+              "b": {
+                "beatboxer": "cyn"
+              },
+              "winner": {
+                "beatboxer": "cyn"
+              },
+              "score": "0 Votes - 4 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "fang9yan"
+              },
+              "b": {
+                "beatboxer": "song"
+              },
+              "winner": {
+                "beatboxer": "fang9yan"
+              },
+              "score": "4 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "fast"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "3 Votes* - 2 Votes*"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "dison"
+              },
+              "b": {
+                "beatboxer": "3h"
+              },
+              "winner": {
+                "beatboxer": "3h"
+              },
+              "score": "1 Vote - 3 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "teller"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "4 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "15"
+              },
+              "b": {
+                "beatboxer": "theo"
+              },
+              "winner": {
+                "beatboxer": "15"
+              },
+              "score": "3 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "dumpling"
+              },
+              "b": {
+                "beatboxer": "mao9"
+              },
+              "winner": {
+                "beatboxer": "dumpling"
+              },
+              "score": "3 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "cyn"
+              },
+              "b": {
+                "beatboxer": "fang9yan"
+              },
+              "winner": {
+                "beatboxer": "fang9yan"
+              },
+              "score": "1 Vote - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "3h"
+              },
+              "winner": {
+                "beatboxer": "3h"
+              },
+              "score": "1 Vote - 3 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "15"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "4 Votes - 0 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "dumpling"
+              },
+              "b": {
+                "beatboxer": "fang9yan"
+              },
+              "winner": {
+                "beatboxer": "fang9yan"
+              },
+              "score": "0 Votes - 4 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "3h"
+              },
+              "b": {
+                "beatboxer": "battery"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "0 Votes - 4 Votes"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "3h"
+              },
+              "b": {
+                "beatboxer": "dumpling"
+              },
+              "winner": {
+                "beatboxer": "dumpling"
+              },
+              "score": "0 Votes* - 4 Votes*"
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "fang9yan"
+              },
+              "b": {
+                "beatboxer": "battery"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              }
+            }
+          ],
+          "seeding": [
+            {
+              "rank": 1,
+              "beatboxer": "nd"
+            },
+            {
+              "rank": 2,
+              "beatboxer": "3h"
+            },
+            {
+              "rank": 3,
+              "beatboxer": "fang9yan"
+            },
+            {
+              "rank": 4,
+              "beatboxer": "ch95"
+            },
+            {
+              "rank": 5,
+              "beatboxer": "corey"
+            },
+            {
+              "rank": 6,
+              "beatboxer": "theo"
+            },
+            {
+              "rank": 7,
+              "beatboxer": "mao9"
+            },
+            {
+              "rank": 8,
+              "beatboxer": "songzai"
+            },
+            {
+              "rank": 9,
+              "beatboxer": "fasite"
+            },
+            {
+              "rank": 10,
+              "beatboxer": "kon"
+            },
+            {
+              "rank": 11,
+              "beatboxer": "cyn"
+            },
+            {
+              "rank": 12,
+              "beatboxer": "dison"
+            },
+            {
+              "rank": 13,
+              "beatboxer": "teller"
+            }
+          ],
+          "notes": [
+            "Battle Guests directly entered into Solo Top 16 battles.",
+            "For more battle information, please check China Beatbox Championship 2024 Qualifiers page.",
+            "[cn] CYN** | [cn] 83-yr-old small old man | [cn] RV{{Cite|message=*|title=Signed as Xu Ruiwen}} | **[hk] The-O** | **[cn] Dison** | [cn] Thunder",
+            "[cn] Fasite** | [cn] Atom | [cn] Leon | [cn] LT_ | [hk] HeartGrey{{Cite|message=*|title=Signed as So Zi Leun (Eric So)}} | [cn] Zi Ao",
+            "Participants took pre-elimination first.",
+            "69 beatboxers attend the elimination round, but I can't remember who got eliminated."
+          ]
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "name": "China Beatbox Championship 2025",
+      "status": "completed",
+      "dates": "August 13-15",
+      "location": "Guangzhou, China",
+      "venue": "MAO Livehouse (Zhongda)",
+      "source": "beatbox.fandom.com",
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "corey"
+          },
+          "runner_up": {
+            "beatboxer": "3h"
+          },
+          "third": {
+            "beatboxer": "battery"
+          },
+          "participants": [
+            {
+              "beatboxer": "randomt",
+              "qualification": "CNBC2025 Division Champion (Online)"
+            },
+            {
+              "beatboxer": "15",
+              "qualification": "CNBC 2025 Division Champion (Southwest)"
+            },
+            {
+              "beatboxer": "fang9yan",
+              "qualification": "CNBC 2025 Division Vice-Champion (Southwest)"
+            },
+            {
+              "beatboxer": "battery",
+              "qualification": "CNBC 2025 Division Champion (Greater Bay Area)"
+            },
+            {
+              "beatboxer": "corey",
+              "qualification": "CNBC 2025 Division Vice-Champion (Greater Bay Area)"
+            },
+            {
+              "beatboxer": "3h",
+              "qualification": "CNBC 2025 Division Champion (Central China)"
+            },
+            {
+              "beatboxer": "mao9",
+              "qualification": "CNBC 2025 Division Vice-Champion (Central China)"
+            },
+            {
+              "beatboxer": "jinc"
+            },
+            {
+              "beatboxer": "btk"
+            },
+            {
+              "beatboxer": "melon"
+            },
+            {
+              "beatboxer": "ruqiu"
+            },
+            {
+              "beatboxer": "sigi"
+            },
+            {
+              "beatboxer": "xwx"
+            },
+            {
+              "beatboxer": "huaran"
+            },
+            {
+              "beatboxer": "magnus"
+            },
+            {
+              "beatboxer": "ashan"
+            },
+            {
+              "beatboxer": "fffish"
+            },
+            {
+              "beatboxer": "rzjiangnancheng"
+            },
+            {
+              "beatboxer": "jh"
+            },
+            {
+              "beatboxer": "39"
+            },
+            {
+              "beatboxer": "atom"
+            },
+            {
+              "beatboxer": "zekatis"
+            },
+            {
+              "beatboxer": "chuliu"
+            },
+            {
+              "beatboxer": "growlh"
+            },
+            {
+              "beatboxer": "ph"
+            },
+            {
+              "beatboxer": "pcrh"
+            },
+            {
+              "beatboxer": "yby"
+            },
+            {
+              "beatboxer": "shallowhite"
+            },
+            {
+              "beatboxer": "ah"
+            },
+            {
+              "beatboxer": "tianxin"
+            },
+            {
+              "beatboxer": "npc"
+            },
+            {
+              "beatboxer": "darui"
+            },
+            {
+              "beatboxer": "yasho"
+            },
+            {
+              "beatboxer": "honking"
+            },
+            {
+              "beatboxer": "andy"
+            },
+            {
+              "beatboxer": "beatboxdongting"
+            },
+            {
+              "beatboxer": "ly"
+            },
+            {
+              "beatboxer": "xujiale"
+            },
+            {
+              "beatboxer": "cardboardboxfish"
+            },
+            {
+              "beatboxer": "caohuang"
+            },
+            {
+              "beatboxer": "jelly"
+            },
+            {
+              "beatboxer": "gyb"
+            },
+            {
+              "beatboxer": "jing"
+            },
+            {
+              "beatboxer": "yuhan"
+            },
+            {
+              "beatboxer": "dtt"
+            },
+            {
+              "beatboxer": "jinjin"
+            },
+            {
+              "beatboxer": "teacat"
+            },
+            {
+              "beatboxer": "brotherxingcheerforme"
+            },
+            {
+              "beatboxer": "airsie"
+            },
+            {
+              "beatboxer": "rob"
+            },
+            {
+              "beatboxer": "crabs"
+            },
+            {
+              "beatboxer": "jimmyyoung"
+            },
+            {
+              "beatboxer": "blackbubble"
+            },
+            {
+              "beatboxer": "yitu"
+            },
+            {
+              "beatboxer": "psybirz"
+            },
+            {
+              "beatboxer": "cdk"
+            },
+            {
+              "beatboxer": "yijie"
+            },
+            {
+              "beatboxer": "wgwuguang"
+            },
+            {
+              "beatboxer": "hua"
+            },
+            {
+              "beatboxer": "atuboxiang"
+            },
+            {
+              "beatboxer": "preacher"
+            },
+            {
+              "beatboxer": "jr"
+            },
+            {
+              "beatboxer": "orange"
+            },
+            {
+              "beatboxer": "cjf"
+            },
+            {
+              "beatboxer": "jbs"
+            },
+            {
+              "beatboxer": "dengshiyu"
+            },
+            {
+              "beatboxer": "555"
+            },
+            {
+              "beatboxer": "jg"
+            },
+            {
+              "beatboxer": "yuze"
+            },
+            {
+              "beatboxer": "wg"
+            },
+            {
+              "beatboxer": "upyoupo"
+            },
+            {
+              "beatboxer": "maom"
+            },
+            {
+              "beatboxer": "gk"
+            },
+            {
+              "beatboxer": "silence"
+            },
+            {
+              "beatboxer": "kangkang"
+            },
+            {
+              "beatboxer": "luhong"
+            },
+            {
+              "beatboxer": "flwhy"
+            },
+            {
+              "beatboxer": "han3"
+            },
+            {
+              "beatboxer": "syko"
+            },
+            {
+              "beatboxer": "redbeardcriminalxiuyi"
+            },
+            {
+              "beatboxer": "east"
+            },
+            {
+              "beatboxer": "nd"
+            },
+            {
+              "beatboxer": "reason"
+            },
+            {
+              "beatboxer": "xr"
+            },
+            {
+              "beatboxer": "littlewatermelon"
+            },
+            {
+              "beatboxer": "atao"
+            },
+            {
+              "beatboxer": "atlantis"
+            },
+            {
+              "beatboxer": "stonefishplus"
+            },
+            {
+              "beatboxer": "hax1"
+            },
+            {
+              "beatboxer": "heartgrey"
+            },
+            {
+              "beatboxer": "haavkelbowstrikechampion"
+            },
+            {
+              "beatboxer": "zuiniao"
+            },
+            {
+              "beatboxer": "eric"
+            },
+            {
+              "beatboxer": "xiejunyu"
+            },
+            {
+              "beatboxer": "fast"
+            },
+            {
+              "beatboxer": "secretary"
+            },
+            {
+              "beatboxer": "yao"
+            },
+            {
+              "beatboxer": "dison"
+            },
+            {
+              "beatboxer": "zn"
+            },
+            {
+              "beatboxer": "cyn"
+            },
+            {
+              "beatboxer": "fefi"
+            },
+            {
+              "beatboxer": "jerryju"
+            },
+            {
+              "beatboxer": "hong"
+            },
+            {
+              "beatboxer": "songzai"
+            },
+            {
+              "beatboxer": "org"
+            },
+            {
+              "beatboxer": "ptao"
+            },
+            {
+              "beatboxer": "fdd"
+            },
+            {
+              "beatboxer": "musiccreeper"
+            },
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "battery"
+            },
+            {
+              "beatboxer": "15"
+            },
+            {
+              "beatboxer": "napom"
+            },
+            {
+              "beatboxer": "footboxg"
+            },
+            {
+              "beatboxer": "3h"
+            },
+            {
+              "beatboxer": "corey"
+            },
+            {
+              "beatboxer": "frosty"
+            },
+            {
+              "beatboxer": "kaji"
+            },
+            {
+              "beatboxer": "fang9yan"
+            },
+            {
+              "beatboxer": "jm"
+            },
+            {
+              "beatboxer": "stitch"
+            },
+            {
+              "beatboxer": "dice"
+            },
+            {
+              "beatboxer": "randomt"
+            },
+            {
+              "beatboxer": "mao9"
+            }
+          ],
+          "judges": [
+            {
+              "beatboxer": "alem"
+            },
+            {
+              "beatboxer": "alexinho"
+            },
+            {
+              "beatboxer": "colaps"
+            },
+            {
+              "beatboxer": "footboxg"
+            },
+            {
+              "beatboxer": "river"
+            },
+            {
+              "beatboxer": "zhangze"
+            },
+            {
+              "beatboxer": "napom"
+            }
+          ],
+          "battles": [
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "nd"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "fdd"
+              },
+              "b": {
+                "beatboxer": "jelly"
+              },
+              "winner": {
+                "beatboxer": "fdd"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "gk"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "fang9yan"
+              },
+              "b": {
+                "beatboxer": "hua"
+              },
+              "winner": {
+                "beatboxer": "fang9yan"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "15"
+              },
+              "b": {
+                "beatboxer": "fast"
+              },
+              "winner": {
+                "beatboxer": "15"
+              },
+              "score": "3 Votes - 2 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "3h"
+              },
+              "b": {
+                "beatboxer": "cdk"
+              },
+              "winner": {
+                "beatboxer": "3h"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "mao9"
+              },
+              "b": {
+                "beatboxer": "dison"
+              },
+              "winner": {
+                "beatboxer": "mao9"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 16",
+              "a": {
+                "beatboxer": "randomt"
+              },
+              "b": {
+                "beatboxer": "cyn"
+              },
+              "winner": {
+                "beatboxer": "randomt"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "fdd"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "fang9yan"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "5 Votes - 0 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "15"
+              },
+              "b": {
+                "beatboxer": "3h"
+              },
+              "winner": {
+                "beatboxer": "3h"
+              },
+              "score": "1 Vote - 4 Votes"
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "mao9"
+              },
+              "b": {
+                "beatboxer": "randomt"
+              },
+              "winner": {
+                "beatboxer": "randomt"
+              },
+              "score": "0 Votes - 5 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "corey"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              },
+              "score": "2 Votes - 3 Votes"
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "3h"
+              },
+              "b": {
+                "beatboxer": "randomt"
+              },
+              "winner": {
+                "beatboxer": "3h"
+              },
+              "score": "4 Votes - 1 Vote"
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "battery"
+              },
+              "b": {
+                "beatboxer": "randomt"
+              },
+              "winner": {
+                "beatboxer": "battery"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "corey"
+              },
+              "b": {
+                "beatboxer": "3h"
+              },
+              "winner": {
+                "beatboxer": "corey"
+              }
+            }
+          ],
+          "notes": [
+            "Battle Guests will directly enter into Solo Top 16 battles.",
+            "[cn] Thai B (CNBC 2025 Video Showcase Champion) dropped out the event.",
+            "<u>[cn] CDK</u>** | [cn] Yi Jie | <u>[cn] wg Wuguang</u> | **<u>[cn] HUA</u>** | <u>[cn] Atuboxiang</u> | <u>[cn] Preacher</u>",
+            "<u>[cn] Dison</u>** | [cn] ZN | **<u>[cn] CYN</u>** | <u>[cn] FEFI</u> | [cn] Jerry Ju | [cn] Hong{{Cite|message=*|title=Feng Duanduan's son.}}",
+            "Translations might not accurate. Please edit it if you want to change your English name.",
+            "Hong is [cn] Feng Duanduan's 3 year old child, it is unknown why he is on the list",
+            "<u> Underlined </u>  is qualified to eliminations. **Bold** is qualified to Top 16 battles by attending eliminations.",
+            "JM acted as a replacement for Feng Duanduan."
+          ]
+        }
+      }
+    }
+  ]
+}

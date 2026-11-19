@@ -1,0 +1,150 @@
+{
+  "competition": "nat_co",
+  "editions": [
+    {
+      "year": 2022,
+      "name": "Colombian Beatbox Championship 2022",
+      "status": "completed",
+      "dates": "October 22th, 2022",
+      "location": "Bogotá, Colombia",
+      "venue": "Edificio Mario Laserna",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "napom"
+        },
+        {
+          "beatboxer": "beatmeda"
+        },
+        {
+          "beatboxer": "colombianbeat"
+        },
+        {
+          "beatboxer": "dharka"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "ordinal"
+          },
+          "runner_up": {
+            "beatboxer": "necro"
+          },
+          "third": {
+            "beatboxer": "carraman"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ordinal"
+              },
+              "b": {
+                "beatboxer": "dharka"
+              },
+              "winner": {
+                "beatboxer": "ordinal"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "carraman"
+              },
+              "b": {
+                "beatboxer": "steamduck"
+              },
+              "winner": {
+                "beatboxer": "carraman"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "necro"
+              },
+              "b": {
+                "beatboxer": "znowsz"
+              },
+              "winner": {
+                "beatboxer": "necro"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "altbass"
+              },
+              "b": {
+                "beatboxer": "melobeats"
+              },
+              "winner": {
+                "beatboxer": "altbass"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ordinal"
+              },
+              "b": {
+                "beatboxer": "carraman"
+              },
+              "winner": {
+                "beatboxer": "ordinal"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "necro"
+              },
+              "b": {
+                "beatboxer": "altbass"
+              },
+              "winner": {
+                "beatboxer": "necro"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "carraman"
+              },
+              "b": {
+                "beatboxer": "altbass"
+              },
+              "winner": {
+                "beatboxer": "carraman"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "ordinal"
+              },
+              "b": {
+                "beatboxer": "necro"
+              },
+              "winner": {
+                "beatboxer": "ordinal"
+              }
+            }
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "river"
+          },
+          "points": [
+            {
+              "beatboxer": "river",
+              "points": 7
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

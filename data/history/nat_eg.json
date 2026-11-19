@@ -1,0 +1,168 @@
+{
+  "competition": "nat_eg",
+  "editions": [
+    {
+      "year": 2024,
+      "name": "Egyptian Beatbox Championship 2024 25",
+      "status": "completed",
+      "dates": "January 31st, 2025",
+      "location": "El Dokki, Cairo, Egypt",
+      "venue": "Vibe for Developing Arts Studio",
+      "source": "beatbox.fandom.com",
+      "judges": [
+        {
+          "beatboxer": "frk"
+        },
+        {
+          "beatboxer": "ziadswidan"
+        },
+        {
+          "beatboxer": "amrhassan"
+        },
+        {
+          "beatboxer": "shadowspedicy"
+        },
+        {
+          "beatboxer": "seifkilla"
+        }
+      ],
+      "wildcard_judges": [
+        {
+          "beatboxer": "nanolotion"
+        },
+        {
+          "beatboxer": "ziadswidan"
+        },
+        {
+          "beatboxer": "nitch"
+        }
+      ],
+      "categories": {
+        "solo": {
+          "champion": {
+            "beatboxer": "coztox"
+          },
+          "runner_up": {
+            "beatboxer": "shehab"
+          },
+          "third": {
+            "beatboxer": "ash"
+          },
+          "battles": [
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "ash"
+              },
+              "b": {
+                "beatboxer": "steva"
+              },
+              "winner": {
+                "beatboxer": "ash"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "shehab"
+              },
+              "b": {
+                "beatboxer": "zyadnegm"
+              },
+              "winner": {
+                "beatboxer": "shehab"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "coztox"
+              },
+              "b": {
+                "beatboxer": "tikka"
+              },
+              "winner": {
+                "beatboxer": "coztox"
+              }
+            },
+            {
+              "round": "Top 8",
+              "a": {
+                "beatboxer": "abdotarek"
+              },
+              "b": {
+                "beatboxer": "heeka"
+              },
+              "winner": {
+                "beatboxer": "abdotarek"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "ash"
+              },
+              "b": {
+                "beatboxer": "shehab"
+              },
+              "winner": {
+                "beatboxer": "shehab"
+              }
+            },
+            {
+              "round": "Semifinal",
+              "a": {
+                "beatboxer": "coztox"
+              },
+              "b": {
+                "beatboxer": "abdotarek"
+              },
+              "winner": {
+                "beatboxer": "coztox"
+              }
+            },
+            {
+              "round": "Third place",
+              "a": {
+                "beatboxer": "ash"
+              },
+              "b": {
+                "beatboxer": "abdotarek"
+              },
+              "winner": {
+                "beatboxer": "ash"
+              }
+            },
+            {
+              "round": "Final",
+              "a": {
+                "beatboxer": "shehab"
+              },
+              "b": {
+                "beatboxer": "coztox"
+              },
+              "winner": {
+                "beatboxer": "coztox"
+              }
+            }
+          ]
+        },
+        "7_to_smoke": {
+          "champion": {
+            "beatboxer": "mody"
+          },
+          "points": [
+            {
+              "beatboxer": "mody",
+              "points": 7
+            },
+            {
+              "beatboxer": "marselo",
+              "points": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
