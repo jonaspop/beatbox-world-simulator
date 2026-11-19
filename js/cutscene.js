@@ -325,71 +325,158 @@ const SCENES = {
   },
 };
 
-// the winner: same language as the wildcard cards, calm and steady — a slow push-in on their picture,
-// a gold label in the lower-left, the name, flag, and how the final went
+// the winner gets a centered "champion poster": picture in a tall frame rising into a gold halo,
+// slow turning rings and light rays, a giant outlined CHAMPION behind, crown-and-mic emblem, name and result
 function drawChampion(g, W, H, t, s, beat) {
+  g.globalAlpha = 1;
   g.fillStyle = "#0b0b0d"; g.fillRect(0, 0, W, H);
   const intro = 1.3;
-  const k = clamp01((t - intro) / (s.duration - intro));
-  if (t >= intro - 0.4) {
-    if (s.img) {
-      coverImage(g, s.img, W, H, 1.03 + k * 0.05);
-      const shade = g.createLinearGradient(0, H, W * 0.6, H * 0.2);
-      shade.addColorStop(0, "rgba(0,0,0,0.85)"); shade.addColorStop(1, "rgba(0,0,0,0)");
-      g.fillStyle = shade; g.fillRect(0, 0, W, H);
-    } else posterArt(g, W, H, { flag: s.flagImg, p: s.p }, k, "255,194,61", 0.07);
-    // fade up from black
-    g.fillStyle = `rgba(11,11,13,${1 - ease((t - (intro - 0.4)) / 0.9)})`;
-    g.fillRect(0, 0, W, H);
-  }
-  g.textAlign = "left"; g.textBaseline = "alphabetic";
+  g.textBaseline = "alphabetic";
   if (t < intro + 0.2) {
-    // opener: just the event and the words "final result"
     const a = Math.min(clamp01(t / 0.5), clamp01((intro + 0.2 - t) / 0.4));
     g.globalAlpha = a;
+    g.textAlign = "center";
     g.fillStyle = "rgba(242,239,232,0.8)";
     g.font = `700 ${Math.max(13, W * 0.016)}px ${BODY}`;
-    g.fillText(s.sub.toUpperCase(), W * 0.07, H * 0.47);
+    g.fillText(s.sub.toUpperCase(), W / 2, H * 0.46);
     g.fillStyle = "#f2efe8";
     g.font = `900 ${Math.min(W * 0.08, 92)}px ${DISPLAY}`;
-    g.fillText("FINAL RESULT", W * 0.07, H * 0.47 + Math.min(W * 0.08, 92));
+    g.fillText("FINAL RESULT", W / 2, H * 0.46 + Math.min(W * 0.08, 92));
     g.globalAlpha = 1;
     return;
   }
   const local = t - intro;
-  // top line
-  g.font = `700 ${Math.max(12, W * 0.014)}px ${BODY}`;
-  g.fillStyle = "rgba(242,239,232,0.85)";
-  g.fillText(s.sub.toUpperCase(), 28, 40);
-  // lower third
-  const slide = ease((local - 0.2) / 0.7);
-  const x0 = 28 - (1 - slide) * 90, base = H - 104;
-  g.globalAlpha = slide;
-  const nameSize = fitText(g, s.p.name.toUpperCase(), W * 0.66, Math.min(W * 0.11, 130));
-  const barW = Math.max(250, Math.min(W * 0.5, s.label.length * 15 + 40));
+  const appear = ease(local / 1.2);
+  const cardH = Math.min(H * 0.44, 380), cardW = cardH * 0.8;
+  const cx = W / 2, cy = H * 0.38;
+  // gold halo + halftone dots growing from the center
+  const halo = g.createRadialGradient(cx, cy, 10, cx, cy, Math.max(W, H) * 0.55);
+  halo.addColorStop(0, `rgba(255,194,61,${0.22 * appear})`);
+  halo.addColorStop(0.45, `rgba(255,140,40,${0.07 * appear})`);
+  halo.addColorStop(1, "rgba(0,0,0,0)");
+  g.fillStyle = halo; g.fillRect(0, 0, W, H);
+  g.fillStyle = `rgba(255,194,61,${0.16 * appear})`;
+  const step = 16;
+  for (let y = 0; y < H; y += step) for (let x = 0; x < W; x += step) {
+    const d = Math.hypot(x - cx, y - cy) / Math.max(W, H);
+    const r = Math.max(0, (0.5 - d) * step * 0.32);
+    if (r > 0.5) { g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill(); }
+  }
+  // light rays, turning very slowly
+  g.save();
+  g.translate(cx, cy);
+  g.rotate(local * 0.04);
+  g.strokeStyle = `rgba(255,214,140,${0.08 * appear})`;
+  g.lineWidth = 2;
+  for (let i = 0; i < 28; i++) {
+    const a = (i / 28) * Math.PI * 2;
+    g.beginPath(); g.moveTo(Math.cos(a) * cardH * 0.6, Math.sin(a) * cardH * 0.6); g.lineTo(Math.cos(a) * W, Math.sin(a) * W); g.stroke();
+  }
+  g.restore();
+  // giant outlined watermark
+  g.save();
+  g.textAlign = "center";
+  const wm = "CHAMPION";
+  g.font = `900 ${Math.min(W * 0.34, H * 0.5)}px ${DISPLAY}`;
+  g.lineWidth = 2;
+  g.strokeStyle = `rgba(255,194,61,${0.09 * appear})`;
+  g.strokeText(wm, cx, cy + Math.min(W * 0.11, H * 0.17));
+  g.restore();
+  // dashed rings
+  g.save();
+  g.strokeStyle = `rgba(255,194,61,${0.45 * appear})`;
+  g.lineWidth = 1.5;
+  [0.78, 0.98, 1.2].forEach((m, i) => {
+    g.setLineDash([2 + i * 2, 9 + i * 3]);
+    g.lineDashOffset = (i % 2 ? 1 : -1) * local * 14;
+    g.beginPath(); g.arc(cx, cy, cardH * m, 0, Math.PI * 2); g.stroke();
+  });
+  g.restore();
+  // the picture frame, rising into place (same cut corner as the avatars)
+  const rise = ease((local - 0.2) / 1.0);
+  const fx = cx - cardW / 2, fy = cy - cardH / 2 + (1 - rise) * 40;
+  g.save();
+  g.globalAlpha = rise;
+  g.beginPath();
+  g.moveTo(fx, fy); g.lineTo(fx + cardW, fy); g.lineTo(fx + cardW, fy + cardH * 0.84); g.lineTo(fx + cardW * 0.84, fy + cardH); g.lineTo(fx, fy + cardH); g.closePath();
+  g.save();
+  g.clip();
+  if (s.img) {
+    const sc = Math.max(cardW / s.img.width, cardH / s.img.height) * (1.02 + local * 0.006);
+    g.drawImage(s.img, cx - (s.img.width * sc) / 2, fy + cardH / 2 - (s.img.height * sc) / 2, s.img.width * sc, s.img.height * sc);
+  } else {
+    if (s.flagImg) {
+      const sc = Math.max(cardW / s.flagImg.width, cardH / s.flagImg.height) * 1.1;
+      g.drawImage(s.flagImg, cx - (s.flagImg.width * sc) / 2, fy + cardH / 2 - (s.flagImg.height * sc) / 2, s.flagImg.width * sc, s.flagImg.height * sc);
+    }
+    g.fillStyle = "rgba(8,8,10,0.66)"; g.fillRect(fx, fy, cardW, cardH);
+    const fade = g.createLinearGradient(0, fy, 0, fy + cardH);
+    fade.addColorStop(0, "rgba(255,194,61,0.10)"); fade.addColorStop(1, "rgba(8,8,10,0.5)");
+    g.fillStyle = fade; g.fillRect(fx, fy, cardW, cardH);
+    halftone(g, W, H, "rgba(0,0,0,0.4)");
+    g.fillStyle = "rgba(242,239,232,0.92)";
+    g.textAlign = "center"; g.textBaseline = "middle";
+    g.font = `900 ${cardH * 0.42}px ${DISPLAY}`;
+    g.fillText(initials(s.p.name), cx, fy + cardH * 0.52);
+    g.textBaseline = "alphabetic";
+  }
+  g.restore();
+  g.strokeStyle = "#ffc23d"; g.lineWidth = 3; g.stroke();
+  g.restore();
+  // crown with a microphone, sitting on the frame
+  const em = ease((local - 0.8) / 0.6);
+  if (em > 0) {
+    g.save();
+    g.globalAlpha = em;
+    g.translate(cx, fy - 6);
+    const u = Math.max(14, cardH * 0.06);
+    g.fillStyle = "#ffc23d";
+    g.beginPath();
+    g.moveTo(-u * 1.6, 0); g.lineTo(-u * 1.6, -u * 1.1); g.lineTo(-u * 0.8, -u * 0.5); g.lineTo(0, -u * 1.5);
+    g.lineTo(u * 0.8, -u * 0.5); g.lineTo(u * 1.6, -u * 1.1); g.lineTo(u * 1.6, 0); g.closePath(); g.fill();
+    g.fillStyle = "#0b0b0d";
+    g.beginPath(); g.ellipse(0, -u * 0.62, u * 0.22, u * 0.32, 0, 0, Math.PI * 2); g.fill();
+    g.fillRect(-u * 0.05, -u * 0.32, u * 0.1, u * 0.26);
+    g.restore();
+  }
+  // name, flag + country, how it was won
+  const ty = fy + cardH + Math.min(H * 0.135, 104);
+  const nm = ease((local - 0.9) / 0.8);
+  g.save();
+  g.globalAlpha = nm;
+  g.textAlign = "center";
+  const size = fitText(g, s.p.name.toUpperCase(), W * 0.8, Math.min(W * 0.1, H * 0.11));
   g.fillStyle = "#ffc23d";
-  g.beginPath(); g.moveTo(x0, base - nameSize - 50); g.lineTo(x0 + barW, base - nameSize - 50); g.lineTo(x0 + barW - 14, base - nameSize - 16); g.lineTo(x0, base - nameSize - 16); g.fill();
-  g.fillStyle = "#0b0b0d";
-  g.font = `900 24px ${DISPLAY}`;
-  g.fillText(s.label, x0 + 12, base - nameSize - 25);
+  g.font = `800 ${Math.max(14, Math.min(W * 0.02, 20))}px ${BODY}`;
+  g.fillText(s.label, cx, ty - size * 0.82 - 12);
   g.fillStyle = "#f2efe8";
-  g.font = `900 ${nameSize}px ${DISPLAY}`;
-  g.shadowColor = "rgba(0,0,0,0.55)"; g.shadowBlur = 16;
-  g.fillText(s.p.name.toUpperCase(), x0, base - 6);
+  g.font = `900 ${size}px ${DISPLAY}`;
+  g.shadowColor = "rgba(0,0,0,0.6)"; g.shadowBlur = 14;
+  g.fillText(s.p.name.toUpperCase(), cx, ty);
   g.shadowBlur = 0;
-  // thin gold rule drawing in under the name
+  const lineW = Math.min(W * 0.3, 280) * ease((local - 1.3) / 1.0);
   g.fillStyle = "#ffc23d";
-  g.fillRect(x0, base + 2, Math.min(W * 0.4, 360) * ease((local - 0.8) / 1.2), 3);
-  if (s.flagImg) g.drawImage(s.flagImg, x0, base + 16, 36, 27);
-  g.font = `700 ${Math.max(14, W * 0.017)}px ${BODY}`;
+  g.fillRect(cx - lineW / 2, ty + 10, lineW, 3);
+  g.font = `700 ${Math.max(13, W * 0.016)}px ${BODY}`;
+  const cname = s.p.countryName.toUpperCase();
+  const cw = g.measureText(cname).width + (s.flagImg ? 42 : 0);
+  if (s.flagImg) g.drawImage(s.flagImg, cx - cw / 2, ty + 22, 32, 24);
+  g.textAlign = "left";
   g.fillStyle = "rgba(242,239,232,0.9)";
-  g.fillText(s.p.countryName.toUpperCase(), x0 + (s.flagImg ? 46 : 0), base + 38);
-  // how it was won, appearing a moment later
-  g.globalAlpha = clamp01((local - 1.4) / 0.8);
-  g.font = `600 ${Math.max(13, W * 0.015)}px ${BODY}`;
-  g.fillStyle = "rgba(242,239,232,0.75)";
+  g.fillText(cname, cx - cw / 2 + (s.flagImg ? 42 : 0), ty + 41);
+  g.textAlign = "center";
+  g.globalAlpha = nm * clamp01((local - 1.8) / 0.8);
+  g.font = `600 ${Math.max(12, W * 0.014)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.7)";
   const how = [s.runnerUp ? `Beat ${s.runnerUp} in the final${s.score ? ` · ${s.score}` : ""}` : null, s.extra].filter(Boolean).join("   ·   ");
-  if (how) g.fillText(how, x0, base + 64);
+  if (how) g.fillText(how, cx, ty + 70);
+  g.restore();
+  // event name, top left
+  g.globalAlpha = appear;
+  g.textAlign = "left";
+  g.font = `700 ${Math.max(12, W * 0.014)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.8)";
+  g.fillText(s.sub.toUpperCase(), 28, 40);
   g.globalAlpha = 1;
 }
 
