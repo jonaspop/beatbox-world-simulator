@@ -410,7 +410,9 @@ async function demo(type) {
 }
 
 function exportSave() {
-  const blob = new Blob([JSON.stringify(app.state)], { type: "application/json" });
+  // pictures you added yourself live in the browser, so they travel with the save file
+  const pictures = Object.fromEntries([...localPictures].map((id) => [id, imageCache.get(id)]).filter(([, v]) => v));
+  const blob = new Blob([JSON.stringify({ ...app.state, pictures })], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
   a.download = `beatbox-world-sim-${app.state.year}.json`;
@@ -422,6 +424,11 @@ async function importSave(file) {
   try {
     const st = JSON.parse(await file.text());
     if (!st.people || !st.season) throw new Error("not a save file");
+    for (const [id, src] of Object.entries(st.pictures || {})) {
+      if (typeof src !== "string" || !src.startsWith("data:image/")) continue;
+      await putImage(id, src); imageCache.set(id, src); localPictures.add(id);
+    }
+    delete st.pictures;
     app.state = attachState(st);
     await saveGame("auto", app.state);
     location.hash = "#home";

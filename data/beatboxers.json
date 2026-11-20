@@ -304,7 +304,7 @@
       "kr"
     ],
     "rating": 77,
-    "potential": 86,
+    "potential": 88,
     "peak_rating": 77,
     "status": "active",
     "retirement_risk": 0.04,
@@ -329,7 +329,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "abdotarek",
@@ -816,7 +822,7 @@
     "countries": [
       "my"
     ],
-    "rating": 73,
+    "rating": 72,
     "potential": 78,
     "peak_rating": 74,
     "status": "active",
@@ -828,7 +834,13 @@
     "record": "2-1",
     "elo": 1038,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "afra",
@@ -2311,9 +2323,9 @@
     "countries": [
       "sk"
     ],
-    "rating": 64,
-    "potential": 80,
-    "peak_rating": 61,
+    "rating": 68,
+    "potential": 81,
+    "peak_rating": 68,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -2323,7 +2335,14 @@
     "record": "2-3",
     "elo": 1003,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "aria",
@@ -2551,8 +2570,8 @@
     "countries": [
       "gb"
     ],
-    "rating": 71,
-    "potential": 75,
+    "rating": 68,
+    "potential": 71,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.04,
@@ -2563,7 +2582,13 @@
     "record": "3-2",
     "elo": 1013,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "aspx",
@@ -2906,9 +2931,9 @@
       "it"
     ],
     "last_judged": 2026,
-    "rating": 73,
-    "potential": 73,
-    "peak_rating": 75,
+    "rating": 77,
+    "potential": 77,
+    "peak_rating": 77,
     "status": "judge",
     "retirement_risk": null,
     "judge_chance": 0.2,
@@ -2917,7 +2942,14 @@
     "battles": 3,
     "record": "2-1",
     "elo": 1025,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "azrael",
@@ -3597,9 +3629,9 @@
     "countries": [
       "at"
     ],
-    "rating": 52,
-    "potential": 63,
-    "peak_rating": 53,
+    "rating": 69,
+    "potential": 79,
+    "peak_rating": 69,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -3608,7 +3640,14 @@
     "battles": 7,
     "record": "3-4",
     "elo": 1001,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "battery",
@@ -3655,8 +3694,8 @@
       "ve"
     ],
     "last_judged": 2025,
-    "rating": 72,
-    "potential": 79,
+    "rating": 69,
+    "potential": 72,
     "peak_rating": 73,
     "status": "active",
     "retirement_risk": 0.12,
@@ -3676,7 +3715,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "bbk",
@@ -3917,8 +3962,8 @@
     "countries": [
       "de"
     ],
-    "rating": 77,
-    "potential": 77,
+    "rating": 65,
+    "potential": 65,
     "peak_rating": 81,
     "status": "retired",
     "retirement_risk": null,
@@ -3928,7 +3973,13 @@
     "battles": 5,
     "record": "3-2",
     "elo": 1006,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "beatdown",
@@ -4623,8 +4674,8 @@
     "last_judged": 2026,
     "rating": 77,
     "potential": 77,
-    "peak_rating": 71,
-    "status": "retired",
+    "peak_rating": 77,
+    "status": "judge",
     "retirement_risk": null,
     "judge_chance": 0.15,
     "debut": 2018,
@@ -4633,7 +4684,14 @@
     "record": "3-2",
     "elo": 1008,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "bigdave",
@@ -4776,10 +4834,12 @@
   {
     "id": "bigm",
     "name": "bigm",
-    "country": null,
-    "countries": [],
-    "rating": 73,
-    "potential": 78,
+    "country": "dz",
+    "countries": [
+      "dz"
+    ],
+    "rating": 62,
+    "potential": 64,
     "peak_rating": 73,
     "status": "active",
     "retirement_risk": 0.04,
@@ -4799,7 +4859,14 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "country",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "bigman",
@@ -6906,8 +6973,8 @@
       "de",
       "at"
     ],
-    "rating": 68,
-    "potential": 72,
+    "rating": 64,
+    "potential": 66,
     "peak_rating": 71,
     "status": "active",
     "retirement_risk": 0.04,
@@ -6918,7 +6985,13 @@
     "record": "1-2",
     "elo": 1009,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "carraman",
@@ -7134,9 +7207,9 @@
     "countries": [
       "mx"
     ],
-    "rating": 40,
-    "potential": 46,
-    "peak_rating": 40,
+    "rating": 68,
+    "potential": 75,
+    "peak_rating": 68,
     "status": "active",
     "retirement_risk": 0.19,
     "judge_chance": 0.15,
@@ -7145,7 +7218,14 @@
     "battles": 2,
     "record": "1-1",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "ceto",
@@ -7503,8 +7583,8 @@
       "au",
       "nz"
     ],
-    "rating": 72,
-    "potential": 74,
+    "rating": 70,
+    "potential": 76,
     "peak_rating": 74,
     "status": "active",
     "retirement_risk": 0.04,
@@ -7515,7 +7595,13 @@
     "record": "4-2",
     "elo": 1024,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "chillyo",
@@ -10265,9 +10351,9 @@
     "countries": [
       "gb"
     ],
-    "rating": 70,
-    "potential": 83,
-    "peak_rating": 57,
+    "rating": 72,
+    "potential": 81,
+    "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -10277,7 +10363,14 @@
     "record": "1-1",
     "elo": 1002,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "dewei",
@@ -10726,8 +10819,8 @@
       "us",
       "mx"
     ],
-    "rating": 71,
-    "potential": 71,
+    "rating": 60,
+    "potential": 60,
     "peak_rating": 75,
     "status": "retired",
     "retirement_risk": null,
@@ -10737,7 +10830,13 @@
     "battles": 6,
     "record": "3-3",
     "elo": 1010,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "djbusted",
@@ -10858,9 +10957,9 @@
       "us"
     ],
     "last_judged": 2023,
-    "rating": 73,
-    "potential": 73,
-    "peak_rating": 76,
+    "rating": 79,
+    "potential": 79,
+    "peak_rating": 79,
     "status": "judge",
     "retirement_risk": null,
     "judge_chance": 0.2,
@@ -10869,7 +10968,14 @@
     "battles": 9,
     "record": "6-3",
     "elo": 1026,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "dl",
@@ -12256,8 +12362,8 @@
     "countries": [
       "us"
     ],
-    "rating": 70,
-    "potential": 70,
+    "rating": 57,
+    "potential": 57,
     "peak_rating": 74,
     "status": "retired",
     "retirement_risk": null,
@@ -12267,7 +12373,13 @@
     "battles": 1,
     "record": "0-1",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "easonhuang",
@@ -12813,9 +12925,9 @@
       "ca"
     ],
     "last_judged": 2024,
-    "rating": 73,
-    "potential": 73,
-    "peak_rating": 76,
+    "rating": 79,
+    "potential": 79,
+    "peak_rating": 79,
     "status": "judge",
     "retirement_risk": null,
     "judge_chance": 0.2,
@@ -12824,7 +12936,14 @@
     "battles": 8,
     "record": "4-4",
     "elo": 1020,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "ellie",
@@ -13904,8 +14023,8 @@
     "countries": [
       "gb"
     ],
-    "rating": 70,
-    "potential": 70,
+    "rating": 60,
+    "potential": 60,
     "peak_rating": 74,
     "status": "retired",
     "retirement_risk": null,
@@ -13915,7 +14034,13 @@
     "battles": 1,
     "record": "0-1",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "fang9yan",
@@ -14477,9 +14602,9 @@
     "aliases": [
       "Firesky"
     ],
-    "rating": 48,
-    "potential": 57,
-    "peak_rating": 51,
+    "rating": 67,
+    "potential": 78,
+    "peak_rating": 67,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -14488,7 +14613,14 @@
     "battles": 5,
     "record": "2-3",
     "elo": 1001,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "fireytruck",
@@ -14991,8 +15123,8 @@
     "countries": [
       "gb-sct"
     ],
-    "rating": 68,
-    "potential": 73,
+    "rating": 61,
+    "potential": 64,
     "peak_rating": 69,
     "status": "active",
     "retirement_risk": 0.04,
@@ -15012,7 +15144,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "francis",
@@ -17185,9 +17323,9 @@
     "countries": [
       "sa"
     ],
-    "rating": 64,
-    "potential": 64,
-    "peak_rating": 69,
+    "rating": 71,
+    "potential": 73,
+    "peak_rating": 71,
     "status": "active",
     "retirement_risk": 0.06,
     "judge_chance": 0.15,
@@ -17197,7 +17335,14 @@
     "record": "2-2",
     "elo": 1004,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "h1ppy",
@@ -17726,9 +17871,9 @@
       "my"
     ],
     "last_judged": 2026,
-    "rating": 69,
-    "potential": 69,
-    "peak_rating": 72,
+    "rating": 77,
+    "potential": 83,
+    "peak_rating": 77,
     "status": "judge",
     "retirement_risk": null,
     "judge_chance": 0.15,
@@ -17737,7 +17882,14 @@
     "battles": 2,
     "record": "0-2",
     "elo": 1008,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "heat",
@@ -18542,9 +18694,9 @@
       "se"
     ],
     "last_judged": 2025,
-    "rating": 40,
-    "potential": 49,
-    "peak_rating": 40,
+    "rating": 61,
+    "potential": 78,
+    "peak_rating": 61,
     "status": "active",
     "retirement_risk": 0.12,
     "judge_chance": 0.15,
@@ -18553,7 +18705,14 @@
     "battles": 3,
     "record": "1-2",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "humanvoice",
@@ -19310,9 +19469,9 @@
       "ru"
     ],
     "last_judged": 2024,
-    "rating": 74,
-    "potential": 74,
-    "peak_rating": 76,
+    "rating": 80,
+    "potential": 80,
+    "peak_rating": 80,
     "status": "judge",
     "retirement_risk": null,
     "judge_chance": 0.22,
@@ -19330,7 +19489,14 @@
           "category": "solo"
         }
       ]
-    }
+    },
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "improzex",
@@ -19750,9 +19916,9 @@
     "countries": [
       "in"
     ],
-    "rating": 70,
-    "potential": 70,
-    "peak_rating": 74,
+    "rating": 76,
+    "potential": 76,
+    "peak_rating": 76,
     "status": "retired",
     "retirement_risk": null,
     "judge_chance": 0.15,
@@ -19761,7 +19927,14 @@
     "battles": 4,
     "record": "2-2",
     "elo": 1006,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "ishan",
@@ -20823,7 +20996,7 @@
     "rating": 71,
     "potential": 71,
     "peak_rating": 73,
-    "status": "active",
+    "status": "judge",
     "retirement_risk": 0.33,
     "judge_chance": 0.18,
     "debut": 2017,
@@ -20832,7 +21005,13 @@
     "record": "2-5",
     "elo": 1013,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "jezor",
@@ -21171,8 +21350,8 @@
     "countries": [
       "pl"
     ],
-    "rating": 71,
-    "potential": 78,
+    "rating": 70,
+    "potential": 72,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.04,
@@ -21192,7 +21371,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "jmiguelquirogaponce",
@@ -21334,8 +21519,8 @@
     "countries": [
       "br"
     ],
-    "rating": 71,
-    "potential": 75,
+    "rating": 69,
+    "potential": 71,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.04,
@@ -21346,7 +21531,13 @@
     "record": "3-1",
     "elo": 1013,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "joker",
@@ -22271,10 +22462,10 @@
     "countries": [
       "de"
     ],
-    "rating": 71,
-    "potential": 74,
+    "rating": 69,
+    "potential": 71,
     "peak_rating": 73,
-    "status": "active",
+    "status": "retired",
     "retirement_risk": 0.19,
     "judge_chance": 0.18,
     "debut": 2024,
@@ -22283,7 +22474,13 @@
     "record": "0-2",
     "elo": 1016,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "kamtek",
@@ -22988,8 +23185,8 @@
       "ch"
     ],
     "last_judged": 2017,
-    "rating": 73,
-    "potential": 73,
+    "rating": 63,
+    "potential": 63,
     "peak_rating": 77,
     "status": "retired",
     "retirement_risk": null,
@@ -22999,7 +23196,13 @@
     "battles": 2,
     "record": "1-1",
     "elo": 1003,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "kev",
@@ -23558,8 +23761,8 @@
       "ch"
     ],
     "last_judged": 2010,
-    "rating": 74,
-    "potential": 74,
+    "rating": 62,
+    "potential": 62,
     "peak_rating": 78,
     "status": "retired",
     "retirement_risk": null,
@@ -23569,7 +23772,13 @@
     "battles": 1,
     "record": "0-1",
     "elo": 1002,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "knarst",
@@ -24693,9 +24902,9 @@
     "aliases": [
       "leevy"
     ],
-    "rating": 70,
+    "rating": 73,
     "potential": 84,
-    "peak_rating": 68,
+    "peak_rating": 74,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -24705,7 +24914,14 @@
     "record": "0-1",
     "elo": 1005,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "lembo",
@@ -25691,7 +25907,7 @@
     "countries": [
       "ie"
     ],
-    "rating": 66,
+    "rating": 67,
     "potential": 68,
     "peak_rating": 69,
     "status": "active",
@@ -25712,7 +25928,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "lowskill",
@@ -27430,7 +27652,7 @@
     "countries": [
       "br"
     ],
-    "rating": 71,
+    "rating": 70,
     "potential": 73,
     "peak_rating": 73,
     "status": "active",
@@ -27442,7 +27664,13 @@
     "record": "4-4",
     "elo": 1013,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "mathias",
@@ -28688,8 +28916,8 @@
       "pt"
     ],
     "last_judged": 2026,
-    "rating": 70,
-    "potential": 70,
+    "rating": 72,
+    "potential": 73,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.27,
@@ -28709,7 +28937,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "mizewell",
@@ -28809,8 +29043,8 @@
     "countries": [
       "eg"
     ],
-    "rating": 72,
-    "potential": 72,
+    "rating": 68,
+    "potential": 70,
     "peak_rating": 73,
     "status": "active",
     "retirement_risk": 0.2,
@@ -28830,7 +29064,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "mohg",
@@ -28916,8 +29156,8 @@
     ],
     "rating": 80,
     "potential": 80,
-    "peak_rating": 77,
-    "status": "retired",
+    "peak_rating": 80,
+    "status": "active",
     "retirement_risk": null,
     "judge_chance": 0.23,
     "debut": 2023,
@@ -28935,7 +29175,14 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "mondi",
@@ -30502,9 +30749,9 @@
     "countries": [
       "jp"
     ],
-    "rating": 40,
-    "potential": 46,
-    "peak_rating": 40,
+    "rating": 71,
+    "potential": 71,
+    "peak_rating": 71,
     "status": "active",
     "retirement_risk": 0.19,
     "judge_chance": 0.15,
@@ -30513,7 +30760,14 @@
     "battles": 0,
     "record": "0-0",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "nitch",
@@ -30689,9 +30943,9 @@
     "aliases": [
       "NOCIAL"
     ],
-    "rating": 56,
-    "potential": 62,
-    "peak_rating": 57,
+    "rating": 68,
+    "potential": 78,
+    "peak_rating": 68,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -30701,7 +30955,14 @@
     "record": "0-4",
     "elo": 1002,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "nodevil",
@@ -32330,9 +32591,9 @@
       "Patbox"
     ],
     "last_judged": 2026,
-    "rating": 84,
+    "rating": 83,
     "potential": 91,
-    "peak_rating": 82,
+    "peak_rating": 83,
     "status": "active",
     "retirement_risk": 0.12,
     "judge_chance": 0.35,
@@ -32363,7 +32624,14 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "patobeats",
@@ -33573,7 +33841,7 @@
       "us"
     ],
     "rating": 76,
-    "potential": 84,
+    "potential": 79,
     "peak_rating": 80,
     "status": "active",
     "retirement_risk": 0.04,
@@ -33605,7 +33873,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "popcan",
@@ -34459,9 +34733,9 @@
     "countries": [
       "gb"
     ],
-    "rating": 40,
-    "potential": 49,
-    "peak_rating": 40,
+    "rating": 65,
+    "potential": 74,
+    "peak_rating": 65,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -34470,7 +34744,14 @@
     "battles": 0,
     "record": "0-0",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "random",
@@ -34702,8 +34983,8 @@
     "countries": [
       "ca"
     ],
-    "rating": 68,
-    "potential": 68,
+    "rating": 70,
+    "potential": 82,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.23,
@@ -34714,7 +34995,13 @@
     "record": "4-3",
     "elo": 1007,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "rbbtdibsty",
@@ -34756,7 +35043,7 @@
       "gb-sct"
     ],
     "last_judged": 2026,
-    "rating": 64,
+    "rating": 67,
     "potential": 74,
     "peak_rating": 67,
     "status": "active",
@@ -34777,7 +35064,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "reach",
@@ -35241,8 +35534,8 @@
     "countries": [
       "hu"
     ],
-    "rating": 71,
-    "potential": 71,
+    "rating": 66,
+    "potential": 66,
     "peak_rating": 75,
     "status": "retired",
     "retirement_risk": null,
@@ -35252,7 +35545,13 @@
     "battles": 3,
     "record": "1-2",
     "elo": 1001,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "revvo",
@@ -36046,9 +36345,9 @@
     "countries": [
       "in"
     ],
-    "rating": 40,
-    "potential": 43,
-    "peak_rating": 40,
+    "rating": 67,
+    "potential": 79,
+    "peak_rating": 67,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -36057,7 +36356,14 @@
     "battles": 2,
     "record": "0-2",
     "elo": 999,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "rojaz",
@@ -38554,9 +38860,9 @@
       "jp"
     ],
     "last_judged": 2018,
-    "rating": 71,
-    "potential": 71,
-    "peak_rating": 75,
+    "rating": 80,
+    "potential": 80,
+    "peak_rating": 80,
     "status": "retired",
     "retirement_risk": null,
     "judge_chance": 0.17,
@@ -38565,7 +38871,14 @@
     "battles": 1,
     "record": "0-1",
     "elo": 1009,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "shuma",
@@ -40464,8 +40777,8 @@
       "ch"
     ],
     "last_judged": 2012,
-    "rating": 72,
-    "potential": 72,
+    "rating": 60,
+    "potential": 60,
     "peak_rating": 76,
     "status": "retired",
     "retirement_risk": null,
@@ -40475,7 +40788,13 @@
     "battles": 2,
     "record": "1-1",
     "elo": 1002,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "stella",
@@ -40775,7 +41094,7 @@
       "in"
     ],
     "rating": 72,
-    "potential": 77,
+    "potential": 73,
     "peak_rating": 73,
     "status": "active",
     "retirement_risk": 0.04,
@@ -40786,7 +41105,13 @@
     "record": "1-1",
     "elo": 1020,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "suffix",
@@ -40836,10 +41161,10 @@
       "be"
     ],
     "last_judged": 2026,
-    "rating": 53,
-    "potential": 58,
-    "peak_rating": 64,
-    "status": "active",
+    "rating": 76,
+    "potential": 76,
+    "peak_rating": 76,
+    "status": "judge",
     "retirement_risk": 0.16,
     "judge_chance": 0.15,
     "debut": 2018,
@@ -40847,7 +41172,15 @@
     "battles": 3,
     "record": "1-2",
     "elo": 1002,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ]
   },
   {
     "id": "supertel",
@@ -40896,10 +41229,10 @@
     "countries": [
       "nl"
     ],
-    "rating": 72,
-    "potential": 72,
-    "peak_rating": 73,
-    "status": "retired",
+    "rating": 74,
+    "potential": 75,
+    "peak_rating": 74,
+    "status": "active",
     "retirement_risk": null,
     "judge_chance": 0.18,
     "debut": 2021,
@@ -40921,7 +41254,15 @@
           "category": "solo"
         }
       ]
-    }
+    },
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ]
   },
   {
     "id": "swarm",
@@ -41241,8 +41582,8 @@
       "pl"
     ],
     "last_judged": 2026,
-    "rating": 67,
-    "potential": 70,
+    "rating": 71,
+    "potential": 72,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.12,
@@ -41267,7 +41608,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "szymon",
@@ -43127,9 +43474,9 @@
     "aliases": [
       "Triizzy"
     ],
-    "rating": 63,
-    "potential": 73,
-    "peak_rating": 64,
+    "rating": 69,
+    "potential": 80,
+    "peak_rating": 69,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -43139,7 +43486,14 @@
     "record": "1-2",
     "elo": 1004,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "trool",
@@ -43181,9 +43535,9 @@
       "vn"
     ],
     "last_judged": 2025,
-    "rating": 74,
-    "potential": 74,
-    "peak_rating": 78,
+    "rating": 80,
+    "potential": 80,
+    "peak_rating": 80,
     "status": "judge",
     "retirement_risk": null,
     "judge_chance": 0.22,
@@ -43192,7 +43546,14 @@
     "battles": 4,
     "record": "1-3",
     "elo": 1025,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "tsweigs",
@@ -43316,8 +43677,8 @@
       "kr"
     ],
     "last_judged": 2024,
-    "rating": 78,
-    "potential": 78,
+    "rating": 82,
+    "potential": 82,
     "peak_rating": 82,
     "status": "judge",
     "retirement_risk": null,
@@ -43327,7 +43688,13 @@
     "battles": 5,
     "record": "2-3",
     "elo": 1024,
-    "confidence": "medium"
+    "confidence": "medium",
+    "reviewed": true,
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "txmbr",
@@ -44549,9 +44916,9 @@
       "Audical"
     ],
     "last_judged": 2026,
-    "rating": 70,
-    "potential": 70,
-    "peak_rating": 80,
+    "rating": 81,
+    "potential": 81,
+    "peak_rating": 81,
     "status": "removed",
     "retirement_risk": null,
     "judge_chance": 0.25,
@@ -44570,7 +44937,14 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "void",
@@ -44653,9 +45027,9 @@
     "aliases": [
       "VOX"
     ],
-    "rating": 40,
-    "potential": 45,
-    "peak_rating": 40,
+    "rating": 72,
+    "potential": 87,
+    "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -44664,7 +45038,14 @@
     "battles": 3,
     "record": "0-3",
     "elo": 998,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "voxel",
@@ -44799,8 +45180,8 @@
     "countries": [
       "ar"
     ],
-    "rating": 71,
-    "potential": 80,
+    "rating": 69,
+    "potential": 71,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.04,
@@ -44811,7 +45192,13 @@
     "record": "1-3",
     "elo": 1013,
     "confidence": "medium",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "wa",
@@ -44896,9 +45283,9 @@
     "countries": [
       "jp"
     ],
-    "rating": 68,
-    "potential": 74,
-    "peak_rating": 69,
+    "rating": 70,
+    "potential": 80,
+    "peak_rating": 70,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -44908,7 +45295,14 @@
     "record": "0-1",
     "elo": 1007,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "waferboi",
@@ -44961,9 +45355,9 @@
     "countries": [
       "in"
     ],
-    "rating": 60,
-    "potential": 60,
-    "peak_rating": 64,
+    "rating": 70,
+    "potential": 76,
+    "peak_rating": 70,
     "status": "retired",
     "retirement_risk": null,
     "judge_chance": 0.15,
@@ -44972,7 +45366,14 @@
     "battles": 0,
     "record": "0-0",
     "elo": 1002,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "waice",
@@ -46437,7 +46838,7 @@
       "jp"
     ],
     "rating": 72,
-    "potential": 81,
+    "potential": 79,
     "peak_rating": 73,
     "status": "active",
     "retirement_risk": 0.04,
@@ -46448,7 +46849,13 @@
     "record": "1-1",
     "elo": 1018,
     "confidence": "low",
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "yuki",
@@ -46559,7 +46966,7 @@
     "countries": [
       "ie"
     ],
-    "rating": 70,
+    "rating": 69,
     "potential": 73,
     "peak_rating": 71,
     "status": "active",
@@ -46580,7 +46987,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "zag1r",
@@ -46613,7 +47026,7 @@
     ],
     "last_judged": 2027,
     "rating": 71,
-    "potential": 76,
+    "potential": 73,
     "peak_rating": 72,
     "status": "active",
     "retirement_risk": 0.12,
@@ -46633,7 +47046,13 @@
         }
       ]
     },
-    "hand_edited": true
+    "hand_edited": [
+      "potential",
+      "rating",
+      "reviewed",
+      "status"
+    ],
+    "reviewed": true
   },
   {
     "id": "zah",
@@ -46976,9 +47395,9 @@
     "countries": [
       "ar"
     ],
-    "rating": 40,
-    "potential": 46,
-    "peak_rating": 40,
+    "rating": 70,
+    "potential": 80,
+    "peak_rating": 70,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -46987,7 +47406,14 @@
     "battles": 0,
     "record": "0-0",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "zeph",
@@ -47757,9 +48183,9 @@
       "Z-vol"
     ],
     "added_by_user": true,
-    "rating": 40,
-    "potential": 49,
-    "peak_rating": 40,
+    "rating": 71,
+    "potential": 82,
+    "peak_rating": 71,
     "status": "active",
     "retirement_risk": 0.04,
     "judge_chance": 0.15,
@@ -47768,7 +48194,14 @@
     "battles": 0,
     "record": "0-0",
     "elo": 1000,
-    "confidence": "low"
+    "confidence": "low",
+    "reviewed": true,
+    "hand_edited": [
+      "peak_rating",
+      "potential",
+      "rating",
+      "reviewed"
+    ]
   },
   {
     "id": "zyadnegm",

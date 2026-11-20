@@ -1,9 +1,10 @@
 {
   "momimaru": {
-    "status": "retired",
+    "status": "active",
     "rating": 80,
     "potential": 80,
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 80
   },
   "xiphire": {
     "rating": 76,
@@ -19,13 +20,13 @@
   },
   "pono": {
     "rating": 76,
-    "potential": 84,
+    "potential": 79,
     "status": "active",
     "reviewed": true
   },
   "aaron": {
     "rating": 77,
-    "potential": 86,
+    "potential": 88,
     "status": "active",
     "reviewed": true
   },
@@ -66,8 +67,8 @@
     "reviewed": true
   },
   "sznajder": {
-    "rating": 67,
-    "potential": 70,
+    "rating": 71,
+    "potential": 72,
     "status": "active",
     "reviewed": true
   },
@@ -252,10 +253,11 @@
     "reviewed": true
   },
   "bigben": {
-    "status": "retired",
+    "status": "judge",
     "rating": 77,
     "potential": 77,
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 77
   },
   "zota": {
     "rating": 76,
@@ -522,10 +524,11 @@
     "reviewed": true
   },
   "vocodah": {
-    "rating": 70,
-    "potential": 70,
+    "rating": 81,
+    "potential": 81,
     "status": "removed",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 81
   },
   "given": {
     "rating": 77,
@@ -600,10 +603,11 @@
     "reviewed": true
   },
   "patbox": {
-    "rating": 84,
+    "rating": 83,
     "potential": 91,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 83
   },
   "dlow": {
     "status": "retired",
@@ -744,8 +748,8 @@
     "reviewed": true
   },
   "carnage": {
-    "rating": 68,
-    "potential": 72,
+    "rating": 64,
+    "potential": 66,
     "status": "active",
     "reviewed": true
   },
@@ -781,7 +785,7 @@
   },
   "zach": {
     "potential": 73,
-    "rating": 70,
+    "rating": 69,
     "status": "active",
     "reviewed": true
   },
@@ -810,8 +814,8 @@
     "reviewed": true
   },
   "mixfx": {
-    "rating": 70,
-    "potential": 70,
+    "rating": 72,
+    "potential": 73,
     "status": "active",
     "reviewed": true
   },
@@ -882,10 +886,11 @@
     "reviewed": true
   },
   "leevy": {
-    "rating": 70,
+    "rating": 73,
     "potential": 84,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 74
   },
   "marwee": {
     "potential": 72,
@@ -960,10 +965,11 @@
     "reviewed": true
   },
   "arcayd": {
-    "rating": 64,
-    "potential": 80,
+    "rating": 68,
+    "potential": 81,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 68
   },
   "milky": {
     "rating": 71,
@@ -1002,10 +1008,11 @@
     "reviewed": true
   },
   "dety": {
-    "rating": 70,
-    "potential": 83,
+    "rating": 72,
+    "potential": 81,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 72
   },
   "kuulest": {
     "rating": 70,
@@ -1038,16 +1045,17 @@
     "reviewed": true
   },
   "afq": {
-    "rating": 73,
+    "rating": 72,
     "potential": 78,
     "status": "active",
     "reviewed": true
   },
   "bigm": {
-    "rating": 73,
-    "potential": 78,
+    "rating": 62,
+    "potential": 64,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "country": "dz"
   },
   "jene": {
     "rating": 73,
@@ -1056,8 +1064,8 @@
     "reviewed": true
   },
   "bbh": {
-    "rating": 72,
-    "potential": 79,
+    "rating": 69,
+    "potential": 72,
     "status": "active",
     "reviewed": true
   },
@@ -1068,8 +1076,8 @@
     "reviewed": true
   },
   "chills": {
-    "rating": 72,
-    "potential": 74,
+    "rating": 70,
+    "potential": 76,
     "status": "active",
     "reviewed": true
   },
@@ -1092,14 +1100,14 @@
     "reviewed": true
   },
   "mody": {
-    "rating": 72,
-    "potential": 72,
+    "rating": 68,
+    "potential": 70,
     "status": "active",
     "reviewed": true
   },
   "sudarshan": {
     "rating": 72,
-    "potential": 77,
+    "potential": 73,
     "status": "active",
     "reviewed": true
   },
@@ -1111,13 +1119,13 @@
   },
   "yuichi": {
     "rating": 72,
-    "potential": 81,
+    "potential": 79,
     "status": "active",
     "reviewed": true
   },
   "aspie": {
-    "rating": 71,
-    "potential": 75,
+    "rating": 68,
+    "potential": 71,
     "status": "active",
     "reviewed": true
   },
@@ -1154,29 +1162,29 @@
   "jewow": {
     "rating": 71,
     "potential": 71,
-    "status": "active",
+    "status": "judge",
     "reviewed": true
   },
   "jmbeats": {
-    "rating": 71,
-    "potential": 78,
+    "rating": 70,
+    "potential": 72,
     "status": "active",
     "reviewed": true
   },
   "jojo": {
-    "rating": 71,
-    "potential": 75,
+    "rating": 69,
+    "potential": 71,
     "status": "active",
     "reviewed": true
   },
   "kalisto": {
-    "rating": 71,
-    "potential": 74,
-    "status": "active",
+    "rating": 69,
+    "potential": 71,
+    "status": "retired",
     "reviewed": true
   },
   "math": {
-    "rating": 71,
+    "rating": 70,
     "potential": 73,
     "status": "active",
     "reviewed": true
@@ -1212,8 +1220,8 @@
     "reviewed": true
   },
   "w": {
-    "rating": 71,
-    "potential": 80,
+    "rating": 69,
+    "potential": 71,
     "status": "active",
     "reviewed": true
   },
@@ -1225,7 +1233,7 @@
   },
   "zagirkart": {
     "rating": 71,
-    "potential": 76,
+    "potential": 73,
     "status": "active",
     "reviewed": true
   },
@@ -1374,8 +1382,8 @@
     "reviewed": true
   },
   "fraj": {
-    "rating": 68,
-    "potential": 73,
+    "rating": 61,
+    "potential": 64,
     "status": "active",
     "reviewed": true
   },
@@ -1404,8 +1412,8 @@
     "reviewed": true
   },
   "rayn": {
-    "rating": 68,
-    "potential": 68,
+    "rating": 70,
+    "potential": 82,
     "status": "active",
     "reviewed": true
   },
@@ -1416,10 +1424,11 @@
     "reviewed": true
   },
   "waddle": {
-    "rating": 68,
-    "potential": 74,
+    "rating": 70,
+    "potential": 80,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 70
   },
   "74": {
     "rating": 67,
@@ -1563,7 +1572,7 @@
     "reviewed": true
   },
   "loughneally": {
-    "rating": 66,
+    "rating": 67,
     "potential": 68,
     "status": "active",
     "reviewed": true
@@ -1665,10 +1674,11 @@
     "reviewed": true
   },
   "gz7v": {
-    "rating": 64,
-    "potential": 64,
+    "rating": 71,
+    "potential": 73,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 71
   },
   "jerry": {
     "rating": 64,
@@ -1719,7 +1729,7 @@
     "reviewed": true
   },
   "rcm": {
-    "rating": 64,
+    "rating": 67,
     "potential": 74,
     "status": "active",
     "reviewed": true
@@ -1863,10 +1873,11 @@
     "reviewed": true
   },
   "triizzy": {
-    "rating": 63,
-    "potential": 73,
+    "rating": 69,
+    "potential": 80,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 69
   },
   "vloud": {
     "rating": 63,
@@ -2439,10 +2450,11 @@
     "reviewed": true
   },
   "nocial": {
-    "rating": 56,
-    "potential": 62,
+    "rating": 68,
+    "potential": 78,
     "status": "active",
-    "reviewed": true
+    "reviewed": true,
+    "peak_rating": 68
   },
   "tac": {
     "rating": 56,
@@ -2568,6 +2580,179 @@
     "rating": 53,
     "potential": 59,
     "status": "active",
+    "reviewed": true
+  },
+  "azel": {
+    "rating": 77,
+    "potential": 77,
+    "peak_rating": 77,
+    "reviewed": true
+  },
+  "bato": {
+    "rating": 69,
+    "potential": 79,
+    "peak_rating": 69,
+    "reviewed": true
+  },
+  "beatbrenning": {
+    "rating": 65,
+    "potential": 65,
+    "reviewed": true
+  },
+  "cebow": {
+    "rating": 68,
+    "potential": 75,
+    "peak_rating": 68,
+    "reviewed": true
+  },
+  "djb3an": {
+    "rating": 60,
+    "potential": 60,
+    "reviewed": true
+  },
+  "dkoy": {
+    "rating": 79,
+    "potential": 79,
+    "peak_rating": 79,
+    "reviewed": true
+  },
+  "eachbox": {
+    "rating": 57,
+    "potential": 57,
+    "reviewed": true
+  },
+  "elisii": {
+    "rating": 79,
+    "potential": 79,
+    "peak_rating": 79,
+    "reviewed": true
+  },
+  "faithsfx": {
+    "rating": 60,
+    "potential": 60,
+    "reviewed": true
+  },
+  "firesky": {
+    "rating": 67,
+    "potential": 78,
+    "peak_rating": 67,
+    "reviewed": true
+  },
+  "heartzel": {
+    "rating": 77,
+    "potential": 83,
+    "peak_rating": 77,
+    "reviewed": true
+  },
+  "hugo": {
+    "rating": 61,
+    "potential": 78,
+    "peak_rating": 61,
+    "reviewed": true
+  },
+  "improver": {
+    "rating": 80,
+    "potential": 80,
+    "peak_rating": 80,
+    "reviewed": true
+  },
+  "ish": {
+    "rating": 76,
+    "potential": 76,
+    "peak_rating": 76,
+    "reviewed": true
+  },
+  "keumart": {
+    "rating": 63,
+    "potential": 63,
+    "reviewed": true
+  },
+  "knackeboul": {
+    "rating": 62,
+    "potential": 62,
+    "reviewed": true
+  },
+  "nishikigoi": {
+    "rating": 71,
+    "potential": 71,
+    "peak_rating": 71,
+    "reviewed": true
+  },
+  "ramok": {
+    "rating": 65,
+    "potential": 74,
+    "peak_rating": 65,
+    "reviewed": true
+  },
+  "revolution": {
+    "rating": 66,
+    "potential": 66,
+    "reviewed": true
+  },
+  "rohan": {
+    "rating": 67,
+    "potential": 79,
+    "peak_rating": 67,
+    "reviewed": true
+  },
+  "showgo": {
+    "rating": 80,
+    "potential": 80,
+    "peak_rating": 80,
+    "reviewed": true
+  },
+  "stefflacheffe": {
+    "rating": 60,
+    "potential": 60,
+    "reviewed": true
+  },
+  "supernova": {
+    "status": "judge",
+    "rating": 76,
+    "potential": 76,
+    "peak_rating": 76,
+    "reviewed": true
+  },
+  "svm": {
+    "status": "active",
+    "rating": 74,
+    "potential": 75,
+    "peak_rating": 74,
+    "reviewed": true
+  },
+  "trungbao": {
+    "rating": 80,
+    "potential": 80,
+    "peak_rating": 80,
+    "reviewed": true
+  },
+  "twoh": {
+    "rating": 82,
+    "potential": 82,
+    "reviewed": true
+  },
+  "vox": {
+    "rating": 72,
+    "potential": 87,
+    "peak_rating": 72,
+    "reviewed": true
+  },
+  "wahdafu": {
+    "rating": 70,
+    "potential": 76,
+    "peak_rating": 70,
+    "reviewed": true
+  },
+  "zennix": {
+    "rating": 70,
+    "potential": 80,
+    "peak_rating": 70,
+    "reviewed": true
+  },
+  "zvol": {
+    "rating": 71,
+    "potential": 82,
+    "peak_rating": 71,
     "reviewed": true
   }
 }
