@@ -70,8 +70,8 @@ const FORMATS = {
   lacup: { field: 16, bracket: 16, invite: "mix", maxGbbLevel: 2 },
   vokal_total: { field: 8, bracket: 8, invite: "6+2" },
   bayreuth: { field: 8, bracket: 8, invite: "6+2", bias: { region: "europe", v: 4 } },
-  one_one: { field: 8, bracket: 8, invite: "6+2", smoke: true },
-  nue: { field: 20, bracket: 16, pool: "europe", bias: { country: "gb", v: 7 }, smoke: true, noGbbLevel: true },
+  one_one: { field: 8, bracket: 8, invite: "6+2" },
+  nue: { field: 20, bracket: 16, pool: "europe", bias: { country: "gb", v: 7 }, noGbbLevel: true },
   botm: { field: 16, bracket: 8, pool: "botm", noGbbLevel: true },
   gbc_global: { field: 12, bracket: 8, pool: "europe", bias: { country: "de", v: 3 } },
 };
@@ -586,14 +586,6 @@ function runTournament(state, ev, cut) {
   }
   if (!ev.national && !ev.qualifier && !["gbb", "bbwc"].includes(ev.comp) && state.settings.favorites.includes(res.champion))
     cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "event", comp: ev.comp, runnerUp: res.runnerUp });
-  if (f.smoke && ev.comp !== "gbb") {
-    const pool7 = res.standings.slice(2, 12);
-    if (pool7.length >= 6) {
-      const sm = runSmoke(state, rngOf(state).shuffle(pool7).slice(0, 8));
-      applyPerformance(state, { ...sm, reached: {} }, `${ev.comp}_7ts`, { progression: true });
-      res.smoke = { ...sm, entrants: sm.standings.slice().sort((a, b) => pool7.indexOf(a) - pool7.indexOf(b)) };
-    }
-  }
   return res;
 }
 
