@@ -1,7 +1,7 @@
 import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, localPictures, forgetLocalPicture, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
 import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, runSmoke, ranking, releaseQualified, comp } from "./sim.js";
 import { artTheme } from "./art.js";
-import { setCountryNamer } from "./social.js";
+import { setCountryNamer, previewRetire } from "./social.js";
 import * as V from "./views.js";
 import { playCutscene, setMuted } from "./cutscene.js";
 import { watchLive } from "./live.js";
@@ -129,6 +129,12 @@ const helpers = {
   flag: (cc) => flagColors(cc),
   flagUrl: (cc) => flagUrl(cc),
   flagHTML: (cc) => V.flag(cc),
+  // retirement tribute: career numbers, biggest titles and their goodbye post with the replies
+  retirementHTML: (id) => {
+    const st = app.state;
+    const post = (st.social || []).find((x) => x.by.p === id && x.kind === "retire") || previewRetire(st, id);
+    return V.retirementScene(id, post);
+  },
   // the live stage: the event's artwork and colour; big events also get light beams, a marquee and a crowd
   stage: (rec) => {
     const c = comp(rec.comp);

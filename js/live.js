@@ -4,18 +4,7 @@ import { esc } from "./data.js";
 import { Beat, setMuted, isMuted } from "./cutscene.js";
 
 // background for the live battles: event artwork, then for big events sweeping light beams,
-// a scrolling outlined event name and a crowd bouncing to the beat
-function crowdSVG() {
-  let s = "";
-  for (let row = 0; row < 2; row++) {
-    for (let i = 0; i < 34; i++) {
-      const x = i * 48 + (row ? 24 : 0) + ((i * 37) % 13), y = 210 - row * 34, r = 13 + ((i * 7 + row * 5) % 6);
-      const arms = (i * 11 + row) % 5 === 0 ? `<path d="M${x - 14} ${y - 6}l-10 -46h7l11 42ZM${x + 14} ${y - 6}l10 -46h-7l-11 42Z"/>` : "";
-      s += `<g class="cr c${(i + row) % 3}"><circle cx="${x}" cy="${y - r - 14}" r="${r}"/><rect x="${x - 22}" y="${y - 12}" width="44" height="80" rx="18"/>${arms}</g>`;
-    }
-  }
-  return `<svg class="stage-crowd" viewBox="0 0 1640 240" preserveAspectRatio="xMidYMax slice">${s}</svg>`;
-}
+// and a scrolling outlined event name
 function stageHTML(st) {
   if (!st) return "";
   const words = Array(6).fill(esc(st.title || "")).join(" · ");
@@ -24,7 +13,6 @@ function stageHTML(st) {
     ${st.big ? `<div class="stage-marquee"><span>${words} · </span><span>${words} · </span></div>
     <div class="stage-beams"><i></i><i></i><i></i><i></i><i></i></div>` : ""}
     <div class="stage-floor"></div>
-    ${st.big ? crowdSVG() : ""}
   </div>`;
 }
 

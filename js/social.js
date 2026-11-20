@@ -58,7 +58,9 @@ function reply(state, item, by, text) {
 // well-known names who might comment: compatriots first, then the top of the scene
 function peers(state, id, n = 2) {
   const me = state.people[id];
-  const pool = Object.values(state.people).filter((p) => p.id !== id && p.rating != null && (p.status === "active" || p.status === "judge") && p.rating >= 66);
+  // active names, judges, and retired legends
+  const pool = Object.values(state.people).filter((p) => p.id !== id && p.rating != null
+    && (((p.status === "active" || p.status === "judge") && p.rating >= 66) || (p.status === "retired" && ((p.peak || 0) >= 85 || majorsOf(p) > 0))));
   const local = pool.filter((p) => p.country === me?.country).sort((a, b) => b.rating - a.rating).slice(0, 6);
   const stars = pool.sort((a, b) => b.rating - a.rating).slice(0, 25);
   const out = [];
@@ -94,6 +96,9 @@ const T = {
     "I'm retiring from competition. I gave this everything I had. {extra}"],
   retireJudge: ["You'll still see me at the judging table 👀", "Next stop: the judging table.", ""],
   tribute: ["Thank you for everything, legend 🙏", "The scene won't be the same without you on stage", "One of the best to ever do it", "Your battles made me start beatboxing", "Enjoy the next chapter ❤️"],
+  tributeLocal: ["{country} will never forget what you did for our scene {flag}❤️", "Proud to have shared so many stages with you {flag}", "You opened the door for all of us here {flag}. Thank you.",
+    "Every beatboxer in {country} grew up on your battles {flag}"],
+  tributeLegend: ["Welcome to the other side 😄 Enjoy it, you earned it", "From one old-timer to another: what a career 🫡", "Legends never really retire. Proud of you."],
   tributeFan: ["End of an era 😭", "Noooo not {name}", "Grew up watching {name}'s battles 😭", "Thank you {name} 🫡"],
   comeback: ["Did you miss me? 👀", "Unfinished business.", "I'm back. See you on stage 🎤"],
   comebackFan: ["NO WAY", "{name} IS BACK 🔥🔥", "Everyone else is in trouble now", "Wasn't ready for this today"],
@@ -169,15 +174,32 @@ export function wildcards(state, y, winners, runnersUp) {
   }
 }
 
-export function retire(state, id) {
+// the retirement post without adding it to the feed (for previews)
+export function previewRetire(state, id) {
+  const keep = state.social;
+  state.social = [];
+  retire(state, id, true);
+  const out = state.social.find((x) => x.by.p === id && x.kind === "retire");
+  state.social = keep;
+  return out;
+}
+
+export function retire(state, id, force = false) {
   const p = state.people[id];
-  if (!p || (p.rating < 66 && !p.titles.length && (p.peak || 0) < 74)) return;
+  if (!p || (!force && p.rating < 66 && !p.titles.length && (p.peak || 0) < 74)) return;
   const v = { ...vars(state, id), years: Math.max(2, state.year - (p.debut ?? state.year) + 1),
     extra: p.status === "judge" ? pick(T.retireJudge) : "" };
   const big = majorsOf(p) > 0 || (p.peak || 0) >= 85;
   const it = post(state, { p: id }, fill(pick(T.retire), v).trim(), { kind: "retire", photo: id, big });
-  for (const pid of peers(state, id, big ? 4 : 2)) reply(state, it, { p: pid }, fill(pick(T.tribute), v));
+  const used = new Set();
+  const fresh = (list) => { const left = list.filter((x) => !used.has(x)); const x = pick(left.length ? left : list); used.add(x); return x; };
+  for (const pid of peers(state, id, big ? 5 : 3)) {
+    const q = state.people[pid];
+    const tpl = q.country === p.country ? T.tributeLocal : q.status === "retired" ? T.tributeLegend : T.tribute;
+    reply(state, it, { p: pid }, fill(fresh(tpl), v));
+  }
   reply(state, it, fan(), fill(pick(T.tributeFan), v));
+  if (big) reply(state, it, fan(), fill(pick(T.tributeFan), v));
   if (big) post(state, { acct: "news" }, `${p.name.toUpperCase()} RETIRES ${flagEmoji(p.country)}\n${majorsOf(p) ? `${majorsOf(p)}× major champion` : `${p.titles.length} career titles`}, ${v.years} years on the scene. Thank you for everything.`, { kind: "retire", photo: id });
 }
 

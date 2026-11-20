@@ -639,3 +639,35 @@ export function viewFeed(params) {
     </aside>
   </div>`;
 }
+
+// ---------------- retirement tribute (an HTML cutscene) ----------------
+const TITLE_WEIGHT = (t) => (["gbb", "bbwc"].includes(t.comp) && t.cat === "solo" ? 100 : t.comp === "gbb" ? 70 : t.comp === "gbb_second_league" ? 55
+  : ["fbb", "gnb", "mba", "apac", "amrq", "bcj", "ebc", "gbc_global"].includes(t.comp) ? 50 : t.comp.startsWith("nat_") || t.comp === "gbc" ? 20 : t.comp === "botm" ? 10 : 35);
+export function retirementScene(id, post) {
+  const p = P(id);
+  const majors = p.titles.filter((t) => TITLE_WEIGHT(t) === 100);
+  const best = p.titles.slice().sort((a, b) => TITLE_WEIGHT(b) - TITLE_WEIGHT(a) || b.year - a.year).slice(0, 5);
+  const from = p.debut ?? (p.hist[0]?.y || A.state.year), to = p.retiredYear ?? A.state.year;
+  const img = imageCache.get(id);
+  const cc = p.country;
+  const D0 = 2.6; // when the stats start
+  const stats = [["Peak rating", Math.round(p.peak ?? p.rating)], ["Titles", p.titles.length], ["Major titles", majors.length], ["Years on stage", Math.max(1, to - from + 1)]];
+  return `<div class="rt" style="--fl:url('https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/${esc(cc || "xx")}.svg')">
+    <div class="rt-bg"></div>
+    <section class="rt-hero">
+      <div class="rt-photo">${img ? `<img src="${img}" alt="">` : avatar(id, "xl")}</div>
+      <div class="rt-id">
+        <p class="rt-kicker">${flag(cc)} ${esc(countryName(cc))} · ${from} – ${to}</p>
+        <h1>${esc(p.name)}</h1>
+        <p class="rt-status">${p.status === "judge" ? "Retires · joins the judging table" : "Retires from competition"}</p>
+      </div>
+    </section>
+    <div class="rt-side">
+      <section class="rt-stats">${stats.map(([l, v], i) => `<div class="rt-stat" style="animation-delay:${D0 + i * 0.25}s"><b data-count="${v}" data-delay="${D0 + i * 0.25}">0</b><span>${l}</span></div>`).join("")}</section>
+      <section class="rt-trophies"><h3 style="animation-delay:${D0 + 1.2}s">Biggest achievements</h3>
+        ${best.map((t, i) => `<div class="rt-tro ${TITLE_WEIGHT(t) === 100 ? "major" : ""}" style="animation-delay:${D0 + 1.5 + i * 0.35}s"><span class="rt-yr">${t.year}</span><b>${esc(compName(t.comp))}${t.cat && t.cat !== "solo" ? ` · ${esc(t.cat.replace(/_/g, " "))}` : ""}</b><span class="rt-badge">${TITLE_WEIGHT(t) === 100 ? "World stage" : "Champion"}</span></div>`).join("") || `<p class="muted" style="animation-delay:${D0 + 1.5}s">A career of big battles</p>`}
+      </section>
+      ${post ? `<section class="rt-post">${postHTML(post)}</section>` : ""}
+    </div>
+  </div>`;
+}

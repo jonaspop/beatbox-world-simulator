@@ -318,7 +318,7 @@ const SCENES = {
     }));
     const per = items.length > 12 ? 1.9 : 2.5;
     const accent = themeFor(sc.comp || "gbb").a;
-    return { duration: 2.2 + items.length * per + 3.4 + items.length * 0.09, bpm: 86, mood: "warm", items, per, sub: sc.event, label: sc.label || "Wildcard", accent, accentInk: inkOn(accent) };
+    return { closerAt: 2.2 + items.length * per, hold: true, duration: 2.2 + items.length * per + 3.4 + items.length * 0.09, bpm: 86, mood: "warm", items, per, sub: sc.event, label: sc.label || "Wildcard", accent, accentInk: inkOn(accent) };
   },
   async wildcards(g, sc, h) {
     const people = sc.ids.map((id) => h.person(id));
@@ -893,6 +893,7 @@ function drawComeback(g, W, H, t, s, beat) {
 const DRAW = { champion: drawChampion, wildcards: drawWildcards, retirement: drawRetirement, comeback: drawComeback, ceremony: drawCeremony };
 
 export async function playCutscene(sc, helpers, { sound = true } = {}) {
+  if (sc.type === "retirement" && helpers.retirementHTML) return playHtmlScene(helpers.retirementHTML(sc.id), helpers, { sound, bpm: 68, mood: "soft" });
   const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
   const wrap = document.createElement("div");
   wrap.className = "cutscene";
@@ -931,8 +932,14 @@ export async function playCutscene(sc, helpers, { sound = true } = {}) {
       wrap.classList.add("out");
       setTimeout(() => { wrap.remove(); resolve(); }, 300);
     };
-    const onKey = (e) => { if (e.key === "Escape" || e.key === " " || e.key === "Enter") { e.preventDefault(); finish(); } };
-    wrap.querySelector("[data-skip]").addEventListener("click", finish);
+    // the wildcard ceremony: skipping the reveal jumps to the full results, which stay until you continue
+    const skipBtn = wrap.querySelector("[data-skip]");
+    const skip = () => {
+      if (s.closerAt != null && (performance.now() - t0) / 1000 < s.closerAt) { t0 = performance.now() - s.closerAt * 1000; skipBtn.textContent = "Continue ▸"; }
+      else finish();
+    };
+    const onKey = (e) => { if (e.key === "Escape" || e.key === " " || e.key === "Enter") { e.preventDefault(); skip(); } };
+    skipBtn.addEventListener("click", skip);
     window.addEventListener("keydown", onKey);
     const frame = (now) => {
       if (done) return;
@@ -940,9 +947,51 @@ export async function playCutscene(sc, helpers, { sound = true } = {}) {
       const dt = Math.min(0.05, (now - last) / 1000);
       last = now;
       try { DRAW[sc.type](g, W, H, t, s, beat, dt); } catch (e) { console.error(e); finish(); return; }
-      if (t >= s.duration && !reduce) finish();
+      if (s.closerAt != null && t >= s.closerAt && skipBtn.textContent !== "Continue ▸") skipBtn.textContent = "Continue ▸";
+      if (t >= s.duration && !reduce && !s.hold) finish();
       else requestAnimationFrame(frame);
     };
     requestAnimationFrame(frame);
+  });
+}
+
+// HTML cutscenes (the retirement tribute): CSS-animated page with the beat underneath, stays until you continue
+function playHtmlScene(html, helpers, { sound = true, bpm = 70, mood = "soft" } = {}) {
+  const wrap = document.createElement("div");
+  wrap.className = "cutscene html-scene";
+  wrap.innerHTML = `${html}<div class="cs-ctl"><button class="cs-btn" type="button" data-mute>${MUTED ? "Unmute" : "Mute"}</button><button class="cs-btn" type="button" data-skip>Continue ▸</button></div>`;
+  document.body.appendChild(wrap);
+  setMuted(!sound);
+  const beat = new Beat(bpm, mood);
+  wrap.querySelector("[data-mute]").addEventListener("click", (e) => {
+    setMuted(!MUTED); e.target.textContent = MUTED ? "Unmute" : "Mute"; helpers.onMute?.(MUTED);
+  });
+  // numbers count up when their tile appears
+  const timers = [];
+  for (const el of wrap.querySelectorAll("[data-count]")) {
+    const to = +el.dataset.count, delay = +(el.dataset.delay || 0);
+    timers.push(setTimeout(() => {
+      const t0 = performance.now();
+      const step = (now) => { const k = Math.min(1, (now - t0) / 1200); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1 && wrap.isConnected) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    }, delay * 1000));
+  }
+  // follow the replies as they appear
+  const sideCol = wrap.querySelector(".rt-side");
+  if (sideCol) for (let k = 0; k < 10; k++) timers.push(setTimeout(() => sideCol.scrollTo({ top: sideCol.scrollHeight, behavior: "smooth" }), (7.2 + k * 1.1) * 1000));
+  return new Promise((resolve) => {
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      timers.forEach(clearTimeout);
+      beat.stop?.();
+      window.removeEventListener("keydown", onKey);
+      wrap.classList.add("out");
+      setTimeout(() => { wrap.remove(); resolve(); }, 300);
+    };
+    const onKey = (e) => { if (e.key === "Escape" || e.key === "Enter") { e.preventDefault(); finish(); } };
+    wrap.querySelector("[data-skip]").addEventListener("click", finish);
+    window.addEventListener("keydown", onKey);
   });
 }
