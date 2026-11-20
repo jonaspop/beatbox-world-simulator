@@ -94,10 +94,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   color: transparent; -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.14); }
 .side-deco.left .sd-text { transform: rotate(180deg); -webkit-text-stroke-color: rgba(255, 91, 31, 0.35); }
 .sd-wave { display: flex; flex-direction: column; align-items: center; gap: 5px; }
-.sd-wave i { display: block; height: 4px; width: 12px; border-radius: 4px; background: var(--grad); opacity: 0.55; animation: sdwave 1.3s ease-in-out infinite alternate; }
-.sd-wave i:nth-child(odd) { animation-duration: 0.9s; }
-.sd-wave i:nth-child(3n) { animation-delay: -0.4s; } .sd-wave i:nth-child(4n) { animation-delay: -0.8s; animation-duration: 1.6s; } .sd-wave i:nth-child(5n) { animation-delay: -0.2s; }
-@keyframes sdwave { to { width: 46px; opacity: 0.85; } }
+.sd-wave i { display: block; height: 4px; width: 14px; border-radius: 4px; background: var(--grad); opacity: 0.6; }
+.sd-wave i:nth-child(3n) { width: 30px; } .sd-wave i:nth-child(4n) { width: 44px; } .sd-wave i:nth-child(5n) { width: 22px; } .sd-wave i:nth-child(7n) { width: 38px; }
 .sd-mic { width: 30px; height: 60px; opacity: 0.5; }
 .sd-mic rect { fill: var(--signal); }
 .sd-mic path { stroke: var(--signal); }
@@ -110,7 +108,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   -webkit-mask-image: linear-gradient(transparent, #000 40%, transparent); mask-image: linear-gradient(transparent, #000 40%, transparent); }
 @media (max-width: 1360px) { .side-deco { opacity: 0.55; } .sd-rings { width: 80px; height: 80px; } }
 @media (max-width: 1100px) { .side-deco { display: none; } }
-@media (prefers-reduced-motion: reduce) { .sd-wave i, .sd-rings { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .sd-rings { animation: none; } }
 
 /* ---------- buttons ---------- */
 .btn { font: 800 13px var(--body); letter-spacing: 0.02em; color: var(--paper); background: rgba(255, 255, 255, 0.06); border: 1px solid var(--line-2); padding: 10px 18px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border-radius: 999px;
