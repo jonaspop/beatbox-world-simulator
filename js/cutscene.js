@@ -318,7 +318,7 @@ const SCENES = {
     }));
     const per = items.length > 12 ? 1.9 : 2.5;
     const accent = themeFor(sc.comp || "gbb").a;
-    return { duration: 2.2 + items.length * per + 1.6, bpm: 86, mood: "warm", items, per, sub: sc.event, label: sc.label || "Wildcard", accent, accentInk: inkOn(accent) };
+    return { duration: 2.2 + items.length * per + 3.4 + items.length * 0.09, bpm: 86, mood: "warm", items, per, sub: sc.event, label: sc.label || "Wildcard", accent, accentInk: inkOn(accent) };
   },
   async wildcards(g, sc, h) {
     const people = sc.ids.map((id) => h.person(id));
@@ -678,22 +678,83 @@ function drawCeremony(g, W, H, t, s, beat) {
     return;
   }
   if (i >= s.items.length) {
-    // closer: everyone at once
-    const k = ease((t - (2.2 + s.items.length * s.per)) / 0.6);
+    // closer: everyone at once, as a wall of picture cards with flag, place and name
+    const t0 = 2.2 + s.items.length * s.per, lt = t - t0;
+    const k = ease(lt / 0.6);
+    halftone(g, W, H, "rgba(242,239,232,0.04)");
+    const glow = g.createRadialGradient(W / 2, 0, 10, W / 2, 0, Math.max(W, H) * 0.8);
+    glow.addColorStop(0, rgba(s.accent, 0.28 * k)); glow.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = glow; g.fillRect(0, 0, W, H);
     g.globalAlpha = k;
-    g.fillStyle = "#f2efe8"; g.textAlign = "center";
-    g.font = `900 ${Math.min(W * 0.07, 70)}px ${DISPLAY}`;
-    g.fillText(s.sub.toUpperCase(), W / 2, H * 0.18);
-    const list = s.items.slice().reverse();
-    const cols = list.length > 10 ? 3 : 2, rows = Math.ceil(list.length / cols);
-    g.font = `800 ${Math.max(14, Math.min(26, H / (rows * 2.2)))}px ${DISPLAY}`;
+    g.textAlign = "center";
+    g.fillStyle = s.accent;
+    g.font = `800 ${Math.max(12, Math.min(W * 0.016, 18))}px ${BODY}`;
+    g.fillText(`${s.label.toUpperCase()} WINNERS`.split("").join(String.fromCharCode(8202)), W / 2, H * 0.075);
+    g.fillStyle = "#f2efe8";
+    const ts = fitText(g, s.sub.toUpperCase(), W * 0.9, Math.min(W * 0.06, H * 0.08, 64));
+    g.font = `900 ${ts}px ${DISPLAY}`;
+    g.fillText(s.sub.toUpperCase(), W / 2, H * 0.075 + ts + 6);
+    const list = s.items.slice().reverse(); // 1st place first
+    const top = H * 0.075 + ts + 26, availH = H - top - 30, availW = W * 0.92, gap = Math.max(8, W * 0.01);
+    let best = null;
+    for (let c = 1; c <= Math.min(10, list.length); c++) {
+      const rows = Math.ceil(list.length / c);
+      let cw = (availW - (c - 1) * gap) / c, ch = cw * 1.28;
+      if (rows * ch + (rows - 1) * gap > availH) { ch = (availH - (rows - 1) * gap) / rows; cw = ch / 1.28; }
+      if (!best || cw > best.cw) best = { c, rows, cw, ch };
+    }
+    const { c: cols, cw, ch } = best;
+    const gridW = cols * cw + (cols - 1) * gap;
     list.forEach((it, j) => {
-      const c = j % cols, r = Math.floor(j / cols);
-      const x = W / 2 + (c - (cols - 1) / 2) * Math.min(340, W / cols);
+      const a = ease((lt - 0.3 - j * 0.09) / 0.5);
+      if (a <= 0) return;
+      const col = j % cols, row = Math.floor(j / cols);
+      const lastRow = Math.floor((list.length - 1) / cols) === row ? list.length - row * cols : cols;
+      const rowW = lastRow * cw + (lastRow - 1) * gap;
+      const x = (W - (row === Math.floor((list.length - 1) / cols) ? rowW : gridW)) / 2 + col * (cw + gap);
+      const y = top + row * (ch + gap) + (1 - a) * 24;
+      g.save();
+      g.globalAlpha = a;
+      const r = Math.min(16, cw * 0.08);
+      g.shadowColor = "rgba(0,0,0,0.6)"; g.shadowBlur = 20;
+      g.beginPath(); g.roundRect(x, y, cw, ch, r); g.fillStyle = "#16171d"; g.fill();
+      g.shadowBlur = 0;
+      g.save(); g.beginPath(); g.roundRect(x, y, cw, ch, r); g.clip();
+      const pic = it.img || it.flag;
+      if (pic) {
+        const sc = Math.max(cw / pic.width, ch / pic.height);
+        // photos lean towards the top (faces), flags sit in the middle
+        g.drawImage(pic, x + cw / 2 - (pic.width * sc) / 2, y + (ch - pic.height * sc) * (it.img ? 0.25 : 0.5), pic.width * sc, pic.height * sc);
+      }
+      if (!it.img) {
+        g.fillStyle = "rgba(8,8,10,0.55)"; g.fillRect(x, y, cw, ch);
+        g.fillStyle = "rgba(255,255,255,0.9)"; g.textAlign = "center";
+        g.font = `900 ${cw * 0.42}px ${DISPLAY}`;
+        g.fillText(initials(it.p.name), x + cw / 2, y + ch * 0.5);
+      }
+      const fade = g.createLinearGradient(0, y + ch * 0.45, 0, y + ch);
+      fade.addColorStop(0, "rgba(8,8,10,0)"); fade.addColorStop(1, "rgba(8,8,10,0.95)");
+      g.fillStyle = fade; g.fillRect(x, y, cw, ch);
+      g.restore();
+      g.beginPath(); g.roundRect(x, y, cw, ch, r);
+      g.strokeStyle = j === 0 ? s.accent : "rgba(255,255,255,0.18)"; g.lineWidth = j === 0 ? 2.5 : 1; g.stroke();
+      // place badge
+      const bs = Math.max(11, Math.min(cw * 0.14, 22));
+      g.font = `900 ${bs}px ${DISPLAY}`;
+      const pl = ord(it.place);
+      const bw = g.measureText(pl).width + bs * 0.9;
       g.fillStyle = s.accent;
-      g.fillText(`${it.place}`, x - 110, H * 0.28 + r * (H * 0.62 / rows));
-      g.fillStyle = "#f2efe8";
-      g.fillText(it.p.name.toUpperCase(), x + 10, H * 0.28 + r * (H * 0.62 / rows));
+      g.beginPath(); g.roundRect(x + 8, y + 8, bw, bs * 1.45, 6); g.fill();
+      g.fillStyle = s.accentInk; g.textAlign = "left";
+      g.fillText(pl, x + 8 + bs * 0.45, y + 8 + bs * 1.1);
+      // flag + name
+      const fh = Math.max(10, Math.min(cw * 0.1, 20)), fw = fh * 4 / 3;
+      if (it.flag && it.img) g.drawImage(it.flag, x + 10, y + ch - fh * 2.9, fw, fh);
+      const ns = fitText(g, it.p.name.toUpperCase(), cw - 20, Math.max(12, Math.min(cw * 0.16, 30)));
+      g.font = `900 ${ns}px ${DISPLAY}`;
+      g.fillStyle = "#f7f4ee";
+      g.fillText(it.p.name.toUpperCase(), x + 10, y + ch - 10);
+      g.restore();
     });
     g.globalAlpha = 1;
     return;

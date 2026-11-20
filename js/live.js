@@ -3,6 +3,31 @@
 import { esc } from "./data.js";
 import { Beat, setMuted, isMuted } from "./cutscene.js";
 
+// background for the live battles: event artwork, then for big events sweeping light beams,
+// a scrolling outlined event name and a crowd bouncing to the beat
+function crowdSVG() {
+  let s = "";
+  for (let row = 0; row < 2; row++) {
+    for (let i = 0; i < 34; i++) {
+      const x = i * 48 + (row ? 24 : 0) + ((i * 37) % 13), y = 210 - row * 34, r = 13 + ((i * 7 + row * 5) % 6);
+      const arms = (i * 11 + row) % 5 === 0 ? `<path d="M${x - 14} ${y - 6}l-10 -46h7l11 42ZM${x + 14} ${y - 6}l10 -46h-7l-11 42Z"/>` : "";
+      s += `<g class="cr c${(i + row) % 3}"><circle cx="${x}" cy="${y - r - 14}" r="${r}"/><rect x="${x - 22}" y="${y - 12}" width="44" height="80" rx="18"/>${arms}</g>`;
+    }
+  }
+  return `<svg class="stage-crowd" viewBox="0 0 1640 240" preserveAspectRatio="xMidYMax slice">${s}</svg>`;
+}
+function stageHTML(st) {
+  if (!st) return "";
+  const words = Array(6).fill(esc(st.title || "")).join(" · ");
+  return `<div class="stage${st.big ? " big" : ""}" style="--sc:${st.color}" aria-hidden="true">
+    <div class="stage-art">${st.art}</div>
+    ${st.big ? `<div class="stage-marquee"><span>${words} · </span><span>${words} · </span></div>
+    <div class="stage-beams"><i></i><i></i><i></i><i></i><i></i></div>` : ""}
+    <div class="stage-floor"></div>
+    ${st.big ? crowdSVG() : ""}
+  </div>`;
+}
+
 export function watchLive(result, h, { sound = true, judges = [] } = {}) {
   return new Promise((resolve) => {
     const el = document.createElement("div");
@@ -18,7 +43,7 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
           <button class="btn small" data-c="end">Skip to results</button>
         </div>
       </header>
-      <div class="live-body"><section class="live-main" data-main></section><aside class="live-side" data-side></aside></div>`;
+      <div class="live-body"><div class="live-main-wrap">${stageHTML(h.stage?.(result))}<section class="live-main" data-main></section></div><aside class="live-side" data-side></aside></div>`;
     document.body.appendChild(el);
     const $ = (s) => el.querySelector(s);
     const main = $("[data-main]"), side = $("[data-side]"), stage = $("[data-stage]");
@@ -164,6 +189,8 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
         }
         const winSide = b.w === b.a ? L : R;
         winSide.classList.add("winner");
+        const stg = el.querySelector(".stage");
+        if (stg) { stg.classList.remove("flash"); void stg.offsetWidth; stg.classList.add("flash"); }
         (winSide === L ? R : L).classList.add("loser");
         phase.innerHTML = `<b>${esc(h.person(b.w).name)}</b> wins ${Math.max(...b.votes)}–${Math.min(...b.votes)}`;
         shown.add(b);

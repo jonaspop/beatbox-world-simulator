@@ -153,8 +153,10 @@ export function viewEvent(key) {
   if (!r) return head + `<section class="card"><p class="muted">This event hasn't happened yet. Watch it live to see every battle and every judge's vote, or sim up to it.</p></section>`;
   if (r.skipped) return head + `<section class="card"><p class="muted">Not held: ${esc(r.reason || "not enough entrants")}.</p></section>`;
   if (r.kind === "wildcards") {
-    return head + `<div class="grid2"><section class="card"><h2>Wildcard winners</h2><ol class="plain">${r.winners.map((id, i) => `<li><span class="rk">${ordinal(i + 1)}</span>${avatar(id)}${nameLink(id)}</li>`).join("")}</ol></section>
-      <section class="card"><h2>Runners-up</h2><p class="muted small">They battle in the Second League in August.</p><ol class="plain">${r.runnersUp.map((id) => `<li>${nameLink(id)}</li>`).join("")}</ol></section></div>`;
+    return head + `<section class="card"><header class="card-h"><h2>Wildcard winners</h2><span class="chip">${r.winners.length} spots</span></header>
+        <div class="wc-grid">${r.winners.map((id, i) => `<a class="wc-card${i === 0 ? " first" : ""}" href="#bb/${encodeURIComponent(id)}">${avatar(id, "xl")}
+          <span class="wc-pl">${ordinal(i + 1)}</span><span class="wc-info"><b>${esc(P(id).name)}</b><span>${flag(P(id).country)} ${esc(countryName(P(id).country))}</span></span></a>`).join("") || `<p class="muted">No open spots this year.</p>`}</div></section>
+      <section class="card"><h2>Runners-up</h2><p class="muted small">They battle in the Second League in August, and replace anyone who drops out.</p><ol class="plain two">${r.runnersUp.map((id, i) => `<li><span class="rk">${i + 1}</span>${avatar(id)}${nameLink(id)}</li>`).join("")}</ol></section>`;
   }
   if (r.kind === "review") {
     return head + `<div class="grid2"><section class="card"><h2>Retired</h2><ul class="plain">${r.retired.map((id) => `<li>${avatar(id)}${nameLink(id)} ${statusChip(P(id).status)}</li>`).join("") || "<li class='muted'>Nobody retired this season</li>"}</ul></section>

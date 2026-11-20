@@ -1,5 +1,6 @@
 import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, localPictures, forgetLocalPicture, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
-import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking, releaseQualified } from "./sim.js";
+import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking, releaseQualified, comp } from "./sim.js";
+import { artTheme } from "./art.js";
 import { setCountryNamer } from "./social.js";
 import * as V from "./views.js";
 import { playCutscene, setMuted } from "./cutscene.js";
@@ -127,6 +128,15 @@ const helpers = {
   flag: (cc) => flagColors(cc),
   flagUrl: (cc) => flagUrl(cc),
   flagHTML: (cc) => V.flag(cc),
+  // the live stage: the event's artwork and colour; big events also get light beams, a marquee and a crowd
+  stage: (rec) => {
+    const c = comp(rec.comp);
+    const ev = app.state.season.events.find((e) => e.key === rec.key)
+      || { comp: rec.comp || "custom", year: rec.year, national: c?.scope === "national" ? c.country : null,
+        qualifier: ["fbb", "gnb", "mba", "apac", "amrq", "bcj", "ebc", "gbc_global"].includes(rec.comp) };
+    const big = !ev.national && rec.comp !== "botm";
+    return { art: V.artFor(ev), color: artTheme(ev).a, big, title: rec.name };
+  },
   onMute: (muted) => setSound(!muted),
   avatarHTML: (id, size = "xl") => V.avatar(id, size),
   record: (id) => { const p = app.state.people[id]; return `Rating ${Math.round(p.rating)} · ${p.titles.length} career title${p.titles.length === 1 ? "" : "s"}`; },
@@ -374,7 +384,7 @@ async function demo(type) {
   if (type === "live") {
     const ids = top.slice(0, 8).map((p) => p.id);
     const res = runBracket(app.state, ids, { bracket: 8, third: true, elimination: false });
-    return live({ ...res, name: "Preview battle", judges: ranking(app.state, { by: "rating", status: "judge" }).slice(0, 5).map((p) => p.id) });
+    return live({ ...res, name: `Grand Beatbox Battle ${app.state.year}`, comp: "gbb", year: app.state.year, judges: ranking(app.state, { by: "rating", status: "judge" }).slice(0, 5).map((p) => p.id) });
   }
   const sc = type === "ceremony" ? { type, ids: top.slice(6, 14).map((p) => p.id), event: `Grand Beatbox Battle ${app.state.year}`, label: "Wildcard" }
     : type === "retirement" ? { type, id: top[0].id }
