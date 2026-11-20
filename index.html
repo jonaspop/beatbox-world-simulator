@@ -27,6 +27,17 @@
       <button class="btn primary" data-act="next" title="Simulate the next event on the calendar">Next ▸</button>
     </div>
   </header>
+  <!-- decoration down both sides of the page (hidden on small screens) -->
+  <div class="side-deco left" aria-hidden="true">
+    <div class="sd-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <span class="sd-text">Beatbox · World · Sim</span>
+    <svg class="sd-mic" viewBox="0 0 40 80"><rect x="12" y="4" width="16" height="30" rx="8"/><path d="M6 26a14 14 0 0 0 28 0M20 40v28M10 72h20" fill="none" stroke-width="3"/></svg>
+  </div>
+  <div class="side-deco right" aria-hidden="true">
+    <svg class="sd-rings" viewBox="0 0 200 200"><circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="55"/><circle cx="100" cy="100" r="80"/><circle cx="100" cy="100" r="98"/></svg>
+    <span class="sd-text" id="side-label">Home</span>
+    <div class="sd-dots"></div>
+  </div>
   <main id="main" class="wrap"></main>
   <script type="module" src="js/main.js"></script>
 </body>

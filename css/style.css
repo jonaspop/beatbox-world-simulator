@@ -81,6 +81,37 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 .wrap { max-width: 1280px; margin: 0 auto; padding-block: 28px 80px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 26px; }
 
+/* ---------- side decoration: a beat waveform and mic on the left, sound rings and the page name on the right ---------- */
+.wrap { position: relative; z-index: 1; }
+.side-deco { position: fixed; top: 64px; bottom: 0; width: clamp(60px, calc((100vw - 1280px) / 2), 170px); z-index: 0; pointer-events: none;
+  display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 40px 0 34px; overflow: hidden; }
+.side-deco.left { left: 0; }
+.side-deco.right { right: 0; }
+.side-deco::before { content: ""; position: absolute; top: 0; bottom: 0; width: 1px; background: linear-gradient(transparent, rgba(255, 91, 31, 0.5) 30%, rgba(255, 46, 110, 0.4) 70%, transparent); }
+.side-deco.left::before { right: 14px; }
+.side-deco.right::before { left: 14px; background: linear-gradient(transparent, rgba(120, 90, 255, 0.45) 30%, rgba(90, 160, 255, 0.35) 70%, transparent); }
+.sd-text { writing-mode: vertical-rl; font: 900 clamp(30px, 3.2vw, 64px)/1 var(--display); text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap;
+  color: transparent; -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.14); }
+.side-deco.left .sd-text { transform: rotate(180deg); -webkit-text-stroke-color: rgba(255, 91, 31, 0.35); }
+.sd-wave { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.sd-wave i { display: block; height: 4px; width: 12px; border-radius: 4px; background: var(--grad); opacity: 0.55; animation: sdwave 1.3s ease-in-out infinite alternate; }
+.sd-wave i:nth-child(odd) { animation-duration: 0.9s; }
+.sd-wave i:nth-child(3n) { animation-delay: -0.4s; } .sd-wave i:nth-child(4n) { animation-delay: -0.8s; animation-duration: 1.6s; } .sd-wave i:nth-child(5n) { animation-delay: -0.2s; }
+@keyframes sdwave { to { width: 46px; opacity: 0.85; } }
+.sd-mic { width: 30px; height: 60px; opacity: 0.5; }
+.sd-mic rect { fill: var(--signal); }
+.sd-mic path { stroke: var(--signal); }
+.sd-rings { width: 130px; height: 130px; flex: none; animation: sdspin 40s linear infinite; }
+.sd-rings circle { fill: none; stroke: rgba(120, 140, 255, 0.35); stroke-width: 1.5; stroke-dasharray: 3 8; }
+.sd-rings circle:nth-child(2) { stroke: rgba(255, 91, 31, 0.4); stroke-dasharray: 14 10; }
+.sd-rings circle:nth-child(4) { stroke-dasharray: 1 6; }
+@keyframes sdspin { to { transform: rotate(360deg); } }
+.sd-dots { width: 60px; height: 120px; background: radial-gradient(circle, rgba(255, 255, 255, 0.28) 1.4px, transparent 1.8px) 0 0 / 12px 12px;
+  -webkit-mask-image: linear-gradient(transparent, #000 40%, transparent); mask-image: linear-gradient(transparent, #000 40%, transparent); }
+@media (max-width: 1360px) { .side-deco { opacity: 0.55; } .sd-rings { width: 80px; height: 80px; } }
+@media (max-width: 1100px) { .side-deco { display: none; } }
+@media (prefers-reduced-motion: reduce) { .sd-wave i, .sd-rings { animation: none; } }
+
 /* ---------- buttons ---------- */
 .btn { font: 800 13px var(--body); letter-spacing: 0.02em; color: var(--paper); background: rgba(255, 255, 255, 0.06); border: 1px solid var(--line-2); padding: 10px 18px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border-radius: 999px;
   transition: background 0.15s, border-color 0.15s, transform 0.15s, box-shadow 0.15s; }

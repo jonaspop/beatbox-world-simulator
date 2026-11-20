@@ -54,6 +54,9 @@ function render() {
   $main.innerHTML = (views[r.name] || views.home)();
   const navName = r.name === "feed" ? "feed" : r.name === "bb" || r.name === "rankings" ? "people" : r.name === "event" ? "calendar" : r.name === "history" ? "champions" : r.name;
   window.scrollTo(0, 0);
+  const label = document.getElementById("side-label");
+  if (label) label.textContent = { home: `Season ${app.state.year}`, feed: "On socials", calendar: "Calendar", people: "Beatboxers", rankings: "Beatboxers", bb: app.state.people[r.arg]?.name || "Profile",
+    event: "Results", history: "History", champions: "Hall of fame", countries: "Countries", custom: "Custom", settings: "Settings" }[r.name] || "Beatbox";
   document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === `#${navName}`));
   updateStatus();
   if (r.name === "people") {
