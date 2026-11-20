@@ -108,8 +108,8 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
         const ol = main.querySelector(".elim-list");
         const rows = list.map((id, i) => {
           const li = document.createElement("li");
-          li.className = `elim-row ${i < result.bracketSize ? "in" : "out"}`;
-          li.innerHTML = `<span class="er-rank">${i + 1}</span>${h.flagHTML(h.person(id).country)}<b>${esc(h.person(id).name)}</b><span class="er-tag">${i < result.bracketSize ? "Battles" : "Out"}</span>`;
+          li.className = `elim-row ${i < result.bracketSize ? "in" : "out"}${i < 3 ? ` s${i + 1}` : ""}`;
+          li.innerHTML = `<span class="er-rank">${i + 1}</span>${h.avatarHTML(id, "sm")}${h.flagHTML(h.person(id).country)}<b>${esc(h.person(id).name)}</b><span class="er-tag">${i < result.bracketSize ? "Battles" : "Out"}</span>`;
           return li;
         });
         rows.forEach((li) => ol.appendChild(li));
@@ -132,7 +132,7 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
         drawSide(b);
         main.innerHTML = `<div class="vs">
           ${card(b.a, "left")}
-          <div class="vs-mid"><span class="vs-mark">VS</span><span class="vs-round">${esc(b.round)}</span><span class="vs-phase" data-phase>Get ready</span></div>
+          <div class="vs-mid"><span class="vs-mark">VS</span><span class="vs-round">${esc(b.round)}</span><span class="vs-phase" data-phase>Get ready</span><span class="vs-tally" aria-hidden="true">${"<i></i>".repeat(5)}</span></div>
           ${card(b.b, "right")}
         </div>`;
         const L = main.querySelector(".vs-side.left"), R = main.querySelector(".vs-side.right"), phase = main.querySelector("[data-phase]");
@@ -157,6 +157,7 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
           chip.className = "vote";
           chip.textContent = names[i % names.length];
           tgt.querySelector(".vs-votes").appendChild(chip);
+          main.querySelectorAll(".vs-tally i")[i]?.classList.add(jv[i] === 0 ? "l" : "r");
           phase.textContent = `${va} – ${vb}`;
           if (beat?.on) beat.kick(beat.ac.currentTime);
           await wait(620);
