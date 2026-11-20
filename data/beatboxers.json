@@ -43681,7 +43681,7 @@
     "potential": 82,
     "peak_rating": 82,
     "status": "judge",
-    "retirement_risk": null,
+    "retirement_risk": 0,
     "judge_chance": 0.28,
     "debut": 2012,
     "last_competed": 2021,
@@ -43693,6 +43693,7 @@
     "hand_edited": [
       "potential",
       "rating",
+      "retirement_risk",
       "reviewed"
     ]
   },

@@ -2729,7 +2729,8 @@
   "twoh": {
     "rating": 82,
     "potential": 82,
-    "reviewed": true
+    "reviewed": true,
+    "retirement_risk": 0
   },
   "vox": {
     "rating": 72,
