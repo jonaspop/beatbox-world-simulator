@@ -591,7 +591,7 @@ function runTournament(state, ev, cut) {
     if (pool7.length >= 6) {
       const sm = runSmoke(state, rngOf(state).shuffle(pool7).slice(0, 8));
       applyPerformance(state, { ...sm, reached: {} }, `${ev.comp}_7ts`, { progression: true });
-      res.smoke = sm;
+      res.smoke = { ...sm, entrants: sm.standings.slice().sort((a, b) => pool7.indexOf(a) - pool7.indexOf(b)) };
     }
   }
   return res;
@@ -611,7 +611,7 @@ function runGbbSmoke(state, ev, cut) {
   addQualified(state, ev.year + 1, sm.champion, `GBB ${ev.year} 7 to Smoke Champion`);
   news(state, `${state.people[sm.champion].name} wins the GBB ${ev.year} 7 to Smoke`, "event", { id: sm.champion });
   social.smoke(state, ev, sm);
-  return { ...sm, entrants: field, format: "7ts" };
+  return { ...sm, entrants: field, format: "7ts", judges: pickJudges(state, ev, field) };
 }
 
 function bbwcEntrants(state, year) {

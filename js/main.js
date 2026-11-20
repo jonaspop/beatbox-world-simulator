@@ -1,5 +1,5 @@
 import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, localPictures, forgetLocalPicture, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
-import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking, releaseQualified, comp } from "./sim.js";
+import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, runSmoke, ranking, releaseQualified, comp } from "./sim.js";
 import { artTheme } from "./art.js";
 import { setCountryNamer } from "./social.js";
 import * as V from "./views.js";
@@ -82,6 +82,7 @@ async function setSound(on) {
 function choicesFor(ev) {
   if (ev.kind === "wildcards") return [["watch", "Watch wildcards", "The full wildcard ceremony, one beatboxer at a time"], ["skip", "Skip", "Just show the results"]];
   if (ev.qualifier) return [["watch", "Watch wildcards", "Wildcard ceremony, then every battle live"], ["battle", "Skip to battle", "Straight to the live battles"], ["skip", "Skip competition", "Simulate it and move on"]];
+  if (ev.kind === "smoke") return [["battle", "Watch it live", "King of the hill, battle by battle, until someone hits 7 points"], ["skip", "Skip it", "Simulate it and move on"]];
   if (["gbb", "bbwc"].includes(ev.comp)) return [["battle", "Watch it live", "Every battle and every judge's vote"], ["skip", "Skip competition", "Simulate it and move on"]];
   return null;
 }
@@ -159,6 +160,8 @@ const judgeNames = (r) => {
 async function play(list) {
   for (const sc of list) await playCutscene(sc, helpers, { sound: setting("sound") });
 }
+// the 7 to Smoke that follows some events (One One, NUE) as its own live show
+const smokeRec = (rec) => ({ ...rec.smoke, name: `${rec.name.replace(/\s\d{4}$/, "")} 7 to Smoke`, comp: "gbb_7ts", key: `${rec.key}-7ts`, year: rec.year, judges: rec.judges });
 const live = (rec) => watchLive(rec, helpers, { sound: setting("sound"), judges: judgeNames(rec) });
 
 // which cutscenes are worth stopping for
@@ -194,7 +197,7 @@ async function simUntil(stop, { quiet = false, liveKey = null, silentBefore = fa
       const out = runNext(app.state);
       if (silent) { if (n % 8 === 7) await tick(ev); continue; }
       let scenes = out.cutscenes.filter((sc) => wanted(sc, ev, quiet && !forced));
-      const hasBattles = out.result && out.result.battles?.length && out.result.format !== "7ts";
+      const hasBattles = out.result && out.result.battles?.length;
       let watch = forced && hasBattles;
       if (choice) {
         if (choice === "skip") scenes = scenes.filter((sc) => sc.type !== "ceremony" && sc.type !== "champion");
@@ -204,7 +207,7 @@ async function simUntil(stop, { quiet = false, liveKey = null, silentBefore = fa
       if (scenes.length || watch) {
         updateStatus(); // don't draw the results page yet: it would spoil the winner behind the overlay
         await play(scenes.filter((s) => s.before));
-        if (watch) await live(app.state.archive[ev.key]);
+        if (watch) { const rec = app.state.archive[ev.key]; await live(rec); if (rec.smoke) await live(smokeRec(rec)); }
         await play(scenes.filter((s) => !s.before));
       } else if (n % 8 === 7) await tick(ev);
     }
@@ -238,6 +241,7 @@ document.addEventListener("click", async (e) => {
     return;
   }
   if (act === "replay") { const r = st.archive[b.dataset.key]; if (r) await live(r); return; }
+  if (act === "replaysmoke") { const r = st.archive[b.dataset.key]; if (r?.smoke) await live(smokeRec(r)); return; }
   if (act === "mute") return setSound(!setting("sound"));
   if (act === "forgetchoice") { st.seasonChoice = null; await saveGame("auto", st); return render(); }
   if (act === "fav") {
@@ -381,6 +385,12 @@ function toast(text) {
 
 async function demo(type) {
   const top = ranking(app.state, { by: "rating" }).filter((p) => !p.noSolo);
+  if (type === "smoke") {
+    const ids = top.slice(0, 8).map((p) => p.id);
+    const sm = runSmoke(app.state, ids);
+    return live({ ...sm, entrants: ids, format: "7ts", name: `GBB ${app.state.year} 7 to Smoke`, comp: "gbb_7ts", year: app.state.year,
+      judges: ranking(app.state, { by: "rating", status: "judge" }).slice(0, 5).map((p) => p.id) });
+  }
   if (type === "live") {
     const ids = top.slice(0, 8).map((p) => p.id);
     const res = runBracket(app.state, ids, { bracket: 8, third: true, elimination: false });

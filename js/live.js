@@ -124,7 +124,103 @@ export function watchLive(result, h, { sound = true, judges = [] } = {}) {
       }).join("")}</div>`).join("");
     };
 
+    // ---------- 7 to Smoke: king of the hill, first to 7 points ----------
+    const pips = (n, cls = "") => `<span class="sm-pips ${cls}">${Array.from({ length: 7 }, (_, i) => `<i class="${i < n ? "on" : ""}"></i>`).join("")}</span>`;
+    async function smokeShow() {
+      const ids = result.entrants || result.standings;
+      const pts = Object.fromEntries(ids.map((id) => [id, 0]));
+      const queueOf = (king, ch, i) => { // who is waiting in line after this battle
+        const q = [];
+        for (const b of result.battles.slice(i + 1)) if (!q.includes(b.b) && b.b !== king) q.push(b.b);
+        return q.filter((x) => x !== ch).slice(0, 5);
+      };
+      const drawBoard = (kingId, hot) => {
+        const order = ids.slice().sort((a, b) => pts[b] - pts[a]);
+        side.innerHTML = `<div class="sm-board"><h4>Points · first to 7</h4>${order.map((id) => `
+          <div class="sm-row ${id === kingId ? "king" : ""} ${id === hot ? "hot" : ""}">
+            <span class="sm-name">${id === kingId ? '<span class="sm-crown">♛</span>' : ""}${esc(h.person(id).name)}</span>${pips(pts[id])}<b>${pts[id]}</b></div>`).join("")}</div>`;
+      };
+      // intro: smoke title and the eight names
+      stage.textContent = "7 to Smoke";
+      main.innerHTML = `<div class="sm-intro"><div class="sm-smoke">${"<i></i>".repeat(9)}</div>
+        <h2 class="sm-title"><span>7</span> to Smoke</h2><p class="sm-sub">King of the hill · win and stay on · first to 7 points</p>
+        <div class="sm-lineup">${ids.map((id, i) => `<div class="sm-card" style="animation-delay:${i * 0.12}s">${h.avatarHTML(id, "md")}<b>${esc(h.person(id).name)}</b></div>`).join("")}</div></div>`;
+      drawBoard(null);
+      if (beat?.on) beat.riser?.(1.2);
+      await wait(3600);
+      skipOne = false;
+      for (let i = 0; i < result.battles.length; i++) {
+        if (skipAll) break;
+        skipOne = false;
+        const b = result.battles[i];
+        const king = b.a, ch = b.b;
+        stage.textContent = `Battle ${i + 1}`;
+        drawBoard(king);
+        const side2 = (id, cls, tag) => `<div class="vs-side ${cls} sm-side">
+          <span class="sm-tag ${tag === "KING" ? "k" : ""}">${tag === "KING" ? "♛ " : ""}${tag}</span>
+          <div class="vs-pic">${h.avatarHTML(id)}</div>
+          <div class="vs-name">${h.flagHTML(h.person(id).country)}<b>${esc(h.person(id).name)}</b></div>
+          ${pips(pts[id], "big")}
+          <div class="vs-wave" aria-hidden="true">${"<i></i>".repeat(18)}</div><div class="vs-votes"></div></div>`;
+        main.innerHTML = `<div class="sm-stage"><div class="sm-smoke low">${"<i></i>".repeat(7)}</div><div class="vs">
+          ${side2(king, "left", "KING")}
+          <div class="vs-mid"><span class="vs-mark">VS</span><span class="vs-round">Battle ${i + 1}</span><span class="vs-phase" data-phase>${esc(h.person(ch).name)} steps up</span><span class="vs-tally" aria-hidden="true">${"<i></i>".repeat(5)}</span></div>
+          ${side2(ch, "right", "CHALLENGER")}</div>
+          <div class="sm-queue"><span>Up next</span>${queueOf(king, ch, i).map((id) => `<span class="sm-q">${h.avatarHTML(id, "sm")}${esc(h.person(id).name)}</span>`).join("") || "<span class='muted'>—</span>"}</div></div>`;
+        const L = main.querySelector(".vs-side.left"), R = main.querySelector(".vs-side.right"), phase = main.querySelector("[data-phase]");
+        await wait(700);
+        for (const who of [L, R]) {
+          if (skipOne || skipAll) break;
+          L.classList.toggle("on", who === L); R.classList.toggle("on", who === R);
+          phase.textContent = `${esc(h.person(who === L ? king : ch).name)} is up`;
+          await wait(900);
+        }
+        L.classList.remove("on"); R.classList.remove("on");
+        const jv = b.jv || Array.from({ length: 5 }, (_, k) => (k < b.votes[0] ? 0 : 1));
+        const names = judges.length ? judges : ["Judge 1", "Judge 2", "Judge 3", "Judge 4", "Judge 5"];
+        let va = 0, vb = 0;
+        for (let k = 0; k < jv.length; k++) {
+          if (skipOne || skipAll) break;
+          const tgt = jv[k] === 0 ? L : R;
+          jv[k] === 0 ? va++ : vb++;
+          const chip = document.createElement("span");
+          chip.className = "vote"; chip.textContent = names[k % names.length];
+          tgt.querySelector(".vs-votes").appendChild(chip);
+          main.querySelectorAll(".vs-tally i")[k]?.classList.add(jv[k] === 0 ? "l" : "r");
+          phase.textContent = `${va} – ${vb}`;
+          if (beat?.on) beat.kick(beat.ac.currentTime, 0.7);
+          await wait(330);
+        }
+        pts[b.w]++;
+        const winSide = b.w === king ? L : R;
+        winSide.classList.add("winner");
+        (winSide === L ? R : L).classList.add("loser");
+        winSide.querySelector(".sm-pips").outerHTML = pips(pts[b.w], "big gain");
+        const dethroned = b.w !== king;
+        phase.innerHTML = dethroned ? `<b>${esc(h.person(b.w).name)}</b> takes the crown!` : `<b>${esc(h.person(b.w).name)}</b> stays king`;
+        const stg = el.querySelector(".stage");
+        if (stg) { stg.classList.remove("flash"); void stg.offsetWidth; stg.classList.add("flash"); }
+        if (dethroned) { winSide.insertAdjacentHTML("beforeend", `<span class="sm-burst">♛</span>`); }
+        drawBoard(b.w, b.w);
+        if (beat?.on) beat.crash();
+        skipOne = false;
+        await wait(pts[b.w] >= 7 ? 1800 : 1100);
+      }
+      // champion
+      const champ = result.champion;
+      Object.assign(pts, result.points);
+      drawBoard(null, champ);
+      stage.textContent = "Results";
+      main.innerHTML = `<div class="sm-intro sm-win"><div class="sm-smoke">${"<i></i>".repeat(11)}</div>
+        <p class="sm-sub">7 to Smoke champion</p>
+        <div class="sm-champ">${h.avatarHTML(champ, "lg")}<b>${esc(h.person(champ).name)}</b>${pips(7, "big gain")}</div>
+        <div class="sm-final">${result.standings.slice(1, 4).map((id, i) => `<span><em>${i + 2}</em>${esc(h.person(id).name)} · ${result.points[id]} pts</span>`).join("")}</div>
+        <button class="btn primary" data-c="close">Continue</button></div>`;
+      if (beat?.on) beat.crash();
+    }
+
     (async () => {
+      if (result.points) { await smokeShow(); return; }
       // 1. elimination reveal
       if (result.elimination && result.bracketSize && result.elimination.length > result.bracketSize) {
         stage.textContent = "Elimination results";

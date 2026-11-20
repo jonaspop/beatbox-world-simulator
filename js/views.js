@@ -32,7 +32,7 @@ const statusChip = (s) => `<span class="chip st-${esc(s)}">${esc(s)}</span>`;
 export const kindOf = (ev) => ev.kind === "review" ? "review" : ev.kind === "wildcards" ? "wild" : ev.national ? "nat"
   : ["gbb", "bbwc", "gbb_7ts"].includes(ev.comp) ? "major" : ev.qualifier ? "qual" : ev.comp === "botm" ? "open" : ev.comp === "custom" ? "custom" : "intl";
 export const KIND_LABEL = { major: "Major", qual: "GBB qualifier", wild: "Wildcards", intl: "International", open: "Open", nat: "National", review: "Season", custom: "Custom" };
-export const liveable = (ev) => ["major", "qual", "intl", "open", "nat", "custom"].includes(kindOf(ev)) && ev.kind !== "smoke";
+export const liveable = (ev) => ["major", "qual", "intl", "open", "nat", "custom"].includes(kindOf(ev)) ;
 
 const ICON = {
   major: '<path d="M6 4h12v3a6 6 0 0 1-12 0V4Zm-3 1h3v2a3 3 0 0 1-3-2Zm15 0h3a3 3 0 0 1-3 2V5ZM10 14h4v3h3v3H7v-3h3v-3Z"/>',
@@ -148,7 +148,7 @@ export function viewEvent(key) {
   const k = kindOf(ev);
   const actions = !r && ev.status === "upcoming"
     ? `${liveable(ev) ? `<button class="btn primary" data-act="live" data-key="${esc(key)}">Watch it live</button>` : ""}<button class="btn" data-act="runto" data-key="${esc(key)}">Sim up to this event</button>`
-    : r && r.battles?.length && r.format !== "7ts" ? `<button class="btn" data-act="replay" data-key="${esc(key)}">Replay the battles</button>` : "";
+    : r && r.battles?.length ? `<button class="btn primary" data-act="replay" data-key="${esc(key)}">${r.format === "7ts" ? "Replay the 7 to Smoke" : "Replay the battles"}</button>${r.smoke ? `<button class="btn" data-act="replaysmoke" data-key="${esc(key)}">Watch the 7 to Smoke</button>` : ""}` : "";
   const head = `<header class="ev-head k-${k}" style="--tc:${artTheme(ev).a}">${artFor(ev)}<div><p class="eyebrow">${kindIcon(k)} ${KIND_LABEL[k] || "Event"} · ${when(ev)}, ${ev.year}</p><h1>${esc(ev.name)}</h1></div><div class="row gap">${actions}</div></header>`;
   if (!r) return head + `<section class="card"><p class="muted">This event hasn't happened yet. Watch it live to see every battle and every judge's vote, or sim up to it.</p></section>`;
   if (r.skipped) return head + `<section class="card"><p class="muted">Not held: ${esc(r.reason || "not enough entrants")}.</p></section>`;
@@ -165,7 +165,7 @@ export function viewEvent(key) {
   const podium = [r.champion, r.runnerUp, r.third].filter(Boolean);
   return head + `
   <section class="podium">${podium.map((id, i) => `<a class="pod p${i + 1}" href="#bb/${encodeURIComponent(id)}">${avatar(id, "lg")}<span class="pl">${["Champion", "Runner-up", "Third"][i]}</span><b>${esc(P(id).name)}</b><span class="muted">${flag(P(id).country)} ${esc(countryName(P(id).country))}</span></a>`).join("")}</section>
-  ${r.format === "7ts" ? smokeTable(r) : bracketView(r)}
+  ${r.format === "7ts" ? smokeTable(r, false, ev) : bracketView(r, ev)}
   <div class="grid2">
     ${r.elimination ? elimHTML(r.elimination, r.bracketSize, (id) => resultTag(r, id)) : ""}
     <section class="card"><h2>Judges</h2><ul class="plain">${(r.judges || []).map((id) => `<li>${avatar(id)}${nameLink(id)}</li>`).join("") || "<li class='muted'>Not recorded</li>"}</ul>
@@ -174,7 +174,7 @@ export function viewEvent(key) {
 }
 
 // ---------- battles: a real bracket with connector lines, seeds, judge votes and the champion at the end ----------
-function bracketView(r) {
+function bracketView(r, ev = null) {
   const seed = r.elimination ? Object.fromEntries(r.elimination.map((id, i) => [id, i + 1])) : null;
   const rounds = [];
   let third = null;
@@ -185,7 +185,7 @@ function bracketView(r) {
     if (!col) rounds.push((col = { name: b.round, list: [] }));
     col.list.push(m);
   }
-  return battlesCard(rounds, { seed, champion: r.champion, third });
+  return battlesCard(rounds, { seed, champion: r.champion, third, art: ev ? artFor(ev) : "" });
 }
 
 const TROPHY = `<svg class="bk-trophy" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v3a6 6 0 0 1-12 0V3Zm-3 1h3v2.5A3 3 0 0 1 3 4Zm15 0h3a3 3 0 0 1-3 2.5V4ZM10 14h4v3h3v3H7v-3h3v-3Z"/></svg>`;
@@ -203,7 +203,7 @@ function matchHTML(m, seed) {
   return `<div class="bm">${row(m.a, m.sa, 0)}${row(m.b, m.sb, 1)}</div>`;
 }
 
-function battlesCard(rounds, { seed = null, champion = null, third = null } = {}) {
+function battlesCard(rounds, { seed = null, champion = null, third = null, art = "" } = {}) {
   if (!rounds.length) return "";
   // connector lines only when every round halves the one before it
   const tidy = rounds.every((c, i) => i === rounds.length - 1 || rounds[i + 1].list.length * 2 === c.list.length);
@@ -218,9 +218,9 @@ function battlesCard(rounds, { seed = null, champion = null, third = null } = {}
   const ch = champion && P(champion);
   const champCol = ch && tidy ? `<div class="bk-col champ fed"><h4>Champion</h4><div class="bk-body"><div class="bk-slot">
     <a class="bk-champ" href="#bb/${encodeURIComponent(champion)}">${TROPHY}${avatar(champion, "lg")}<b>${esc(ch.name)}</b><span>${flag(ch.country)} ${esc(countryName(ch.country))}</span></a></div></div></div>` : "";
-  return `<section class="card battles"><header class="card-h"><h2>Battles</h2><span class="muted small">${seed ? "Numbers are elimination seeds · " : ""}${rounds[0].list.some((m) => m.jv) ? "dots are the five judges' votes" : ""}</span></header>
+  return `<section class="card battles${art ? " has-art" : ""}">${art}<div class="card-in"><header class="card-h"><h2>Battles</h2><span class="muted small">${seed ? "Numbers are elimination seeds · " : ""}${rounds[0].list.some((m) => m.jv) ? "dots are the five judges' votes" : ""}</span></header>
     <div class="bk-scroll"><div class="bk ${tidy ? "tidy" : "loose"}${champCol ? " has-champ" : ""}">${cols}${champCol}</div></div>
-    ${third ? `<div class="bk-third"><h4>Third place</h4>${matchHTML(third, seed)}</div>` : ""}</section>`;
+    ${third ? `<div class="bk-third"><h4>Third place</h4>${matchHTML(third, seed)}</div>` : ""}</div></section>`;
 }
 
 // ---------- elimination ranking: seeds, the cut line, and how far everyone went ----------
@@ -243,11 +243,18 @@ function elimHTML(order, size, tag = () => null) {
   return `<section class="card elim-card"><header class="card-h"><h2>Elimination ranking</h2><span class="chip">${order.length} entered</span></header><ol class="er-list">${rows}</ol></section>`;
 }
 
-function smokeTable(r, inner = false) {
-  const rows = r.standings.map((id) => `<tr><td>${nameLink(id)}</td><td class="num">${r.points[id]}</td></tr>`).join("");
-  const t = `<table class="tbl"><thead><tr><th>Beatboxer</th><th class="num">Points</th></tr></thead><tbody>${rows}</tbody></table>
-    <p class="muted small">${r.battles.length} battles. King of the hill, first to 7 points.</p>`;
-  return inner ? t : `<section class="card"><h2>7 to Smoke</h2>${t}</section>`;
+// 7 to Smoke: points as pips, plus the longest reign on the hill
+function smokeTable(r, inner = false, ev = null) {
+  let king = null, run = 0, best = { id: null, n: 0 };
+  for (const b of r.battles) {
+    if (b.w === king) run++; else { king = b.w; run = 1; }
+    if (run > best.n) best = { id: king, n: run };
+  }
+  const pips = (n) => `<span class="sm-pips">${Array.from({ length: 7 }, (_, i) => `<i class="${i < n ? "on" : ""}"></i>`).join("")}</span>`;
+  const rows = r.standings.map((id, i) => `<li class="er sm-res ${i === 0 ? "in s1" : ""}"><span class="er-n">${i === 0 ? "♛" : i + 1}</span>${avatar(id)}<span class="er-name">${nameLink(id)}</span><span class="sm-cell">${pips(r.points[id])}<b>${r.points[id]}</b></span></li>`).join("");
+  const t = `<ol class="er-list">${rows}</ol>
+    <div class="sm-stats"><span><b>${r.battles.length}</b> battles</span>${best.id ? `<span>Longest reign <b>${esc(P(best.id)?.name || best.id)}</b> · ${best.n} wins in a row</span>` : ""}</div>`;
+  return inner ? t : `<section class="card smoke-card">${ev ? artFor(ev) : ""}<div class="card-in"><header class="card-h"><h2>7 to Smoke</h2><span class="chip">King of the hill · first to 7</span></header>${t}</div></section>`;
 }
 
 // ---------------- beatboxers (browse, filter, create) ----------------
@@ -418,11 +425,11 @@ export function viewHistory(arg) {
   const cats = Object.entries(e.categories || {}).sort(([a], [b]) => (a === "solo" ? -1 : b === "solo" ? 1 : 0));
   return `<header class="ev-head k-${k}" style="--tc:${artTheme(ev).a}">${artFor({ ...ev, year: e.year })}<div><p class="eyebrow">${kindIcon(k)} Real results · ${esc(where || e.year)}</p><h1>${esc(e.name)}</h1></div>
       <span class="chip">${esc(e.status === "upcoming" ? "Upcoming" : "History")}</span></header>
-    ${cats.map(([cat, d]) => historyCategory(cat, d)).join("") || `<section class="card"><p class="muted">No solo results recorded for this edition.</p></section>`}
+    ${cats.map(([cat, d]) => historyCategory(cat, d, { ...ev, year: e.year })).join("") || `<section class="card"><p class="muted">No solo results recorded for this edition.</p></section>`}
     ${judges.length ? `<section class="card"><h2>Judges</h2><ul class="plain">${judges.map((j) => `<li>${avatar(j)}${nameLink(j)}</li>`).join("")}</ul></section>` : ""}`;
 }
 
-function historyCategory(cat, d) {
+function historyCategory(cat, d, ev = null) {
   const pod = [bidOf(d.champion), bidOf(d.runner_up), bidOf(d.third)].filter(Boolean);
   const rounds = [];
   for (const b of d.battles || []) {
@@ -439,7 +446,7 @@ function historyCategory(cat, d) {
     ${rounds.length ? (() => {
       const hr = rounds.map((c) => ({ name: c.name, list: c.list.map((b) => { const [sa, sb] = score(b); return { a: bidOf(b.a), b: bidOf(b.b), w: bidOf(b.winner), sa, sb }; }) }));
       const thirdCol = hr.find((c) => /^third/i.test(c.name) && c.list.length === 1);
-      return battlesCard(hr.filter((c) => c !== thirdCol), { seed: d.seeding ? Object.fromEntries(d.seeding.map((x) => [x.beatboxer, x.rank])) : null, champion: bidOf(d.champion), third: thirdCol?.list[0] });
+      return battlesCard(hr.filter((c) => c !== thirdCol), { seed: d.seeding ? Object.fromEntries(d.seeding.map((x) => [x.beatboxer, x.rank])) : null, champion: bidOf(d.champion), third: thirdCol?.list[0], art: ev ? artFor(ev) : "" });
     })() : ""}
     <div class="grid2">
       ${d.points ? `<section class="card"><h2>Points</h2><table class="tbl"><tbody>${d.points.slice().sort((a, b) => b.points - a.points).map((x) => `<tr><td>${nameLink(x.beatboxer)}</td><td class="num">${x.points}</td></tr>`).join("")}</tbody></table></section>` : ""}
@@ -549,7 +556,7 @@ export function viewSettings() {
       ${box("cutscenes", "Champion, retirement and comeback cutscenes", true)}
       ${box("nationalCutscenes", "A cutscene for every national champion")}
       ${box("sound", "Beat and sound effects", true)}
-      <div class="row gap mt"><button class="btn" data-act="demo" data-type="ceremony">Preview wildcard ceremony</button><button class="btn" data-act="demo" data-type="champion">Preview champion (next colour each click)</button><button class="btn" data-act="demo" data-type="live">Preview a live battle</button><button class="btn" data-act="demo" data-type="retirement">Preview retirement</button></div>
+      <div class="row gap mt"><button class="btn" data-act="demo" data-type="ceremony">Preview wildcard ceremony</button><button class="btn" data-act="demo" data-type="champion">Preview champion (next colour each click)</button><button class="btn" data-act="demo" data-type="live">Preview a live battle</button><button class="btn" data-act="demo" data-type="smoke">Preview a 7 to Smoke</button><button class="btn" data-act="demo" data-type="retirement">Preview retirement</button></div>
     </section>
     <section class="card"><h2>Save game</h2>
       <p class="muted small">The game saves itself in this browser after every step. Export a file to back it up or move it to another device.</p>
