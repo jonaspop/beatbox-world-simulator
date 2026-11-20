@@ -1,5 +1,6 @@
 // The season engine: calendar, entrant selection, battles, qualification, progression, retirements, prospects.
 import { makeRng, inRegion, START_YEAR, SAVE_VERSION, MONTH_NAMES } from "./data.js";
+import * as social from "./social.js";
 
 let D = null;          // static data (loaded files)
 let COMPS = {};        // competition id -> definition (incl. generated nationals)
@@ -123,6 +124,31 @@ function addQualified(state, year, id, reason) {
   if (!list.some((q) => q.id === id)) list.push({ id, reason });
 }
 
+// the GBB a ticket won now goes to: this year's until GBB has happened, then next year's
+const gbbDoneThisSeason = (state) => state.season?.events.find((e) => e.comp === "gbb")?.status !== "upcoming";
+export const ticketYear = (state, year) => (state.season?.year === year && gbbDoneThisSeason(state) ? year + 1 : year);
+// everyone holding a GBB ticket that is still to be used (this year's before GBB, and next year's)
+export function holdsGbbTicket(state, year) {
+  const ids = new Set();
+  const years = state.season?.year === year && gbbDoneThisSeason(state) ? [year + 1] : [year, year + 1];
+  for (const y of years) for (const q of state.qualified[y] || []) ids.add(q.id);
+  return ids;
+}
+// someone retired or stopped: free their GBB spot so another wildcard (or a runner-up) takes it
+export function releaseQualified(state, id) {
+  const freed = [];
+  for (const [y, list] of Object.entries(state.qualified)) {
+    if (+y < state.year) continue;
+    const i = list.findIndex((q) => q.id === id);
+    if (i < 0) continue;
+    const gbb = state.archive[`gbb-${y}-9-11`];
+    if (gbb) continue; // that GBB already happened
+    list.splice(i, 1);
+    freed.push(+y);
+  }
+  return freed;
+}
+
 // ---------- helpers ----------
 export const activePeople = (state) => Object.values(state.people).filter((p) => p.status === "active" && p.rating != null && !p.noSolo && p.country);
 
@@ -216,7 +242,8 @@ function pickEntrants(state, ev) {
     return list.map((p) => ({ p, s: eff(p) + r.normal(0, 6) - (r.chance(0.12) ? 30 : 0) }))
       .sort((a, b) => b.s - a.s).slice(0, size).map((x) => x.p.id);
   }
-  const qualifiedNow = new Set((state.qualified[ev.year] || []).map((q) => q.id));
+  // nobody who already holds a GBB ticket enters a GBB qualifier
+  const qualifiedNow = holdsGbbTicket(state, ev.year);
   const elite = gbbLevel(state, ev.year);
   if (f.invite) {
     const list = activePeople(state).filter((p) => !f.bias || !f.bias.region || inRegion(p.country, f.bias.region) || r.chance(0.35));
@@ -263,7 +290,7 @@ function pickEntrants(state, ev) {
 // BeatCity Japan: a Japanese field plus at most a few internationals
 function pickHomeEvent(state, ev, f) {
   const r = rngOf(state);
-  const qualifiedNow = new Set((state.qualified[ev.year] || []).map((q) => q.id));
+  const qualifiedNow = ev.qualifier ? holdsGbbTicket(state, ev.year) : new Set();
   const all = activePeople(state).filter((p) => !qualifiedNow.has(p.id));
   const score = (p) => eff(p) + r.normal(0, 5);
   const home = all.filter((p) => p.country === f.home).map((p) => ({ p, s: score(p) })).sort((a, b) => b.s - a.s);
@@ -398,7 +425,10 @@ function eloBonus(rule, stages, seed) {
   return t;
 }
 
-// ---------- performance-based improvement (more up than down) ----------
+// ---------- performance-based improvement (mostly up, rarely down) ----------
+// The expected finish comes from the ratings, so losing to someone better costs nothing.
+// Only a clearly bad result (far below where your rating puts you) takes a little off; good results,
+// finals and titles add more, most of all when there is room below potential.
 function applyPerformance(state, res, compId, { progression = true } = {}) {
   const rule = ruleFor(compId);
   const weight = Math.min(1, Math.max(0.15, (rule.win || 10) / 75));
@@ -421,11 +451,16 @@ function applyPerformance(state, res, compId, { progression = true } = {}) {
     const expected = byRating.indexOf(id) / (n - 1);
     const actual = place / (n - 1);
     const perf = expected - actual; // > 0 means better than expected
-    const room = Math.min(1.4, Math.max(0.15, (p.potential - p.rating) / 8));
-    let delta = perf > 0 ? perf * 3.2 * weight * room : perf * 1.25 * weight;
-    if (id === res.champion) delta += 0.5 * weight;
+    const room = Math.min(1.5, Math.max(0.25, (p.potential - p.rating) / 6));
+    let delta = 0;
+    if (perf > 0) delta = perf * 2.6 * weight * room;
+    else if (perf < -0.35) delta = (perf + 0.35) * 0.5 * weight; // at worst about -0.3 at GBB
+    // achievements count on their own, whatever the seeding said
+    if (id === res.champion) delta += (0.5 + 0.7 * room) * weight;
+    else if (id === res.runnerUp) delta += 0.35 * room * weight;
+    else if (res.reached?.[id] && res.reached[id] <= 4) delta += 0.15 * room * weight;
     p.rating = Math.min(99, Math.max(25, p.rating + delta));
-    if (p.rating > p.potential - 0.5 && perf > 0.3) p.potential = Math.min(99, p.potential + weight); // breakout
+    if (p.rating > p.potential - 0.5 && (perf > 0.3 || id === res.champion)) p.potential = Math.min(99, p.potential + weight * 0.8); // breakout
     p.peak = Math.max(p.peak ?? p.rating, p.rating);
   });
 }
@@ -488,7 +523,7 @@ function runTournament(state, ev, cut) {
   const f = FORMATS[ev.comp] || { field: 16, bracket: 16 };
   let entrants;
   if (ev.comp === "gbb") {
-    entrants = (state.qualified[ev.year] || []).map((q) => q.id).filter((id) => state.people[id]?.status === "active");
+    entrants = (state.qualified[ev.year] || []).map((q) => q.id).filter((id) => state.people[id]?.status === "active").slice(0, f.field);
     // empty spots (unused qualifier tickets, retirements) go to the next wildcard runners-up, like real replacements
     for (const id of state.wildcardRunnersUp[ev.year] || []) {
       if (entrants.length >= f.field) break;
@@ -498,51 +533,59 @@ function runTournament(state, ev, cut) {
       }
     }
   }
-  else if (ev.comp === "gbb_second_league") entrants = (state.wildcardRunnersUp[ev.year] || []).filter((id) => state.people[id]?.status === "active").slice(0, f.field);
+  else if (ev.comp === "gbb_second_league") {
+    // the Second League is for wildcard runners-up who didn't get a GBB ticket some other way
+    const holding = holdsGbbTicket(state, ev.year);
+    entrants = (state.wildcardRunnersUp[ev.year] || []).filter((id) => state.people[id]?.status === "active" && !holding.has(id)).slice(0, f.field);
+  }
   else if (ev.comp === "bbwc") entrants = bbwcEntrants(state, ev.year);
   else entrants = pickEntrants(state, ev);
   if (entrants.length < 4) return { skipped: true, reason: "Not enough entrants" };
   if (ESTABLISH_COMPS.has(ev.comp)) for (const id of entrants) (state.established ||= {})[id] = true;
   if (ev.qualifier)
-    cut.push({ type: "ceremony", ids: entrants, event: ev.name, before: true, label: "Wildcard" });
+    cut.push({ type: "ceremony", ids: entrants, event: ev.name, before: true, label: "Wildcard", comp: ev.comp });
+  social.lineup(state, ev, entrants);
+  const before = Object.fromEntries(entrants.map((id) => [id, state.people[id].rating]));
   const res = runBracket(state, entrants, { bracket: f.bracket, third: !!f.third || entrants.length >= 12, home: f.home, foreignInBracket: f.foreignInBracket });
   res.entrants = entrants;
   res.judges = pickJudges(state, ev, entrants);
   applyPerformance(state, res, ev.comp);
+  social.result(state, ev, res, before, ev.qualifier ? ticketYear(state, ev.year) : null);
   const champ = state.people[res.champion];
   title(state, res.champion, ev.comp);
   // consequences
   if (ev.national) {
     (state.nationalChamps[ev.year] ||= []).push({ id: res.champion, country: ev.national, comp: ev.comp });
     news(state, `${champ.name} wins the ${ev.name}`, "national", { id: res.champion, event: ev.key });
-    if (state.settings.nationalCutscenes || state.settings.favorites.includes(res.champion)) cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "national" });
+    if (state.settings.nationalCutscenes || state.settings.favorites.includes(res.champion)) cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "national", comp: ev.comp, country: ev.national });
   } else {
     news(state, `${champ.name} wins ${ev.name}`, ev.comp === "gbb" || ev.comp === "bbwc" ? "major" : "event", { id: res.champion, event: ev.key });
   }
   if (ev.qualifier) {
-    const nextGbbDone = state.season.events.find((e) => e.comp === "gbb")?.status === "done";
-    const y = nextGbbDone ? ev.year + 1 : ev.year;
-    const qualifiedIds = new Set((state.qualified[y] || []).map((q) => q.id));
+    const y = ticketYear(state, ev.year);
+    const qualifiedIds = holdsGbbTicket(state, ev.year);
     const ticket = [res.champion, res.runnerUp, res.third].find((id) => id && !qualifiedIds.has(id));
     if (ticket) {
       addQualified(state, y, ticket, `${ev.name} ${ticket === res.champion ? "Champion" : "top finisher"}`);
       news(state, `${state.people[ticket].name} qualifies for GBB ${y} through ${ev.name}`, "qualify", { id: ticket });
-      cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "qualifier", runnerUp: res.runnerUp, ticketYear: y });
+      if (ticket !== res.champion) social.qualified(state, ticket, y, ev.name);
+      cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "qualifier", runnerUp: res.runnerUp, ticketYear: y, comp: ev.comp });
     }
   }
   if (ev.comp === "gbb") {
     [res.champion, res.runnerUp, res.third].filter(Boolean).forEach((id, i) =>
       addQualified(state, ev.year + 1, id, `GBB ${ev.year} Solo ${["Champion", "Vice-Champion", "3rd Place"][i]}`));
     state.gbbSmokePool = res.standings.slice(3);
-    cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "gbb", runnerUp: res.runnerUp });
+    cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "gbb", runnerUp: res.runnerUp, comp: "gbb" });
   }
-  if (ev.comp === "bbwc") cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "bbwc", runnerUp: res.runnerUp });
+  if (ev.comp === "bbwc") cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "bbwc", runnerUp: res.runnerUp, comp: "bbwc" });
   if (ev.comp === "gbb_second_league") {
     addQualified(state, ev.year + 1, res.champion, `GBB ${ev.year}: Second League Champion`);
     news(state, `${champ.name} wins the Second League and qualifies for GBB ${ev.year + 1}`, "qualify", { id: res.champion });
+    social.qualified(state, res.champion, ev.year + 1, ev.name);
   }
   if (!ev.national && !ev.qualifier && !["gbb", "bbwc"].includes(ev.comp) && state.settings.favorites.includes(res.champion))
-    cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "event" });
+    cut.push({ type: "champion", id: res.champion, event: ev.name, tier: "event", comp: ev.comp, runnerUp: res.runnerUp });
   if (f.smoke && ev.comp !== "gbb") {
     const pool7 = res.standings.slice(2, 12);
     if (pool7.length >= 6) {
@@ -556,8 +599,8 @@ function runTournament(state, ev, cut) {
 
 function runGbbSmoke(state, ev, cut) {
   const r = rngOf(state);
-  const fromGbb = (state.gbbSmokePool || []).filter((id) => state.people[id]?.status === "active");
   const qualifiedNext = new Set((state.qualified[ev.year + 1] || []).map((q) => q.id));
+  const fromGbb = (state.gbbSmokePool || []).filter((id) => state.people[id]?.status === "active" && !qualifiedNext.has(id));
   const others = activePeople(state).filter((p) => !fromGbb.includes(p.id) && !qualifiedNext.has(p.id))
     .map((p) => ({ id: p.id, s: eff(p) + r.normal(0, 4) })).sort((a, b) => b.s - a.s).map((x) => x.id);
   const field = r.shuffle(fromGbb.slice(0, 5).concat(others.slice(0, 8 - Math.min(5, fromGbb.length)))).slice(0, 8);
@@ -567,6 +610,7 @@ function runGbbSmoke(state, ev, cut) {
   title(state, sm.champion, "gbb", "7_to_smoke");
   addQualified(state, ev.year + 1, sm.champion, `GBB ${ev.year} 7 to Smoke Champion`);
   news(state, `${state.people[sm.champion].name} wins the GBB ${ev.year} 7 to Smoke`, "event", { id: sm.champion });
+  social.smoke(state, ev, sm);
   return { ...sm, entrants: field, format: "7ts" };
 }
 
@@ -591,10 +635,12 @@ function bbwcEntrants(state, year) {
 function runWildcards(state, ev, cut) {
   const r = rngOf(state);
   const y = ev.year;
-  const qualifiedIds = new Set((state.qualified[y] || []).map((q) => q.id));
+  // anyone who already holds a GBB ticket can't win a wildcard on top of it
+  const qualifiedIds = holdsGbbTicket(state, y);
+  const inField = (state.qualified[y] || []).filter((q) => state.people[q.id]?.status === "active").length;
   // keep spots open for qualifier events that come after the wildcard results
   const later = state.season.events.filter((e) => e.qualifier && e.status === "upcoming" && (e.month > ev.month || (e.month === ev.month && e.day > ev.day))).length;
-  const spots = Math.max(6, FORMATS.gbb.field - qualifiedIds.size - later);
+  const spots = Math.max(0, FORMATS.gbb.field - inField - later);
   const ranked = activePeople(state).filter((p) => !qualifiedIds.has(p.id))
     .map((p) => ({ id: p.id, s: eff(p) + r.normal(0, 3.5) })).sort((a, b) => b.s - a.s).map((x) => x.id);
   const winners = ranked.slice(0, spots);
@@ -602,8 +648,9 @@ function runWildcards(state, ev, cut) {
   winners.forEach((id, i) => addQualified(state, y, id, `${ordinal(i + 1)} Wildcard Winner`));
   state.wildcardRunnersUp[y] = runnersUp;
   for (const id of winners) state.people[id].elo += D.eloRules.competitions.gbb.qualify || 0;
-  news(state, `GBB ${y} wildcard results: ${winners.map((id) => state.people[id].name).join(", ")}`, "wildcards");
-  cut.push({ type: "ceremony", ids: winners, event: `Grand Beatbox Battle ${y}`, label: "Wildcard" });
+  news(state, `GBB ${y} wildcard results: ${winners.map((id) => state.people[id].name).join(", ") || "no open spots"}`, "wildcards");
+  social.wildcards(state, y, winners, runnersUp);
+  if (winners.length) cut.push({ type: "ceremony", ids: winners, event: `Grand Beatbox Battle ${y}`, label: "Wildcard", comp: "gbb" });
   return { winners, runnersUp, standings: winners.concat(runnersUp) };
 }
 
@@ -641,11 +688,14 @@ function seasonReview(state, ev, cut) {
     if (p.status === "active") {
       const yearsIn = y - (p.debut ?? y) + 1;
       const gap = p.potential - p.rating;
-      const g = yearsIn <= 3 ? 0.22 : yearsIn <= 6 ? 0.14 : yearsIn <= 10 ? 0.06 : 0;
+      const g = yearsIn <= 3 ? 0.22 : yearsIn <= 6 ? 0.15 : yearsIn <= 10 ? 0.08 : 0.03;
       if (gap > 0) p.rating += gap * g * r.range(0.5, 1.3);
-      if (yearsIn >= 11) p.rating -= r.range(0.2, 1.2) * (yearsIn - 10) * 0.3;
-      if ((p.lastCompeted ?? 0) < y) p.rating -= 1.5;
-      p.rating = Math.max(25, Math.min(99, p.rating));
+      // only very long careers fade, and slowly
+      if (yearsIn >= 15) p.rating -= r.range(0, 0.5) * Math.min(3, (yearsIn - 14) * 0.3);
+      if ((p.lastCompeted ?? 0) < y) p.rating -= 0.5;
+      // the level you reached doesn't disappear while you're still competing
+      const floor = (p.peak ?? p.rating) - 6 - Math.max(0, yearsIn - 14) * 0.8;
+      p.rating = Math.max(25, Math.min(99, Math.max(p.rating, Math.min(floor, p.rating + 1))));
       p.peak = Math.max(p.peak ?? p.rating, p.rating);
       // retirement
       const startOfYear = p.hist.length ? p.hist[p.hist.length - 1].r : p.rating;
@@ -662,6 +712,11 @@ function seasonReview(state, ev, cut) {
         if (majorsOf(p) >= 1 || (p.peak || 0) >= 85) cut.push({ type: "retirement", id: p.id });
         if (p.rating >= 68 || p.titles.length || (p.peak || 0) >= 75)
           news(state, `${p.name} retires from competing${p.status === "judge" ? " and moves to the judging table" : ""}`, "retire", { id: p.id });
+        social.retire(state, p.id);
+        for (const fy of releaseQualified(state, p.id)) {
+          news(state, `${p.name}'s GBB ${fy} spot opens up: one more wildcard goes out`, "qualify", { id: p.id });
+          social.spotOpened(state, p.id, fy);
+        }
       } else {
         const years = y - (p.debut ?? y) + 1;
         p.retirementRisk = Math.min(0.85, 0.04 + 0.015 * Math.max(0, years - 6) + (majorsOf(p) >= 2 ? 0.35 : majorsOf(p) === 1 ? 0.12 : 0));
@@ -675,6 +730,7 @@ function seasonReview(state, ev, cut) {
         p.form = 1.5;
         comebacks.push(p.id);
         news(state, `${p.name} announces a comeback!`, "comeback", { id: p.id });
+        social.comeback(state, p.id);
         cut.push({ type: "comeback", id: p.id });
       }
     }

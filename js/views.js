@@ -1,6 +1,8 @@
 // HTML for each screen. Views read from the app context and return markup; main.js wires the actions.
 import { esc, round, avatarColors, imageCache, localPictures, defaultPictures, MONTH_NAMES } from "./data.js";
 import { compName, nextEvent, nationalChampionGrid, championsOf, ordinal } from "./sim.js";
+import { eventArt, artTheme } from "./art.js";
+import { accountOf, handleOf, isVerified } from "./social.js";
 
 let A; // app context: { state, data }
 export const bindViews = (ctx) => { A = ctx; };
@@ -81,6 +83,7 @@ export function viewHome() {
   const progress = st.season.events.filter((e) => e.status !== "upcoming").length;
   return `
   <section class="poster">
+    ${ev ? artFor(ev) : heroArt()}
     <div class="poster-txt">
       <p class="eyebrow">Season ${st.year}${ev ? ` · ${when(ev)}` : ""}</p>
       <h1>${ev ? esc(ev.name.replace(` ${st.year}`, "")) : "Season complete"}</h1>
@@ -95,7 +98,6 @@ export function viewHome() {
       <div class="meter" aria-label="Season progress"><span style="width:${Math.round(100 * progress / st.season.events.length)}%"></span></div>
       <p class="small muted">${progress} of ${st.season.events.length} events played</p>
     </div>
-    ${heroArt()}
   </section>
   <div class="grid3">
     <section class="card">
@@ -112,6 +114,10 @@ export function viewHome() {
     </section>
   </div>
   <section>
+    <header class="sec-h card-h"><h2>On socials</h2><a href="#feed">Open the feed</a></header>
+    <div class="feed-strip">${(st.social || []).slice(0, 6).map((x) => postHTML(x, { compact: true })).join("") || `<p class="muted">Posts appear here as the season runs: line-ups, champions, reactions and retirements.</p>`}</div>
+  </section>
+  <section>
     <header class="sec-h"><h2>Latest champions</h2></header>
     <div class="champ-strip">${done.map((e) => { const r = st.archive[e.key]; const p = P(r.champion); return `<a class="champ-card" href="#event/${encodeURIComponent(e.key)}">${avatar(r.champion, "md")}<span class="cc-name">${flag(p.country)}${esc(p.name)}</span><span class="cc-ev">${esc(e.name.replace(` ${e.year}`, ""))}</span></a>`; }).join("") || `<p class="muted">Results appear here as the season runs.</p>`}</div>
   </section>`;
@@ -127,7 +133,7 @@ export function viewCalendar() {
     <div class="legend">${["major", "qual", "wild", "intl", "open", "nat"].map((k) => `<span class="lg">${kindIcon(k)}${KIND_LABEL[k]}</span>`).join("")}</div></header>
   <div class="cal">${byMonth.map((list, m) => `
     <section class="cal-m"><h3><span>${String(m + 1).padStart(2, "0")}</span>${MONTH_NAMES[m]}</h3>
-      ${list.map((e) => { const r = st.archive[e.key]; return `<a class="cal-e k-${kindOf(e)} ${e.status}" href="#event/${encodeURIComponent(e.key)}">
+      ${list.map((e) => { const r = st.archive[e.key]; return `<a class="cal-e k-${kindOf(e)} ${e.status}" style="--tc:${artTheme(e).a}" href="#event/${encodeURIComponent(e.key)}">
         ${kindIcon(kindOf(e))}<span class="t">${esc(e.name.replace(` ${st.year}`, ""))}</span><span class="d">${e.day}</span>
         ${r?.champion ? `<span class="w">${flag(P(r.champion).country)}${esc(P(r.champion).name)}</span>` : e.status === "skipped" ? `<span class="w muted">Not held</span>` : ""}</a>`; }).join("") || `<p class="muted small">No events</p>`}
     </section>`).join("")}</div>`;
@@ -143,7 +149,7 @@ export function viewEvent(key) {
   const actions = !r && ev.status === "upcoming"
     ? `${liveable(ev) ? `<button class="btn primary" data-act="live" data-key="${esc(key)}">Watch it live</button>` : ""}<button class="btn" data-act="runto" data-key="${esc(key)}">Sim up to this event</button>`
     : r && r.battles?.length && r.format !== "7ts" ? `<button class="btn" data-act="replay" data-key="${esc(key)}">Replay the battles</button>` : "";
-  const head = `<header class="ev-head k-${k}"><div><p class="eyebrow">${kindIcon(k)} ${KIND_LABEL[k] || "Event"} · ${when(ev)}, ${ev.year}</p><h1>${esc(ev.name)}</h1></div><div class="row gap">${actions}</div></header>`;
+  const head = `<header class="ev-head k-${k}" style="--tc:${artTheme(ev).a}">${artFor(ev)}<div><p class="eyebrow">${kindIcon(k)} ${KIND_LABEL[k] || "Event"} · ${when(ev)}, ${ev.year}</p><h1>${esc(ev.name)}</h1></div><div class="row gap">${actions}</div></header>`;
   if (!r) return head + `<section class="card"><p class="muted">This event hasn't happened yet. Watch it live to see every battle and every judge's vote, or sim up to it.</p></section>`;
   if (r.skipped) return head + `<section class="card"><p class="muted">Not held: ${esc(r.reason || "not enough entrants")}.</p></section>`;
   if (r.kind === "wildcards") {
@@ -273,6 +279,8 @@ export function viewProfile(id) {
       <ul class="plain links">${results.map((r) => { const pl = r.standings.indexOf(id); return `<li><span class="yr">${r.year}</span><a href="#event/${encodeURIComponent(r.key)}">${esc(r.name.replace(` ${r.year}`, ""))}</a> <span class="muted">${pl === 0 ? "Champion" : pl >= 0 ? ordinal(pl + 1) : "entered"}</span></li>`; }).join("") || "<li class='muted'>Nothing simulated yet</li>"}</ul>
     </section>
   </div>
+  ${(() => { const mine = (A.state.social || []).filter((x) => x.by.p === id || x.people?.includes(id) || x.photo === id).slice(0, 6);
+    return mine.length ? `<section><header class="sec-h"><h2>On socials</h2></header><div class="feed-strip">${mine.map((x) => postHTML(x, { compact: true })).join("")}</div></section>` : ""; })()}
   <section class="card"><h2>Career history</h2><p class="muted small">Every real event in the records. Click one to see its battles.</p>
     <div class="tbl-wrap"><table class="tbl career"><thead><tr><th>Year</th><th>Event</th><th>Category</th><th>Result</th></tr></thead><tbody>
     ${realAppearances(id).map((a) => `<tr><td class="yr">${a.year}</td><td><a href="${a.href}">${esc(a.name)}</a></td><td class="muted">${esc(a.cat)}</td><td class="${a.rank === 1 ? "gold" : ""}">${esc(a.result)}</td></tr>`).join("") || `<tr><td colspan="4" class="muted">No real events on record.</td></tr>`}
@@ -344,12 +352,13 @@ export function viewHistory(arg) {
   const [cid, idxStr] = (arg || "").split("/");
   const e = (A.data.history[cid] || [])[+idxStr];
   if (!e) return `<p class="muted">Event not found.</p>`;
-  const ev = { comp: cid, national: compName(cid) && cid.startsWith("nat_") ? cid.slice(4) : null };
+  const c = A.data.competitions.find((x) => x.id === cid);
+  const ev = { comp: cid, national: c?.scope === "national" ? c.country : null, qualifier: ["fbb", "gnb", "mba", "apac", "amrq", "bcj", "ebc", "gbc_global"].includes(cid) };
   const k = kindOf(ev);
   const where = [e.dates, e.location].filter(Boolean).join(" · ");
   const judges = (e.judges || []).map(bidOf).filter(Boolean);
   const cats = Object.entries(e.categories || {}).sort(([a], [b]) => (a === "solo" ? -1 : b === "solo" ? 1 : 0));
-  return `<header class="ev-head k-${k}"><div><p class="eyebrow">${kindIcon(k)} Real results · ${esc(where || e.year)}</p><h1>${esc(e.name)}</h1></div>
+  return `<header class="ev-head k-${k}" style="--tc:${artTheme(ev).a}">${artFor({ ...ev, year: e.year })}<div><p class="eyebrow">${kindIcon(k)} Real results · ${esc(where || e.year)}</p><h1>${esc(e.name)}</h1></div>
       <span class="chip">${esc(e.status === "upcoming" ? "Upcoming" : "History")}</span></header>
     ${cats.map(([cat, d]) => historyCategory(cat, d)).join("") || `<section class="card"><p class="muted">No solo results recorded for this edition.</p></section>`}
     ${judges.length ? `<section class="card"><h2>Judges</h2><ul class="plain">${judges.map((j) => `<li>${avatar(j)}${nameLink(j)}</li>`).join("")}</ul></section>` : ""}`;
@@ -473,10 +482,16 @@ export function viewSettings() {
         ${[["watch", "Watch wildcards, then the battles"], ["battle", "Skip to the battles"], ["skip", "Skip the competition"]].map(([v, l]) => `<option value="${v}"${(s.defaultChoice || "watch") === v ? " selected" : ""}>${l}</option>`).join("")}
       </select></label>
       ${A.state.seasonChoice?.year === A.state.year ? `<p class="small muted">You chose "${esc(A.state.seasonChoice.choice)}" for the rest of ${A.state.year}. <button class="btn small" data-act="forgetchoice">Ask again</button></p>` : ""}
+      <h3 class="mt">Skip in the background</h3>
+      <p class="muted small">Skipped events still happen and count, but run without questions, live battles or cutscenes, and "Next" jumps past them.</p>
+      ${box("skipNat", "Skip national championships")}
+      ${box("skipIntl", "Skip international championships (La Cup, One One, Beatbox of the Month…)")}
+      ${box("skipQual", "Skip GBB qualifiers")}
+      <h3 class="mt">Cutscenes</h3>
       ${box("cutscenes", "Champion, retirement and comeback cutscenes", true)}
       ${box("nationalCutscenes", "A cutscene for every national champion")}
       ${box("sound", "Beat and sound effects", true)}
-      <div class="row gap mt"><button class="btn" data-act="demo" data-type="ceremony">Preview wildcard ceremony</button><button class="btn" data-act="demo" data-type="champion">Preview champion</button><button class="btn" data-act="demo" data-type="live">Preview a live battle</button><button class="btn" data-act="demo" data-type="retirement">Preview retirement</button></div>
+      <div class="row gap mt"><button class="btn" data-act="demo" data-type="ceremony">Preview wildcard ceremony</button><button class="btn" data-act="demo" data-type="champion">Preview champion (next colour each click)</button><button class="btn" data-act="demo" data-type="live">Preview a live battle</button><button class="btn" data-act="demo" data-type="retirement">Preview retirement</button></div>
     </section>
     <section class="card"><h2>Save game</h2>
       <p class="muted small">The game saves itself in this browser after every step. Export a file to back it up or move it to another device.</p>
@@ -485,5 +500,77 @@ export function viewSettings() {
       <div class="row gap mt"><button class="btn danger" data-act="newgame">Start a new game from 2027</button></div>
       <p class="muted small" data-confirm></p>
     </section>
+  </div>`;
+}
+
+// ---------------- event graphics ----------------
+const SHORT = { gbb: "GBB", bbwc: "BBWC", ebc: "EBC", fbb: "FLORIDA", gnb: "GREAT NORTH", mba: "MAESTRO", apac: "APAC", amrq: "AMRQ", bcj: "BEATCITY",
+  gbc_global: "GBC GLOBAL", gbc: "GBC", lacup: "LA CUP", vokal_total: "VOKAL TOTAL", bayreuth: "BAYREUTH", one_one: "ONE ONE", nue: "NUE", btw: "BTW", botm: "BOTM",
+  gbb_7ts: "7 TO SMOKE", gbb_second_league: "SECOND LEAGUE", gbb_wildcards: "WILDCARDS", season_review: "REVIEW" };
+export function artFor(ev) {
+  const big = ev.national ? countryName(ev.national) : SHORT[ev.comp] || "";
+  return eventArt(ev, { big, year: ev.year || "" });
+}
+// champion previews in Settings cycle through every colour
+export const PREVIEW_EVENTS = [["gbb", "Grand Beatbox Battle", "gbb"], ["bbwc", "Beatbox Battle World Championship", "bbwc"], ["gbc_global", "GBC Global Solo", "qualifier"],
+  ["fbb", "Florida Beatbox Battle", "qualifier"], ["bcj", "BeatCity Japan", "qualifier"], ["ebc", "European Beatbox Championship", "qualifier"], ["lacup", "La Cup", "event"]];
+
+// ---------------- social feed ----------------
+const VERIFIED = `<svg class="vf" viewBox="0 0 24 24" role="img" aria-label="Verified"><path d="M12 1.5l2.5 2 3.2-.4 1 3.1 2.9 1.5-1.1 3 1.1 3-2.9 1.5-1 3.1-3.2-.4-2.5 2-2.5-2-3.2.4-1-3.1L2.4 14.7l1.1-3-1.1-3 2.9-1.5 1-3.1 3.2.4Z"/><path d="m7.6 12.3 2.9 2.9 5.9-6" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const fmtNum = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n >= 1e4 ? `${Math.round(n / 1e3)}K` : n >= 1e3 ? `${(n / 1e3).toFixed(1)}K` : `${n}`);
+const fanColor = (h) => { let x = 0; for (const c of h) x = (x * 31 + c.charCodeAt(0)) >>> 0; return `hsl(${x % 360} 55% 45%)`; };
+function authorOf(by) {
+  if (by.p) {
+    const p = P(by.p);
+    return { name: p?.name || by.p, handle: handleOf(p?.name), verified: isVerified(p), av: avatar(by.p, "md"), href: `#bb/${encodeURIComponent(by.p)}`, flag: flag(p?.country) };
+  }
+  if (by.acct) {
+    const a = accountOf(by.acct);
+    return { name: a.name, handle: a.handle, verified: true, av: `<span class="av av-md acct" style="--ac:${a.color}"><span>${esc(a.short)}</span></span>`, href: null, flag: "" };
+  }
+  return { name: by.fan, handle: `@${by.fan}`, verified: false, av: `<span class="av av-md fan" style="--ac:${fanColor(by.fan)}"><span>${esc(by.fan[0].toUpperCase())}</span></span>`, href: null, flag: "" };
+}
+// flag emoji don't draw on Windows, so swap them for the flag-icons artwork
+const linkify = (text) => esc(text).replace(/\n/g, "<br>")
+  .replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, (m) => flag([...m].map((c) => String.fromCharCode(c.codePointAt(0) - 0x1f1a5)).join("").toLowerCase(), false));
+function whoHTML(a) {
+  const name = `<b>${esc(a.name)}</b>${a.verified ? VERIFIED : ""}`;
+  return `<span class="po-who">${a.href ? `<a href="${a.href}">${name}</a>` : name}<span class="po-h">${esc(a.handle)}</span></span>`;
+}
+export function postHTML(x, { compact = false } = {}) {
+  const a = authorOf(x.by);
+  const date = `${MONTH_NAMES[(x.m || 1) - 1].slice(0, 3)} ${x.y}`;
+  const img = x.photo && imageCache.get(x.photo);
+  const media = x.art ? `<a class="po-media art" href="${x.ev ? `#event/${encodeURIComponent(x.ev)}` : "#calendar"}">${artFor(x.art)}<span class="po-art-t">${esc(x.art.name)}</span></a>`
+    : img ? `<a class="po-media" href="#bb/${encodeURIComponent(x.photo)}"><img src="${img}" alt="" loading="lazy" decoding="async"></a>` : "";
+  const chips = x.people?.length ? `<div class="po-chips">${x.people.slice(0, compact ? 6 : 20).map((id) => `<a class="po-chip" href="#bb/${encodeURIComponent(id)}">${flag(P(id)?.country)}${esc(P(id)?.name || id)}</a>`).join("")}${compact && x.people.length > 6 ? `<span class="po-chip more">+${x.people.length - 6}</span>` : ""}</div>` : "";
+  const replies = (compact ? x.replies.slice(0, 1) : x.replies).map((r) => { const ra = authorOf(r.by); return `<div class="po-reply">${ra.av}<div><div class="po-head">${whoHTML(ra)}</div><p>${linkify(r.text)}</p><span class="po-act"><span>♥ ${fmtNum(r.likes)}</span></span></div></div>`; }).join("");
+  return `<article class="post k-${esc(x.kind || "post")}">
+    <div class="po-top">${a.av}<div class="po-head">${whoHTML(a)}<span class="po-d">${a.flag} ${date}</span></div></div>
+    <p class="po-text">${linkify(x.text)}</p>
+    ${chips}${media}
+    <div class="po-act"><span title="Replies">💬 ${x.replies.length}</span><span title="Reposts">⟳ ${fmtNum(x.reposts)}</span><span title="Likes">♥ ${fmtNum(x.likes)}</span></div>
+    ${replies ? `<div class="po-replies">${replies}${compact && x.replies.length > 1 ? `<a class="po-more" href="#feed">${x.replies.length - 1} more repl${x.replies.length === 2 ? "y" : "ies"}</a>` : ""}</div>` : ""}
+  </article>`;
+}
+
+const FEED_TABS = [["all", "For you"], ["win", "Champions"], ["lineup", "Line-ups"], ["qualify", "GBB tickets"], ["retire", "Retirements"], ["fans", "Fans"]];
+export function viewFeed(params) {
+  const st = A.state;
+  const tab = params.get("f") || "all";
+  const all = st.social || [];
+  const list = all.filter((x) => tab === "all" || (tab === "fans" ? !!x.by.fan : tab === "win" ? ["win", "result"].includes(x.kind) : tab === "qualify" ? ["qualify", "wildcards"].includes(x.kind) : x.kind === tab || (tab === "retire" && x.kind === "comeback"))).slice(0, 80);
+  // who gets talked about the most
+  const buzz = {};
+  for (const x of all.slice(0, 150)) for (const id of [x.by.p, x.photo, ...(x.people || []).slice(0, 3)]) if (id) buzz[id] = (buzz[id] || 0) + 1 + (x.likes > 5000 ? 2 : 0);
+  const trending = Object.entries(buzz).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([id]) => id).filter((id) => P(id));
+  return `<header class="page-h"><div><p class="eyebrow">The scene online</p><h1>Feed</h1></div>
+    <nav class="tabs">${FEED_TABS.map(([k, l]) => `<a class="tab ${k === tab ? "on" : ""}" href="#feed?f=${k}">${l}</a>`).join("")}</nav></header>
+  <div class="feed-layout">
+    <div class="feed">${list.map((x) => postHTML(x)).join("") || `<section class="card"><p class="muted">Nothing here yet. Sim some events: line-ups, champions, reactions and retirements all show up here.</p></section>`}</div>
+    <aside class="feed-side">
+      <section class="card"><h2>Trending</h2><ol class="plain">${trending.map((id, i) => `<li><span class="rk">${i + 1}</span>${avatar(id)}${nameLink(id)}</li>`).join("") || "<li class='muted'>Quiet so far</li>"}</ol></section>
+      <section class="card"><h2>Headlines</h2><ul class="news">${st.news.slice(0, 10).map((n) => `<li class="n-${n.kind}"><span class="when">${MONTH_NAMES[(n.month || 1) - 1].slice(0, 3)} ${n.year}</span>${esc(n.text)}</li>`).join("") || "<li class='muted'>No headlines yet</li>"}</ul></section>
+    </aside>
   </div>`;
 }

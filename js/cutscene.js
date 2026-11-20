@@ -17,6 +17,13 @@ function noiseBuffer(ac) {
   return b;
 }
 
+import { themeFor } from "./art.js";
+
+// colour helpers for the themed scenes
+const rgb = (hex) => { const n = parseInt(hex.slice(1), 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; };
+const rgba = (hex, a) => `rgba(${rgb(hex).join(",")},${a})`;
+const inkOn = (hex) => { const [r, g, b] = rgb(hex); return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.6 ? "#0b0b0d" : "#ffffff"; };
+
 // one mute switch for every beat that is playing
 let MUTED = false;
 const BEATS = new Set();
@@ -298,7 +305,8 @@ const SCENES = {
       : "CHAMPION";
     const flagImg = await loadImg(h.flagUrl(p.country));
     const extra = sc.tier === "qualifier" ? `QUALIFIED FOR GBB ${sc.ticketYear || ""}`.trim() : null;
-    return { duration: big ? 8.5 : 6.8, bpm: 84, mood: "warm", img, colors, p, label, flagImg, extra,
+    const theme = themeFor(sc.comp || (sc.tier === "gbb" ? "gbb" : sc.tier === "bbwc" ? "bbwc" : null));
+    return { duration: big ? 8.5 : 6.8, bpm: 84, mood: "warm", img, colors, p, label, flagImg, extra, theme,
       record: h.record(sc.id), sub: sc.event, score: sc.score, runnerUp: sc.runnerUp ? h.person(sc.runnerUp).name : null };
   },
   async ceremony(g, sc, h) {
@@ -309,7 +317,8 @@ const SCENES = {
       return { p, place, img: await loadImg(h.image(id)), flag: await loadImg(h.flagUrl(p.country)), colors: h.flag(p.country) };
     }));
     const per = items.length > 12 ? 1.9 : 2.5;
-    return { duration: 2.2 + items.length * per + 1.6, bpm: 86, mood: "warm", items, per, sub: sc.event, label: sc.label || "Wildcard" };
+    const accent = themeFor(sc.comp || "gbb").a;
+    return { duration: 2.2 + items.length * per + 1.6, bpm: 86, mood: "warm", items, per, sub: sc.event, label: sc.label || "Wildcard", accent, accentInk: inkOn(accent) };
   },
   async wildcards(g, sc, h) {
     const people = sc.ids.map((id) => h.person(id));
@@ -347,15 +356,17 @@ function drawChampion(g, W, H, t, s, beat) {
   }
   const local = t - intro;
   const appear = ease(local / 1.2);
+  const T = s.theme;
   const cardH = Math.min(H * 0.44, 380), cardW = cardH * 0.8;
   const cx = W / 2, cy = H * 0.38;
-  // gold halo + halftone dots growing from the center
-  const halo = g.createRadialGradient(cx, cy, 10, cx, cy, Math.max(W, H) * 0.55);
-  halo.addColorStop(0, `rgba(255,194,61,${0.22 * appear})`);
-  halo.addColorStop(0.45, `rgba(255,140,40,${0.07 * appear})`);
-  halo.addColorStop(1, "rgba(0,0,0,0)");
-  g.fillStyle = halo; g.fillRect(0, 0, W, H);
-  g.fillStyle = `rgba(255,194,61,${0.16 * appear})`;
+  // the event's colour floods the screen from the centre
+  const bg = g.createRadialGradient(cx, cy, 10, cx, cy, Math.max(W, H) * 0.75);
+  bg.addColorStop(0, rgba(T.b, appear));
+  bg.addColorStop(0.35, rgba(T.a, appear));
+  bg.addColorStop(1, rgba(T.deep, appear));
+  g.fillStyle = bg; g.fillRect(0, 0, W, H);
+  champMotif(g, W, H, cx, cy, cardH, T, local, appear);
+  g.fillStyle = rgba(T.deep, 0.22 * appear);
   const step = 16;
   for (let y = 0; y < H; y += step) for (let x = 0; x < W; x += step) {
     const d = Math.hypot(x - cx, y - cy) / Math.max(W, H);
@@ -366,7 +377,7 @@ function drawChampion(g, W, H, t, s, beat) {
   g.save();
   g.translate(cx, cy);
   g.rotate(local * 0.04);
-  g.strokeStyle = `rgba(255,214,140,${0.08 * appear})`;
+  g.strokeStyle = `rgba(255,255,255,${0.12 * appear})`;
   g.lineWidth = 2;
   for (let i = 0; i < 28; i++) {
     const a = (i / 28) * Math.PI * 2;
@@ -379,12 +390,12 @@ function drawChampion(g, W, H, t, s, beat) {
   const wm = "CHAMPION";
   g.font = `900 ${Math.min(W * 0.34, H * 0.5)}px ${DISPLAY}`;
   g.lineWidth = 2;
-  g.strokeStyle = `rgba(255,194,61,${0.09 * appear})`;
+  g.strokeStyle = `rgba(255,255,255,${0.2 * appear})`;
   g.strokeText(wm, cx, cy + Math.min(W * 0.11, H * 0.17));
   g.restore();
   // dashed rings
   g.save();
-  g.strokeStyle = `rgba(255,194,61,${0.45 * appear})`;
+  g.strokeStyle = `rgba(255,255,255,${0.5 * appear})`;
   g.lineWidth = 1.5;
   [0.78, 0.98, 1.2].forEach((m, i) => {
     g.setLineDash([2 + i * 2, 9 + i * 3]);
@@ -397,8 +408,12 @@ function drawChampion(g, W, H, t, s, beat) {
   const fx = cx - cardW / 2, fy = cy - cardH / 2 + (1 - rise) * 40;
   g.save();
   g.globalAlpha = rise;
-  g.beginPath();
-  g.moveTo(fx, fy); g.lineTo(fx + cardW, fy); g.lineTo(fx + cardW, fy + cardH * 0.84); g.lineTo(fx + cardW * 0.84, fy + cardH); g.lineTo(fx, fy + cardH); g.closePath();
+  const framePath = (dx = 0, dy = 0) => {
+    g.beginPath();
+    g.moveTo(fx + dx, fy + dy); g.lineTo(fx + cardW + dx, fy + dy); g.lineTo(fx + cardW + dx, fy + cardH * 0.84 + dy); g.lineTo(fx + cardW * 0.84 + dx, fy + cardH + dy); g.lineTo(fx + dx, fy + cardH + dy); g.closePath();
+  };
+  framePath(14, 14); g.fillStyle = rgba(T.deep, 0.85); g.fill();
+  framePath();
   g.save();
   g.clip();
   if (s.img) {
@@ -421,7 +436,7 @@ function drawChampion(g, W, H, t, s, beat) {
     g.textBaseline = "alphabetic";
   }
   g.restore();
-  g.strokeStyle = "#ffc23d"; g.lineWidth = 3; g.stroke();
+  g.strokeStyle = "#ffffff"; g.lineWidth = 3; g.stroke();
   g.restore();
   // crown with a microphone, sitting on the frame
   const em = ease((local - 0.8) / 0.6);
@@ -430,11 +445,13 @@ function drawChampion(g, W, H, t, s, beat) {
     g.globalAlpha = em;
     g.translate(cx, fy - 6);
     const u = Math.max(14, cardH * 0.06);
-    g.fillStyle = "#ffc23d";
+    g.fillStyle = "#ffffff";
+    g.shadowColor = rgba(T.deep, 0.6); g.shadowBlur = 12;
     g.beginPath();
     g.moveTo(-u * 1.6, 0); g.lineTo(-u * 1.6, -u * 1.1); g.lineTo(-u * 0.8, -u * 0.5); g.lineTo(0, -u * 1.5);
     g.lineTo(u * 0.8, -u * 0.5); g.lineTo(u * 1.6, -u * 1.1); g.lineTo(u * 1.6, 0); g.closePath(); g.fill();
-    g.fillStyle = "#0b0b0d";
+    g.shadowBlur = 0;
+    g.fillStyle = T.a;
     g.beginPath(); g.ellipse(0, -u * 0.62, u * 0.22, u * 0.32, 0, 0, Math.PI * 2); g.fill();
     g.fillRect(-u * 0.05, -u * 0.32, u * 0.1, u * 0.26);
     g.restore();
@@ -455,9 +472,9 @@ function drawChampion(g, W, H, t, s, beat) {
   g.font = `900 ${lf}px ${DISPLAY}`;
   const lw = g.measureText(s.label).width + 28;
   const ly = ty - size * 0.86 - 16;
-  g.fillStyle = "#ffc23d";
+  g.fillStyle = T.a;
   g.beginPath(); g.moveTo(cx - lw / 2, ly - lf - 6); g.lineTo(cx + lw / 2 + 8, ly - lf - 6); g.lineTo(cx + lw / 2, ly + 6); g.lineTo(cx - lw / 2 - 8, ly + 6); g.closePath(); g.fill();
-  g.fillStyle = "#0b0b0d";
+  g.fillStyle = inkOn(T.a);
   g.fillText(s.label, cx, ly);
   // the name: big, with a dark outline and shadow
   g.font = `900 ${size}px ${DISPLAY}`;
@@ -468,7 +485,7 @@ function drawChampion(g, W, H, t, s, beat) {
   g.fillText(s.p.name.toUpperCase(), cx, ty);
   g.shadowBlur = 0;
   const lineW = Math.min(W * 0.3, 280) * ease((local - 1.3) / 1.0);
-  g.fillStyle = "#ffc23d";
+  g.fillStyle = T.a;
   g.fillRect(cx - lineW / 2, ty + 12, lineW, 3);
   g.font = `800 ${Math.max(15, W * 0.018)}px ${BODY}`;
   const cname = s.p.countryName.toUpperCase();
@@ -488,9 +505,64 @@ function drawChampion(g, W, H, t, s, beat) {
   g.globalAlpha = appear;
   g.textAlign = "left";
   g.font = `700 ${Math.max(12, W * 0.014)}px ${BODY}`;
-  g.fillStyle = "rgba(242,239,232,0.8)";
+  g.fillStyle = "rgba(255,255,255,0.92)";
+  g.shadowColor = "rgba(0,0,0,0.5)"; g.shadowBlur = 8;
   g.fillText(s.sub.toUpperCase(), 28, 40);
+  g.shadowBlur = 0;
   g.globalAlpha = 1;
+}
+
+// each event's own pattern behind the champion: sunset stripes, a globe, stars, diagonal stripes…
+function champMotif(g, W, H, cx, cy, cardH, T, local, appear) {
+  g.save();
+  g.globalAlpha = appear;
+  const R = cardH * 1.25;
+  if (T.motif === "sunset") {
+    // retro sun with cut stripes, pink into orange
+    const sun = g.createLinearGradient(0, cy - R, 0, cy + R);
+    sun.addColorStop(0, "rgba(255,214,110,0.75)"); sun.addColorStop(1, rgba(T.a, 0.2));
+    g.fillStyle = sun; g.beginPath(); g.arc(cx, cy, R, 0, Math.PI * 2); g.fill();
+    g.fillStyle = rgba(T.deep, 0.5);
+    for (let i = 0; i < 9; i++) g.fillRect(0, cy + i * R * 0.12, W, 3 + i * 1.6);
+  } else if (T.motif === "stripes") {
+    g.fillStyle = "rgba(255,255,255,0.12)";
+    const off = (local * 18) % 80;
+    for (let x = -H; x < W + H; x += 80) { g.beginPath(); g.moveTo(x + off, H); g.lineTo(x + off + H * 0.6, 0); g.lineTo(x + off + H * 0.6 + 34, 0); g.lineTo(x + off + 34, H); g.fill(); }
+    g.strokeStyle = "rgba(255,255,255,0.75)"; g.lineWidth = 6;
+    g.beginPath(); g.arc(cx, cy, R * 0.92, 0, Math.PI * 2); g.stroke();
+  } else if (T.motif === "globe") {
+    g.strokeStyle = "rgba(255,255,255,0.18)"; g.lineWidth = 2;
+    g.save(); g.translate(cx, cy);
+    g.beginPath(); g.arc(0, 0, R, 0, Math.PI * 2); g.stroke();
+    for (let k = 0; k < 5; k++) { const rx = Math.abs(Math.cos(local * 0.3 + (k * Math.PI) / 5)) * R; g.beginPath(); g.ellipse(0, 0, rx, R, 0, 0, Math.PI * 2); g.stroke(); }
+    for (const f of [-0.6, -0.3, 0, 0.3, 0.6]) { const y = f * R, w = Math.sqrt(R * R - y * y); g.beginPath(); g.moveTo(-w, y); g.lineTo(w, y); g.stroke(); }
+    g.restore();
+  } else if (T.motif === "stars") {
+    g.fillStyle = "rgba(255,255,255,0.85)";
+    for (let k = 0; k < 12; k++) {
+      const a = (k / 12) * Math.PI * 2 + local * 0.05, x = cx + Math.cos(a) * R, y = cy + Math.sin(a) * R, rr = Math.max(8, cardH * 0.045);
+      g.beginPath();
+      for (let j = 0; j < 10; j++) { const b = -Math.PI / 2 + (j * Math.PI) / 5, q = j % 2 ? rr * 0.42 : rr; g.lineTo(x + Math.cos(b) * q, y + Math.sin(b) * q); }
+      g.closePath(); g.fill();
+    }
+  } else if (T.motif === "dots") {
+    g.fillStyle = "rgba(255,255,255,0.22)";
+    const step = 30;
+    for (let y = 0; y < H; y += step) for (let x = 0; x < W; x += step) {
+      const d = Math.hypot(x - cx, y - cy) / Math.max(W, H);
+      const r = Math.max(0, Math.sin(d * 14 - local * 1.2) * 5 + 2);
+      g.beginPath(); g.arc(x + ((y / step) % 2 ? step / 2 : 0), y, r, 0, Math.PI * 2); g.fill();
+    }
+  } else if (T.motif === "rays") {
+    g.fillStyle = "rgba(255,255,255,0.1)";
+    g.translate(cx, cy); g.rotate(-local * 0.03);
+    for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; g.beginPath(); g.moveTo(0, 0); g.lineTo(Math.cos(a) * W * 1.5, Math.sin(a) * W * 1.5); g.lineTo(Math.cos(a + 0.12) * W * 1.5, Math.sin(a + 0.12) * W * 1.5); g.fill(); }
+  } else {
+    // gold: soft concentric rings moving outwards
+    g.strokeStyle = rgba(T.deep, 0.18);
+    for (let i = 1; i < 9; i++) { g.lineWidth = i % 2 ? 2 : 8; g.beginPath(); g.arc(cx, cy, cardH * 0.4 * i + (local * 12) % (cardH * 0.4), 0, Math.PI * 2); g.stroke(); }
+  }
+  g.restore();
 }
 
 const ord = (n) => { const t = n % 100, u = n % 10; return `${n}${t >= 11 && t <= 13 ? "TH" : u === 1 ? "ST" : u === 2 ? "ND" : u === 3 ? "RD" : "TH"}`; };
@@ -550,7 +622,7 @@ function posterArt(g, W, H, it, k, accent = "255,120,40", streak = 0.05) {
 }
 
 // a tall portrait card with the cut corner, placed right of centre (above the name on narrow screens)
-function photoCard(g, W, H, img, k, show) {
+function photoCard(g, W, H, img, k, show, accent = "#ff5b1f") {
   if (show <= 0) return;
   const wide = W > H * 1.05;
   const ch = wide ? Math.min(H * 0.66, 560) : Math.min(H * 0.46, W * 0.9);
@@ -565,7 +637,7 @@ function photoCard(g, W, H, img, k, show) {
   g.save();
   g.globalAlpha = show;
   // soft shadow and an offset orange plate behind the card
-  g.fillStyle = "rgba(255,91,31,0.85)";
+  g.fillStyle = accent;
   g.save(); g.translate(14, 14); path(); g.fill(); g.restore();
   g.shadowColor = "rgba(0,0,0,0.6)"; g.shadowBlur = 40;
   path(); g.fillStyle = "#0b0b0d"; g.fill();
@@ -597,7 +669,7 @@ function drawCeremony(g, W, H, t, s, beat) {
     const fs = fitText(g, `${s.label.toUpperCase()} RESULTS`, W * 0.8, Math.min(W * 0.1, 116));
     g.font = `900 ${fs}px ${DISPLAY}`;
     g.fillText(`${s.label.toUpperCase()} RESULTS`, W * 0.07 - (1 - k) * 24, H * 0.52);
-    g.fillStyle = "#ff5b1f";
+    g.fillStyle = s.accent;
     g.fillRect(W * 0.07, H * 0.52 + 18, W * 0.22 * k, 5);
     g.font = `700 ${Math.max(14, W * 0.018)}px ${BODY}`;
     g.fillStyle = "rgba(242,239,232,0.75)";
@@ -618,7 +690,7 @@ function drawCeremony(g, W, H, t, s, beat) {
     list.forEach((it, j) => {
       const c = j % cols, r = Math.floor(j / cols);
       const x = W / 2 + (c - (cols - 1) / 2) * Math.min(340, W / cols);
-      g.fillStyle = "#ff5b1f";
+      g.fillStyle = s.accent;
       g.fillText(`${it.place}`, x - 110, H * 0.28 + r * (H * 0.62 / rows));
       g.fillStyle = "#f2efe8";
       g.fillText(it.p.name.toUpperCase(), x + 10, H * 0.28 + r * (H * 0.62 / rows));
@@ -632,7 +704,7 @@ function drawCeremony(g, W, H, t, s, beat) {
   if (!s[`hit${i}`]) { s[`hit${i}`] = true; if (beat.on) beat.kick(beat.ac.currentTime, 0.6); }
   // background: the flag poster art, always; their photo sits on it as a framed portrait card
   posterArt(g, W, H, it, k);
-  if (it.img) photoCard(g, W, H, it.img, k, ease((local - 0.1) / 0.7));
+  if (it.img) photoCard(g, W, H, it.img, k, ease((local - 0.1) / 0.7), s.accent);
   // gentle fade between people instead of a flash
   const fadeIn = 1 - ease(local / 0.45), fadeOut = ease((local - (s.per - 0.3)) / 0.3);
   const cover = Math.max(fadeIn, fadeOut);
@@ -651,9 +723,9 @@ function drawCeremony(g, W, H, t, s, beat) {
   const nameSize = fitText(g, it.p.name.toUpperCase(), W * 0.62, Math.min(W * 0.1, 120));
   g.textAlign = "left";
   g.save();
-  g.fillStyle = "#ff5b1f";
+  g.fillStyle = s.accent;
   g.beginPath(); g.moveTo(x0, base - nameSize - 46); g.lineTo(x0 + 250, base - nameSize - 46); g.lineTo(x0 + 236, base - nameSize - 14); g.lineTo(x0, base - nameSize - 14); g.fill();
-  g.fillStyle = "#0b0b0d";
+  g.fillStyle = s.accentInk;
   g.font = `900 ${22}px ${DISPLAY}`;
   g.fillText(`${ord(it.place)} ${s.label.toUpperCase()}`, x0 + 12, base - nameSize - 22);
   g.fillStyle = "#f2efe8";

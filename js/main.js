@@ -1,5 +1,6 @@
 import { loadData, saveGame, loadGame, putImage, deleteImage, warmImages, imageCache, localPictures, forgetLocalPicture, flagColors, flagUrl, esc, SAVE_VERSION } from "./data.js";
-import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking } from "./sim.js";
+import { setData, newGame, attachState, runNext, nextEvent, runCustom, runBracket, ranking, releaseQualified } from "./sim.js";
+import { setCountryNamer } from "./social.js";
 import * as V from "./views.js";
 import { playCutscene, setMuted } from "./cutscene.js";
 import { watchLive } from "./live.js";
@@ -18,6 +19,7 @@ const setting = (k, def = true) => app.state.settings[k] ?? def;
     const saved = await loadGame("auto");
     app.state = saved && saved.version === SAVE_VERSION ? attachState(saved) : newGame();
     V.bindViews(app);
+    setCountryNamer(V.countryName);
     setMuted(!setting("sound"));
     window.addEventListener("hashchange", render);
     render();
@@ -43,14 +45,14 @@ function render() {
   if (!app.state) return;
   const r = route();
   const views = {
-    home: () => V.viewHome(), calendar: () => V.viewCalendar(), event: () => V.viewEvent(r.arg),
+    home: () => V.viewHome(), calendar: () => V.viewCalendar(), event: () => V.viewEvent(r.arg), feed: () => V.viewFeed(r.params),
     people: () => V.viewPeople(r.params), rankings: () => V.viewPeople(r.params), bb: () => V.viewProfile(r.arg),
     history: () => V.viewHistory(r.arg),
     champions: () => V.viewChampions(), countries: () => V.viewCountries(), custom: () => V.viewCustom(app.picks),
     settings: () => V.viewSettings(),
   };
   $main.innerHTML = (views[r.name] || views.home)();
-  const navName = r.name === "bb" || r.name === "rankings" ? "people" : r.name === "event" ? "calendar" : r.name === "history" ? "champions" : r.name;
+  const navName = r.name === "feed" ? "feed" : r.name === "bb" || r.name === "rankings" ? "people" : r.name === "event" ? "calendar" : r.name === "history" ? "champions" : r.name;
   window.scrollTo(0, 0);
   document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === `#${navName}`));
   updateStatus();
@@ -85,6 +87,7 @@ function askChoice(ev) {
     const el = document.createElement("div");
     el.className = "choice";
     el.innerHTML = `<div class="choice-box" role="dialog" aria-modal="true" aria-labelledby="choice-h">
+      <div class="choice-art">${V.artFor(ev)}</div>
       <p class="eyebrow">${V.kindIcon(V.kindOf(ev))} ${esc(V.KIND_LABEL[V.kindOf(ev)] || "Event")} · ${esc(ev.name.match(/\d{4}/)?.[0] || "")}</p>
       <h2 id="choice-h">${esc(ev.name)}</h2>
       <div class="choice-opts">${opts.map(([k, label, sub], i) => `<button class="choice-opt${i === 0 ? " first" : ""}" data-choice="${k}"><b>${esc(label)}</b><span>${esc(sub)}</span></button>`).join("")}</div>
@@ -155,17 +158,24 @@ function wanted(sc, ev, quiet) {
   return sc.type === "retirement" || sc.type === "comeback" || (sc.type === "champion" && ["gbb", "bbwc", "qualifier"].includes(sc.tier));
 }
 
+// event groups you can choose to skip: they still happen, just in the background with no cutscenes or questions
+export const skipGroup = (ev) => (ev.national ? "skipNat" : ev.qualifier ? "skipQual"
+  : !ev.kind && !["gbb", "bbwc", "gbb_second_league"].includes(ev.comp) ? "skipIntl" : null);
+const isSkipped = (ev) => { const g = skipGroup(ev); return !!g && setting(g, false); };
+
 // ---------- simulation controls ----------
 async function simUntil(stop, { quiet = false, liveKey = null, silentBefore = false } = {}) {
   if (app.busy) return;
   app.busy = true;
   document.body.classList.add("busy");
   try {
+    let shown = 0; // events that weren't skipped
     for (let n = 0; n < 500; n++) {
       const ev = nextEvent(app.state);
-      if (!ev || stop(ev, n)) break;
+      if (!ev || stop(ev, n, shown)) break;
       const forced = liveKey && ev.key === liveKey;
-      const silent = silentBefore && !forced;
+      const silent = (silentBefore || isSkipped(ev)) && !forced;
+      if (!isSkipped(ev) || forced) shown++;
       // qualifiers, GBB wildcards, GBB and BBWC ask how you want to see them
       const choice = silent ? null : forced ? "watch" : await decide(ev);
       const out = runNext(app.state);
@@ -203,7 +213,7 @@ document.addEventListener("click", async (e) => {
   if (!b || b.closest(".live")) return;
   const act = b.dataset.act;
   const st = app.state;
-  if (act === "next") return simUntil((ev, n) => n >= 1);
+  if (act === "next") return simUntil((ev, n, shown) => shown >= 1);
   if (act === "month") { const m = nextEvent(st)?.month; return simUntil((ev) => ev.month !== m || ev.kind === "review", { quiet: true }); }
   if (act === "tognext") { let seen = false; return simUntil((ev) => { if (seen) return true; if (ev.comp === b.dataset.target) seen = true; return false; }, { quiet: true }); }
   if (act === "season") { const y = st.year; return simUntil(() => app.state.year !== y, { quiet: true }); }
@@ -286,6 +296,7 @@ async function saveEdit(f) {
   const num = (v, lo, hi) => Math.min(hi, Math.max(lo, Number(v)));
   p.name = d.name.trim() || p.name;
   if (d.country !== p.country) { p.country = d.country; p.countries = [d.country, ...(p.countries || []).filter((c) => c !== d.country)]; }
+  if (p.status === "active" && d.status !== "active") releaseQualified(app.state, p.id);
   p.status = d.status;
   p.rating = num(d.rating, 1, 99);
   p.potential = Math.max(p.rating, num(d.potential, 1, 99));
@@ -363,7 +374,9 @@ async function demo(type) {
     return live({ ...res, name: "Preview battle", judges: ranking(app.state, { by: "rating", status: "judge" }).slice(0, 5).map((p) => p.id) });
   }
   const sc = type === "ceremony" ? { type, ids: top.slice(6, 14).map((p) => p.id), event: `Grand Beatbox Battle ${app.state.year}`, label: "Wildcard" }
-    : type === "retirement" ? { type, id: top[0].id } : { type: "champion", id: top[0].id, event: `Grand Beatbox Battle ${app.state.year}`, tier: "gbb", runnerUp: top[1].id };
+    : type === "retirement" ? { type, id: top[0].id }
+    : (() => { const [comp, name, tier] = V.PREVIEW_EVENTS[(app.previewN = ((app.previewN ?? -1) + 1)) % V.PREVIEW_EVENTS.length];
+      return { type: "champion", id: top[app.previewN % 6].id, event: `${name} ${app.state.year}`, tier, comp, runnerUp: top[(app.previewN % 6) + 1].id, ticketYear: app.state.year }; })();
   await playCutscene(sc, helpers, { sound: setting("sound") });
 }
 

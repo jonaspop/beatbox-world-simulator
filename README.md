@@ -81,7 +81,7 @@ four years, GBB and its 7 to Smoke in September, and a season review on December
 
 - **Formats**: an elimination ranking, then a seeded bracket. GBB is a top 20 with 8 going to the
   battles; Beatbox of the Month also has top 8 battles. Five judges vote on every battle.
-- **Who enters what**: nobody already qualified for GBB enters a GBB qualifier; GBB-level names never
+- **Who enters what**: nobody holding a GBB ticket enters a GBB qualifier, wins a wildcard or plays the Second League; GBB-level names never
   enter Beatbox of the Month or NUE, and La Cup gets one or two of them at most. BeatCity Japan is
   Japanese apart from up to 4 internationals, and only one international can pass its elimination.
   Scottish and Welsh beatboxers enter the UK Championships. Anyone marked "doesn't enter solo events"
@@ -92,18 +92,27 @@ four years, GBB and its 7 to Smoke in September, and a season review on December
   performers' rounds and each judge's vote. GBB and BBWC play live automatically (Settings).
 - **Wildcard ceremonies** for GBB and every GBB qualifier: a full-screen card per beatboxer with their
   picture (or generated poster art) and their name and place in the bottom-left corner.
-- **Progression**: beating expectations raises a rating (more when there is room below potential),
-  under-performing lowers it, and ups are bigger than downs. Young careers grow toward potential at
-  the season review; long careers slowly decline.
+- **Progression**: the expected finish comes from the ratings, so losing to someone better costs nothing.
+  Beating expectations, finals and titles raise a rating (more when there is room below potential); only
+  a clearly bad result takes a little off. Young careers grow toward potential at the season review; only
+  careers past 15 years fade, slowly, and an active beatboxer never drops far below their peak.
 - **Retirement**: only people who have competed for six or more years and won something big for their
-  level can retire. Multiple GBB/BBWC champions often step away after winning again, and many become
+  level can retire. A retiring beatboxer who holds a GBB ticket gives it up and one more wildcard goes out.
+  Multiple GBB/BBWC champions often step away after winning again, and many become
   judges. Recent retirees can come back. No beatboxers are generated: the scene is the real one plus
   anyone you add yourself.
 - **Qualification**: GBB top 3, the 7 to Smoke winner and the Second League winner go to the next
   GBB; qualifier champions go to the same year's GBB; wildcards fill the rest, and wildcard
   runners-up replace anyone who drops out. BBWC takes national champions since the last edition plus
   the previous top 16.
-- **Cutscenes** for GBB and BBWC champions, qualifier winners, legends retiring and comebacks.
+- **Skipping**: Settings can skip national championships, international championships and GBB
+  qualifiers. They still happen, in the background, and "Next" jumps past them.
+- **Social feed**: line-ups, champions celebrating, rivals and friends replying, fans praising (and
+  hating a little), GBB tickets, wildcards, retirements and comebacks, written from what happens in the sim.
+- **Event graphics**: every event gets generated artwork: the flag for national championships, its own
+  colours and pattern for each international and qualifier, rays for GBB and a globe for the World Championship.
+- **Cutscenes** in each event's colour (GBB orange, World Championship blue, GBC pink, Florida pink
+  sunset, BeatCity blue and white, European green, everything else yellow) for GBB and BBWC champions, qualifier winners, legends retiring and comebacks.
   Follow a beatboxer on their profile to get a cutscene whenever they win.
 - **Editing**: open any profile to change name, country, status, rating, potential, retirement and
   judge chance, whether they enter solo events, or add a picture (upload a file, or copy a picture
