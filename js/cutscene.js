@@ -440,36 +440,49 @@ function drawChampion(g, W, H, t, s, beat) {
     g.restore();
   }
   // name, flag + country, how it was won
-  const ty = fy + cardH + Math.min(H * 0.135, 104);
+  const ty = fy + cardH + Math.min(H * 0.2, 150);
   const nm = ease((local - 0.9) / 0.8);
+  // dark band behind all the text so the rays, dots and watermark never fight it
+  const band = g.createLinearGradient(0, fy + cardH * 0.7, 0, H);
+  band.addColorStop(0, "rgba(6,6,8,0)"); band.addColorStop(0.35, `rgba(6,6,8,${0.82 * nm})`); band.addColorStop(1, `rgba(6,6,8,${0.92 * nm})`);
+  g.fillStyle = band; g.fillRect(0, fy + cardH * 0.7, W, H);
   g.save();
   g.globalAlpha = nm;
   g.textAlign = "center";
-  const size = fitText(g, s.p.name.toUpperCase(), W * 0.8, Math.min(W * 0.1, H * 0.11));
+  const size = fitText(g, s.p.name.toUpperCase(), W * 0.82, Math.min(W * 0.11, H * 0.12));
+  // title as a solid gold bar with dark letters
+  const lf = Math.max(16, Math.min(W * 0.022, 24));
+  g.font = `900 ${lf}px ${DISPLAY}`;
+  const lw = g.measureText(s.label).width + 28;
+  const ly = ty - size * 0.86 - 16;
   g.fillStyle = "#ffc23d";
-  g.font = `800 ${Math.max(14, Math.min(W * 0.02, 20))}px ${BODY}`;
-  g.fillText(s.label, cx, ty - size * 0.82 - 12);
-  g.fillStyle = "#f2efe8";
+  g.beginPath(); g.moveTo(cx - lw / 2, ly - lf - 6); g.lineTo(cx + lw / 2 + 8, ly - lf - 6); g.lineTo(cx + lw / 2, ly + 6); g.lineTo(cx - lw / 2 - 8, ly + 6); g.closePath(); g.fill();
+  g.fillStyle = "#0b0b0d";
+  g.fillText(s.label, cx, ly);
+  // the name: big, with a dark outline and shadow
   g.font = `900 ${size}px ${DISPLAY}`;
-  g.shadowColor = "rgba(0,0,0,0.6)"; g.shadowBlur = 14;
+  g.lineWidth = Math.max(4, size * 0.06); g.lineJoin = "round"; g.strokeStyle = "rgba(6,6,8,0.9)";
+  g.strokeText(s.p.name.toUpperCase(), cx, ty);
+  g.shadowColor = "rgba(0,0,0,0.75)"; g.shadowBlur = 18;
+  g.fillStyle = "#f7f4ee";
   g.fillText(s.p.name.toUpperCase(), cx, ty);
   g.shadowBlur = 0;
   const lineW = Math.min(W * 0.3, 280) * ease((local - 1.3) / 1.0);
   g.fillStyle = "#ffc23d";
-  g.fillRect(cx - lineW / 2, ty + 10, lineW, 3);
-  g.font = `700 ${Math.max(13, W * 0.016)}px ${BODY}`;
+  g.fillRect(cx - lineW / 2, ty + 12, lineW, 3);
+  g.font = `800 ${Math.max(15, W * 0.018)}px ${BODY}`;
   const cname = s.p.countryName.toUpperCase();
-  const cw = g.measureText(cname).width + (s.flagImg ? 42 : 0);
-  if (s.flagImg) g.drawImage(s.flagImg, cx - cw / 2, ty + 22, 32, 24);
+  const cw = g.measureText(cname).width + (s.flagImg ? 46 : 0);
+  if (s.flagImg) g.drawImage(s.flagImg, cx - cw / 2, ty + 26, 36, 27);
   g.textAlign = "left";
-  g.fillStyle = "rgba(242,239,232,0.9)";
-  g.fillText(cname, cx - cw / 2 + (s.flagImg ? 42 : 0), ty + 41);
+  g.fillStyle = "#f2efe8";
+  g.fillText(cname, cx - cw / 2 + (s.flagImg ? 46 : 0), ty + 46);
   g.textAlign = "center";
   g.globalAlpha = nm * clamp01((local - 1.8) / 0.8);
-  g.font = `600 ${Math.max(12, W * 0.014)}px ${BODY}`;
-  g.fillStyle = "rgba(242,239,232,0.7)";
+  g.font = `700 ${Math.max(14, W * 0.016)}px ${BODY}`;
+  g.fillStyle = "rgba(242,239,232,0.92)";
   const how = [s.runnerUp ? `Beat ${s.runnerUp} in the final${s.score ? ` · ${s.score}` : ""}` : null, s.extra].filter(Boolean).join("   ·   ");
-  if (how) g.fillText(how, cx, ty + 70);
+  if (how) g.fillText(how, cx, ty + 80);
   g.restore();
   // event name, top left
   g.globalAlpha = appear;
@@ -536,6 +549,40 @@ function posterArt(g, W, H, it, k, accent = "255,120,40", streak = 0.05) {
   g.restore();
 }
 
+// a tall portrait card with the cut corner, placed right of centre (above the name on narrow screens)
+function photoCard(g, W, H, img, k, show) {
+  if (show <= 0) return;
+  const wide = W > H * 1.05;
+  const ch = wide ? Math.min(H * 0.66, 560) : Math.min(H * 0.46, W * 0.9);
+  const cw = ch * 0.8;
+  const cx = wide ? W * 0.66 : W / 2;
+  const cy = wide ? H * 0.47 : H * 0.36;
+  const x = cx - cw / 2 + k * 10, y = cy - ch / 2 + (1 - show) * 30;
+  const path = () => {
+    g.beginPath();
+    g.moveTo(x, y); g.lineTo(x + cw, y); g.lineTo(x + cw, y + ch * 0.86); g.lineTo(x + cw * 0.86, y + ch); g.lineTo(x, y + ch); g.closePath();
+  };
+  g.save();
+  g.globalAlpha = show;
+  // soft shadow and an offset orange plate behind the card
+  g.fillStyle = "rgba(255,91,31,0.85)";
+  g.save(); g.translate(14, 14); path(); g.fill(); g.restore();
+  g.shadowColor = "rgba(0,0,0,0.6)"; g.shadowBlur = 40;
+  path(); g.fillStyle = "#0b0b0d"; g.fill();
+  g.shadowBlur = 0;
+  g.save();
+  path(); g.clip();
+  const sc = Math.max(cw / img.width, ch / img.height) * (1.02 + k * 0.04);
+  g.drawImage(img, cx + k * 10 - (img.width * sc) / 2, y + ch / 2 - (img.height * sc) / 2, img.width * sc, img.height * sc);
+  // a little of the halftone texture over the photo so it belongs to the poster
+  const fade = g.createLinearGradient(0, y + ch * 0.55, 0, y + ch);
+  fade.addColorStop(0, "rgba(11,11,13,0)"); fade.addColorStop(1, "rgba(11,11,13,0.45)");
+  g.fillStyle = fade; g.fillRect(x, y, cw, ch);
+  g.restore();
+  path(); g.strokeStyle = "rgba(242,239,232,0.9)"; g.lineWidth = 2; g.stroke();
+  g.restore();
+}
+
 function drawCeremony(g, W, H, t, s, beat) {
   const i = Math.floor((t - 2.2) / s.per);
   g.globalAlpha = 1;
@@ -583,13 +630,9 @@ function drawCeremony(g, W, H, t, s, beat) {
   const local = t - 2.2 - i * s.per;
   const k = clamp01(local / s.per);
   if (!s[`hit${i}`]) { s[`hit${i}`] = true; if (beat.on) beat.kick(beat.ac.currentTime, 0.6); }
-  // background: photo or generated poster art, slowly zooming
-  if (it.img) {
-    g.save(); coverImage(g, it.img, W, H, 1.03 + k * 0.03); g.restore();
-    const shade = g.createLinearGradient(0, H, W * 0.6, H * 0.2);
-    shade.addColorStop(0, "rgba(0,0,0,0.85)"); shade.addColorStop(1, "rgba(0,0,0,0)");
-    g.fillStyle = shade; g.fillRect(0, 0, W, H);
-  } else posterArt(g, W, H, it, k);
+  // background: the flag poster art, always; their photo sits on it as a framed portrait card
+  posterArt(g, W, H, it, k);
+  if (it.img) photoCard(g, W, H, it.img, k, ease((local - 0.1) / 0.7));
   // gentle fade between people instead of a flash
   const fadeIn = 1 - ease(local / 0.45), fadeOut = ease((local - (s.per - 0.3)) / 0.3);
   const cover = Math.max(fadeIn, fadeOut);
