@@ -305,7 +305,7 @@ export function viewProfile(id) {
       <label class="btn small">Upload picture<input type="file" accept="image/*" data-upload="${esc(id)}" hidden></label>
       <span class="muted small pf-tip">Or copy a picture anywhere and press Ctrl+V here.</span>
       ${localPictures.has(id) ? `<button class="btn small ghost" data-act="rmpic" data-id="${esc(id)}">Remove my picture</button>` : ""}
-      ${!localPictures.has(id) && defaultPictures.has(id) ? `<a class="muted small" href="${esc(defaultPictures.get(id).source)}" target="_blank" rel="noopener">Photo: ${esc(new URL(defaultPictures.get(id).source).hostname.replace(/^www\./, ""))}</a>` : ""}
+      ${!localPictures.has(id) && /^https?:/.test(defaultPictures.get(id)?.source || "") ? `<a class="muted small" href="${esc(defaultPictures.get(id).source)}" target="_blank" rel="noopener">Photo: ${esc(new URL(defaultPictures.get(id).source).hostname.replace(/^www\./, ""))}</a>` : ""}
     </div>
     <div class="pf-main">
       <p class="eyebrow">${flag(p.country)} ${esc(countryName(p.country))}${p.countries?.length > 1 ? ` · also ${p.countries.slice(1).map((c) => esc(countryName(c))).join(", ")}` : ""}</p>
